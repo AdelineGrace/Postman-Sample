@@ -499,6 +499,19 @@
 		},
 		{
 			"name": "Create/Save ProgID",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8bc6cd7e-a423-43e9-988a-967c809e085b",
+						"exec": [
+							"const serialNo = Math.floor(Math.random()* 1000000);\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "63e7f8ab-c802-4141-a094-16b9734a762c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -506,6 +519,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"programDescription\": \"Jun23-API-Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-{{string}}\",\r\n    \"programStatus\": \"Active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": "{{BaseUrl}}/saveprogram"
 			},
 			"response": []
