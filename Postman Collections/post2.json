@@ -824,7 +824,7 @@
 			"response": [
 				{
 					"id": "0625be42-75a3-45ad-ad15-0628f47ae905",
-					"name": "Update Program by Name with Path Variable Copy",
+					"name": "404 Error for invalid ProgName",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
