@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "45c4c965-b5bd-4d57-beca-82b9b5ef9d4a",
+		"name": "Assignment Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Assignment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f78ce632-3f1b-4254-81c8-e38d403f3a8e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "8c2fc7f0-49e3-4373-9d81-b4445a20852b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseUrl}}/assignments"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Assignments By ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a20a7e7f-a4b5-41f8-93d2-d12221646e16",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "f0ab4438-d88f-4fcc-a95e-5f2388bd7f0d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignments/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignments",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "220",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Assignment By Invalid AssignmentID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "69bfb036-6521-4224-918c-773ba1c0215a",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var invalidAssignmentId = pm.request.url.path[2];\r",
+							"  //console.log(pm.request.url.path[2]);\r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Assignment not found with Id : \" +invalidAssignmentId+\" \",\r",
+							"    \"success\": false\r",
+							"  };\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "544efdcf-cbb7-45f3-9708-d031eb629704",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignments/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignments",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "100",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Assignments for Batch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c5bf14d9-bfcc-4771-afe6-f3c6bb3eaabf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "48dd2ddf-1f09-44d2-99a1-18fb67c5b4a1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignments/batch/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignments",
+						"batch",
+						":batchId"
+					],
+					"variable": [
+						{
+							"key": "batchId",
+							"value": "2",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get No Assignments for Batch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9361c5e7-91a8-4e33-8e7c-7bd6bc006357",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var batchId = pm.request.url.path[3];\r",
+							"  //console.log(pm.request.url);\r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Assignments not found with BatchId : \" +batchId+\" \",\r",
+							"    \"success\": false\r",
+							"  };\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "d357b243-d209-4cae-b257-43f5ba320a47",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignments/batch/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignments",
+						"batch",
+						":batchId"
+					],
+					"variable": [
+						{
+							"key": "batchId",
+							"value": "100",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Assignment for Invalid Batch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0b36bba0-4c41-4a8d-8d32-892c6bc49b93",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var invalidBatchId = pm.request.url.path[3];\r",
+							"  //console.log(pm.request.url);\r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Batch not found with Id : \" +invalidBatchId+\" \",\r",
+							"    \"success\": false\r",
+							"  };\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "0a6f2731-42a6-4954-9551-ebd5aaec2ecf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignments/batch/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignments",
+						"batch",
+						":batchId"
+					],
+					"variable": [
+						{
+							"key": "batchId",
+							"value": "2001",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Assignment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ec359da5-1c92-400b-b80c-ce6355c4fb32",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.globals.set(\"assignmentId\", response.assignmentId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "51cc30c4-87d3-40b1-a8ad-742628e57b0d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"assignmentDescription\": \"Test Assignment from Team3\",\r\n  \"assignmentName\": \"Test Assigment 5\" ,\r\n  \"batchId\": 2,\r\n  \"comments\": \"Test Assignemnt created by Team3\",\r\n  \"createdBy\": \"U22\",\r\n  \"dueDate\": \"2023-06-19T22:02:28.140Z\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"Filepath1\",\r\n  \"pathAttachment2\": \"Filepath2\",\r\n  \"pathAttachment3\": \"Filepath3\",\r\n  \"pathAttachment4\": \"Filepath4\",\r\n  \"pathAttachment5\": \"Filepath5\" }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}/assignments"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Assignment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c152b3d5-87f3-4f5a-a55b-29682b71fe1c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "79226f22-d3ae-4024-a48a-cf481104241e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n  \"assignmentDescription\": \"Test Assignment 1\",\r\n  \"assignmentName\": \"Test Assignment 01\",\r\n  \"batchId\": 1,\r\n  \"comments\": \"Comments are updated\",\r\n  \"createdBy\": \"U22\",\r\n  \"dueDate\": \"2023-06-19T22:02:28.140Z\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\",\r\n  \"pathAttachment4\": \"string\",\r\n  \"pathAttachment5\": \"string\"   }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/assignments/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignments",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "{{assignmentId}}",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete with ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3532b6a8-f30b-4a99-acc2-d91bd8f98f67",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "76adea01-1e7c-4184-b20d-e95c83af2fcc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignments/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignments",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "{{assignmentId}}",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete with Invalid ID",
+			"_postman_id": "0021e970-c0f3-4c11-9ba6-94cd87d042de",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignments/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignments",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "00",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
