@@ -1006,6 +1006,19 @@
 					"body": "{\n    \"timestamp\": \"2023-06-25T05:35:24.794+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/lms/program/Jun23-Postman%20Pros-DA-314482\"\n}"
 				}
 			]
+		},
+		{
+			"name": "{{BaseUrl}}/putprogram/{programId}",
+			"id": "f524222a-f339-466f-b31a-b85d9e46c9ed",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "{{BaseUrl}}/putprogram/{programId}"
+			},
+			"response": []
 		}
 	]
 }
