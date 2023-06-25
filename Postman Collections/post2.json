@@ -657,28 +657,6 @@
 					"body": "{\n    \"message\": \"program with this: 250not found\",\n    \"success\": false\n}"
 				}
 			]
-		},
-		{
-			"name": "Update Prog by Name with Path Variable",
-			"id": "86b7bbf7-7718-49ad-a81e-7b0b30d166cd",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PATCH",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"programDescription\": \"June 2023 API Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-DA-314482_Updated\",\r\n    \"programStatus\": \"Active\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}/programs/Jun23-Postman Pros-DA-314482"
-			},
-			"response": []
 		}
 	]
 }
