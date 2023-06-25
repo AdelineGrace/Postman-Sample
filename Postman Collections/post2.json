@@ -889,6 +889,122 @@
 					"body": "{\n    \"message\": \"no list with such program nameJun23-Postman Pros-DA-314482\",\n    \"success\": false\n}"
 				}
 			]
+		},
+		{
+			"name": "400 Bad Request Missing Field",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d21a75d1-92ba-45bb-9eff-4a24fcd37952",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "5f36b37b-157a-4599-abd9-de615b359c88",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"programDescription\": \"2023 June API Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-DA-314482_Updated\",\r\n    \"programStatus\": \"Active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/program/:programName",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"program",
+						":programName"
+					],
+					"variable": [
+						{
+							"id": "0b788d41-7f02-49f1-9fdf-a247a79fc9de",
+							"key": "programName",
+							"value": "Jun23-Postman Pros-DA-314482"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "2e21a65f-285d-47f5-a332-702ddb186c6e",
+					"name": "Update Program by Name",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"programDescription\": \"2023 June API Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-DA-314482_Updated\",\r\n    \"programStatus\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/program/:programName",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"program",
+								":programName"
+							],
+							"variable": [
+								{
+									"key": "programName",
+									"value": "Jun23-Postman Pros-DA-314482"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 04:43:53 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"programId\": 1845,\n    \"programName\": \"Jun23-Postman Pros-DA-314482_Updated\",\n    \"programDescription\": \"2023 June API Hackathon\",\n    \"programStatus\": \"Active\",\n    \"creationTime\": null,\n    \"lastModTime\": null\n}"
+				}
+			]
 		}
 	]
 }
