@@ -1016,7 +1016,22 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
-				"url": "{{BaseUrl}}/putprogram/{programId}"
+				"url": {
+					"raw": "{{BaseUrl}}/putprogram/:programId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"putprogram",
+						":programId"
+					],
+					"variable": [
+						{
+							"key": "programId",
+							"value": null
+						}
+					]
+				}
 			},
 			"response": []
 		}
