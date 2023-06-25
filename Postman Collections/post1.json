@@ -505,58 +505,7 @@
 				},
 				"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/1003"
 			},
-			"response": [
-				{
-					"id": "b275b10b-0fae-46e8-afb4-a8eaa5510fbf",
-					"name": "Update Batch",
-					"originalRequest": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"batchName\": \"June 2023 API Hackathon-72761\",\r\n    \"batchDescription\": null,\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 4,\r\n    \"programId\": 51,\r\n    \"programName\": \"new1\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/1003"
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 17:30:40 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"batchId\": 1003,\n    \"batchName\": \"June 2023 API Hackathon-72761\",\n    \"batchDescription\": null,\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 4,\n    \"programId\": 51,\n    \"programName\": \"new1\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Delete Batch",
