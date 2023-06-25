@@ -667,7 +667,22 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
-				"url": "{{BaseUrl}}/programs/{programName}"
+				"url": {
+					"raw": "{{BaseUrl}}/programs/:programName",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"programs",
+						":programName"
+					],
+					"variable": [
+						{
+							"key": "programName",
+							"value": "Jun23-Postman Pros-DA-314482"
+						}
+					]
+				}
 			},
 			"response": []
 		}
