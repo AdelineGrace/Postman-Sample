@@ -7,6 +7,19 @@
 	"item": [
 		{
 			"name": "Create Batch",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "625d88b8-993d-4bc1-9ca6-634e1647045d",
+						"exec": [
+							"const serialNo = Math.floor(Math.random()* 1000000);\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "ed4c79d3-dbe9-42b8-a75b-0a505c952000",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -16,12 +29,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51,\r\n}"
 				},
 				"url": "{{BaseUrl}}/batches"
 			},
