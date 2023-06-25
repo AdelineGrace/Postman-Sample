@@ -1015,7 +1015,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "df26372d-70cf-4865-8785-41133c41c679",
+				"id": "b0501780-9027-4ea5-907e-19cd6402ac95",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1025,12 +1025,20 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "02e1d16e-d567-45e7-86e4-bf6f44eca6df",
+				"id": "0dc4f278-5b5a-45de-b6da-2eca4fb7956a",
 				"type": "text/javascript",
 				"exec": [
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"id": "c7c6ba82-eb54-4104-9edd-2f9dc2336399",
+			"key": "assignmentIdsubmission",
+			"value": "",
+			"type": "string"
 		}
 	]
 }
