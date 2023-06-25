@@ -13,7 +13,8 @@
 					"script": {
 						"id": "625d88b8-993d-4bc1-9ca6-634e1647045d",
 						"exec": [
-							""
+							"const serialNo = Math.floor(Math.random()* 1000000);\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());"
 						],
 						"type": "text/javascript"
 					}
@@ -28,7 +29,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51\r\n}",
+					"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon-{{serialNumber}}\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -37,58 +38,7 @@
 				},
 				"url": "{{BaseUrl}}/batches"
 			},
-			"response": [
-				{
-					"id": "45ccc34c-db19-4013-a325-9e3250ca645d",
-					"name": "Create Batch",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{BaseUrl}}/batches"
-					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 17:19:57 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"batchId\": 1001,\n    \"batchName\": \"June 2023 API Hackathon\",\n    \"batchDescription\": null,\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 3,\n    \"programId\": 51,\n    \"programName\": \"new1\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Get All Batches",
