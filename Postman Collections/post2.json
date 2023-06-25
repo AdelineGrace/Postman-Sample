@@ -1008,7 +1008,7 @@
 			]
 		},
 		{
-			"name": "Update Program using ProgramId",
+			"name": "404 Error for Invalid ProgId",
 			"id": "f55ff2cb-2f54-4172-b5b7-72a046ec1c9c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -1045,8 +1045,8 @@
 			},
 			"response": [
 				{
-					"id": "7fea5c3a-f53f-4dd0-9db0-b0d049848274",
-					"name": "Update Program using ProgramId",
+					"id": "43f1204d-bed0-4cca-8ae4-c0d171dbb099",
+					"name": "404 Error for Invalid ProgId",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
@@ -1099,7 +1099,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 25 Jun 2023 07:16:29 GMT"
+							"value": "Sun, 25 Jun 2023 07:20:22 GMT"
 						},
 						{
 							"key": "Via",
@@ -1111,44 +1111,6 @@
 					"body": "{\n    \"programId\": 1845,\n    \"programName\": \"Jun23-Postman Pros-DA-314482\",\n    \"programDescription\": \"June 2023 API Hackathon\",\n    \"programStatus\": \"Active\",\n    \"creationTime\": null,\n    \"lastModTime\": null\n}"
 				}
 			]
-		},
-		{
-			"name": "404 Error for Invalid ProgId",
-			"id": "59b18dc3-5e85-41f8-81bf-5beace5194ae",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programId\": 18650,\r\n  \"programName\": \"Jun23-Postman Pros-DA-314482\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{BaseUrl}}/putprogram/:programId",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"putprogram",
-						":programId"
-					],
-					"variable": [
-						{
-							"id": "7ac7873e-d432-4110-ac75-ab945c587320",
-							"key": "programId",
-							"value": "1845"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }
