@@ -774,7 +774,7 @@
 			]
 		},
 		{
-			"name": "Update Program by Name with Path Variable Copy",
+			"name": "404 Error for invalid ProgName",
 			"event": [
 				{
 					"listen": "prerequest",
