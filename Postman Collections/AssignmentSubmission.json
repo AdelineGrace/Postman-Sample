@@ -1,0 +1,991 @@
+{
+	"info": {
+		"_postman_id": "701b15a3-4cc0-4760-a6a2-02bb11c423f3",
+		"name": "AssignmentSubmission Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Grades by BatchID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cebd2ddc-59de-452c-bd91-79a46c66d728",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "78172485-60dd-4bc1-8bb3-653cbc7dc164",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/grades/:batchID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"grades",
+						":batchID"
+					],
+					"variable": [
+						{
+							"key": "batchID",
+							"value": "1",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Grades by Invalid BatchID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "025d003b-8feb-4173-95c2-d746f948376c",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var batchId = pm.request.url.path[3];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Assignments with grades does not exist for Batch ID : \" +batchId+\"\",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "081153eb-6d16-4309-9336-e68f46a207b8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/grades/:batchID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"grades",
+						":batchID"
+					],
+					"variable": [
+						{
+							"key": "batchID",
+							"value": "100",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Submission by UserID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fb4c8b86-bae8-41ff-92e3-15e4e1847038",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "5cf27c6f-f2a7-41c2-8345-42c9a9885df9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/student/:UserID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"student",
+						":UserID"
+					],
+					"variable": [
+						{
+							"key": "UserID",
+							"value": "U76",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Submission by Invalid UserID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "238b1a2b-ac0b-42af-9695-3f2171b65c85",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var userId = pm.request.url.path[3];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"User not found with UserID : \" +userId+\" \",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "b8d400a5-726f-4ab4-99f8-34e53dad423b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/student/:UserID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"student",
+						":UserID"
+					],
+					"variable": [
+						{
+							"key": "UserID",
+							"value": "U7",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Submission by BatchID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d94c5b18-87ce-4671-a2c9-3e5b6e292674",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "b9cd0ec3-956a-4181-96f2-cf30fa448fee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/studentbatch/:batchID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"studentbatch",
+						":batchID"
+					],
+					"variable": [
+						{
+							"key": "batchID",
+							"value": "2",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Submission by Invalid BatchID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5002c70b-3b3d-4ba8-809c-44d72ea701d8",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var batchId = pm.request.url.path[3];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"User not found with UserID : \" +batchId+\" \",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "a9f9d280-6464-4ece-91e4-188aa3e9896f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/studentbatch/:batchid",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"studentbatch",
+						":batchid"
+					],
+					"variable": [
+						{
+							"key": "batchid",
+							"value": "99",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Assignment",
+			"_postman_id": "e57842a9-c2a8-43c1-af4a-03be4a0f0a1d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"assignmentId\" : 12,\r\n        \"userId\" : \"U19\",\r\n        \"subDesc\" : \"Submissions for SQL assignements\",\r\n        \"subComments\" : \"SQL\",\r\n        \"subPathAttach1\" : \"Filepath1\",\r\n        \"subPathAttach2\" : \"Filepath2\",\r\n        \"subPathAttach3\" : \"Filepath3\",\r\n        \"subPathAttach4\" : \"Filepath4\",\r\n        \"subPathAttach5\" : \"Filepath5\",\r\n        \"subDateTime\" : \"{{$isoTimestamp}}\",\r\n        \"gradedBy\" : \"U22\",\r\n        \"gradedDAteTime\" : \"\",\r\n        \"grade\" : 2\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}/assignmentsubmission"
+			},
+			"response": []
+		},
+		{
+			"name": "All Submission",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cd44dc96-c890-4cd5-9e2b-124155e31193",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "6fe370ba-98ef-432b-9a6d-b0faf132118e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{BaseUrl}}/assignmentsubmission"
+			},
+			"response": [
+				{
+					"id": "fc86a6e4-f940-4e4a-8b7d-24c07378b307",
+					"name": "All Submission",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{BaseUrl}}/assignmentsubmission"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 00:22:38 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"submissionId\": 5,\n        \"assignmentId\": 12,\n        \"userId\": \"U19\",\n        \"subDesc\": \"Submissions for SQL assignment\",\n        \"subComments\": \"SQL\",\n        \"subPathAttach1\": \"Filepath1\",\n        \"subPathAttach2\": \"Filepath2\",\n        \"subPathAttach3\": \"Filepath3\",\n        \"subPathAttach4\": \"Filepath4\",\n        \"subPathAttach5\": \"Filepath5\",\n        \"subDateTime\": \"06-20-2023 15:35:01\",\n        \"gradedBy\": \"U22\",\n        \"gradedDateTime\": \"06-20-2023 17:18:42\",\n        \"grade\": 2\n    },\n    {\n        \"submissionId\": 9,\n        \"assignmentId\": 12,\n        \"userId\": \"U21\",\n        \"subDesc\": \"Submissions for SQL assignment\",\n        \"subComments\": \"SQL\",\n        \"subPathAttach1\": \"Filepath1\",\n        \"subDateTime\": \"06-20-2023 17:20:00\",\n        \"gradedBy\": \"U22\",\n        \"gradedDateTime\": \"06-20-2023 17:20:08\",\n        \"grade\": 2\n    },\n    {\n        \"submissionId\": 10,\n        \"assignmentId\": 13,\n        \"userId\": \"U21\",\n        \"subDesc\": \"Submissions for SQL assignment\",\n        \"subComments\": \"SQL\",\n        \"subPathAttach1\": \"Filepath1\",\n        \"subDateTime\": \"06-20-2023 17:22:53\",\n        \"gradedBy\": \"U22\",\n        \"gradedDateTime\": \"06-20-2023 17:23:14\",\n        \"grade\": 2\n    },\n    {\n        \"submissionId\": 11,\n        \"assignmentId\": 10,\n        \"userId\": \"U75\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:09:16\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 12,\n        \"assignmentId\": 10,\n        \"userId\": \"U76\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:20:02\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 45,\n        \"assignmentId\": 197,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 197 for U78\",\n        \"subComments\": \"Successfully submitted assignment 197 for U78\",\n        \"subDateTime\": \"06-24-2023 23:50:02\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 15,\n        \"assignmentId\": 30,\n        \"userId\": \"U78\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 23:10:20\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 16,\n        \"assignmentId\": 19,\n        \"userId\": \"U78\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 23:11:45\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 46,\n        \"assignmentId\": 204,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 204 for U78\",\n        \"subComments\": \"Successfully submitted assignment 204 for U78\",\n        \"subDateTime\": \"06-25-2023 00:02:40\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 47,\n        \"assignmentId\": 207,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 207 for U78\",\n        \"subComments\": \"Successfully submitted assignment 207 for U78\",\n        \"subDateTime\": \"06-25-2023 00:10:27\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 48,\n        \"assignmentId\": 209,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 209 for U78\",\n        \"subComments\": \"Successfully submitted assignment 209 for U78\",\n        \"subDateTime\": \"06-25-2023 00:22:23\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 14,\n        \"assignmentId\": 10,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Test\",\n        \"subComments\": \"test\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 16:04:24\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 24,\n        \"assignmentId\": 10,\n        \"userId\": \"U92\",\n        \"subDesc\": \"Test1\",\n        \"subComments\": \"test1\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 17:51:29\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 34,\n        \"assignmentId\": 168,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting 168 for U78\",\n        \"subComments\": \"Successfully submitted 168 for U78\",\n        \"subDateTime\": \"06-24-2023 23:05:25\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 35,\n        \"assignmentId\": 172,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 172 for U78\",\n        \"subComments\": \"Successfully submitted assignment 172 for U78\",\n        \"subDateTime\": \"06-24-2023 23:08:42\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 36,\n        \"assignmentId\": 174,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 174 for U78\",\n        \"subComments\": \"Successfully submitted assignment 174 for U78\",\n        \"subDateTime\": \"06-24-2023 23:09:43\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 37,\n        \"assignmentId\": 179,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 179 for U78\",\n        \"subComments\": \"Successfully submitted assignment 179 for U78\",\n        \"subDateTime\": \"06-24-2023 23:14:15\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 38,\n        \"assignmentId\": 180,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 180 for U78\",\n        \"subComments\": \"Successfully submitted assignment 180 for U78\",\n        \"subDateTime\": \"06-24-2023 23:19:59\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 39,\n        \"assignmentId\": 183,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 183 for U78\",\n        \"subComments\": \"Successfully submitted assignment 183 for U78\",\n        \"subDateTime\": \"06-24-2023 23:26:15\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 40,\n        \"assignmentId\": 186,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 186 for U78\",\n        \"subComments\": \"Successfully submitted assignment 186 for U78\",\n        \"subDateTime\": \"06-24-2023 23:31:49\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 41,\n        \"assignmentId\": 190,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 190 for U78\",\n        \"subComments\": \"Successfully submitted assignment 190 for U78\",\n        \"subDateTime\": \"06-24-2023 23:40:36\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 42,\n        \"assignmentId\": 191,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 191 for U78\",\n        \"subComments\": \"Successfully submitted assignment 191 for U78\",\n        \"subDateTime\": \"06-24-2023 23:41:49\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 43,\n        \"assignmentId\": 192,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 192 for U78\",\n        \"subComments\": \"Successfully submitted assignment 192 for U78\",\n        \"subDateTime\": \"06-24-2023 23:47:19\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 44,\n        \"assignmentId\": 193,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Submitting assignment 193 for U78\",\n        \"subComments\": \"Successfully submitted assignment 193 for U78\",\n        \"subDateTime\": \"06-24-2023 23:49:23\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Grades by Assignment ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cc6393f4-4b40-4549-82d8-517216b01645",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "5d8add59-c586-4eb6-b3ec-b5c812dd7b63",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"getGrades",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "10",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "ffdfbacc-2e6e-4f5a-90c2-8bbfa8bdec00",
+					"name": "Grades by Assignment ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGrades",
+								":assignmentId"
+							],
+							"variable": [
+								{
+									"key": "assignmentId",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 00:23:23 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"submissionId\": 11,\n        \"assignmentId\": 10,\n        \"userId\": \"U75\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:09:16\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 12,\n        \"assignmentId\": 10,\n        \"userId\": \"U76\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:20:02\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 14,\n        \"assignmentId\": 10,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Test\",\n        \"subComments\": \"test\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 16:04:24\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 24,\n        \"assignmentId\": 10,\n        \"userId\": \"U92\",\n        \"subDesc\": \"Test1\",\n        \"subComments\": \"test1\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 17:51:29\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    }\n]"
+				},
+				{
+					"id": "a08a0db6-bc57-41e3-b37a-75f90ef0106b",
+					"name": "Grades by Assignment ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGrades",
+								":assignmentId"
+							],
+							"variable": [
+								{
+									"key": "assignmentId",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 00:40:25 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"submissionId\": 11,\n        \"assignmentId\": 10,\n        \"userId\": \"U75\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:09:16\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 12,\n        \"assignmentId\": 10,\n        \"userId\": \"U76\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:20:02\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 14,\n        \"assignmentId\": 10,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Test\",\n        \"subComments\": \"test\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 16:04:24\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 24,\n        \"assignmentId\": 10,\n        \"userId\": \"U92\",\n        \"subDesc\": \"Test1\",\n        \"subComments\": \"test1\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 17:51:29\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Grades by Invalid Assignment ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9ce2b883-fdd3-460f-81ba-422df66fb830",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "f57db13d-2d94-4ace-a511-d922dc83a6d1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"getGrades",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "0",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grades by StudentID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "65831822-a1b6-4dc3-8a0c-814dfed5a810",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "ba972489-cf14-4a71-8e44-5735af8addfc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/getGradesByStudentId/:studentID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"getGradesByStudentId",
+						":studentID"
+					],
+					"variable": [
+						{
+							"key": "studentID",
+							"value": "U19",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "ddc03046-f1d9-4bf7-b3a0-6ed041bee7ba",
+					"name": "Grades by StudentID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGradesByStudentId/:studentID",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGradesByStudentId",
+								":studentID"
+							],
+							"variable": [
+								{
+									"key": "studentID",
+									"value": "U19"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 01:03:36 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"submissionId\": 5,\n        \"assignmentId\": 12,\n        \"userId\": \"U19\",\n        \"subDesc\": \"Submissions for SQL assignment\",\n        \"subComments\": \"SQL\",\n        \"subPathAttach1\": \"Filepath1\",\n        \"subPathAttach2\": \"Filepath2\",\n        \"subPathAttach3\": \"Filepath3\",\n        \"subPathAttach4\": \"Filepath4\",\n        \"subPathAttach5\": \"Filepath5\",\n        \"subDateTime\": \"06-20-2023 15:35:01\",\n        \"gradedBy\": \"U22\",\n        \"gradedDateTime\": \"06-20-2023 17:18:42\",\n        \"grade\": 2\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Grades by Invalid StudentID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "526199e1-1bba-47b5-92d0-1938f326cf71",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "8454acce-9c55-46b9-a112-61998def62c1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/getGradesByStudentId/:studentID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"getGradesByStudentId",
+						":studentID"
+					],
+					"variable": [
+						{
+							"key": "studentID",
+							"value": "U12",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "45158905-d7ab-4e4b-b3c1-4c2ae28bf84b",
+					"name": "Grades by Invalid StudentID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGradesByStudentId/:studentID",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGradesByStudentId",
+								":studentID"
+							],
+							"variable": [
+								{
+									"key": "studentID",
+									"value": "U12"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 01:07:17 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"Student not found with Student ID:  : U12 \",\n    \"success\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Resubmit Assignment",
+			"_postman_id": "5314eaac-e368-4b7e-b663-267cc1e7e1fd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						":Id"
+					],
+					"variable": [
+						{
+							"key": "Id",
+							"value": "76",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Assignment Id",
+			"_postman_id": "a259d5e1-bace-4030-a5f5-60527226b899",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "{{assignmentId}}",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Invalid Assignment Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3e1a5ed0-5250-4a26-9b01-36cca7becd36",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var assignmentId = pm.request.url.path[2];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Submission not found with ID : \"+assignmentId+\" \",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "23eca312-fb34-4f32-856d-aeaf153a5884",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/:assignmentId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						":assignmentId"
+					],
+					"variable": [
+						{
+							"key": "assignmentId",
+							"value": "0",
+							"type": "string"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "df26372d-70cf-4865-8785-41133c41c679",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "02e1d16e-d567-45e7-86e4-bf6f44eca6df",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
