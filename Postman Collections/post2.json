@@ -325,6 +325,20 @@
 		},
 		{
 			"name": "Get AllPrograms",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1c9f0d76-7efc-4806-96a3-759b1cb5661b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "b12463f9-4bd6-4cb4-891b-986393d3a610",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -479,6 +493,20 @@
 		},
 		{
 			"name": "One ProgramId without Path Variable",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0bdbc13b-cca0-423a-86c8-e67ffd41ab34",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "43385348-b0de-47a7-830b-de18579b45c0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -490,8 +518,8 @@
 			},
 			"response": [
 				{
-					"id": "6bad2c8d-0b50-48e6-ae95-1b88e35109c9",
-					"name": "One Program without Path Variable",
+					"id": "dbd6d5ff-b350-4e87-8e2b-c6a7e1d77a4e",
+					"name": "One ProgramId without Path Variable",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -519,7 +547,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 25 Jun 2023 02:06:34 GMT"
+							"value": "Sun, 25 Jun 2023 18:38:05 GMT"
 						},
 						{
 							"key": "Via",
@@ -681,6 +709,18 @@
 						"id": "d21a75d1-92ba-45bb-9eff-4a24fcd37952",
 						"exec": [
 							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d27b4791-6596-403e-b23f-5b990bea07b5",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
