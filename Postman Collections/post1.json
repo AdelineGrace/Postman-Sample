@@ -29,7 +29,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51,\r\n}"
+					"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon-{{serialNumber}}\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51,\r\n}"
 				},
 				"url": "{{BaseUrl}}/batches"
 			},
