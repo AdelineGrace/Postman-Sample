@@ -659,24 +659,37 @@
 			]
 		},
 		{
-			"name": "Update Prog by Name with Path Variable",
-			"id": "86b7bbf7-7718-49ad-a81e-7b0b30d166cd",
+			"name": "Update Program by Name",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d21a75d1-92ba-45bb-9eff-4a24fcd37952",
+						"exec": [
+							"const serialNo = Math.floor(Math.random()* 1000000);\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "4d0e26e9-6d32-44df-99f5-610373d6edac",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "PUT",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"programDescription\": \"June 2023 API Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-DA-314482_Updated\",\r\n    \"programStatus\": \"Active\"\r\n}",
+					"raw": "{\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{BaseUrl}}/programs/Jun23-Postman Pros-DA-314482"
+				"url": "{{BaseUrl}}/saveprogram"
 			},
 			"response": []
 		}
