@@ -472,23 +472,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "{{BaseUrl}}/programs/:pid",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"programs",
-						":pid"
-					],
-					"variable": [
-						{
-							"id": "0718a8ce-db56-40d8-b537-a57b40df7a27",
-							"key": "pid",
-							"value": "40"
-						}
-					]
-				}
+				"url": "{{BaseUrl}}/programs/40"
 			},
 			"response": [
 				{
