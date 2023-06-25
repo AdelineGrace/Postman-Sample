@@ -338,21 +338,7 @@
 					"script": {
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
-							"const subdate = pm.request.body;\r",
-							"const submissiondate = JSON.parse(subdate).subDateTime\r",
-							"console.log(submissiondate)\r",
 							"\r",
-							"//let subdate = JSON.parse(pm.request.body.raw).subDateTime;\r",
-							"\r",
-							"//pm.environment.set('businessType', businessType);\r",
-							"\r",
-							"\r",
-							"console.log(pm.request.data);\r",
-							"let moment = require ('moment');\r",
-							"\r",
-							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
-							"pm.expect(moment(\"subdate\", 'MM-dd-yyyy HH:mm:ss', true).isValid()).is.true;\r",
-							"});\r",
 							""
 						],
 						"type": "text/javascript"
@@ -363,10 +349,7 @@
 					"script": {
 						"id": "c3cc8495-bcfa-4f15-9134-d9712ad9e5a2",
 						"exec": [
-							"//console.log(pm.request.data);\r",
-							"const subdate = pm.request.body;\r",
-							"const submissiondate = JSON.parse(subdate).subDateTime\r",
-							"console.log(submissiondate)"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -1056,7 +1039,7 @@
 	],
 	"variable": [
 		{
-			"id": "e47e9444-8b48-42fa-aba8-359b3d1905ca",
+			"id": "88af9f18-1d14-4035-b569-a0f820b52147",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
