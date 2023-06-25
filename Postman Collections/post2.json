@@ -406,62 +406,6 @@
 			},
 			"response": [
 				{
-					"id": "51ff360c-5d35-4d30-8bc2-7ee9167b0823",
-					"name": "Get One Program using Path Variable",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/programs/:pid",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"programs",
-								":pid"
-							],
-							"variable": [
-								{
-									"key": "pid",
-									"value": "40"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 02:02:35 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"programId\": 40,\n    \"programName\": \"Jun23-API Hackers-SDET-49\",\n    \"programDescription\": \"C programming\",\n    \"programStatus\": \"Active\",\n    \"creationTime\": \"2023-06-23T02:56:14.758+00:00\",\n    \"lastModTime\": \"2023-06-23T02:56:14.758+00:00\"\n}"
-				},
-				{
 					"id": "7d6abd19-048e-4c9f-b054-6fdf0be62d63",
 					"name": "One ProgramId using Path Variable",
 					"originalRequest": {
