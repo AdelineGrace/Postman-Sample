@@ -338,7 +338,6 @@
 					"script": {
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
-							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1039,7 +1038,7 @@
 	],
 	"variable": [
 		{
-			"id": "88af9f18-1d14-4035-b569-a0f820b52147",
+			"id": "3baf8e36-cf64-42bd-8849-1f91da69b5db",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
