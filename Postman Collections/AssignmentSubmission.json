@@ -342,7 +342,7 @@
 							"const submissiondate = JSON.parse(subdate).subDateTime\r",
 							"console.log(submissiondate)\r",
 							"\r",
-							"let subdate = JSON.parse(pm.request.body.raw).subDateTime;\r",
+							"//let subdate = JSON.parse(pm.request.body.raw).subDateTime;\r",
 							"\r",
 							"//pm.environment.set('businessType', businessType);\r",
 							"\r",
@@ -1056,7 +1056,7 @@
 	],
 	"variable": [
 		{
-			"id": "0c2f8149-0529-45d7-ba61-ed2b336329ae",
+			"id": "e47e9444-8b48-42fa-aba8-359b3d1905ca",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
