@@ -363,7 +363,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 20,\r\n    \"userId\": \"string\",\r\n    \"subDesc\": \"string\",\r\n    \"subComments\": \"string\",\r\n    \"subPathAttach1\": \"string\",\r\n    \"subPathAttach2\": \"string\",\r\n    \"subPathAttach3\": \"String\",\r\n    \"subPathAttach4\": \"string\",\r\n    \"subPathAttach5\": \"string\",\r\n    \"subDateTime\": \"string\",\r\n    \"gradedBy\": 0,\r\n    \"gradedDateTime\": \"string\",\r\n    \"grade\": 0\r\n}",
+					"raw": "{\r\n    \"assignmentId\": 220,\r\n    \"userId\": \"string\",\r\n    \"subDesc\": \"string\",\r\n    \"subComments\": \"string\",\r\n    \"subPathAttach1\": \"string\",\r\n    \"subPathAttach2\": \"string\",\r\n    \"subPathAttach3\": \"String\",\r\n    \"subPathAttach4\": \"string\",\r\n    \"subPathAttach5\": \"string\",\r\n    \"subDateTime\": \"string\",\r\n    \"gradedBy\": 0,\r\n    \"gradedDateTime\": \"string\",\r\n    \"grade\": 0\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1038,7 +1038,7 @@
 	],
 	"variable": [
 		{
-			"id": "dfe51aac-432c-4f9d-898d-d1a8323cb769",
+			"id": "1d527a4f-7f2b-4275-a172-bde84f4748f1",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
