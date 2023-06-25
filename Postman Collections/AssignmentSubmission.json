@@ -338,9 +338,10 @@
 					"script": {
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
-							"postman.setNextRequest(\"Get Assignments By ID\");\r",
+							"\r",
 							"\r",
 							"const subdate=pm.request.subDateTime;\r",
+							"console.log(subdate);\r",
 							"let moment = require ('moment');\r",
 							"\r",
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
@@ -1046,7 +1047,7 @@
 	],
 	"variable": [
 		{
-			"id": "77aa43d8-3228-4a24-8491-8dd0ae8b3119",
+			"id": "9e7d67ec-ac3a-4cf1-a246-b84609278ed1",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
