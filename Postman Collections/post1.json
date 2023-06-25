@@ -582,6 +582,92 @@
 					"body": "{\n    \"programId\": 2508,\n    \"programName\": \"Jun23-Postman Pros-{{string}}\",\n    \"programDescription\": \"Jun23-API-Hackathon\",\n    \"programStatus\": \"Active\",\n    \"creationTime\": \"2023-06-25T16:34:04.450+00:00\",\n    \"lastModTime\": \"2023-06-25T16:34:04.450+00:00\"\n}"
 				}
 			]
+		},
+		{
+			"name": "Create/Save ProgID 2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8bc6cd7e-a423-43e9-988a-967c809e085b",
+						"exec": [
+							"const serialNo = Math.floor(Math.random()* 1000000);\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a12d4a9c-f6a6-44fd-bad1-8376807a097f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"programDescription\": \"Jun23-API-Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-{{string}}\",\r\n    \"programStatus\": \"Active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}/saveprogram"
+			},
+			"response": [
+				{
+					"id": "598d18c7-f3e1-49c5-84f5-11ebae96adda",
+					"name": "Create/Save ProgID",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"programDescription\": \"Jun23-API-Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-{{string}}\",\r\n    \"programStatus\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BaseUrl}}/saveprogram"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 16:34:04 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"programId\": 2508,\n    \"programName\": \"Jun23-Postman Pros-{{string}}\",\n    \"programDescription\": \"Jun23-API-Hackathon\",\n    \"programStatus\": \"Active\",\n    \"creationTime\": \"2023-06-25T16:34:04.450+00:00\",\n    \"lastModTime\": \"2023-06-25T16:34:04.450+00:00\"\n}"
+				}
+			]
 		}
 	]
 }
