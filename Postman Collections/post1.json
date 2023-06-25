@@ -588,47 +588,6 @@
 			},
 			"response": [
 				{
-					"id": "61868d85-f102-4c53-b945-d0d826de9829",
-					"name": "Delete Batch",
-					"originalRequest": {
-						"method": "DELETE",
-						"header": [],
-						"url": "{{BaseUrl}}/batches"
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 16:15:55 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"message\": \"Batch not found with Id : 4 \",\n    \"success\": false\n}"
-				},
-				{
 					"id": "fec10094-5685-4349-a826-7ae0f80aba07",
 					"name": "Delete Batch",
 					"originalRequest": {
