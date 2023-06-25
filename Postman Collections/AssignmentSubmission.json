@@ -780,12 +780,29 @@
 		},
 		{
 			"name": "Resubmit Assignment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f08401ca-be65-4d57-bbf4-80b0a53d69ac",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "5314eaac-e368-4b7e-b663-267cc1e7e1fd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -816,7 +833,7 @@
 			"response": []
 		},
 		{
-			"name": "Resubmit Assignment Copy",
+			"name": "Grade Assignment Submission",
 			"id": "b16dba30-a6d7-4a06-aa4a-9afd9da3bf02",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
