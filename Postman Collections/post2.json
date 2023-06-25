@@ -659,7 +659,7 @@
 			]
 		},
 		{
-			"name": "Update Program by Name",
+			"name": "Create/Save Prog1 Copy",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -678,7 +678,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "PUT",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -689,7 +689,7 @@
 						}
 					}
 				},
-				"url": "{{BaseUrl}}/program/{programName}"
+				"url": "{{BaseUrl}}/saveprogram"
 			},
 			"response": []
 		}
