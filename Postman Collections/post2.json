@@ -678,7 +678,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -689,7 +689,7 @@
 						}
 					}
 				},
-				"url": "{{BaseUrl}}/saveprogram"
+				"url": "{{BaseUrl}}/program/{programName}"
 			},
 			"response": []
 		}
