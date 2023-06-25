@@ -616,7 +616,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"programDescription\": \"Jun23-API-Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-{{string}}\",\r\n    \"programStatus\": \"Active\"\r\n}",
+					"raw": "{\r\n  \"programDescription\": \"June 23 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pro- {{string}}\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
