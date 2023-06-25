@@ -1063,6 +1063,20 @@
 		},
 		{
 			"name": "Update Program by ProgID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1a3ed1b0-1143-4296-9d91-fc694342845c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "f524222a-f339-466f-b31a-b85d9e46c9ed",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
