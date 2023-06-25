@@ -787,6 +787,15 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[    {\r\n        \"assignmentId\": 12,\r\n        \"userId\": \"U19\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"string\",\r\n        \"subPathAttach1\": \"string\",\r\n        \"subPathAttach2\": \"string\",\r\n        \"subPathAttach3\": \"String\",\r\n        \"subPathAttach4\": \"string\",\r\n        \"subPathAttach5\": \"string\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": 0,\r\n        \"gradedDateTime\": \"string\",\r\n        \"grade\": 0\r\n    }]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
 					"host": [
@@ -798,6 +807,35 @@
 					],
 					"variable": [
 						{
+							"key": "Id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resubmit Assignment Copy",
+			"id": "b16dba30-a6d7-4a06-aa4a-9afd9da3bf02",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						":Id"
+					],
+					"variable": [
+						{
+							"id": "1d81351b-05d1-48fd-8187-dd5350887ffa",
 							"key": "Id",
 							"value": "76"
 						}
