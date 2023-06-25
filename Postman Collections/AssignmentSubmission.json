@@ -342,9 +342,10 @@
 							"\r",
 							"const subdate=pm.request.subDateTime;\r",
 							"let moment = require ('moment');\r",
+							"\r",
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
 							"pm.expect(moment(\"subdate\", 'MM-dd-yyyy HH:mm:ss', true).isValid()).is.true;\r",
-							"}\r",
+							"});\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1045,7 +1046,7 @@
 	],
 	"variable": [
 		{
-			"id": "1b1142a2-8761-44be-865b-0de8295f61d7",
+			"id": "77aa43d8-3228-4a24-8491-8dd0ae8b3119",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
