@@ -496,6 +496,19 @@
 					"body": "{\n    \"message\": \"Batch not found with Id : 4 \",\n    \"success\": false\n}"
 				}
 			]
+		},
+		{
+			"name": "Create/Save ProgID",
+			"id": "63e7f8ab-c802-4141-a094-16b9734a762c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{BaseUrl}}/saveprogram"
+			},
+			"response": []
 		}
 	]
 }
