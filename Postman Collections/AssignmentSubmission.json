@@ -332,6 +332,25 @@
 		},
 		{
 			"name": "Submit Assignment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
+						"exec": [
+							"\r",
+							"\r",
+							"\r",
+							"var moment=require('moment');\r",
+							"var dueDate = moment().add(7, 'days').format();\r",
+							"pm.collectionVariables.set(\"DueDate\", dueDate);\r",
+							"\r",
+							"pm.next"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "e57842a9-c2a8-43c1-af4a-03be4a0f0a1d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
