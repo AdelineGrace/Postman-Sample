@@ -1008,7 +1008,7 @@
 			]
 		},
 		{
-			"name": "{{BaseUrl}}/putprogram/{programId}",
+			"name": "Update Program by ProgID",
 			"id": "f524222a-f339-466f-b31a-b85d9e46c9ed",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
