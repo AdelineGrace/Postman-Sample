@@ -659,7 +659,7 @@
 			]
 		},
 		{
-			"name": "Update Program by Name",
+			"name": "Update Program by Name with Path Variable",
 			"event": [
 				{
 					"listen": "prerequest",
