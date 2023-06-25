@@ -1008,7 +1008,7 @@
 			]
 		},
 		{
-			"name": "Update Program using ProgramId",
+			"name": "404 Error for Invalid ProgId",
 			"id": "f55ff2cb-2f54-4172-b5b7-72a046ec1c9c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -1113,7 +1113,7 @@
 			]
 		},
 		{
-			"name": "Update Program using ProgramId Copy",
+			"name": "404 Error for Invalid ProgId",
 			"id": "59b18dc3-5e85-41f8-81bf-5beace5194ae",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
