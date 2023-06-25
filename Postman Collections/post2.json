@@ -472,7 +472,23 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{BaseUrl}}/programs/40"
+				"url": {
+					"raw": "{{BaseUrl}}/programs/:pid",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"programs",
+						":pid"
+					],
+					"variable": [
+						{
+							"id": "0718a8ce-db56-40d8-b537-a57b40df7a27",
+							"key": "pid",
+							"value": "40"
+						}
+					]
+				}
 			},
 			"response": [
 				{
@@ -657,18 +673,6 @@
 					"body": "{\n    \"message\": \"program with this: 250not found\",\n    \"success\": false\n}"
 				}
 			]
-		},
-		{
-			"name": "Update Prog by Name",
-			"id": "86b7bbf7-7718-49ad-a81e-7b0b30d166cd",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	]
 }
