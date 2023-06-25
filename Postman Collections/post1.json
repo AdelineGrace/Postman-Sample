@@ -584,7 +584,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "{{BaseUrl}}/batches"
+				"url": "{{BaseUrl}}/batches/1001"
 			},
 			"response": [
 				{
