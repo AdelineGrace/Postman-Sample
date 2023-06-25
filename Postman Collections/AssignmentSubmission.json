@@ -338,6 +338,10 @@
 					"script": {
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
+							"const subdate = pm.request.body;\r",
+							"const submissiondate = JSON.parse(subdate).subDateTime\r",
+							"console.log(submissiondate)\r",
+							"\r",
 							"let subdate = JSON.parse(pm.request.body.raw).subDateTime;\r",
 							"\r",
 							"//pm.environment.set('businessType', businessType);\r",
@@ -1052,7 +1056,7 @@
 	],
 	"variable": [
 		{
-			"id": "2ef2d59d-3221-4384-8c71-fbcc4673e6d1",
+			"id": "0c2f8149-0529-45d7-ba61-ed2b336329ae",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
