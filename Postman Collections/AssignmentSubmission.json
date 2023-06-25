@@ -323,7 +323,7 @@
 					"variable": [
 						{
 							"key": "batchid",
-							"value": "99"
+							"value": "0"
 						}
 					]
 				}
@@ -468,63 +468,6 @@
 				}
 			},
 			"response": [
-				{
-					"id": "ffdfbacc-2e6e-4f5a-90c2-8bbfa8bdec00",
-					"name": "Grades by Assignment ID",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"assignmentsubmission",
-								"getGrades",
-								":assignmentId"
-							],
-							"variable": [
-								{
-									"key": "assignmentId",
-									"value": "10"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 00:23:23 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "[\n    {\n        \"submissionId\": 11,\n        \"assignmentId\": 10,\n        \"userId\": \"U75\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:09:16\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 12,\n        \"assignmentId\": 10,\n        \"userId\": \"U76\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:20:02\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 14,\n        \"assignmentId\": 10,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Test\",\n        \"subComments\": \"test\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 16:04:24\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 24,\n        \"assignmentId\": 10,\n        \"userId\": \"U92\",\n        \"subDesc\": \"Test1\",\n        \"subComments\": \"test1\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 17:51:29\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    }\n]"
-				},
 				{
 					"id": "a08a0db6-bc57-41e3-b37a-75f90ef0106b",
 					"name": "Grades by Assignment ID",
