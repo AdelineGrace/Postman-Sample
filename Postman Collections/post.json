@@ -1128,7 +1128,74 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "4959f0d1-f687-437b-a8e4-785f78a466c2",
+					"name": "Update User with Missing fields",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"userId\": \"{{StaffID}}\",\r\n   \r\n    \"userLastName\": \"Ann {{$randomLastName}}\",\r\n    \"userMiddleName\": \"Marietta John\",\r\n    \"userPhoneNumber\": 7786056908,\r\n    \"userLocation\": \"Canada\",\r\n    \"userTimeZone\": \"EST\",\r\n    \r\n    \"userEduUg\": \"BE\",\r\n    \"userEduPg\": \"ME\",\r\n    \"userComments\": \"CreatingUser\",\r\n    \"userVisaStatus\": \"Canada-Citizen\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/users/users/:userId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"users",
+								"users",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "{{StaffID}}"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 20:01:30 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"User First Name is mandatory\",\n    \"success\": false\n}"
+				}
+			]
 		},
 		{
 			"name": "Update User Role Status",
