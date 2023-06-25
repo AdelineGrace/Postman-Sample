@@ -494,6 +494,15 @@
 			"request": {
 				"method": "PUT",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"batchName\":\"RosePetals\",\r\n\"batchStatus\":\"Active\",\r\n\"batchnoOfclasses\":5,\r\n\"programId\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/batchId"
 			},
 			"response": []
