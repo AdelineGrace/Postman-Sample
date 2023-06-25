@@ -30,7 +30,7 @@
 					"mode": "raw",
 					"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51,\r\n}"
 				},
-				"url": "{{BaseUrl}}/batches/batchName/{batchName}"
+				"url": "{{BaseUrl}}/batches"
 			},
 			"response": [
 				{
