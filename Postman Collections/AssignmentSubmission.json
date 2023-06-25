@@ -25,7 +25,7 @@
 					}
 				}
 			],
-			"_postman_id": "78172485-60dd-4bc1-8bb3-653cbc7dc164",
+			"id": "78172485-60dd-4bc1-8bb3-653cbc7dc164",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -45,8 +45,7 @@
 					"variable": [
 						{
 							"key": "batchID",
-							"value": "1",
-							"type": "string"
+							"value": "1"
 						}
 					]
 				}
@@ -88,7 +87,7 @@
 					}
 				}
 			],
-			"_postman_id": "081153eb-6d16-4309-9336-e68f46a207b8",
+			"id": "081153eb-6d16-4309-9336-e68f46a207b8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -108,8 +107,7 @@
 					"variable": [
 						{
 							"key": "batchID",
-							"value": "100",
-							"type": "string"
+							"value": "100"
 						}
 					]
 				}
@@ -135,7 +133,7 @@
 					}
 				}
 			],
-			"_postman_id": "5cf27c6f-f2a7-41c2-8345-42c9a9885df9",
+			"id": "5cf27c6f-f2a7-41c2-8345-42c9a9885df9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -155,8 +153,7 @@
 					"variable": [
 						{
 							"key": "UserID",
-							"value": "U76",
-							"type": "string"
+							"value": "U76"
 						}
 					]
 				}
@@ -198,7 +195,7 @@
 					}
 				}
 			],
-			"_postman_id": "b8d400a5-726f-4ab4-99f8-34e53dad423b",
+			"id": "b8d400a5-726f-4ab4-99f8-34e53dad423b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -218,8 +215,7 @@
 					"variable": [
 						{
 							"key": "UserID",
-							"value": "U7",
-							"type": "string"
+							"value": "U7"
 						}
 					]
 				}
@@ -246,7 +242,7 @@
 					}
 				}
 			],
-			"_postman_id": "b9cd0ec3-956a-4181-96f2-cf30fa448fee",
+			"id": "b9cd0ec3-956a-4181-96f2-cf30fa448fee",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -266,8 +262,7 @@
 					"variable": [
 						{
 							"key": "batchID",
-							"value": "2",
-							"type": "string"
+							"value": "2"
 						}
 					]
 				}
@@ -308,7 +303,7 @@
 					}
 				}
 			],
-			"_postman_id": "a9f9d280-6464-4ece-91e4-188aa3e9896f",
+			"id": "a9f9d280-6464-4ece-91e4-188aa3e9896f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -328,8 +323,7 @@
 					"variable": [
 						{
 							"key": "batchid",
-							"value": "99",
-							"type": "string"
+							"value": "0"
 						}
 					]
 				}
@@ -338,7 +332,7 @@
 		},
 		{
 			"name": "Submit Assignment",
-			"_postman_id": "e57842a9-c2a8-43c1-af4a-03be4a0f0a1d",
+			"id": "e57842a9-c2a8-43c1-af4a-03be4a0f0a1d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -377,7 +371,7 @@
 					}
 				}
 			],
-			"_postman_id": "6fe370ba-98ef-432b-9a6d-b0faf132118e",
+			"id": "6fe370ba-98ef-432b-9a6d-b0faf132118e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -448,7 +442,7 @@
 					}
 				}
 			],
-			"_postman_id": "5d8add59-c586-4eb6-b3ec-b5c812dd7b63",
+			"id": "5d8add59-c586-4eb6-b3ec-b5c812dd7b63",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -468,8 +462,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "10",
-							"type": "string"
+							"value": "10"
 						}
 					]
 				}
@@ -609,7 +602,7 @@
 					}
 				}
 			],
-			"_postman_id": "f57db13d-2d94-4ace-a511-d922dc83a6d1",
+			"id": "f57db13d-2d94-4ace-a511-d922dc83a6d1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -629,8 +622,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "0",
-							"type": "string"
+							"value": "0"
 						}
 					]
 				}
@@ -655,7 +647,7 @@
 					}
 				}
 			],
-			"_postman_id": "ba972489-cf14-4a71-8e44-5735af8addfc",
+			"id": "ba972489-cf14-4a71-8e44-5735af8addfc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -675,8 +667,7 @@
 					"variable": [
 						{
 							"key": "studentID",
-							"value": "U19",
-							"type": "string"
+							"value": "U19"
 						}
 					]
 				}
@@ -759,7 +750,7 @@
 					}
 				}
 			],
-			"_postman_id": "8454acce-9c55-46b9-a112-61998def62c1",
+			"id": "8454acce-9c55-46b9-a112-61998def62c1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -779,8 +770,7 @@
 					"variable": [
 						{
 							"key": "studentID",
-							"value": "U12",
-							"type": "string"
+							"value": "U12"
 						}
 					]
 				}
@@ -847,7 +837,7 @@
 		},
 		{
 			"name": "Resubmit Assignment",
-			"_postman_id": "5314eaac-e368-4b7e-b663-267cc1e7e1fd",
+			"id": "5314eaac-e368-4b7e-b663-267cc1e7e1fd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -866,8 +856,7 @@
 					"variable": [
 						{
 							"key": "Id",
-							"value": "76",
-							"type": "string"
+							"value": "76"
 						}
 					]
 				}
@@ -876,7 +865,24 @@
 		},
 		{
 			"name": "Delete Assignment Id",
-			"_postman_id": "a259d5e1-bace-4030-a5f5-60527226b899",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "76a51b05-1175-4186-a2e1-b2e2521c18cb",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a259d5e1-bace-4030-a5f5-60527226b899",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -895,8 +901,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "{{assignmentId}}",
-							"type": "string"
+							"value": "{{assignmentId}}"
 						}
 					]
 				}
@@ -938,7 +943,7 @@
 					}
 				}
 			],
-			"_postman_id": "23eca312-fb34-4f32-856d-aeaf153a5884",
+			"id": "23eca312-fb34-4f32-856d-aeaf153a5884",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -957,8 +962,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "0",
-							"type": "string"
+							"value": "0"
 						}
 					]
 				}
