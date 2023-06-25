@@ -325,20 +325,6 @@
 		},
 		{
 			"name": "Get AllPrograms",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "1c9f0d76-7efc-4806-96a3-759b1cb5661b",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
 			"id": "b12463f9-4bd6-4cb4-891b-986393d3a610",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -394,20 +380,6 @@
 		},
 		{
 			"name": "One ProgramId using Path Variable",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "8d9b959f-ae7d-4989-8639-f30829fcfd1a",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
 			"id": "aea2bbc9-0627-4337-ac79-2b3285a6bbea",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -432,64 +404,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "8a99e21c-28e0-4875-9118-7d236cb7042c",
-					"name": "One ProgramId using Path Variable",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/programs/:pid",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"programs",
-								":pid"
-							],
-							"variable": [
-								{
-									"key": "pid",
-									"value": "40"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 18:36:26 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"programId\": 40,\n    \"programName\": \"Jun23-API Hackers-SDET-49\",\n    \"programDescription\": \"C programming\",\n    \"programStatus\": \"Active\",\n    \"creationTime\": \"2023-06-23T02:56:14.758+00:00\",\n    \"lastModTime\": \"2023-06-23T02:56:14.758+00:00\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "One ProgramId without Path Variable",
@@ -504,8 +419,8 @@
 			},
 			"response": [
 				{
-					"id": "dbd6d5ff-b350-4e87-8e2b-c6a7e1d77a4e",
-					"name": "One ProgramId without Path Variable",
+					"id": "6bad2c8d-0b50-48e6-ae95-1b88e35109c9",
+					"name": "One Program without Path Variable",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -533,7 +448,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 25 Jun 2023 18:38:05 GMT"
+							"value": "Sun, 25 Jun 2023 02:06:34 GMT"
 						},
 						{
 							"key": "Via",
