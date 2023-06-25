@@ -340,12 +340,22 @@
 						"exec": [
 							"postman.setNextRequest(\"Get Assignments By ID\");\r",
 							"\r",
-							"pm.expect(moment(jsonData.data.date, 'DD-MM-YYYY hh:mm:ss', true).isValid()).is.true;\r",
+							"\r",
 							"var moment=require('moment');\r",
 							"var dueDate = moment().add(7, 'days').format();\r",
 							"pm.collectionVariables.set(\"DueDate\", dueDate);\r",
 							"\r",
 							"pm.next"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3cc8495-bcfa-4f15-9134-d9712ad9e5a2",
+						"exec": [
+							"pm.expect(moment(jsonData.data.date, 'DD-MM-YYYY hh:mm:ss', true).isValid()).is.true;"
 						],
 						"type": "text/javascript"
 					}
@@ -1035,7 +1045,7 @@
 	],
 	"variable": [
 		{
-			"id": "ec2e7aab-ce2f-44e7-844e-d74543b089ee",
+			"id": "992a6f47-dd5f-4e4b-a42b-ee81b229561f",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
