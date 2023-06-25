@@ -1111,7 +1111,7 @@
 			]
 		},
 		{
-			"name": "404 Error with Invalid ProgId",
+			"name": "404 Error with Invalid ProgramId",
 			"id": "40729a1e-4daf-4d0c-a247-21559689b634",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
