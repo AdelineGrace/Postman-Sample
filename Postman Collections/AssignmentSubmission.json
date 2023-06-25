@@ -789,7 +789,6 @@
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"\r",
 							"console.log(pm.response.status);\r",
 							"console.log(pm.response.code);"
 						],
