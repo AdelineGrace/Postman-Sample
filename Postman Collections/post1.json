@@ -28,7 +28,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51,\r\n}",
+					"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -37,58 +37,7 @@
 				},
 				"url": "{{BaseUrl}}/batches"
 			},
-			"response": [
-				{
-					"id": "ff113e52-3ca0-4d1c-8672-3dfdf9388609",
-					"name": "Create Batch",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"batchDescription\": \"June23-API-Hackathon\",\r\n  \"batchName\": \"Jun23-Postman Pros-{{string}}\",\r\n  \"batchNoOfClasses\": 4,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 2508\r\n }\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{BaseUrl}}/batches"
-					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 16:46:31 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"batchId\": 984,\n    \"batchName\": \"Jun23-Postman Pros-{{string}}\",\n    \"batchDescription\": \"June23-API-Hackathon\",\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 4,\n    \"programId\": 2508,\n    \"programName\": \"Jun23-Postman Pros-{{string}}\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Get All Batches",
