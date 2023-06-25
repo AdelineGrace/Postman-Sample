@@ -496,7 +496,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"batchName\": \"June 2023 API Hackathon-72761\",\r\n    \"batchDescription\": null,\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 4,\r\n    \"programId\": 51,\r\n    \"programName\": \"new1\"\r\n}",
+					"raw": "{\r\n    \"batchName\": \"June 2023 API Hackathon-72761\",\r\n    \"batchDescription\": null,\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 3,\r\n    \"programId\": 51,\r\n    \"programName\": \"new1\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
