@@ -657,6 +657,19 @@
 					"body": "{\n    \"message\": \"program with this: 250not found\",\n    \"success\": false\n}"
 				}
 			]
+		},
+		{
+			"name": "Update Prog by Name",
+			"id": "86b7bbf7-7718-49ad-a81e-7b0b30d166cd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "{{BaseUrl}}/programs/{programName}"
+			},
+			"response": []
 		}
 	]
 }
