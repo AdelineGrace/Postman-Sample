@@ -759,7 +759,73 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "fa3fe696-ecf1-47db-9bb4-5d3044acba22",
+					"name": "Update Program by Name with Path Variable",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"programDescription\": \"2023 June API Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-DA-314482_NewUpdated\",\r\n    \"programStatus\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/program/:programName",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"program",
+								":programName"
+							],
+							"variable": [
+								{
+									"key": "programName",
+									"value": "Jun23-Postman Pros-DA-314482_Updated"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 18:43:56 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"programId\": 1845,\n    \"programName\": \"Jun23-Postman Pros-DA-314482_NewUpdated\",\n    \"programDescription\": \"2023 June API Hackathon\",\n    \"programStatus\": \"Active\",\n    \"creationTime\": null,\n    \"lastModTime\": null\n}"
+				}
+			]
 		},
 		{
 			"name": "404 Error for invalid ProgName",
