@@ -325,6 +325,20 @@
 		},
 		{
 			"name": "Get AllPrograms",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1c9f0d76-7efc-4806-96a3-759b1cb5661b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "b12463f9-4bd6-4cb4-891b-986393d3a610",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -380,6 +394,20 @@
 		},
 		{
 			"name": "One ProgramId using Path Variable",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8d9b959f-ae7d-4989-8639-f30829fcfd1a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "aea2bbc9-0627-4337-ac79-2b3285a6bbea",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
