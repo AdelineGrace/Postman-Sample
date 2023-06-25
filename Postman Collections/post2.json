@@ -659,7 +659,7 @@
 			]
 		},
 		{
-			"name": "Update Prog by Name",
+			"name": "Update Prog by Name with Path Variable",
 			"id": "86b7bbf7-7718-49ad-a81e-7b0b30d166cd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
