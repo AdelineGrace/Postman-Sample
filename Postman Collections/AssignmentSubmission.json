@@ -343,7 +343,7 @@
 							"//pm.environment.set('businessType', businessType);\r",
 							"\r",
 							"\r",
-							"console.log(subdate);\r",
+							"console.log(pm.request.data);\r",
 							"let moment = require ('moment');\r",
 							"\r",
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
@@ -1049,7 +1049,7 @@
 	],
 	"variable": [
 		{
-			"id": "aef0e716-182c-4d66-99a2-add4b407a04a",
+			"id": "4a2694a9-7e03-4606-96ca-5e06c108ab4d",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
