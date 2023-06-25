@@ -23,7 +23,7 @@
 					}
 				}
 			],
-			"_postman_id": "8c2fc7f0-49e3-4373-9d81-b4445a20852b",
+			"id": "8c2fc7f0-49e3-4373-9d81-b4445a20852b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -53,7 +53,7 @@
 					}
 				}
 			],
-			"_postman_id": "f0ab4438-d88f-4fcc-a95e-5f2388bd7f0d",
+			"id": "f0ab4438-d88f-4fcc-a95e-5f2388bd7f0d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -72,8 +72,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "220",
-							"type": "string"
+							"value": "220"
 						}
 					]
 				}
@@ -111,7 +110,7 @@
 					}
 				}
 			],
-			"_postman_id": "544efdcf-cbb7-45f3-9708-d031eb629704",
+			"id": "544efdcf-cbb7-45f3-9708-d031eb629704",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -130,8 +129,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "100",
-							"type": "string"
+							"value": "100"
 						}
 					]
 				}
@@ -157,7 +155,7 @@
 					}
 				}
 			],
-			"_postman_id": "48dd2ddf-1f09-44d2-99a1-18fb67c5b4a1",
+			"id": "48dd2ddf-1f09-44d2-99a1-18fb67c5b4a1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -177,8 +175,7 @@
 					"variable": [
 						{
 							"key": "batchId",
-							"value": "2",
-							"type": "string"
+							"value": "2"
 						}
 					]
 				}
@@ -216,7 +213,7 @@
 					}
 				}
 			],
-			"_postman_id": "d357b243-d209-4cae-b257-43f5ba320a47",
+			"id": "d357b243-d209-4cae-b257-43f5ba320a47",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -236,8 +233,7 @@
 					"variable": [
 						{
 							"key": "batchId",
-							"value": "100",
-							"type": "string"
+							"value": "100"
 						}
 					]
 				}
@@ -275,7 +271,7 @@
 					}
 				}
 			],
-			"_postman_id": "0a6f2731-42a6-4954-9551-ebd5aaec2ecf",
+			"id": "0a6f2731-42a6-4954-9551-ebd5aaec2ecf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -295,8 +291,7 @@
 					"variable": [
 						{
 							"key": "batchId",
-							"value": "2001",
-							"type": "string"
+							"value": "2001"
 						}
 					]
 				}
@@ -322,7 +317,7 @@
 					}
 				}
 			],
-			"_postman_id": "51cc30c4-87d3-40b1-a8ad-742628e57b0d",
+			"id": "51cc30c4-87d3-40b1-a8ad-742628e57b0d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -358,7 +353,7 @@
 					}
 				}
 			],
-			"_postman_id": "79226f22-d3ae-4024-a48a-cf481104241e",
+			"id": "79226f22-d3ae-4024-a48a-cf481104241e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -386,8 +381,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "{{assignmentId}}",
-							"type": "string"
+							"value": "{{assignmentId}}"
 						}
 					]
 				}
@@ -402,13 +396,32 @@
 					"script": {
 						"id": "3532b6a8-f30b-4a99-acc2-d91bd8f98f67",
 						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  //var invalidAssignmentId = pm.request.url.path[2];\r",
+							"  //console.log(pm.request.url.path[2]);\r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Assignment deleted successfully\",\r",
+							"    \"success\": true\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"_postman_id": "76adea01-1e7c-4184-b20d-e95c83af2fcc",
+			"id": "76adea01-1e7c-4184-b20d-e95c83af2fcc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -427,8 +440,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "{{assignmentId}}",
-							"type": "string"
+							"value": "{{assignmentId}}"
 						}
 					]
 				}
@@ -437,7 +449,7 @@
 		},
 		{
 			"name": "Delete with Invalid ID",
-			"_postman_id": "0021e970-c0f3-4c11-9ba6-94cd87d042de",
+			"id": "0021e970-c0f3-4c11-9ba6-94cd87d042de",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -456,8 +468,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "00",
-							"type": "string"
+							"value": "00"
 						}
 					]
 				}
