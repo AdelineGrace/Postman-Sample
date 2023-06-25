@@ -359,7 +359,10 @@
 					"script": {
 						"id": "c3cc8495-bcfa-4f15-9134-d9712ad9e5a2",
 						"exec": [
-							""
+							"//console.log(pm.request.data);\r",
+							"const subdate = pm.request.body;\r",
+							"const submissiondate = JSON.parse(subdate).subDateTime\r",
+							"console.log(submissiondate)"
 						],
 						"type": "text/javascript"
 					}
@@ -1049,7 +1052,7 @@
 	],
 	"variable": [
 		{
-			"id": "4a2694a9-7e03-4606-96ca-5e06c108ab4d",
+			"id": "2ef2d59d-3221-4384-8c71-fbcc4673e6d1",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
