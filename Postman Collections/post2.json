@@ -1112,6 +1112,71 @@
 			},
 			"response": [
 				{
+					"id": "82531ba5-01f2-4904-9ab0-70c5d2c87aff",
+					"name": "Update Program by ProgID",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"programDescription\": \"2023 June API HAckathon \",\r\n  \"programId\": 1851,\r\n  \"programName\": \"Jun23-Postman Pros-DA-289907_UpdatedWithID\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/putprogram/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"putprogram",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "1851"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 16:57:07 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"programId\": 1851,\n    \"programName\": \"Jun23-Postman Pros-DA-289907_UpdatedWithID\",\n    \"programDescription\": \"2023 June API HAckathon \",\n    \"programStatus\": \"Active\",\n    \"creationTime\": null,\n    \"lastModTime\": null\n}"
+				},
+				{
 					"id": "9b05579d-c9fa-4a25-8389-b054aa9d92ef",
 					"name": "Update Program by ProgID",
 					"originalRequest": {
