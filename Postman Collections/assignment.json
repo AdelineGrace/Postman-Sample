@@ -449,6 +449,41 @@
 		},
 		{
 			"name": "Delete with Invalid ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bf07524d-a6c6-484c-b69e-2a5a21365d8e",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);    \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");    \r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var invalidAssignmentId = pm.request.url.path[2];\r",
+							"  //console.log(pm.request.url.path[2]);\r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Assignment not found with Id : \"+invalidAssignmentId+\" \",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "0021e970-c0f3-4c11-9ba6-94cd87d042de",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -468,7 +503,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "00"
+							"value": "0"
 						}
 					]
 				}
