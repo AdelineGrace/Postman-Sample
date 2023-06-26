@@ -487,7 +487,9 @@
 							"\r",
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
 							"\r",
-							""
+							"const randomNumber = _.random(1000000000,9999999999)\r",
+							"\r",
+							"pm.environment.set(\"randomNumber\",randomNumber);"
 						],
 						"type": "text/javascript"
 					}
@@ -550,7 +552,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userComments\": \"{{userComments}}\",\r\n  \"userEduPg\": \"{{userEduPg}}\",\r\n  \"userEduUg\": \"{{userEduUg}}\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"{{userLinkedinUrl}}\",\r\n  \"userLocation\": \"{{userLocation}}\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": \"{{userPhoneNumber}}\",\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"{{roleId}}\",\r\n      \"userRoleStatus\": \"{{userRoleStatus}}\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"{{userTimeZone}}\",\r\n  \"userVisaStatus\": \"{{userVisaStatus}}\"\r\n}\r\n",
+					"raw": "{\r\n  \"userComments\": \"{{userComments}}\",\r\n  \"userEduPg\": \"{{userEduPg}}\",\r\n  \"userEduUg\": \"{{userEduUg}}\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"{{userLinkedinUrl}}\",\r\n  \"userLocation\": \"{{userLocation}}\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": \"{{randomNumber}}\",\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"{{roleId}}\",\r\n      \"userRoleStatus\": \"{{userRoleStatus}}\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"{{userTimeZone}}\",\r\n  \"userVisaStatus\": \"{{userVisaStatus}}\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
