@@ -363,7 +363,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 12,\r\n    \"userId\": \"string\",\r\n    \"subDesc\": \"string\",\r\n    \"subComments\": \"string\",\r\n    \"subPathAttach1\": \"string\",\r\n    \"subPathAttach2\": \"string\",\r\n    \"subPathAttach3\": \"String\",\r\n    \"subPathAttach4\": \"string\",\r\n    \"subPathAttach5\": \"string\",\r\n    \"subDateTime\": \"string\",\r\n    \"gradedBy\": 0,\r\n    \"gradedDateTime\": \"string\",\r\n    \"grade\": 0\r\n}",
+					"raw": "{\r\n    \"assignmentId\": 12,\r\n    \"userId\": \"U21\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"string\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"string\",\r\n    \"grade\": 2\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1038,7 +1038,7 @@
 	],
 	"variable": [
 		{
-			"id": "03b3ba43-2d5e-4e95-9edf-3b932a1086cb",
+			"id": "eb84028e-2ed8-4160-a5a6-1c8a34e9b6ec",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
