@@ -533,6 +533,39 @@
 		},
 		{
 			"name": "Get Batch by non-existent batch name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fd81f96d-f137-4e79-bd58-883b4505878c",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var batchName = pm.request.url.path[3];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"User not found with UserID : \" +batchName+\" \",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "021f8c67-2eee-4fde-859e-5093c03e1f28",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
