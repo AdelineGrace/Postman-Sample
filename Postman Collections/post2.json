@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Create/Save Prog1",
+			"name": "Create",
 			"event": [
 				{
 					"listen": "prerequest",
