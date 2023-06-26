@@ -338,7 +338,9 @@
 					"script": {
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
-							""
+							"var moment = require('moment')\r",
+							"//pm.environment.set(‘timestamp’, moment().format((“YYYY-MM-DDTHH:MM:SS”)))\r",
+							"pm.collectionVariables.set(\"submissionDateTime\", moment.format(\"MM-dd-yyyy HH:mm:ss\"));"
 						],
 						"type": "text/javascript"
 					}
@@ -351,7 +353,14 @@
 							"const subdate = pm.request.body;\r",
 							"const submissiondate = JSON.parse(subdate).subDateTime\r",
 							"console.log(subdate)\r",
-							"console.log(submissiondate)"
+							"console.log(submissiondate)\r",
+							"\r",
+							"let moment = require ('moment');\r",
+							"\r",
+							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
+							"pm.expect(moment(\"submissiondate\", 'MM-dd-yyyy HH:mm:ss', true).isValid()).is.true;\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -366,7 +375,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 12,\r\n    \"userId\": \"U21\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"string\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"string\",\r\n    \"grade\": 2\r\n}",
+					"raw": "{\r\n    \"assignmentId\": 12,\r\n    \"userId\": \"U21\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{$isoTimestamp}}\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"string\",\r\n    \"grade\": 2\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1041,7 +1050,7 @@
 	],
 	"variable": [
 		{
-			"id": "90541cc1-aa3a-499c-aacd-3ca9488352bf",
+			"id": "9931375e-a1cc-49c0-a90e-a5c128e04882",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
