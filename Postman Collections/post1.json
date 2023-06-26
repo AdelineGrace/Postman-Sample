@@ -743,6 +743,27 @@
 		},
 		{
 			"name": "Get batch by Invalid ProgramId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "082b84be-2636-4c94-8054-38b4f45a7a3f",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "6dcd6201-1214-44cc-a533-d4bca434c9e0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
