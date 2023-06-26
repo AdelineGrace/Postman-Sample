@@ -1466,7 +1466,8 @@
 							"});\r",
 							"\r",
 							"const response = pm.response.json();\r",
-							"pm.globals.set(\"programId\", response.programId);"
+							"pm.globals.set(\"programId_SDET\", response[0].programId);\r",
+							"pm.globals.set(\"programId_DA\", response[1].programId)"
 						],
 						"type": "text/javascript"
 					}
