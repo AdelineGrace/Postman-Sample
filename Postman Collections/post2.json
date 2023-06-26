@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Create",
+			"name": "Post Program",
 			"event": [
 				{
 					"listen": "prerequest",
