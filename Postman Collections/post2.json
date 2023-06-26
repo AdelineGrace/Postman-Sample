@@ -29,7 +29,7 @@
 							"});\r",
 							"\r",
 							"const response = pm.response.json();\r",
-							"pm.globals.set(\"programId\", \"response.programId\");\r",
+							"pm.globals.set(\"programId_DA\", response.programId);\r",
 							""
 						],
 						"type": "text/javascript"
