@@ -833,29 +833,31 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
-							"{pm.sendRequest({\r",
-							"    url: '{{BaseUrl}}/assignmentsubmission/:Id',\r",
-							"    method: 'GET',\r",
-							"    header: {\r",
-							"        // Add any required headers\r",
-							"    }\r",
-							"}, function (err, response) {\r",
-							"    if (err) {\r",
-							"        console.log(err);\r",
-							"    } else {\r",
-							"        var dueDate = response.json().{{dueDate}}; \r",
-							"        \r",
-							"        // Perform the precondition check\r",
-							"        if (() < new Date(dueDate)) {\r",
-							"            // Allow the resubmission\r",
-							"            pm.environment.set('allowResubmission', true);\r",
-							"        } else {\r",
-							"            // Disallow the resubmission\r",
-							"            pm.environment.set('allowResubmission', false);\r",
-							"        }\r",
-							"    }\r",
-							"});\r",
-							"}"
+							"var dueDate = pm.globals.get('dueDate');\r",
+							"var subDateTime = pm.request.json()[0].subDateTime;\r",
+							"var assignmentId = pm.request.json()[0].assignmentId;\r",
+							"var userId = pm.request.json()[0].userId;\r",
+							"var subDesc = pm.request.json()[0].subDesc;\r",
+							"\r",
+							"if (new Date(subDateTime) < new Date(dueDate)) {\r",
+							"    // Assignment can be resubmitted until the due date\r",
+							"    pm.globals.set('allowResubmission', true);\r",
+							"} else {\r",
+							"    // Assignment submission is not allowed after the due date\r",
+							"    pm.globals.set('allowResubmission', false);\r",
+							"    pm.request.abort();\r",
+							"}\r",
+							"\r",
+							"// Set the mandatory fields in the request body\r",
+							"pm.request.json()[0].subDateTime = subDateTime;\r",
+							"pm.request.json()[0].assignmentId = assignmentId;\r",
+							"pm.request.json()[0].userId = userId;\r",
+							"pm.request.json()[0].subDesc = subDesc;\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -870,7 +872,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{if (pm.environment.get('allowResubmission') === true) {\r\n    pm.continueRequest();\r\n} else {\r\n    // Abort the request or perform any other required actions\r\n    pm.request.abort();\r\n}\r\n\r\n\r\n{\r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"U19\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 2\r\n    }\r\n}    \r\n",
+					"raw": "\r\n{\r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"U19\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 2\r\n    }\r\n}    \r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1081,13 +1083,13 @@
 	],
 	"variable": [
 		{
-			"id": "f263cb6e-922b-4960-a100-c5cdeb9568d9",
+			"id": "e290fe90-bac9-4450-bbdc-daf1b55150e7",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e104488b-f2af-4ba8-a7e0-7d97acf094c3",
+			"id": "8e9a2f5d-584e-44ef-9161-ca80af0d3934",
 			"key": "submissionDateTime",
 			"value": ""
 		}
