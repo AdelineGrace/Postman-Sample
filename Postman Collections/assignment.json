@@ -311,7 +311,42 @@
 							"});\r",
 							"\r",
 							"const response = pm.response.json();\r",
-							"pm.globals.set(\"assignmentId\", response.assignmentId);"
+							"pm.globals.set(\"assignmentId\", response.assignmentId);\r",
+							"\r",
+							"const schema = {\r",
+							"\"type\": \"object\",\r",
+							"\"properties\":{\r",
+							"    \"assignmentId\": {\r",
+							"        \"type\" : \"integer\"\r",
+							"    },\r",
+							"    \"assignmentName\": {\r",
+							"        \"type\" : \"string\"\r",
+							"    },\r",
+							"    \"batchId\": {\r",
+							"        \"type\" : \"integer\"\r",
+							"    },\r",
+							"    \"comments\": {\r",
+							"       \"type\" : \"string\"\r",
+							"    },\r",
+							"    \"createdBy\": {\r",
+							"        \"type\" : \"string\"\r",
+							"    },\r",
+							"    \"dueDate\": {\r",
+							"        \"type\" : \"string\"        \r",
+							"    },\r",
+							"    \"graderId\": {\r",
+							"        \"type\" : \"string\"\r",
+							"    }\r",
+							"}\r",
+							"};\r",
+							"\r",
+							"var responseData = pm.response.json()\r",
+							"console.log(responseData)\r",
+							"\r",
+							"\r",
+							"pm.test(\"Validating schema\", () => {\r",
+							"            pm.response.to.have.jsonSchema(schema);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -326,7 +361,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": \"Test Assignment from Team3\",\r\n  \"assignmentName\": \"Test Assigment 5\" ,\r\n  \"batchId\": 2,\r\n  \"comments\": \"Test Assignemnt created by Team3\",\r\n  \"createdBy\": \"U22\",\r\n  \"dueDate\": \"2023-06-19T22:02:28.140Z\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"Filepath1\",\r\n  \"pathAttachment2\": \"Filepath2\",\r\n  \"pathAttachment3\": \"Filepath3\",\r\n  \"pathAttachment4\": \"Filepath4\",\r\n  \"pathAttachment5\": \"Filepath5\" }\r\n",
+					"raw": "{\r\n  \"assignmentDescription\": {{$randomPhrase}},\r\n  \"assignmentName\": \"Test Assigment 9\" ,\r\n  \"batchId\": 1,\r\n  \"comments\": \"Test Assignment created by Team3\",\r\n  \"createdBy\": \"U233\",\r\n  \"dueDate\": {{$randomDateFuture}},\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": {{$randomFilePath}},\r\n  \"pathAttachment2\": {{$randomFilePath}},\r\n  \"pathAttachment3\": {{$randomFilePath}}  \r\n }\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
