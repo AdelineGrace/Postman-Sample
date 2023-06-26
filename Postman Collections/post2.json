@@ -1372,6 +1372,18 @@
 					"body": "{\n    \"timestamp\": \"2023-06-25T17:45:57.647+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/lms/putprogram/1851\"\n}"
 				}
 			]
+		},
+		{
+			"name": "New Request",
+			"id": "a8b6f599-fb7e-4a73-b391-be75f2ec6894",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
