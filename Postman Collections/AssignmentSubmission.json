@@ -827,6 +827,38 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
+						"exec": [
+							"{pm.sendRequest({\r",
+							"    url: '{{BaseUrl}}/assignmentsubmission/:Id',\r",
+							"    method: 'GET',\r",
+							"    header: {\r",
+							"        // Add any required headers\r",
+							"    }\r",
+							"}, function (err, response) {\r",
+							"    if (err) {\r",
+							"        console.log(err);\r",
+							"    } else {\r",
+							"        var dueDate = response.json().{{dueDate}}; \r",
+							"        \r",
+							"        // Perform the precondition check\r",
+							"        if (() < new Date(dueDate)) {\r",
+							"            // Allow the resubmission\r",
+							"            pm.environment.set('allowResubmission', true);\r",
+							"        } else {\r",
+							"            // Disallow the resubmission\r",
+							"            pm.environment.set('allowResubmission', false);\r",
+							"        }\r",
+							"    }\r",
+							"});\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "5314eaac-e368-4b7e-b663-267cc1e7e1fd",
@@ -838,7 +870,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"U19\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 2\r\n    }\r\n",
+					"raw": "{if (pm.environment.get('allowResubmission') === true) {\r\n    pm.continueRequest();\r\n} else {\r\n    // Abort the request or perform any other required actions\r\n    pm.request.abort();\r\n}\r\n\r\n\r\n{\r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"U19\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 2\r\n    }\r\n}    \r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1049,13 +1081,13 @@
 	],
 	"variable": [
 		{
-			"id": "9d556275-68cb-4e73-998d-9aaa0f1943b2",
+			"id": "f263cb6e-922b-4960-a100-c5cdeb9568d9",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0026fb62-5051-4a95-8d9e-0c31135c48e7",
+			"id": "e104488b-f2af-4ba8-a7e0-7d97acf094c3",
 			"key": "submissionDateTime",
 			"value": ""
 		}
