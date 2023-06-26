@@ -313,6 +313,15 @@
 							"const response = pm.response.json();\r",
 							"pm.globals.set(\"assignmentId\", response.assignmentId);\r",
 							"\r",
+							"var responseData = pm.response.json()\r",
+							"console.log(responseData)\r",
+							"\r",
+							"var dueDate = responseData.dueDate;\r",
+							"var moment = require(moment);\r",
+							"pm.test(\"Checking data format\", function () {\r",
+							"    pm.expect(dueDate).to.include(moment(dueDate).format('YYYY-MM-DDTHH:mm:ss:sssZ'));\r",
+							"});\r",
+							"\r",
 							"const schema = {\r",
 							"\"type\": \"object\",\r",
 							"\"properties\":{\r",
@@ -340,13 +349,26 @@
 							"}\r",
 							"};\r",
 							"\r",
-							"var responseData = pm.response.json()\r",
-							"console.log(responseData)\r",
-							"\r",
+							"//const reqBody = JSON.parse(pm.request.body.raw);\r",
+							"//console.log(reqBody)\r",
+							"//pm.test(\"Date is present in correct format\", function () {\r",
+							"  //  pm.expect(reqBody.dueDate).to.match(/^\\d{4}-\\d{2}-\\d{2}\\T\\d{2}:\\d{2}.\\d{3}\\Z$/);\r",
+							"//});\r",
 							"\r",
 							"pm.test(\"Validating schema\", () => {\r",
 							"            pm.response.to.have.jsonSchema(schema);\r",
 							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9d31f758-03c1-455f-b713-895a56ed5d70",
+						"exec": [
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -361,7 +383,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": {{$randomPhrase}},\r\n  \"assignmentName\": \"Test Assigment 9\" ,\r\n  \"batchId\": 1,\r\n  \"comments\": \"Test Assignment created by Team3\",\r\n  \"createdBy\": \"U233\",\r\n  \"dueDate\": {{$randomDateFuture}},\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": {{$randomFilePath}},\r\n  \"pathAttachment2\": {{$randomFilePath}},\r\n  \"pathAttachment3\": {{$randomFilePath}}  \r\n }\r\n",
+					"raw": "{\r\n  \"assignmentDescription\": \"Test Assigment 9\",\r\n  \"assignmentName\": \"Test Assigment 9\" ,\r\n  \"batchId\": 1,\r\n  \"comments\": \"Test Assignment created by Team3\",\r\n  \"createdBy\": \"U233\",\r\n  \"dueDate\": \"2023-06-26T22:02:28.140Z\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\"\r\n }\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
