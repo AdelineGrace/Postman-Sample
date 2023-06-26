@@ -1129,7 +1129,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"userId\": \"{{StaffID}}\",\r\n   \r\n    \"userLastName\": \"Ann {{$randomLastName}}\",\r\n    \"userMiddleName\": \"Marietta John\",\r\n    \"userPhoneNumber\": 7786056908,\r\n    \"userLocation\": \"Canada\",\r\n    \"userTimeZone\": \"EST\",\r\n    \"userFirstName\": \"\",\r\n    \"userEduUg\": \"BE\",\r\n    \"userEduPg\": \"ME\",\r\n    \"userComments\": \"CreatingUser\",\r\n    \"userVisaStatus\": \"Canada-Citizen\"\r\n}",
+					"raw": "{\r\n   \"userId\": \"{{StaffID}}\",\r\n   \r\n    \"userLastName\": \"Ann {{$randomLastName}}\",\r\n    \"userMiddleName\": \"Marietta John\",\r\n    \"userPhoneNumber\": 7786056908,\r\n    \"userLocation\": \"Canada\",\r\n    \"userTimeZone\": \"EST\",\r\n    \"userFirstName\": null,\r\n    \"userEduUg\": \"BE\",\r\n    \"userEduPg\": \"ME\",\r\n    \"userComments\": \"CreatingUser\",\r\n    \"userVisaStatus\": \"Canada-Citizen\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
