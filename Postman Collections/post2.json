@@ -203,6 +203,20 @@
 		},
 		{
 			"name": "400 Error Prog already exists",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3d54090-b0ca-4e91-8908-be620abc450a",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "054a0014-2e16-4f0c-bead-ac5c97c18778",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -276,6 +290,20 @@
 		},
 		{
 			"name": "500 Error ProgStatus Null",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "25de3194-ba62-4207-a517-1290372f73cf",
+						"exec": [
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "ba8c4c3b-e7db-4a99-8e4a-56da52979c63",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -587,6 +615,20 @@
 		},
 		{
 			"name": "404 for invalid ProgId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a222e88b-bb6c-4adc-b66d-81895c62696a",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "cbb8e80a-f301-4a87-b728-ca3b52877f37",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
