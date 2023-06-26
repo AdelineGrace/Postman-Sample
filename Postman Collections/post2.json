@@ -1380,8 +1380,24 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/deletebyprogid/:programId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"deletebyprogid",
+						":programId"
+					],
+					"variable": [
+						{
+							"key": "programId",
+							"value": "3824"
+						}
+					]
+				}
 			},
 			"response": []
 		}
