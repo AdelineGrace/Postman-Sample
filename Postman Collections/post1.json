@@ -305,6 +305,38 @@
 		},
 		{
 			"name": "Get Batch by invalid Batch Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d64ac8b7-ebef-4c60-80c0-3a6f27dbf40b",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var batchId = pm.request.url.path[3];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Assignments with grades does not exist for Batch ID : \" +batchId+\"\",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "ca7f0341-8a62-41b8-aff3-f7915660e2a7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
