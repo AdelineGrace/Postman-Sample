@@ -1011,6 +1011,39 @@
 		},
 		{
 			"name": "Delete batch with invalid BatchId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ca2d8c3e-e481-48eb-918e-a2d38c161a6e",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var batchId = pm.request.url.path[2];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Batch not found with Id : \"+batchId+\" \",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "9de721a8-38c2-469b-a43b-18e8d63441b2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
