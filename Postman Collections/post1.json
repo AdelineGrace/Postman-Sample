@@ -718,7 +718,7 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "Get Batch by Invalid batch name",
 			"id": "021f8c67-2eee-4fde-859e-5093c03e1f28",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
