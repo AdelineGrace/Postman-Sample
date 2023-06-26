@@ -552,7 +552,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userComments\": \"{{userComments}}\",\r\n  \"userEduPg\": \"{{userEduPg}}\",\r\n  \"userEduUg\": \"{{userEduUg}}\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"{{userLinkedinUrl}}\",\r\n  \"userLocation\": \"{{userLocation}}\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": \"{{userPhoneNumber}}\",\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"{{roleId}}\",\r\n      \"userRoleStatus\": \"{{userRoleStatus}}\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"{{userTimeZone}}\",\r\n  \"userVisaStatus\": \"{{userVisaStatus}}\"\r\n}\r\n",
+					"raw": "{\r\n  \"userComments\": \"{{userComments}}\",\r\n  \"userEduPg\": \"{{userEduPg}}\",\r\n  \"userEduUg\": \"{{userEduUg}}\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"{{userLinkedinUrl}}\",\r\n  \"userLocation\": \"{{userLocation}}\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": \"{{randomNumber}}\",\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"{{roleId}}\",\r\n      \"userRoleStatus\": \"{{userRoleStatus}}\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"{{userTimeZone}}\",\r\n  \"userVisaStatus\": \"{{userVisaStatus}}\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1087,8 +1087,8 @@
 					"script": {
 						"id": "4bd175f9-dc4f-42f3-8815-053f1d069451",
 						"exec": [
-							"pm.test(\"Status code is 404\", function () {\r",
-							"    pm.response.to.have.status(404);\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
 							"});\r",
 							""
 						],
@@ -1105,7 +1105,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"userId\": \"{{StaffID}}\",\r\n    \"userFirstName\": \"PostmanPros_842397\",\r\n    \"userLastName\": \"Ann {{$randomLastName}}\",\r\n    \"userMiddleName\": \"Marietta John\",\r\n    \"userPhoneNumber\": 7786056908,\r\n    \"userLocat\": \"Canada\",\r\n    \"userTimeZone\": \"EST\",\r\n    \r\n    \"userEduUg\": \"BE\",\r\n    \"userEduPg\": \"ME\",\r\n    \"userComments\": \"CreatingUser\",\r\n    \"userVisaStatus\": \"Canada-Citizen\"\r\n}",
+					"raw": "{\r\n   \"userId\": \"{{StaffID}}\",\r\n   \r\n    \"userLastName\": \"Ann {{$randomLastName}}\",\r\n    \"userMiddleName\": \"Marietta John\",\r\n    \"userPhoneNumber\": 7786056908,\r\n    \"userLocation\": \"Canada\",\r\n    \"userTimeZone\": \"EST\",\r\n    \r\n    \"userEduUg\": \"BE\",\r\n    \"userEduPg\": \"ME\",\r\n    \"userComments\": \"CreatingUser\",\r\n    \"userVisaStatus\": \"Canada-Citizen\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
