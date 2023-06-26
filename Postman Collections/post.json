@@ -1488,7 +1488,7 @@
 							"  var userid = pm.request.url.path[4];\r",
 							"  \r",
 							"  const expectedObject = {\r",
-							"    \"message\": \"User \"+userid+\" has been successfully assigned to Program/Batch(es)\"\r",
+							"    \"message\": \"User\" +Uuserid+ \"has been successfully assigned to Program/Batch(es)\"\r",
 							"    \r",
 							"};\r",
 							"\r",
