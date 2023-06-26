@@ -315,7 +315,7 @@
 							"pm.globals.set(\"assignmentDueDate\", response.dueDate);\r",
 							"\r",
 							"const reqBody = JSON.parse(pm.request.body.raw);\r",
-							"// test to check the \"assignmentName\" field should not be null, need to validate if the assignment Name is unique)\r",
+							"// test to check the mandatory fields should not be null, need to validate if the assignment Name is unique)\r",
 							"pm.test(\"Verify the mandatory fields are not null\", function () {\r",
 							"    pm.expect(reqBody.assignmentName).to.not.null;\r",
 							"    pm.expect(reqBody.assignmentDescription).to.not.null;\r",
@@ -382,14 +382,11 @@
 							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
 							"const moment = require('moment');\r",
-							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSZ\"))\r",
+							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MM.SSZ\"))\r",
 							"/*var dateNow = new Date();  \r",
 							"var assignmentDueDate = new Date(dateNow.setDate(dateNow.getDate() + 14)).toISOString();\r",
 							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSZ\"))*/\r",
-							"//postman.setEnvironmentVariable(\"future-date\", twoWeeksFutureDate);\r",
-							"\r",
-							"\r",
-							""
+							"//postman.setEnvironmentVariable(\"future-date\", twoWeeksFutureDate);"
 						],
 						"type": "text/javascript"
 					}
@@ -613,31 +610,31 @@
 	],
 	"variable": [
 		{
-			"id": "63d2ea72-9115-4f0c-8d49-d529e5f93f99",
+			"id": "45df2df3-7dd9-429c-9a3f-abb78bb829af",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "8dc11395-1a15-40ee-b799-4b64d9ccef9c",
+			"id": "17958b3c-8c3d-4ca0-a523-bb2a12a5f12e",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "02acc8db-add3-4a12-a94b-797bc39334b2",
+			"id": "0ee9b15b-6707-4c46-a6c0-da1b23c25e42",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "d0c32c6b-0a96-427c-8c34-c9a161cf6ee1",
+			"id": "f93e25bd-d51d-4eba-a9a0-f41532b34fa7",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "ba767e59-e6f2-4755-959d-240f315edf32",
+			"id": "d3f6872f-1b6f-45b5-bbf9-0fc74289988c",
 			"key": "dueDate",
 			"value": ""
 		}
