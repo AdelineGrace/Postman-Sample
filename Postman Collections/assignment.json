@@ -610,25 +610,25 @@
 	],
 	"variable": [
 		{
-			"id": "e216af77-0d87-479f-ad96-677299ae3ffe",
+			"id": "bb4d8f60-1c57-4e63-a410-f52f9781f481",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "d1d1231f-b84f-4826-810a-6bc8aac60bbe",
+			"id": "cd8cccc3-177e-4497-8871-05c96409715f",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "39d7edc7-0e42-40c1-b720-32c75fa115d2",
+			"id": "28b87817-df57-496e-bd7f-a5f49c490e53",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "d8e3f068-65df-4bb7-bc69-04a7db829af9",
+			"id": "37290fcf-efe5-4936-ae16-4c42ffae35a0",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
