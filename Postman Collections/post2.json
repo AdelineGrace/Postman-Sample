@@ -1422,7 +1422,7 @@
 					"variable": [
 						{
 							"key": "programName",
-							"value": null
+							"value": "{{programId_SDET}}"
 						}
 					]
 				}
