@@ -1483,7 +1483,21 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
-							"});"
+							"});\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var userid = pm.request.url.path[4];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"User\" +userid+ \"has been successfully assigned to Program/Batch(es)\"\r",
+							"    \r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
 						],
 						"type": "text/javascript"
 					}
