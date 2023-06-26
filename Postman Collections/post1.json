@@ -18,6 +18,17 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ba0b61a5-f1af-441d-b46e-4629bcdda8e2",
+						"exec": [
+							"const response = pm.response.json();\r",
+							"pm.globals.set(\"batchId\", response.batchId);"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "ed4c79d3-dbe9-42b8-a75b-0a505c952000",
