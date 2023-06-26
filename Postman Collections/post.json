@@ -15,7 +15,13 @@
 						"exec": [
 							"const serialNo = Math.floor(Math.random()* 1000000);\r",
 							"\r",
-							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
+							"\r",
+							"if (pm.environment.get(\"alreadyRun\") == undefined) {\r",
+							"    pm.environment.set(\"alreadyRun\", true);\r",
+							"} else {\r",
+							"    postman.setNextRequest(\"Request2\");\r",
+							"}"
 						],
 						"type": "text/javascript"
 					}
