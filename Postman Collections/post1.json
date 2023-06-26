@@ -725,7 +725,24 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/batches/batchName/:batchName",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"batches",
+						"batchName",
+						":batchName"
+					],
+					"variable": [
+						{
+							"key": "batchName",
+							"value": "657"
+						}
+					]
+				}
 			},
 			"response": []
 		}
