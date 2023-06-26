@@ -805,7 +805,7 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "Get batch by Invalid ProgramId",
 			"id": "6dcd6201-1214-44cc-a533-d4bca434c9e0",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
