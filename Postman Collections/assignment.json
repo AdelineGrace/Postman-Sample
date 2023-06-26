@@ -381,9 +381,12 @@
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
 							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
-							"const moment = require('moment');\r",
-							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSSZ\"))\r",
-							"//pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));\r",
+							"/*const moment = require('moment');\r",
+							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSSZ\"))*/\r",
+							"var dateNow = new Date();  \r",
+							"var dueDate = new Date(dateNow.setDate(dateNow.getDate() + 14)).toISOString();\r",
+							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSZ\"))\r",
+							"postman.setEnvironmentVariable(\"future-date\", twoWeeksFutureDate);\r",
 							"\r",
 							"\r",
 							""
@@ -610,31 +613,31 @@
 	],
 	"variable": [
 		{
-			"id": "6b4afa83-0785-4504-bb15-a82642e001ce",
+			"id": "935b3065-3e0a-447d-93fc-553efd63701f",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "6f0d1f29-a230-4d5a-b303-04753802def6",
+			"id": "61668f01-6dd3-41c9-ae03-d59a5aa0932a",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "fc44aea3-a66d-45bd-a871-9fd74f2ea19c",
+			"id": "ba633bff-a5b8-45d6-807f-6b19cfc695b6",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "b190052e-26d5-4df4-b3ce-eeaf9acf5254",
+			"id": "5f917048-18b1-46b7-a9b7-683051ba8f6b",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "5b5e70c3-5e0e-4ce5-933e-bcede9672273",
+			"id": "d40fb412-8f44-434d-a600-193dfae080cf",
 			"key": "dueDate",
 			"value": ""
 		}
