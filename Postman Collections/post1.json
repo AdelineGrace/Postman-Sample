@@ -849,18 +849,6 @@
 			]
 		},
 		{
-			"name": "Update batch with invalid batchId",
-			"id": "0d460b64-9df0-4389-9c7d-752233c110c6",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
 			"name": "Delete Batch",
 			"event": [
 				{
