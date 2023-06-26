@@ -318,7 +318,7 @@
 							"  var batchId = pm.request.url.path[3];\r",
 							"  \r",
 							"  const expectedObject = {\r",
-							"    \"message\": \"Batch not found with ID : \" +batchId+\" \",\r",
+							"    \"message\": \"Batch not found with Id : \" +batchId+\" \",\r",
 							"    \"success\": false\r",
 							"};\r",
 							"\r",
