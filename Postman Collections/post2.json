@@ -104,7 +104,7 @@
 			]
 		},
 		{
-			"name": "Create/Save Prog2",
+			"name": "Post Program 2",
 			"event": [
 				{
 					"listen": "prerequest",
