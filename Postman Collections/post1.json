@@ -956,7 +956,7 @@
 					"variable": [
 						{
 							"key": "batchId",
-							"value": null
+							"value": "00"
 						}
 					]
 				}
