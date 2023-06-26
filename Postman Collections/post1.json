@@ -623,7 +623,7 @@
 					"variable": [
 						{
 							"key": "programId",
-							"value": "1"
+							"value": "{{programId}}"
 						}
 					]
 				}
