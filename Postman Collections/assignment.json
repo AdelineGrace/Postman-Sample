@@ -377,7 +377,8 @@
 						"id": "9d31f758-03c1-455f-b713-895a56ed5d70",
 						"exec": [
 							"//script to create serialnumber at the end of the Assignment as per the Hackathon guidelines\r",
-							"const serialNo = Math.floor(Math.random()* 1000);\r",
+							"//const serialNo = Math.floor(Math.random()* 1000);\r",
+							"const serialNo = Math.floor(Math.random()* 900) +100;\r",
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
 							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
@@ -610,31 +611,31 @@
 	],
 	"variable": [
 		{
-			"id": "0eadbe85-5b38-4804-93c0-45be1a41b38b",
+			"id": "a5192cfd-ebb2-4848-b60f-bb2757282add",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "8e9232e5-b1e2-41a9-a44f-c5908357233f",
+			"id": "488d7200-d38c-4e47-932c-976fa25123f0",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "c3846fdc-2f89-4dad-a0bc-8fd40a6d61b0",
+			"id": "2e63480a-8916-4403-a6a6-17a5adb6933b",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "6f44aa2c-7fc1-473d-a91e-d9aeca1929aa",
+			"id": "24d11b95-1618-439c-bc3f-f559382ed3a6",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "99ae18ea-b917-4814-b454-7447edf960a3",
+			"id": "ac4aaa3c-e62a-4133-aeea-ac58957978a1",
 			"key": "dueDate",
 			"value": ""
 		}
