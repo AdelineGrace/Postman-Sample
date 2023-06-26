@@ -874,7 +874,22 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "{{BaseUrl}}/batches/1001"
+				"url": {
+					"raw": "{{BaseUrl}}/batches/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"batches",
+						":batchId"
+					],
+					"variable": [
+						{
+							"key": "batchId",
+							"value": "{{batchId}}"
+						}
+					]
+				}
 			},
 			"response": [
 				{
