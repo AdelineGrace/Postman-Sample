@@ -367,7 +367,6 @@
 					"script": {
 						"id": "9d31f758-03c1-455f-b713-895a56ed5d70",
 						"exec": [
-							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -383,7 +382,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": \"Test Assigment 9\",\r\n  \"assignmentName\": \"Test Assigment 9\" ,\r\n  \"batchId\": 1,\r\n  \"comments\": \"Test Assignment created by Team3\",\r\n  \"createdBy\": \"U233\",\r\n  \"dueDate\": \"2023-06-26T22:02:28.140Z\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\"\r\n }\r\n",
+					"raw": "{\r\n  \"assignmentDescription\": \"Test Assigment\",\r\n  \"assignmentName\": \"Test Assigment 9\" ,\r\n  \"batchId\": 1,\r\n  \"comments\": \"Test Assignment created by Team3\",\r\n  \"createdBy\": \"U233\",\r\n  \"dueDate\": \"2023-06-26T22:02:28.140Z\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\"\r\n }\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
