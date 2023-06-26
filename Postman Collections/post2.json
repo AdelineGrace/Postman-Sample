@@ -920,6 +920,18 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d96e0530-2170-4fd3-aead-a5b818ea5c55",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "348b22b4-8f2d-4cb9-a924-2f3aa1f6b033",
