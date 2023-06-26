@@ -131,7 +131,7 @@
 							"});\r",
 							"\r",
 							"const response = pm.response.json();\r",
-							"pm.globals.set(\"programId_SDET\", response.programId);"
+							"pm.globals.set(\"programName\", response.programName);"
 						],
 						"type": "text/javascript"
 					}
@@ -1422,7 +1422,7 @@
 					"variable": [
 						{
 							"key": "programName",
-							"value": "{{programId_SDET}}"
+							"value": "Jun23-Postman Pros-SDET-178"
 						}
 					]
 				}
