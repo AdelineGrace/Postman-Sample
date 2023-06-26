@@ -1348,7 +1348,21 @@
 						"exec": [
 							"pm.test(\"Status code is 404\", function () {\r",
 							"    pm.response.to.have.status(404);\r",
-							"});"
+							"});\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var userid = pm.request.url.path[4];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"User Id: \"+userid+\" Not Found\",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
 						],
 						"type": "text/javascript"
 					}
