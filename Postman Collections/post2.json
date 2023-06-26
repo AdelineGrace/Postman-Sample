@@ -1390,6 +1390,20 @@
 		},
 		{
 			"name": "400 Error Bad Request for Missing Required Field",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6f0d04f8-792a-471e-acd5-05c11e2bac76",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "671b0760-38a3-4e6b-986f-dd1523c1a76b",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
