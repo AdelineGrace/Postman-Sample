@@ -744,7 +744,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "c614c942-7ed5-457d-91d7-f14f5157ec88",
+					"name": "Get Batch by Invalid batch name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/batchName/:batchName",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								"batchName",
+								":batchName"
+							],
+							"variable": [
+								{
+									"key": "batchName",
+									"value": "657"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jun 2023 12:27:11 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"programBatch with id657not found\",\n    \"success\": false\n}"
+				}
+			]
 		}
 	]
 }
