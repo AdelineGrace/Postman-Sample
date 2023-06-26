@@ -657,7 +657,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "ee9ee296-c6f6-4953-99d0-ba83faa0e994",
+					"name": "Get Batch by invalid Batch Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/batchId/:batchId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								"batchId",
+								":batchId"
+							],
+							"variable": [
+								{
+									"key": "batchId",
+									"value": "5007890567"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jun 2023 12:15:23 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"timestamp\": \"2023-06-26T12:15:23.409+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/lms/batches/batchId/5007890567\"\n}"
+				}
+			]
 		}
 	]
 }
