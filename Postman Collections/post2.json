@@ -684,6 +684,20 @@
 		},
 		{
 			"name": "404 for invalid ProgId using Path Variable",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "559d2dbc-ddc8-48dd-8256-c91a0a65ae1a",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "0bd3c477-d94d-4694-a170-8a7e30f97968",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
