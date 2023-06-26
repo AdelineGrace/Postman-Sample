@@ -1455,6 +1455,19 @@
 		},
 		{
 			"name": "CSV Data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77f468ab-7309-4f3d-9603-70c7e027b502",
+						"exec": [
+							"const serialNo = Math.floor(Math.random()* 1000);\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "ff67ea18-2f81-4054-bb2e-beb4d2849336",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
