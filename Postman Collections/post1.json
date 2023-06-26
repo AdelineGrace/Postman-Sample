@@ -117,23 +117,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "{{BaseUrl}}/batches/program/:programId",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"batches",
-						"program",
-						":programId"
-					],
-					"variable": [
-						{
-							"key": "programId",
-							"value": "1"
-						}
-					]
-				}
+				"url": "{{BaseUrl}}/batches"
 			},
 			"response": [
 				{
