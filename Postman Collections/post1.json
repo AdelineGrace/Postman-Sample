@@ -229,7 +229,7 @@
 					"variable": [
 						{
 							"key": "batchId",
-							"value": "1001"
+							"value": "{{batchId}}"
 						}
 					]
 				}
