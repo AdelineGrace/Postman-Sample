@@ -357,7 +357,7 @@
 							"let moment = require ('moment');\r",
 							"\r",
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
-							"pm.expect(moment(\"submissiondate\", 'MM-dd-yyyy HH:mm:ss', true).isValid()).is.true;\r",
+							"pm.expect(moment(\"submissiondate\", 'MM-DD-YYYY HH:mm:ss', true).isValid()).is.true;\r",
 							"});\r",
 							""
 						],
@@ -1049,13 +1049,13 @@
 	],
 	"variable": [
 		{
-			"id": "1a756e9e-caee-4e14-b4db-e432aba5b8ad",
+			"id": "4fc5a5d0-20b5-459c-9e60-dc9306560867",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c3c2c8a2-9b67-46e4-bd74-0a6a00ae49bc",
+			"id": "6dd38a67-2efe-4798-bda8-d649554975fd",
 			"key": "submissionDateTime",
 			"value": ""
 		}
