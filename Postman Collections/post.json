@@ -245,7 +245,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userComments\": \"Creating Student User\",\r\n  \"userEduPg\": \"MSC\",\r\n  \"userEduUg\": \"BSC\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"USA\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": 7775888808,\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R03\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"PST\",\r\n  \"userVisaStatus\": \"H4-EAD\"\r\n}\r\n",
+					"raw": "{\r\n  \"userComments\": \"Creating Student User\",\r\n  \"userEduPg\": \"MSC\",\r\n  \"userEduUg\": \"BSC\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"USA\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": {{$randomPhoneNumber}},\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R03\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"PST\",\r\n  \"userVisaStatus\": \"H4-EAD\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
