@@ -339,7 +339,6 @@
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
 							"var moment = require('moment')\r",
-							"//pm.environment.set(‘timestamp’, moment().format((“YYYY-MM-DDTHH:MM:SS”)))\r",
 							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))"
 						],
 						"type": "text/javascript"
@@ -358,7 +357,7 @@
 							"let moment = require ('moment');\r",
 							"\r",
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
-							"pm.expect(moment(\"submissiondate\", 'MM-dd-yyyy HH:mm:ss', true).isValid()).is.true;\r",
+							"pm.expect(moment(\"submissiondate\", 'MM-DD-YYYY HH:mm:ss', true).isValid()).is.true;\r",
 							"});\r",
 							""
 						],
@@ -1050,13 +1049,13 @@
 	],
 	"variable": [
 		{
-			"id": "61d82c08-518e-4a0c-97e1-cdb2eb981fa5",
+			"id": "0e27f5a0-e35c-4f17-bdf9-dcd1739d3e9e",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4961009d-27ce-4f49-997a-643e7cbe0440",
+			"id": "179658b6-da9e-4682-8027-4f6947b598d8",
 			"key": "submissionDateTime",
 			"value": ""
 		}
