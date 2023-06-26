@@ -116,6 +116,18 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "bbf54a69-6005-493c-828b-ad270fda745a",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "ff8b3fa1-8079-43d5-a5eb-032bc90cc3d1",
@@ -191,6 +203,20 @@
 		},
 		{
 			"name": "400 Error Prog already exists",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3d54090-b0ca-4e91-8908-be620abc450a",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "054a0014-2e16-4f0c-bead-ac5c97c18778",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
