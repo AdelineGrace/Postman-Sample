@@ -718,7 +718,7 @@
 			]
 		},
 		{
-			"name": "Get Batch by Invalid batch name",
+			"name": "Get Batch by non-existent batch name",
 			"id": "021f8c67-2eee-4fde-859e-5093c03e1f28",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
