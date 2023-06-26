@@ -725,7 +725,25 @@
 						"exec": [
 							"pm.test(\"Status code is 404\", function () {\r",
 							"    pm.response.to.have.status(404);\r",
-							"});"
+							"});\r",
+							"pm.test(\"Status code name has ID Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var userid = pm.request.url.path[3];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"User Id 77 not found : \" +userid+\"\",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
 						],
 						"type": "text/javascript"
 					}
