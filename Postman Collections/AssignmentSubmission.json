@@ -340,7 +340,7 @@
 						"exec": [
 							"var moment = require('moment')\r",
 							"//pm.environment.set(‘timestamp’, moment().format((“YYYY-MM-DDTHH:MM:SS”)))\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format(\"MM-dd-yyyy HH:mm:ss\"))"
+							"pm.collectionVariables.set(\"submissionDateTime\", moment().format(\"MM-DD-YYYY HH:mm:ss\"))"
 						],
 						"type": "text/javascript"
 					}
@@ -1050,13 +1050,13 @@
 	],
 	"variable": [
 		{
-			"id": "9361c69e-0642-4e01-89f4-49fc29770cda",
+			"id": "84ce1e41-2083-46bd-a775-10a5e7adc360",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "68f9d9a5-4543-44b5-b6d0-56efa5a50d3c",
+			"id": "fd017c87-02e7-45b2-a00d-27a896d38413",
 			"key": "submissionDateTime",
 			"value": ""
 		}
