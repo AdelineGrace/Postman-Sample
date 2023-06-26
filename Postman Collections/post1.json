@@ -304,6 +304,93 @@
 			]
 		},
 		{
+			"name": "Get Batch by invalid Batch Id",
+			"id": "ca7f0341-8a62-41b8-aff3-f7915660e2a7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/batches/batchId/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"batches",
+						"batchId",
+						":batchId"
+					],
+					"variable": [
+						{
+							"key": "batchId",
+							"value": "5007890567"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "ee9ee296-c6f6-4953-99d0-ba83faa0e994",
+					"name": "Get Batch by invalid Batch Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/batchId/:batchId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								"batchId",
+								":batchId"
+							],
+							"variable": [
+								{
+									"key": "batchId",
+									"value": "5007890567"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jun 2023 12:15:23 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"timestamp\": \"2023-06-26T12:15:23.409+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/lms/batches/batchId/5007890567\"\n}"
+				}
+			]
+		},
+		{
 			"name": "Get Batch by Name",
 			"id": "9edade07-981c-42d2-976a-0423dbc069af",
 			"protocolProfileBehavior": {
@@ -399,6 +486,93 @@
 			]
 		},
 		{
+			"name": "Get Batch by non-existent batch name",
+			"id": "021f8c67-2eee-4fde-859e-5093c03e1f28",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/batches/batchName/:batchName",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"batches",
+						"batchName",
+						":batchName"
+					],
+					"variable": [
+						{
+							"key": "batchName",
+							"value": "657"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "c614c942-7ed5-457d-91d7-f14f5157ec88",
+					"name": "Get Batch by Invalid batch name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/batchName/:batchName",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								"batchName",
+								":batchName"
+							],
+							"variable": [
+								{
+									"key": "batchName",
+									"value": "657"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jun 2023 12:27:11 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"programBatch with id657not found\",\n    \"success\": false\n}"
+				}
+			]
+		},
+		{
 			"name": "Get Batch by ProgramId",
 			"id": "2ac10f52-0a87-4812-b65e-acb045c8ef45",
 			"protocolProfileBehavior": {
@@ -482,6 +656,76 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "[\n    {\n        \"batchId\": 197,\n        \"batchName\": \"asd \",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"string\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 19,\n        \"batchName\": \"poonamtest\",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 2,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 25,\n        \"batchName\": \"SDET\",\n        \"batchDescription\": \"APITesting\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 2023,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 26,\n        \"batchName\": \"Jun23-sparkplugs-SDET-001\",\n        \"batchDescription\": \"APITesting\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 2023,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 28,\n        \"batchName\": \"Jun23-sparkplugs-SDET-003\",\n        \"batchDescription\": \"APITesting\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 2023,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 29,\n        \"batchName\": \"Jun23-sparkplugs-SDET-004\",\n        \"batchDescription\": \"APITesting\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 2023,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 53,\n        \"batchName\": \"101\",\n        \"batchDescription\": \"SQL BATCH 198\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 3,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 87,\n        \"batchName\": \"105\",\n        \"batchDescription\": \"SQL BATCH 199\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 3,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 100,\n        \"batchName\": \"{{BatchName}}\",\n        \"batchDescription\": \"fourth_batch\",\n        \"batchStatus\": \"pass\",\n        \"batchNoOfClasses\": 20,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 5,\n        \"batchName\": \"June23-APIExplorers-SDET-114\",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 5,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 51,\n        \"batchName\": \"01\",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 5,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 92,\n        \"batchName\": \"test5\",\n        \"batchDescription\": \"nothing\",\n        \"batchStatus\": \"train\",\n        \"batchNoOfClasses\": 3,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 98,\n        \"batchName\": \"Jun23-HugsForBugs-SDET-SDET02-\",\n        \"batchDescription\": \"second_batch\",\n        \"batchStatus\": \"inactive\",\n        \"batchNoOfClasses\": 3,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 14,\n        \"batchName\": \"*******\",\n        \"batchDescription\": \"****1111***\",\n        \"batchStatus\": \"*******\",\n        \"batchNoOfClasses\": 10,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 103,\n        \"batchName\": \"Jun23-HugsForBugs-SDET-SDET94-334\",\n        \"batchDescription\": \"five_batch\",\n        \"batchStatus\": \"passed\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 104,\n        \"batchName\": \"Jun23-HugsForBugs-SDET-SDET94-120\",\n        \"batchDescription\": \"six_batch\",\n        \"batchStatus\": \"failed\",\n        \"batchNoOfClasses\": 6,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 109,\n        \"batchName\": \"team\",\n        \"batchDescription\": \"hackathon\",\n        \"batchStatus\": \"pass\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 208,\n        \"batchName\": \"Jun23-sparkplugs-SDET-005\",\n        \"batchDescription\": \"APITesting\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 2023,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 120,\n        \"batchName\": \"Jun23-HugsForBugs-SDET-SDET94-769\",\n        \"batchDescription\": \"five_batch\",\n        \"batchStatus\": \"passed\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 121,\n        \"batchName\": \"Jun23-HugsForBugs-SDET-SDET94-807\",\n        \"batchDescription\": \"six_batch\",\n        \"batchStatus\": \"failed\",\n        \"batchNoOfClasses\": 6,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 137,\n        \"batchName\": \"string\",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"string\",\n        \"batchNoOfClasses\": 10,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 198,\n        \"batchName\": \"sdf\",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"string\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 199,\n        \"batchName\": \"sdfdsf\",\n        \"batchDescription\": \"sdf\",\n        \"batchStatus\": \"string\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 200,\n        \"batchName\": \"sdfdsfrt\",\n        \"batchDescription\": \"sdf\",\n        \"batchStatus\": \"string\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 138,\n        \"batchName\": \"108\",\n        \"batchDescription\": \"SQL\\ufffdBATCH\\ufffd199\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 4,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 139,\n        \"batchName\": \"109\",\n        \"batchDescription\": \"SQL\\ufffdBATCH\\ufffd200\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 3,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 141,\n        \"batchName\": \"111\",\n        \"batchDescription\": \"SQL\\ufffdBATCH\\ufffd199\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 4,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 142,\n        \"batchName\": \"112\",\n        \"batchDescription\": \"SQL\\ufffdBATCH\\ufffd200\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 3,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 146,\n        \"batchName\": \"114\",\n        \"batchDescription\": \"SQL\\ufffdBATCH\\ufffd199\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 4,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 147,\n        \"batchName\": \"115\",\n        \"batchDescription\": \"SQL\\ufffdBATCH\\ufffd200\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 3,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 221,\n        \"batchName\": \"CHECKING\",\n        \"batchDescription\": \"API-41\",\n        \"batchStatus\": \"ACTIVE\",\n        \"batchNoOfClasses\": 67,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 236,\n        \"batchName\": \"1\",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"string\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 307,\n        \"batchName\": \"Jun23-ApiPixies-SDET-002\",\n        \"batchDescription\": \"Automation Testing Batch\",\n        \"batchStatus\": \"Ongoing\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 271,\n        \"batchName\": \"Jun23-sparkplugs-SDET-110\",\n        \"batchDescription\": \"API Testing\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 15,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 275,\n        \"batchName\": \"Jun23-sparkplugs-SDET-002\",\n        \"batchDescription\": \"APITesting\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 2023,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 309,\n        \"batchName\": \"string89\",\n        \"batchDescription\": \"nmj\",\n        \"batchStatus\": \"stringmn\",\n        \"batchNoOfClasses\": 9,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 295,\n        \"batchName\": \"Jun23-ApiPixies--SDET-001\",\n        \"batchDescription\": \"Automation Testing Batch\",\n        \"batchStatus\": \"Ongoing\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 296,\n        \"batchName\": \"Jun23-ApiPixies-SDET-001\",\n        \"batchDescription\": \"Automation Testing Batch\",\n        \"batchStatus\": \"Ongoing\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 1,\n        \"batchName\": \"Jun23-ApiPixies-SDET-002\",\n        \"batchDescription\": \"Automation Testing Batch\",\n        \"batchStatus\": \"Ongoing\",\n        \"batchNoOfClasses\": 1,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 327,\n        \"batchName\": \"Ds\",\n        \"batchDescription\": \"Data Scientist\",\n        \"batchStatus\": \"Running\",\n        \"batchNoOfClasses\": 2,\n        \"programId\": 1,\n        \"programName\": \"\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get batch by Invalid ProgramId",
+			"id": "6dcd6201-1214-44cc-a533-d4bca434c9e0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"id": "e91831f1-ee81-41aa-9911-029a682076ae",
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/program/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								"program",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "6789456"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jun 2023 12:45:36 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"batch with this programId 6789456not found\",\n    \"success\": false\n}"
 				}
 			]
 		},
@@ -631,182 +875,8 @@
 			]
 		},
 		{
-			"name": "Get Batch by invalid Batch Id",
-			"id": "ca7f0341-8a62-41b8-aff3-f7915660e2a7",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{BaseUrl}}/batches/batchId/:batchId",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"batches",
-						"batchId",
-						":batchId"
-					],
-					"variable": [
-						{
-							"key": "batchId",
-							"value": "5007890567"
-						}
-					]
-				}
-			},
-			"response": [
-				{
-					"id": "ee9ee296-c6f6-4953-99d0-ba83faa0e994",
-					"name": "Get Batch by invalid Batch Id",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/batches/batchId/:batchId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"batches",
-								"batchId",
-								":batchId"
-							],
-							"variable": [
-								{
-									"key": "batchId",
-									"value": "5007890567"
-								}
-							]
-						}
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Mon, 26 Jun 2023 12:15:23 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"timestamp\": \"2023-06-26T12:15:23.409+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/lms/batches/batchId/5007890567\"\n}"
-				}
-			]
-		},
-		{
-			"name": "Get Batch by non-existent batch name",
-			"id": "021f8c67-2eee-4fde-859e-5093c03e1f28",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{BaseUrl}}/batches/batchName/:batchName",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"batches",
-						"batchName",
-						":batchName"
-					],
-					"variable": [
-						{
-							"key": "batchName",
-							"value": "657"
-						}
-					]
-				}
-			},
-			"response": [
-				{
-					"id": "c614c942-7ed5-457d-91d7-f14f5157ec88",
-					"name": "Get Batch by Invalid batch name",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/batches/batchName/:batchName",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"batches",
-								"batchName",
-								":batchName"
-							],
-							"variable": [
-								{
-									"key": "batchName",
-									"value": "657"
-								}
-							]
-						}
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Mon, 26 Jun 2023 12:27:11 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"message\": \"programBatch with id657not found\",\n    \"success\": false\n}"
-				}
-			]
-		},
-		{
-			"name": "Get batch by Invalid ProgramId",
-			"id": "6dcd6201-1214-44cc-a533-d4bca434c9e0",
+			"name": "New Request",
+			"id": "0d460b64-9df0-4389-9c7d-752233c110c6",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -814,65 +884,7 @@
 				"method": "GET",
 				"header": []
 			},
-			"response": [
-				{
-					"id": "e91831f1-ee81-41aa-9911-029a682076ae",
-					"name": "New Request",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/batches/program/:programId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"batches",
-								"program",
-								":programId"
-							],
-							"variable": [
-								{
-									"key": "programId",
-									"value": "6789456"
-								}
-							]
-						}
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Mon, 26 Jun 2023 12:45:36 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"message\": \"batch with this programId 6789456not found\",\n    \"success\": false\n}"
-				}
-			]
+			"response": []
 		}
 	]
 }
