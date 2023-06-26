@@ -1846,7 +1846,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "98f5a175-89e2-4c4c-a9aa-94ab1d62bc7b",
+					"name": "Delete User by UserID",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/users/users/:userId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"users",
+								"users",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "{{StudentID}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 26 Jun 2023 01:53:04 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Deleted User ID:  U909"
+				}
+			]
 		}
 	],
 	"event": [
