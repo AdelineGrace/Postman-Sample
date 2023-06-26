@@ -638,7 +638,24 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/batches/batchId/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"batches",
+						"batchId",
+						":batchId"
+					],
+					"variable": [
+						{
+							"key": "batchId",
+							"value": "5007890567"
+						}
+					]
+				}
 			},
 			"response": []
 		}
