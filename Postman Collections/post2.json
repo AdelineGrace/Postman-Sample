@@ -1460,8 +1460,18 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"programDescription\": {{programDescription}},\r\n  \"programName\": \"{{programName}}{{serialNumber}}\",\r\n  \"programStatus\": {{programStatus}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}//saveprogram"
 			},
 			"response": []
 		}
