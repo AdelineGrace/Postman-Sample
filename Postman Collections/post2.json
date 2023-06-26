@@ -1454,7 +1454,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "CSV Data",
 			"id": "ff67ea18-2f81-4054-bb2e-beb4d2849336",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
