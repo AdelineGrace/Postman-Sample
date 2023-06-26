@@ -1050,10 +1050,15 @@
 	],
 	"variable": [
 		{
-			"id": "8f570535-ea00-45de-9c95-6f5aab0d868f",
+			"id": "9361c69e-0642-4e01-89f4-49fc29770cda",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
+		},
+		{
+			"id": "68f9d9a5-4543-44b5-b6d0-56efa5a50d3c",
+			"key": "submissionDateTime",
+			"value": ""
 		}
 	]
 }
