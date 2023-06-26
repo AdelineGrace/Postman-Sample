@@ -13,7 +13,7 @@
 					"script": {
 						"id": "625d88b8-993d-4bc1-9ca6-634e1647045d",
 						"exec": [
-							"const serialNo = Math.floor(Math.random()* 1000000);\r",
+							"const serialNo = Math.floor(Math.random()* 900)+ 100;\r",
 							"pm.environment.set(\"serialNumber\", serialNo.toString());"
 						],
 						"type": "text/javascript"
