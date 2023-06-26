@@ -1273,6 +1273,20 @@
 		},
 		{
 			"name": "404 Error with Invalid ProgramId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "962c8af9-b064-4f25-bce8-dd95e4b74cc5",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "40729a1e-4daf-4d0c-a247-21559689b634",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -1300,9 +1314,8 @@
 					],
 					"variable": [
 						{
-							"id": "695fb25d-a0aa-426e-8c59-baf01ee62038",
 							"key": "programId",
-							"value": "1851"
+							"value": "185100"
 						}
 					]
 				}
