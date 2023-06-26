@@ -642,6 +642,20 @@
 		},
 		{
 			"name": "Get Batch by ProgramId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "82b1903b-fbe1-4bdf-b71a-294a5732ade3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "2ac10f52-0a87-4812-b65e-acb045c8ef45",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
