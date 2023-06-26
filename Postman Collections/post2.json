@@ -290,6 +290,20 @@
 		},
 		{
 			"name": "500 Error ProgStatus Null",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "25de3194-ba62-4207-a517-1290372f73cf",
+						"exec": [
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "ba8c4c3b-e7db-4a99-8e4a-56da52979c63",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
