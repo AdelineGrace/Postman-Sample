@@ -111,7 +111,7 @@
 					"script": {
 						"id": "d21a75d1-92ba-45bb-9eff-4a24fcd37952",
 						"exec": [
-							"const serialNo = Math.floor(Math.random()* 1000000);\r",
+							"const serialNo = Math.floor(Math.random()* 1000);\r",
 							"pm.environment.set(\"serialNumber\", serialNo.toString());"
 						],
 						"type": "text/javascript"
@@ -139,7 +139,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
+					"raw": "{\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-SDET-{{serialNumber}}\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
