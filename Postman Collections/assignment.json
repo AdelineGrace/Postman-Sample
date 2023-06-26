@@ -382,7 +382,8 @@
 							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
 							"const moment = require('moment');\r",
-							"pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));\r",
+							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DD HH:MI:SS\"))\r",
+							"//pm.globals.set(\"today\", moment().format(\"MM/DD/YYYY\"));\r",
 							"\r",
 							"\r",
 							""
@@ -609,25 +610,25 @@
 	],
 	"variable": [
 		{
-			"id": "5b7de7cd-09f6-4b8a-b904-313a5af8ae94",
+			"id": "00452b22-ac03-4ff7-9379-887ea1a6bf7b",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "e0f81fd8-b8ce-4832-8553-31aabe5f70b2",
+			"id": "6ea77867-10db-4c6f-b631-69e6e4245e35",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "435628d8-7409-463b-822c-c4f20fa93490",
+			"id": "923d76d6-aff8-4807-8a8d-e0c7a5d0b2c8",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "65d0984d-51d9-440a-8540-a0bbe74bded3",
+			"id": "ef8a6aaf-4d45-4aa0-afe8-0b0d33909286",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
