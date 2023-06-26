@@ -47,7 +47,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userComments\": \"CreatingUser\",\r\n  \"userEduPg\": \"ME\",\r\n  \"userEduUg\": \"BE\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"Canada\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": 7786857908,\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R01\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"EST\",\r\n  \"userVisaStatus\": \"Canada-Citizen\"\r\n}\r\n",
+					"raw": "{\r\n  \"userComments\": \"CreatingUser\",\r\n  \"userEduPg\": \"ME\",\r\n  \"userEduUg\": \"BE\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"Canada\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": {{$randomPhoneNumber}},\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R01\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"EST\",\r\n  \"userVisaStatus\": \"Canada-Citizen\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -146,7 +146,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userComments\": \"CreatingUser\",\r\n  \"userEduPg\": \"MBA\",\r\n  \"userEduUg\": \"BA\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"India\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": 7775624908,\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R02\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"IST\",\r\n  \"userVisaStatus\": \"Indian-Citizen\"\r\n}\r\n",
+					"raw": "{\r\n  \"userComments\": \"CreatingUser\",\r\n  \"userEduPg\": \"MBA\",\r\n  \"userEduUg\": \"BA\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"India\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": {{$randomPhoneNumber}},\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R02\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"IST\",\r\n  \"userVisaStatus\": \"Indian-Citizen\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
