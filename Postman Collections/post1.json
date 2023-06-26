@@ -24,8 +24,10 @@
 					"script": {
 						"id": "ba0b61a5-f1af-441d-b46e-4629bcdda8e2",
 						"exec": [
+							"const request = pm.request.json();\r",
 							"const response = pm.response.json();\r",
-							"pm.globals.set(\"batchId\", response.batchId);"
+							"pm.globals.set(\"batchId\", response.batchId);\r",
+							"pm.globals.set(\"batchName\", request.batchName);"
 						],
 						"type": "text/javascript"
 					}
