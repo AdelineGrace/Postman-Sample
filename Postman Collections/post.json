@@ -734,7 +734,7 @@
 							"  var userid = pm.request.url.path[3];\r",
 							"  \r",
 							"  const expectedObject = {\r",
-							"    \"message\": \"User Id 77 not found : \" +userid+\"\",\r",
+							"    \"message\": \"User Id \" +userid+\" not found\",\r",
 							"    \"success\": false\r",
 							"};\r",
 							"\r",
