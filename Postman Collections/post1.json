@@ -927,8 +927,24 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/batches/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"batches",
+						":batchId"
+					],
+					"variable": [
+						{
+							"key": "batchId",
+							"value": null
+						}
+					]
+				}
 			},
 			"response": []
 		}
