@@ -131,7 +131,7 @@
 							"});\r",
 							"\r",
 							"const response = pm.response.json();\r",
-							"pm.globals.set(\"programName\", response.programName);"
+							"pm.globals.set(\"programId_SDET\", response.programId);"
 						],
 						"type": "text/javascript"
 					}
@@ -487,7 +487,7 @@
 					"variable": [
 						{
 							"key": "pid",
-							"value": "{{programId}}"
+							"value": "40"
 						}
 					]
 				}
@@ -1397,7 +1397,7 @@
 					"variable": [
 						{
 							"key": "programId",
-							"value": "{{programId}}"
+							"value": "{{programId_DA}}"
 						}
 					]
 				}
@@ -1422,34 +1422,10 @@
 					"variable": [
 						{
 							"key": "programName",
-							"value": "{{programName}}"
+							"value": "Jun23-Postman Pros-SDET-178"
 						}
 					]
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete by Invalid ProgramId",
-			"id": "77154c27-ccc9-4012-a616-ba334dfc46c7",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "Delete by Invalid ProgramName",
-			"id": "eb73236e-c3fa-40ab-b865-146ad6908ae1",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": []
 			},
 			"response": []
 		}
