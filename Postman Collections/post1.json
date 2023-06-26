@@ -588,15 +588,15 @@
 			},
 			"response": [
 				{
-					"id": "61868d85-f102-4c53-b945-d0d826de9829",
+					"id": "fec10094-5685-4349-a826-7ae0f80aba07",
 					"name": "Delete Batch",
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{BaseUrl}}/batches"
+						"url": "{{BaseUrl}}/batches/1001"
 					},
-					"status": "Not Found",
-					"code": 404,
+					"status": "OK",
+					"code": 200,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -612,12 +612,12 @@
 							"value": "application/json"
 						},
 						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
+							"key": "Content-Length",
+							"value": "49"
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 25 Jun 2023 16:15:55 GMT"
+							"value": "Sun, 25 Jun 2023 17:32:34 GMT"
 						},
 						{
 							"key": "Via",
@@ -626,9 +626,21 @@
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n    \"message\": \"Batch not found with Id : 4 \",\n    \"success\": false\n}"
+					"body": "Message: Batch with Id-1001 deleted Successfully!"
 				}
 			]
+		},
+		{
+			"name": "New Request",
+			"id": "ca7f0341-8a62-41b8-aff3-f7915660e2a7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
