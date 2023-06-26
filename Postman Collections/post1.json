@@ -904,7 +904,7 @@
 			]
 		},
 		{
-			"name": "New Request",
+			"name": "Delete batch with invalid BatchId",
 			"id": "9de721a8-38c2-469b-a43b-18e8d63441b2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
