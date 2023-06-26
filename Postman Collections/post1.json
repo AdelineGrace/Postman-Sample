@@ -815,30 +815,6 @@
 				"header": []
 			},
 			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "e2690631-9417-4395-80b2-87a780be614a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
-		},
-		{
-			"name": "New Request",
-			"id": "6dcd6201-1214-44cc-a533-d4bca434c9e0",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	]
 }
