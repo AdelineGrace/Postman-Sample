@@ -327,8 +327,8 @@
 					"script": {
 						"id": "7a12a931-4757-4ef6-b64e-e0afc9e2804a",
 						"exec": [
-							"pm.test(\"Created-201 OK\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
+							"pm.test(\"Status Code:400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1605,7 +1605,21 @@
 						"exec": [
 							"pm.test(\"Status code is 404\", function () {\r",
 							"    pm.response.to.have.status(404);\r",
-							"});"
+							"});\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var userid = pm.request.url.path[4];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"User not found with Id : \" +userid+\" \",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -1726,7 +1740,8 @@
 						"exec": [
 							"pm.test(\"Status code is 400\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
-							"});"
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
