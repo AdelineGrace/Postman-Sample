@@ -543,7 +543,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"programDescription\": \"This is a program to learn\",\r\n    \"programName\": \"{{programName}}_NewUpdated\",\r\n    \"programStatus\": \"Active\"\r\n}",
+					"raw": "{\r\n    \"programDescription\": \"This is a program to learn\",\r\n    \"programName\": \"Jun23-Postman Pros-DA-303_NewUpdated\",\r\n    \"programStatus\": \"Active\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -562,7 +562,7 @@
 					"variable": [
 						{
 							"key": "programName",
-							"value": "{{programName}}"
+							"value": "Jun23-Postman Pros-DA-303"
 						}
 					]
 				}
