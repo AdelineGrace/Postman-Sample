@@ -1442,6 +1442,20 @@
 		},
 		{
 			"name": "Delete by Invalid ProgramId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "40de4e13-5cda-484c-a28b-32ca171ed414",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "77154c27-ccc9-4012-a616-ba334dfc46c7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
