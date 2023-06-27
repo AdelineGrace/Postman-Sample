@@ -26,8 +26,12 @@
 						"exec": [
 							"const request = pm.request.json();\r",
 							"const response = pm.response.json();\r",
+							"\r",
 							"pm.globals.set(\"batchId\", response.batchId);\r",
-							"pm.globals.set(\"batchName\", request.batchName);"
+							"pm.globals.set(\"batchName\", request.batchName);\r",
+							"\r",
+							"var batchID=response.batchId;\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -42,7 +46,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}-{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId}}\r\n}",
+					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}-{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId_SDET}}\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
