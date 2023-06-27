@@ -881,7 +881,7 @@
 			]
 		},
 		{
-			"name": "Update Program by ProgID",
+			"name": "Update Program by ProgramID",
 			"event": [
 				{
 					"listen": "test",
@@ -1875,6 +1875,118 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "Message: Program Id-3572 is deleted Successfully!"
+				},
+				{
+					"id": "363eca86-746f-42f0-a0e8-3be656681b7b",
+					"name": "Delete by ProgramId",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/deletebyprogid/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"deletebyprogid",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "1851"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Jun 2023 04:20:40 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Message: Program Id-1851 is deleted Successfully!"
+				},
+				{
+					"id": "80bec760-1708-4215-aad8-4520f904a8ff",
+					"name": "Delete by ProgramId",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/deletebyprogid/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"deletebyprogid",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "3692"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Jun 2023 04:21:10 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Message: Program Id-3692 is deleted Successfully!"
 				}
 			]
 		},
