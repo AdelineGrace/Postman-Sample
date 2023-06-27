@@ -1254,6 +1254,30 @@
 		},
 		{
 			"name": "Delete by ProgramId",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b99f33f4-2d0f-4683-8fee-537ae1ffbc38",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"   const expectedObject = {\r",
+							"    \"message\": \"Program Id-\"+programId+\"deleted Successfully!\"    \r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "a8b6f599-fb7e-4a73-b391-be75f2ec6894",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -1273,7 +1297,7 @@
 					"variable": [
 						{
 							"key": "programId",
-							"value": "4175"
+							"value": "{{programId_SDET}}"
 						}
 					]
 				}
