@@ -80,20 +80,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/grades/:batchID",
+					"raw": "{{BaseUrl}}/assignments/:assignmentId",
 					"host": [
 						"{{BaseUrl}}"
 					],
 					"path": [
-						"assignmentsubmission",
-						"grades",
-						":batchID"
+						"assignments",
+						":assignmentId"
 					],
 					"variable": [
 						{
-							"id": "0b3a2a25-8e0e-4f0f-9405-d9ee2b243752",
-							"key": "batchID",
-							"value": "{{batchId}}"
+							"key": "assignmentId",
+							"value": "{{assignmentId}}"
 						}
 					]
 				}
@@ -1172,13 +1170,13 @@
 	],
 	"variable": [
 		{
-			"id": "0028c01e-ddb3-4a32-aea4-873c8bc2f331",
+			"id": "a55a83d1-c486-4ace-a476-47c11e90be77",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b6276088-db89-45d2-b3da-b0df17ff95eb",
+			"id": "f2b973b7-4585-4ad4-ae61-e2c28cbaa1f3",
 			"key": "submissionDateTime",
 			"value": ""
 		}
