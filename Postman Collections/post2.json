@@ -25,11 +25,11 @@
 							"//console.log(reqBody.programName);\r",
 							"if (reqBody.programName.has(\"SDET\")){\r",
 							"pm.globals.set(\"programId_SDET\", response.programId);\r",
-							"pm.globals.set(\"programName_SDET\", response.programName);\r",
+							"pm.globals.set(\"programName_SDET\", response[0].programName);\r",
 							"}\r",
 							"else if(reqBody.programName.has(\"DA\")){\r",
 							"pm.globals.set(\"programId_DA\", response.programId)\r",
-							"pm.globals.set(\"programName_DA\", response.programName);\r",
+							"pm.globals.set(\"programName_DA\", response[1].programName);\r",
 							"};\r",
 							"\r",
 							"if(response.programStatus === 0){\r",
@@ -2542,12 +2542,12 @@
 	],
 	"variable": [
 		{
-			"id": "61d2d20d-8c36-498f-b68d-7b17e2aa6e2c",
+			"id": "2bc83278-a04a-4b2f-ac8a-070e7faf7261",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "f009bd05-857b-4e4c-b15c-2fdc26d5f764",
+			"id": "dfa386d6-d52b-4686-b7aa-b2cacba436d3",
 			"key": "iterationCount",
 			"value": ""
 		}
