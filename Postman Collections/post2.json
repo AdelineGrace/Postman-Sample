@@ -787,7 +787,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"programDescription\": \"2023 June API Hackathon\",\r\n    \"programName\": \"Jun23-Postman Pros-DA-314482_Updated\",\r\n    \"programStatus\": \"Active\"\r\n}",
+					"raw": "{\r\n    \"programDescription\": \"2023 June API Hackathon\",\r\n    \"programName\": \"\",\r\n    \"programStatus\": \"Active\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
