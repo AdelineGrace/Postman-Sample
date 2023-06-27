@@ -410,7 +410,7 @@
 			]
 		},
 		{
-			"name": "Get by InvalidId ProgramId",
+			"name": "Get by InvalidId Program",
 			"event": [
 				{
 					"listen": "test",
