@@ -673,7 +673,7 @@
 					"variable": [
 						{
 							"key": "programId",
-							"value": "{{programId}}"
+							"value": "{{programId_SDET}}"
 						}
 					]
 				}
