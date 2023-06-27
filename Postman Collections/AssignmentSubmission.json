@@ -262,7 +262,7 @@
 					"variable": [
 						{
 							"key": "batchID",
-							"value": "2"
+							"value": "{{batchId}}"
 						}
 					]
 				}
@@ -1097,13 +1097,13 @@
 	],
 	"variable": [
 		{
-			"id": "af64fe14-8426-48a8-a7f8-e24b31cfcc68",
+			"id": "f696982f-b7cd-4575-90be-e59daa84514d",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8fa24b6-d4a8-48be-906d-b62a069547ee",
+			"id": "1980e008-e717-42ec-a8e4-07ebec7bc773",
 			"key": "submissionDateTime",
 			"value": ""
 		}
