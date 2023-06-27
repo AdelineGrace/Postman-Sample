@@ -1427,6 +1427,62 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "Message: Program Id-4297 is deleted Successfully!"
+				},
+				{
+					"id": "aa29ad33-11c4-41a4-b2a6-86ca4bd34823",
+					"name": "Delete by ProgramId",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/deletebyprogid/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"deletebyprogid",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "4298"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Jun 2023 04:15:27 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Message: Program Id-4298 is deleted Successfully!"
 				}
 			]
 		},
