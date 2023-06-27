@@ -40,6 +40,12 @@
 							"});\r",
 							"}\r",
 							"\r",
+							"const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
+							"const currentIteration = (pm.info.iteration);\r",
+							"console.log(currentIteration);\r",
+							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
+							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
 							"\r",
 							""
 						],
