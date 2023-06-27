@@ -495,7 +495,7 @@
 					"variable": [
 						{
 							"key": "assignmentId",
-							"value": "10"
+							"value": "{{assignmentId}}"
 						}
 					]
 				}
@@ -1097,13 +1097,13 @@
 	],
 	"variable": [
 		{
-			"id": "0e5446b3-f29c-4c71-8327-20b53adff028",
+			"id": "cb5afced-fb11-4d61-8672-ce5936c810f4",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "114ecc5c-ddd4-44fb-aea7-b213817da5af",
+			"id": "3ea7790a-1954-4c69-8cb2-ef4b1187b72e",
 			"key": "submissionDateTime",
 			"value": ""
 		}
