@@ -817,7 +817,22 @@
 						}
 					}
 				},
-				"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/1003"
+				"url": {
+					"raw": "{{BaseUrl}}/batches/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"batches",
+						":batchId"
+					],
+					"variable": [
+						{
+							"key": "batchId",
+							"value": "{{batchId}}"
+						}
+					]
+				}
 			},
 			"response": [
 				{
