@@ -79,7 +79,94 @@
 			"response": []
 		},
 		{
-			"name": "Create Program",
+			"name": "Create Program with Null Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "25de3194-ba62-4207-a517-1290372f73cf",
+						"exec": [
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ba8c4c3b-e7db-4a99-8e4a-56da52979c63",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}/saveprogram"
+			},
+			"response": [
+				{
+					"id": "e94fb104-e29b-4d60-b5a3-b4a91f8dae0e",
+					"name": "500 Error ProgStatus Null",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BaseUrl}}/saveprogram"
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 01:42:38 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"timestamp\": \"2023-06-25T01:42:38.765+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"path\": \"/lms/saveprogram\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Post Program with Existing ProgramName",
 			"event": [
 				{
 					"listen": "test",
@@ -176,93 +263,6 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"message\": \"cannot create program , since already exists\",\n    \"success\": false\n}"
-				}
-			]
-		},
-		{
-			"name": "500 Error ProgStatus Null",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "25de3194-ba62-4207-a517-1290372f73cf",
-						"exec": [
-							"pm.test(\"Status code is 500\", function () {\r",
-							"    pm.response.to.have.status(500);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "ba8c4c3b-e7db-4a99-8e4a-56da52979c63",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": " {\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"\"\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}/saveprogram"
-			},
-			"response": [
-				{
-					"id": "e94fb104-e29b-4d60-b5a3-b4a91f8dae0e",
-					"name": "500 Error ProgStatus Null",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": " {\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"\"\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{BaseUrl}}/saveprogram"
-					},
-					"status": "Internal Server Error",
-					"code": 500,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 01:42:38 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"timestamp\": \"2023-06-25T01:42:38.765+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"path\": \"/lms/saveprogram\"\n}"
 				}
 			]
 		},
@@ -2518,12 +2518,12 @@
 	],
 	"variable": [
 		{
-			"id": "1f90124a-b85c-45a5-837e-279b265a6821",
+			"id": "d585d424-957c-44d5-ae13-a1224408d27a",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "cbab657a-d913-4c0f-9ee9-de324b2afc92",
+			"id": "6402261f-0f94-40c2-988c-3d1acfdfc0bb",
 			"key": "iterationCount",
 			"value": ""
 		}
