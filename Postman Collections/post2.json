@@ -34,12 +34,6 @@
 							"console.log(programName);\r",
 							"};\r",
 							"\r",
-							"if(response.programStatus === 0){\r",
-							"pm.test(\"Program Module POST request - Status code is 500\", function () {\r",
-							"    pm.response.to.have.status(500);\r",
-							"});\r",
-							"}\r",
-							"\r",
 							"const iterationCount = pm.info.iterationCount;\r",
 							"console.log(iterationCount);\r",
 							"const currentIteration = (pm.info.iteration);\r",
@@ -60,7 +54,7 @@
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
 							"\r",
 							"// to create work flow to run the post request alone in the collection\r",
-							"const iterationCount = pm.info.iterationCount;\r",
+							"/*const iterationCount = pm.info.iterationCount;\r",
 							"console.log(iterationCount);\r",
 							"const currentIteration = (pm.info.iteration);\r",
 							"console.log(currentIteration);\r",
@@ -72,7 +66,7 @@
 							"\r",
 							"if (currentIterationValue <= iterationCount){\r",
 							"    postman.setNextRequest(\"Create Program\");    \r",
-							"}"
+							"}*/"
 						],
 						"type": "text/javascript"
 					}
@@ -2571,12 +2565,12 @@
 	],
 	"variable": [
 		{
-			"id": "5381e634-314e-4396-91c1-ae35992dc76c",
+			"id": "21328404-d5de-46a3-ad19-cb421ca7ff85",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "b4ba039f-ebff-440e-ba32-bf39173de010",
+			"id": "4ee17924-0e97-4740-ab08-93e77985d754",
 			"key": "currentIteration",
 			"value": ""
 		}
