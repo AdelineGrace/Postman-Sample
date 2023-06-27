@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "b34fd1fa-066e-429a-a8c9-f2c619887740"
+		},
+		{
 			"name": "Create 3 Users with CSV",
 			"event": [
 				{
