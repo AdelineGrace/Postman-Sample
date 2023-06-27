@@ -31,11 +31,11 @@
 							"pm.globals.set(\"programId_DA\", response.programId)\r",
 							"};\r",
 							"\r",
-							"if(response.programStatus === null)\r",
+							"if(response.programStatus === null){\r",
 							"pm.test(\"Program Module POST request - Status code is 500\", function () {\r",
 							"    pm.response.to.have.status(500);\r",
 							"});\r",
-							""
+							"}"
 						],
 						"type": "text/javascript"
 					}
