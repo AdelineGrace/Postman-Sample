@@ -311,7 +311,7 @@
 			]
 		},
 		{
-			"name": "Get ProgramId",
+			"name": "Get by ProgramId",
 			"event": [
 				{
 					"listen": "test",
@@ -345,7 +345,7 @@
 					"variable": [
 						{
 							"key": "pid",
-							"value": "{{programId}}"
+							"value": "{{programId_DA}}"
 						}
 					]
 				}
