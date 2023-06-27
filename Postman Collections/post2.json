@@ -41,6 +41,11 @@
 							"pm.test(\"Program Module POST request - Status code is 500\", function () {\r",
 							"    pm.response.to.have.status(500);\r",
 							"});\r",
+							"}\r",
+							"\r",
+							"let currentIteration = pm.collectionVariables.get(\"currentIteration\");\r",
+							"if (currentIteration <= (iterationCount-1)){\r",
+							"    postman.setNextRequest(\"Create Create Program with Null Status\");\r",
 							"}"
 						],
 						"type": "text/javascript"
@@ -2518,12 +2523,12 @@
 	],
 	"variable": [
 		{
-			"id": "d585d424-957c-44d5-ae13-a1224408d27a",
+			"id": "ecc1af58-8fd6-47c6-ab1d-df3f0a6df0ee",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "6402261f-0f94-40c2-988c-3d1acfdfc0bb",
+			"id": "8d59755b-4845-4180-9976-a628ba833abb",
 			"key": "iterationCount",
 			"value": ""
 		}
