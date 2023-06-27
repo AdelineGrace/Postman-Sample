@@ -1177,9 +1177,8 @@
 					],
 					"variable": [
 						{
-							"id": "695fb25d-a0aa-426e-8c59-baf01ee62038",
 							"key": "programId",
-							"value": "1851"
+							"value": "{{programId_SDET}}"
 						}
 					]
 				}
