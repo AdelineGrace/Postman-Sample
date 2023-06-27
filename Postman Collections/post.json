@@ -19,7 +19,13 @@
 							"\r",
 							"const randomNumber = _.random(1000000000,9999999999)\r",
 							"\r",
-							"pm.environment.set(\"randomNumber\",randomNumber);"
+							"pm.environment.set(\"randomNumber\",randomNumber);\r",
+							"if (pm.environment.get(\"alreadyRun\") == undefined) {\r",
+							"    pm.environment.set(\"alreadyRun\", true);\r",
+							"} else {\r",
+							"    postman.setNextRequest(\"Create New Student User with Invalid Details\");\r",
+							"}\r",
+							""
 						],
 						"type": "text/javascript"
 					}
