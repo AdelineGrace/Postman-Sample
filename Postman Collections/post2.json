@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Create Program using CSV Data",
+			"name": "Create Program",
 			"event": [
 				{
 					"listen": "test",
