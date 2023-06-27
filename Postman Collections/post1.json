@@ -55,58 +55,7 @@
 				},
 				"url": "{{BaseUrl}}/batches"
 			},
-			"response": [
-				{
-					"id": "ce94a1e7-6564-45d7-93df-05008d362dd2",
-					"name": "Create Batch",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"batchName\": \"June 2023 API Hackathon-{{serialNumber}}\",\r\n  \"batchNoOfClasses\": 3,\r\n  \"batchStatus\": \"Active\",\r\n  \"programId\": 51\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{BaseUrl}}/batches"
-					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 17:22:39 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"batchId\": 1003,\n    \"batchName\": \"June 2023 API Hackathon-72760\",\n    \"batchDescription\": null,\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 3,\n    \"programId\": 51,\n    \"programName\": \"new1\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Get All Batches",
