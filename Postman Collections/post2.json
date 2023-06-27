@@ -17,6 +17,7 @@
 							"    pm.response.to.have.status(201);\r",
 							"});\r",
 							"const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
 							"const response = pm.response.json();\r",
 							"console.log(response);\r",
 							"\r",
@@ -62,7 +63,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"programDescription\": \"{{programDescription}}\",\r\n  \"programName\": \"{{programName}}{{serialNumber}}\",\r\n  \"programStatus\": \"{{programStatus}}\"\r\n}",
+					"raw": "{\r\n  \"programDescription\": {{programDescription}},\r\n  \"programName\": \"{{programName}}{{serialNumber}}\",\r\n  \"programStatus\": {{programStatus}}\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
