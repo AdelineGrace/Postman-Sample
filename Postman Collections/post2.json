@@ -41,12 +41,12 @@
 							"// to create work flow to run the post request alone in the collection\r",
 							"const iterationCount = pm.info.iterationCount;\r",
 							"//console.log(iterationCount);\r",
-							"const currentIteration = ((pm.info.iteration) +1);\r",
+							"const currentIteration = (pm.info.iteration);\r",
 							"//console.log(currentIteration);\r",
 							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
 							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
 							"\r",
-							"if (currentIteration <= iterationCount){\r",
+							"if ((currentIteration +1) <= iterationCount){\r",
 							"    postman.setNextRequest(\"Create Program\");    \r",
 							"}\r",
 							"else{\r",
@@ -2529,12 +2529,12 @@
 	],
 	"variable": [
 		{
-			"id": "60befa34-acb7-4bbb-bfe1-f89d20d04063",
+			"id": "1ea7b44e-e3bc-4a27-a7fb-60507419b2ab",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "fdb86878-c98a-4449-a4dc-b238b6636824",
+			"id": "b95e4486-25be-47f6-b430-81825459058a",
 			"key": "iterationCount",
 			"value": ""
 		}
