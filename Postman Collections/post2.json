@@ -1128,7 +1128,9 @@
 						"exec": [
 							"pm.test(\"Status code is 400\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
-							"});"
+							"});\r",
+							"\r",
+							"//postman.setNextRequest(\"Create Batch\");"
 						],
 						"type": "text/javascript"
 					}
