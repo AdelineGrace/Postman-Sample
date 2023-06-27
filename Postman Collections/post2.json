@@ -248,7 +248,7 @@
 					"script": {
 						"id": "1c9f0d76-7efc-4806-96a3-759b1cb5661b",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Get All Programs - Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							""
