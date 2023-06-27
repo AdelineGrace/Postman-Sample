@@ -211,10 +211,7 @@
 					"script": {
 						"id": "fcd50ea4-3d82-4781-970a-91704e454078",
 						"exec": [
-							"let currentIteration = pm.collectionVariables.get(\"currentIteration\");\r",
-							"if (currentIteration <= (iterationCount-1)){\r",
-							"    postman.setNextRequest(\"Create Program\");\r",
-							"}"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -2565,12 +2562,12 @@
 	],
 	"variable": [
 		{
-			"id": "21328404-d5de-46a3-ad19-cb421ca7ff85",
+			"id": "7ef16c3f-1352-4b76-b394-e5899f66a61f",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "4ee17924-0e97-4740-ab08-93e77985d754",
+			"id": "778f8bcb-89fe-428c-afea-bd26c018949e",
 			"key": "currentIteration",
 			"value": ""
 		}
