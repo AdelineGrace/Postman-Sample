@@ -529,7 +529,7 @@
 			]
 		},
 		{
-			"name": "Get Batch by non-existent batch name",
+			"name": "Get Batch by Invalid batch name",
 			"event": [
 				{
 					"listen": "test",
