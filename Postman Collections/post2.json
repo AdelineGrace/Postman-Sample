@@ -2517,8 +2517,13 @@
 	],
 	"variable": [
 		{
-			"id": "b0f5dd1e-0fec-42a4-a0df-5f16dfaabc1d",
+			"id": "46a1eb26-5c70-43c5-83ba-798477e0b7a6",
 			"key": "currentIteration",
+			"value": ""
+		},
+		{
+			"id": "67ac805a-6a23-4cac-a04b-49addd36f185",
+			"key": "iterationCount",
 			"value": ""
 		}
 	]
