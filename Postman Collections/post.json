@@ -1403,7 +1403,7 @@
 			]
 		},
 		{
-			"name": "Assign Update User Role Program Batch Status with Missing field and Invalid",
+			"name": "Assign Update User Role Program Batch Status with Missing field",
 			"event": [
 				{
 					"listen": "test",
@@ -1449,7 +1449,7 @@
 					"variable": [
 						{
 							"key": "userId",
-							"value": "77"
+							"value": "0"
 						}
 					]
 				}
