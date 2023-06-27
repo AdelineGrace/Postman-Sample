@@ -226,7 +226,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"programDescription\": \"This program is for QA\",\r\n  \"programName\": \"{{programName}}\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
+					"raw": "{\r\n  \"programDescription\": \"This program is for QA\",\r\n  \"programName\": \"Jun23-PostmanPros-DA-388\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2562,12 +2562,12 @@
 	],
 	"variable": [
 		{
-			"id": "aec1ce90-8619-4a06-b77f-9c0b81c7510b",
+			"id": "fb77084d-2899-4aad-8e40-ceb8b9e6d1d5",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "a3ac5595-e9fc-416b-988c-d9ac0a904ab8",
+			"id": "6e933f3b-7660-4ba1-ac08-813b07f6c708",
 			"key": "currentIteration",
 			"value": ""
 		}
