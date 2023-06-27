@@ -712,13 +712,7 @@
 					"script": {
 						"id": "2291e83a-3017-42cb-b8d7-19073e0770f2",
 						"exec": [
-							"const reqBody = JSON.parse(pm.request.body.raw);\r",
-							"//console.log(reqBody);\r",
-							"//console.log(reqBody.programName);\r",
-							"if (reqBody.programName.has(\"SDET\")){\r",
-							"pm.globals.set(\"programId_SDET\", response.programId);\r",
-							"pm.globals.set(\"programName\", response.programName);\r",
-							"}"
+							""
 						],
 						"type": "text/javascript"
 					}
