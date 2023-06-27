@@ -86,7 +86,20 @@
 						"exec": [
 							"pm.test(\"Status code is 400\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
-							"});"
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fcd50ea4-3d82-4781-970a-91704e454078",
+						"exec": [
+							"if (currentIteration <= (iterationCount-1)){\r",
+							"    postman.setNextRequest(\"Create Program\");\r",
+							"}"
 						],
 						"type": "text/javascript"
 					}
