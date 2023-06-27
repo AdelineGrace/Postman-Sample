@@ -106,12 +106,7 @@
 						"id": "3971839a-314b-49a3-b4f8-c13b8a005f3a",
 						"exec": [
 							"// to create work flow to run the post request alone in the collection\r",
-							"const iterationCount = pm.info.iterationCount;\r",
-							"console.log(iterationCount);\r",
 							"const currentIteration = (pm.info.iteration);\r",
-							"console.log(currentIteration);\r",
-							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
-							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
 							"let currentIterationValue = (currentIteration+1);\r",
 							"console.log(currentIterationValue);\r",
 							"\r",
