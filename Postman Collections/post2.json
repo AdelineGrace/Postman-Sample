@@ -568,7 +568,7 @@
 					"variable": [
 						{
 							"key": "programName",
-							"value": "Jun23-Postman Pros-DA-303"
+							"value": "{{programName}}"
 						}
 					]
 				}
