@@ -37,20 +37,21 @@
 							"    pm.response.to.have.status(500);\r",
 							"});\r",
 							"}\r",
+							"\r",
 							"// to create work flow to run the post request alone in the collection\r",
 							"const iterationCount = pm.info.iterationCount;\r",
-							"console.log(iterationCount);\r",
-							"const currentIteration = pm.info.iteration;\r",
-							"console.log(currentIteration);\r",
+							"//console.log(iterationCount);\r",
+							"const currentIteration = ((pm.info.iteration) +1);\r",
+							"//console.log(currentIteration);\r",
 							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
 							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
-							"if (currentIteration <= (iterationCount-1)){\r",
+							"\r",
+							"if (currentIteration <= (iterationCount)){\r",
 							"    postman.setNextRequest(\"Create Program with Null Status\");\r",
 							"}\r",
 							"else{\r",
-							"    postman.setNextRequest(\"Create Program\");    \r",
+							"    postman.setNextRequest(\"Create Program\"); \r",
 							"}\r",
-							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -2528,12 +2529,12 @@
 	],
 	"variable": [
 		{
-			"id": "1ac13710-5da6-474f-afdc-0b27fef5e9f1",
+			"id": "b72a6a14-a7a0-4160-a2d1-5b016a42ff77",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "cef53464-79f2-43ee-a0d9-ec316f1b5951",
+			"id": "2152aa84-c084-438e-a9ca-d500d6da73d7",
 			"key": "iterationCount",
 			"value": ""
 		}
