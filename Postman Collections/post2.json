@@ -16,12 +16,7 @@
 							"pm.test(\"Program Module POST request - Status code is 201\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
 							"});\r",
-							"const iterationCount = pm.info.iterationCount;\r",
-							"console.log(iterationCount);\r",
-							"const currentIteration = pm.info.iteration;\r",
-							"console.log(currentIteration);\r",
-							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
-							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
+							"\r",
 							"const response = pm.response.json();\r",
 							"console.log(response);\r",
 							"\r",
@@ -42,8 +37,13 @@
 							"    pm.response.to.have.status(500);\r",
 							"});\r",
 							"}\r",
-							"\r",
-							"//let currentIteration = pm.collectionVariables.get(\"currentIteration\");\r",
+							"// to create work flow to run the post request alone in the collection\r",
+							"const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
+							"const currentIteration = pm.info.iteration;\r",
+							"console.log(currentIteration);\r",
+							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
+							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
 							"if (currentIteration <= (iterationCount-1)){\r",
 							"    postman.setNextRequest(\"Create Create\");\r",
 							"}\r",
@@ -2528,12 +2528,12 @@
 	],
 	"variable": [
 		{
-			"id": "90fb283d-9700-4330-a186-4d66ad03b610",
+			"id": "c4000a5f-64f8-43e1-ba25-120e45560f97",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "5da026a3-fc91-4abb-89c6-b76d16fdacf6",
+			"id": "f47ab1fd-2373-46e4-be45-16272f8db3ac",
 			"key": "iterationCount",
 			"value": ""
 		}
