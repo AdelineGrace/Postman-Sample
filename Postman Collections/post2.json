@@ -18,6 +18,8 @@
 							"});\r",
 							"const iterationCount = pm.info.iterationCount;\r",
 							"console.log(iterationCount);\r",
+							"const currentIteration = pm.info.iteration;\r",
+							"console.log(currentIteration);\r",
 							"const response = pm.response.json();\r",
 							"console.log(response);\r",
 							"\r",
