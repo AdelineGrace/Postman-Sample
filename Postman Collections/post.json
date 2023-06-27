@@ -528,7 +528,7 @@
 							"const adminUser = response.find(user => user.role.roleName === \"ROLE_ADMIN\");\r",
 							"if (adminUser) {\r",
 							"    pm.globals.set(\"AdminRoleId\", adminUser.role.roleId);\r",
-							"    console.log(adminUser.role.roleId);\r",
+							"   \r",
 							"}\r",
 							"\r",
 							"const studentUser = response.find(user => user.role.roleName === \"ROLE_STUDENT\");\r",
