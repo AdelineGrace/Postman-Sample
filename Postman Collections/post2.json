@@ -43,7 +43,7 @@
 							"});\r",
 							"}\r",
 							"\r",
-							"let currentIteration = pm.collectionVariables.get(\"currentIteration\");\r",
+							"//let currentIteration = pm.collectionVariables.get(\"currentIteration\");\r",
 							"if (currentIteration <= (iterationCount-1)){\r",
 							"    postman.setNextRequest(\"Create Create\");\r",
 							"}\r",
@@ -2528,12 +2528,12 @@
 	],
 	"variable": [
 		{
-			"id": "f3148261-96bf-465f-a49c-abd1a5fc297d",
+			"id": "72f54175-32d6-44e2-ab57-3a1451cc0373",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "b9e7210c-88e1-4f70-b7c9-614297967155",
+			"id": "4666519e-86a1-4d65-93e3-3bf7e6487a44",
 			"key": "iterationCount",
 			"value": ""
 		}
