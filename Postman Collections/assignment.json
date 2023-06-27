@@ -382,13 +382,14 @@
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
 							"\r",
 							"const assignmentName = [Java, Python, Selenium, TestNG, Cucumber, SQL];\r",
+							"pm.environment.set(\"assignmentName\", [\"a\",\"b\"]);\r",
 							"const assignmentDescription = [\r",
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the basics of Python\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"    \"This assignment is to understand the TestNg Annotations\",\r",
-							"    \"This assignment is to understand the  test case implementation in Cucumber\"\r",
-							"\r",
+							"    \"This assignment is to understand the  test case implementation in Cucumber\",\r",
+							"    \"This assignment is to understand the  SQL concepts\"\r",
 							"]\r",
 							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
@@ -398,11 +399,7 @@
 							"var assignmentDueDate = new Date(dateNow.setDate(dateNow.getDate() + 14)).toISOString();\r",
 							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSZ\"))*/\r",
 							"//postman.setEnvironmentVariable(\"future-date\", twoWeeksFutureDate);\r",
-							"if (pm.request.assignmentName = \"Java\") then\r",
-							"\r",
-							"switch (pm.request.assignmentName = \"Java\")\r",
-							"const assignmentDescArray = \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\";\r",
-							"else if ()"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -626,31 +623,31 @@
 	],
 	"variable": [
 		{
-			"id": "8d5f6b56-64fc-41e6-b061-d9f70a9842f0",
+			"id": "c6a0273b-025b-42d2-a4d9-ca4541264e32",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "3e2a0960-d9b8-470d-896e-2471dbe49d20",
+			"id": "2655047d-d64c-4f7e-86af-ab0df3339135",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "b000d66b-52a9-497d-bc10-e32d1c2d52e9",
+			"id": "6d6e344e-a20e-4ad5-91a5-444d5009781f",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "7b924a94-3224-4292-bf4d-d7b898601ee4",
+			"id": "838a816c-614f-4d50-9e99-5ee304690df8",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "0ba1d554-a4ed-4cc4-8490-f2cf62a16d7d",
+			"id": "a3a8c153-c5d6-4e4f-80ed-e1c0d788b5e0",
 			"key": "dueDate",
 			"value": ""
 		}
