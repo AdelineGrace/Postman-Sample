@@ -905,7 +905,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"programDescription\": \"2023 June API HAckathon \",\r\n  \"programId\": 1851,\r\n  \"programName\": \"Jun23-Postman Pros-DA-289907_UpdatedWithID\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
+					"raw": "{\r\n  \"programDescription\": \"2023 June API HAckathon \",\r\n  \"programId\": {{programId_SDET}},\r\n  \"programName\": \"{{programName}}_UpdatedWithID\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -924,7 +924,7 @@
 					"variable": [
 						{
 							"key": "programId",
-							"value": "1851"
+							"value": "{{programId_SDET}}"
 						}
 					]
 				}
@@ -2043,6 +2043,62 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "Message: Program Id-3842 is deleted Successfully!"
+				},
+				{
+					"id": "5f7161bd-bb30-4288-a0dd-0a4823143e57",
+					"name": "Delete by ProgramId",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/deletebyprogid/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"deletebyprogid",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "4230"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Jun 2023 04:22:04 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Message: Program Id-4230 is deleted Successfully!"
 				}
 			]
 		},
