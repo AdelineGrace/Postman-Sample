@@ -384,6 +384,7 @@
 					"script": {
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
+							"\r",
 							"var moment = require('moment')\r",
 							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))\r",
 							"\r",
@@ -1170,13 +1171,13 @@
 	],
 	"variable": [
 		{
-			"id": "a55a83d1-c486-4ace-a476-47c11e90be77",
+			"id": "163cb6c6-23ff-4529-8d4d-bb6f79e8dd1c",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f2b973b7-4585-4ad4-ae61-e2c28cbaa1f3",
+			"id": "877a6450-021c-4529-8869-c3f7f1612499",
 			"key": "submissionDateTime",
 			"value": ""
 		}
