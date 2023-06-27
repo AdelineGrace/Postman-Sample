@@ -16,7 +16,7 @@
 							"pm.test(\"Program Module POST request - Status code is 201\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
 							"});\r",
-							"\r",
+							"const iterationCount = pm.info.iterationCount;\r",
 							"const response = pm.response.json();\r",
 							"console.log(response);\r",
 							"\r",
