@@ -929,6 +929,32 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "1357d138-ba2f-4b7f-b5fc-fb79efb16a58",
+						"exec": [
+							"/ Get the current date and time\r",
+							"const currentDate = new Date();\r",
+							"\r",
+							"// Get the due date from the global variable\r",
+							"const dueDate = pm.globals.get(\"dueDate\");\r",
+							"\r",
+							"// Compare the current date with the due date\r",
+							"if (currentDate < new Date(dueDate)) {\r",
+							"    // Set the grade value as -1 as a placeholder\r",
+							"    pm.request.body.grades[0].grade = -1;\r",
+							"    \r",
+							"    // Log a message indicating that grading is not allowed yet\r",
+							"    console.log(\"Grading is not allowed before the due date.\");\r",
+							"    \r",
+							"    // Abort the request\r",
+							"    pm.request.abort();\r",
+							"}"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "b16dba30-a6d7-4a06-aa4a-9afd9da3bf02",
@@ -940,7 +966,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[    {\r\n        \"submissionId\":{{submissionId}},\r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"U19\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 2\r\n    }]",
+					"raw": "[    {\r\n        \"submissionId\":{{submissionId}},\r\n        \"assignmentId\": 10,\r\n        \"userId\": \"U19\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 2\r\n    }]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -960,7 +986,7 @@
 					"variable": [
 						{
 							"key": "submissionId",
-							"value": "{{submissionId}}"
+							"value": ""
 						}
 					]
 				}
@@ -1098,13 +1124,13 @@
 	],
 	"variable": [
 		{
-			"id": "24f574cc-cab3-4713-a17d-ca6f8a4a87b5",
+			"id": "9268bb7f-64ba-444d-9207-4c2857a4878c",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ada1752e-e89c-4852-95d1-51b0c063ae4b",
+			"id": "1367bcd1-dd61-4d6f-9d59-97f030610616",
 			"key": "submissionDateTime",
 			"value": ""
 		}
