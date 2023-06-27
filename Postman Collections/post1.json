@@ -68,7 +68,7 @@
 					"script": {
 						"id": "a0090f91-7fc3-4617-b1f1-2c7603d25cea",
 						"exec": [
-							"pm.test(\"Program Batch Get all Batches : Status code is 200\", function () {\r",
+							"pm.test(\"Get all Batches : Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
