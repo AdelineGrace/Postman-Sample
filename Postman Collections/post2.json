@@ -345,7 +345,7 @@
 					"variable": [
 						{
 							"key": "pid",
-							"value": "{{programId_DA}}"
+							"value": "{{programId}}"
 						}
 					]
 				}
