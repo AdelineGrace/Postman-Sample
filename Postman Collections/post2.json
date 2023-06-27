@@ -1480,13 +1480,14 @@
 							"console.log(response);\r",
 							"\r",
 							"const reqBody = JSON.parse(pm.request.body.raw);\r",
-							"console.log(reqBody);\r",
-							"\r",
-							"if (pm.reqBody.programName.has(\"SDET\")){\r",
+							"//console.log(reqBody);\r",
+							"//console.log(reqBody.programName);\r",
+							"if (reqBody.programName.has(\"SDET\")){\r",
 							"pm.globals.set(\"programId_SDET\", response.programId);\r",
 							"}\r",
-							"else\r",
-							"pm.globals.set(\"programId_DA\", response.programId)"
+							"else if(reqBody.programName.has(\"DA\"))\r",
+							"pm.globals.set(\"programId_DA\", response.programId)\r",
+							""
 						],
 						"type": "text/javascript"
 					}
