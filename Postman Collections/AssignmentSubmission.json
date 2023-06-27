@@ -935,7 +935,7 @@
 					"script": {
 						"id": "1357d138-ba2f-4b7f-b5fc-fb79efb16a58",
 						"exec": [
-							"/ Get the current date and time\r",
+							"//Get the current date and time\r",
 							"const currentDate = new Date();\r",
 							"\r",
 							"// Get the due date from the global variable\r",
@@ -1124,13 +1124,13 @@
 	],
 	"variable": [
 		{
-			"id": "9268bb7f-64ba-444d-9207-4c2857a4878c",
+			"id": "89725452-bab3-4616-8924-30bce8e83112",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1367bcd1-dd61-4d6f-9d59-97f030610616",
+			"id": "378844a3-4bd4-4513-9c77-407f9ac72404",
 			"key": "submissionDateTime",
 			"value": ""
 		}
