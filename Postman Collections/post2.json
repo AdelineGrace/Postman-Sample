@@ -1466,6 +1466,7 @@
 							"});\r",
 							"\r",
 							"const response = pm.response.json();\r",
+							"console.log(response);\r",
 							"pm.globals.set(\"programId_SDET\", response.programId);\r",
 							"pm.globals.set(\"programId_DA\", response.programId)"
 						],
