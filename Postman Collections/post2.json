@@ -41,7 +41,17 @@
 							"pm.test(\"Program Module POST request - Status code is 500\", function () {\r",
 							"    pm.response.to.have.status(500);\r",
 							"});\r",
-							"}"
+							"}\r",
+							"\r",
+							"let currentIteration = pm.collectionVariables.get(\"currentIteration\");\r",
+							"if (currentIteration <= (iterationCount-1)){\r",
+							"    postman.setNextRequest(\"Create Create\");\r",
+							"}\r",
+							"else{\r",
+							"    postman.setNextRequest(\"Create Program with Null Status\");\r",
+							"}\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -77,6 +87,93 @@
 				"url": "{{BaseUrl}}//saveprogram"
 			},
 			"response": []
+		},
+		{
+			"name": "Create Program with Null Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "25de3194-ba62-4207-a517-1290372f73cf",
+						"exec": [
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ba8c4c3b-e7db-4a99-8e4a-56da52979c63",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}/saveprogram"
+			},
+			"response": [
+				{
+					"id": "e94fb104-e29b-4d60-b5a3-b4a91f8dae0e",
+					"name": "500 Error ProgStatus Null",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BaseUrl}}/saveprogram"
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 01:42:38 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"timestamp\": \"2023-06-25T01:42:38.765+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"path\": \"/lms/saveprogram\"\n}"
+				}
+			]
 		},
 		{
 			"name": "Post Program with Existing ProgramName",
@@ -176,93 +273,6 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"message\": \"cannot create program , since already exists\",\n    \"success\": false\n}"
-				}
-			]
-		},
-		{
-			"name": "500 Error ProgStatus Null",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "25de3194-ba62-4207-a517-1290372f73cf",
-						"exec": [
-							"pm.test(\"Status code is 500\", function () {\r",
-							"    pm.response.to.have.status(500);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "ba8c4c3b-e7db-4a99-8e4a-56da52979c63",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": " {\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"\"\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}/saveprogram"
-			},
-			"response": [
-				{
-					"id": "e94fb104-e29b-4d60-b5a3-b4a91f8dae0e",
-					"name": "500 Error ProgStatus Null",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": " {\r\n  \"programDescription\": \"June 2023 API Hackathon\",\r\n  \"programName\": \"Jun23-Postman Pros-DA-{{serialNumber}}\",\r\n  \"programStatus\": \"\"\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{BaseUrl}}/saveprogram"
-					},
-					"status": "Internal Server Error",
-					"code": 500,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 01:42:38 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"timestamp\": \"2023-06-25T01:42:38.765+00:00\",\n    \"status\": 500,\n    \"error\": \"Internal Server Error\",\n    \"path\": \"/lms/saveprogram\"\n}"
 				}
 			]
 		},
@@ -2518,12 +2528,12 @@
 	],
 	"variable": [
 		{
-			"id": "88068408-96b4-450f-a7c2-e2c5cd0bcf22",
+			"id": "f3148261-96bf-465f-a49c-abd1a5fc297d",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "ef14396e-8251-440e-8de1-1b996e277737",
+			"id": "b9e7210c-88e1-4f70-b7c9-614297967155",
 			"key": "iterationCount",
 			"value": ""
 		}
