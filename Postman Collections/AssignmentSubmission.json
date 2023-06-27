@@ -844,12 +844,19 @@
 							"    return;\r",
 							"}\r",
 							"\r",
+							"if (!requestBody || !requestBody[0]) {\r",
+							"    console.log('Request body is missing or empty.');\r",
+							"    return;\r",
+							"}\r",
+							"\r",
 							"var submission = requestBody[0];\r",
 							"\r",
+							"if (!submission.subDateTime || !submission.assignmentId || !submission.userId || !submission.subDesc) {\r",
+							"    console.log('Mandatory fields are missing in the request body.');\r",
+							"    return;\r",
+							"}\r",
+							"\r",
 							"var subDateTime = submission.subDateTime;\r",
-							"var assignmentId = pm.globals.get('assignmentId');\r",
-							"var userId = submission.userId;\r",
-							"var subDesc = submission.subDesc;\r",
 							"\r",
 							"if (new Date(subDateTime) >= new Date(dueDate)) {\r",
 							"    // Assignment submission is not allowed after the due date\r",
@@ -857,15 +864,8 @@
 							"    return;\r",
 							"}\r",
 							"\r",
-							"// Set the mandatory fields in the request body\r",
-							"submission.subDateTime = subDateTime;\r",
-							"submission.assignmentId = assignmentId;\r",
-							"submission.userId = userId;\r",
-							"submission.subDesc = subDesc;\r",
-							"\r",
 							"// Update the request body with the modified submission object\r",
 							"pm.request.body.raw = JSON.stringify(requestBody);\r",
-							"\r",
 							"\r",
 							"\r",
 							"\r",
@@ -887,7 +887,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 504,\r\n    \"userId\": \"U21\",\r\n    \"subDesc\": \"Submissions for SQL assignment updated\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"06-26-2023 03:55:47\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
+					"raw": "{\r\n    \"assignmentId\": 1045,\r\n    \"userId\": \"U21\",\r\n    \"subDesc\": \"Submissions for SQL assignment updated\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"06-26-2023 03:55:47\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -906,7 +906,7 @@
 					"variable": [
 						{
 							"key": "Id",
-							"value": "504"
+							"value": "1045"
 						}
 					]
 				}
@@ -1124,13 +1124,13 @@
 	],
 	"variable": [
 		{
-			"id": "2f046875-b671-4821-a1e6-46651dc74929",
+			"id": "7d51bd04-c2fc-4a73-ade2-a94adcffbe43",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "34dd8a5b-79c6-4d92-ae40-3690a287546d",
+			"id": "4179cc3d-111c-4426-ad7a-d55d1347fc10",
 			"key": "submissionDateTime",
 			"value": ""
 		}
