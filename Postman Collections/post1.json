@@ -30,7 +30,7 @@
 							"pm.globals.set(\"batchId\", response.batchId);\r",
 							"pm.globals.set(\"batchName\", request.batchName);\r",
 							"\r",
-							"var batchID=response.batchId;\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
