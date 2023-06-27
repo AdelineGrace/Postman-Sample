@@ -568,11 +568,7 @@
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"const response = pm.response.json();\r",
 							"\r",
-							"const Staff = response.filter((user)=> user.role.roleId === \"R02\");\r",
-							"console.log(Staff)\r",
-							"pm.globals.set(\"StaffId\", Staff[0].user.userId);\r",
 							""
 						],
 						"type": "text/javascript"
