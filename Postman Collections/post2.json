@@ -311,7 +311,7 @@
 			]
 		},
 		{
-			"name": "One ProgramId using Path Variable",
+			"name": "Get ProgramId",
 			"event": [
 				{
 					"listen": "test",
