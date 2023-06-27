@@ -156,7 +156,7 @@
 					"script": {
 						"id": "604ce27d-7709-4311-9de2-eee58edef600",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Get Batch By Id - Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
