@@ -345,7 +345,7 @@
 					"variable": [
 						{
 							"key": "pid",
-							"value": "{{programId}}"
+							"value": "{{programId_DA}}"
 						}
 					]
 				}
@@ -410,7 +410,7 @@
 			]
 		},
 		{
-			"name": "Get Program by InvalidId",
+			"name": "Get by InvalidId ProgramId",
 			"event": [
 				{
 					"listen": "test",
