@@ -44,8 +44,7 @@
 							"console.log(iterationCount);\r",
 							"const currentIteration = (pm.info.iteration);\r",
 							"console.log(currentIteration);\r",
-							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
-							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
+							"\r",
 							"\r",
 							""
 						],
@@ -58,7 +57,22 @@
 						"id": "e3d63e48-adf0-42b5-b3e9-75f9d501b11f",
 						"exec": [
 							"const serialNo = Math.floor(Math.random()* 1000);\r",
-							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
+							"\r",
+							"// to create work flow to run the post request alone in the collection\r",
+							"const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
+							"const currentIteration = (pm.info.iteration);\r",
+							"console.log(currentIteration);\r",
+							"let currentIterationValue = (currentIteration+1);\r",
+							"console.log(currentIterationValue);\r",
+							"\r",
+							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
+							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
+							"\r",
+							"if (currentIterationValue <= iterationCount){\r",
+							"    postman.setNextRequest(\"Create Program\");    \r",
+							"}"
 						],
 						"type": "text/javascript"
 					}
@@ -2567,12 +2581,12 @@
 	],
 	"variable": [
 		{
-			"id": "1626f80c-fc89-4b01-b258-0f4bf46417ab",
+			"id": "c0200a73-8fec-4b4f-baa1-60d8abfbda09",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "a58b42fb-7db0-48f9-9efa-a4c8b10d9d51",
+			"id": "ded788e2-8c2a-487a-a1a8-301e6238c0d3",
 			"key": "currentIteration",
 			"value": ""
 		}
