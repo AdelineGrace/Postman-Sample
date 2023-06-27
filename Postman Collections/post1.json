@@ -446,12 +446,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/batchName/:batchName",
-					"protocol": "https",
+					"raw": "{{BaseUrl}}/lms/batches/batchName/:batchName",
 					"host": [
-						"lms-api-hackathon-june2023-930a8b0f895d",
-						"herokuapp",
-						"com"
+						"{{BaseUrl}}"
 					],
 					"path": [
 						"lms",
@@ -462,7 +459,7 @@
 					"variable": [
 						{
 							"key": "batchName",
-							"value": "{{batchName}}"
+							"value": null
 						}
 					]
 				}
