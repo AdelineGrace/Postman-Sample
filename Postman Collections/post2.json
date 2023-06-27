@@ -45,7 +45,7 @@
 							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
 							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
 							"if (currentIteration <= (iterationCount-1)){\r",
-							"    postman.setNextRequest(\"Create Create\");\r",
+							"    postman.setNextRequest(\"Create Program\");\r",
 							"}\r",
 							"else{\r",
 							"    postman.setNextRequest(\"Create Program with Null Status\");\r",
@@ -2528,12 +2528,12 @@
 	],
 	"variable": [
 		{
-			"id": "c4000a5f-64f8-43e1-ba25-120e45560f97",
+			"id": "65d117ea-9900-4e12-bef8-ec4d89951ff7",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "f47ab1fd-2373-46e4-be45-16272f8db3ac",
+			"id": "4e65304d-c9fb-41a0-9de2-65efb084e766",
 			"key": "iterationCount",
 			"value": ""
 		}
