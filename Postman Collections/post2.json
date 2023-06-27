@@ -29,6 +29,10 @@
 							"}\r",
 							"else if(reqBody.programName.has(\"DA\"))\r",
 							"pm.globals.set(\"programId_DA\", response.programId)\r",
+							"\r",
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});\r",
 							""
 						],
 						"type": "text/javascript"
@@ -248,7 +252,7 @@
 					"script": {
 						"id": "1c9f0d76-7efc-4806-96a3-759b1cb5661b",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Get All Programs - Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							""
@@ -998,7 +1002,7 @@
 			]
 		},
 		{
-			"name": "404 Error with Invalid ProgramId",
+			"name": "Update by Invalid Program Id",
 			"event": [
 				{
 					"listen": "test",
@@ -1115,7 +1119,7 @@
 			]
 		},
 		{
-			"name": "400 Error Bad Request for Missing Required Field",
+			"name": "Update Program by Missing field",
 			"event": [
 				{
 					"listen": "test",
@@ -1139,7 +1143,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"programDescription\": \"2023 June API HAckathon \",\r\n  \"programId\": 1851,\r\n  \"programName\": \"2023 June API HAckathon\",\r\n  \"programStatus\":  \r\n}\r\n",
+					"raw": "{\r\n  \"programDescription\":\"2023 June API HAckathon\",\r\n  \"programId\": 1851,\r\n  \"programName\": \"2023 June API HAckathon\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2216,6 +2220,20 @@
 		},
 		{
 			"name": "Delete by ProgramName",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1258ef2-af50-4044-ada7-6e5354c54fc4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "e37a578e-b9cc-44a5-90b9-0d1aa9bb0d77",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
