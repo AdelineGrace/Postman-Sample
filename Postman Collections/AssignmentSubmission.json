@@ -341,11 +341,12 @@
 							"var moment = require('moment')\r",
 							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))\r",
 							"\r",
-							"const request = pm.request.body;\r",
-							"const submissiondate = JSON.parse(request).subDateTime\r",
+							"const reqbody = pm.request.body;\r",
+							"const submissiondate = JSON.parse(reqbody).subDateTime\r",
 							"\r",
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
-							"pm.expect(Date.parse({{assignmentDueDate}})).to.be.above(Date.parse(submissiondate))"
+							"pm.expect(Date.parse({{assignmentDueDate}})).to.be.above(Date.parse(submissiondate))\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -1103,13 +1104,13 @@
 	],
 	"variable": [
 		{
-			"id": "e1427339-7123-4af7-83ed-df0f540755c2",
+			"id": "31cd74e8-8ecf-489f-b8e3-4f9fcb8b8e05",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1f37038e-1d39-4d19-9fef-97a87c36ff91",
+			"id": "27309c30-060b-4b59-abec-08d0a183e069",
 			"key": "submissionDateTime",
 			"value": ""
 		}
