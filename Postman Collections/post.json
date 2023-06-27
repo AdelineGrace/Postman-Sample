@@ -527,6 +527,7 @@
 							"\r",
 							"if (response.map(user => user.roleName).includes(\"ROLE_ADMIN\")) {\r",
 							"    pm.globals.set(\"AdminRoleId\", response.map(user => user.roleId));\r",
+							"    console.log(response.map(user => user.roleId))\r",
 							"}\r",
 							"\r",
 							"if (response.map(user => user.roleName).includes(\"ROLE_STUDENT\")) {\r",
