@@ -1579,7 +1579,64 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "f1db24ff-0541-48d2-88a6-515eb7dba4e5",
+					"name": "Delete by Invalid ProgramName",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/deletebyprogname/:programName",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"deletebyprogname",
+								":programName"
+							],
+							"variable": [
+								{
+									"key": "programName",
+									"value": "Jun23-Postman Pros-DA-314482"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 27 Jun 2023 02:18:34 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"no record found with programName\",\n    \"success\": false\n}"
+				}
+			]
 		},
 		{
 			"name": "Post Program using CSV Data",
