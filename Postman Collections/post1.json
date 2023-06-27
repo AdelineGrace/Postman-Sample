@@ -383,7 +383,7 @@
 					"script": {
 						"id": "f2a3c39c-0606-4545-be68-bba0aae76a07",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Get Batch by Name - Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
