@@ -79,7 +79,7 @@
 			"response": []
 		},
 		{
-			"name": "Post Program with Existing ProgramName",
+			"name": "Create Program",
 			"event": [
 				{
 					"listen": "test",
@@ -2518,12 +2518,12 @@
 	],
 	"variable": [
 		{
-			"id": "27563d15-be71-4a4a-9f7c-206d63fa9042",
+			"id": "1f90124a-b85c-45a5-837e-279b265a6821",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "bf2b82c8-0fad-41dc-bcdf-b1585da17510",
+			"id": "cbab657a-d913-4c0f-9ee9-de324b2afc92",
 			"key": "iterationCount",
 			"value": ""
 		}
