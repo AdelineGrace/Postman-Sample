@@ -106,7 +106,10 @@
 						"id": "3971839a-314b-49a3-b4f8-c13b8a005f3a",
 						"exec": [
 							"// to create work flow to run the post request alone in the collection\r",
+							"const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
 							"const currentIteration = (pm.info.iteration);\r",
+							"console.log(currentIteration);\r",
 							"let currentIterationValue = (currentIteration+1);\r",
 							"console.log(currentIterationValue);\r",
 							"\r",
@@ -2564,12 +2567,12 @@
 	],
 	"variable": [
 		{
-			"id": "549ab792-a998-4886-b451-f583b6892c7c",
+			"id": "1626f80c-fc89-4b01-b258-0f4bf46417ab",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "dc8109a7-84a0-47f2-830c-636306ef6930",
+			"id": "a58b42fb-7db0-48f9-9efa-a4c8b10d9d51",
 			"key": "currentIteration",
 			"value": ""
 		}
