@@ -2561,5 +2561,17 @@
 				]
 			}
 		}
+	],
+	"variable": [
+		{
+			"id": "549ab792-a998-4886-b451-f583b6892c7c",
+			"key": "iterationCount",
+			"value": ""
+		},
+		{
+			"id": "dc8109a7-84a0-47f2-830c-636306ef6930",
+			"key": "currentIteration",
+			"value": ""
+		}
 	]
 }
