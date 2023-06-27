@@ -601,7 +601,7 @@
 					"script": {
 						"id": "82b1903b-fbe1-4bdf-b71a-294a5732ade3",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Get Batch by ProgramID - Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});"
 						],
