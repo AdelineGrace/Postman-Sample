@@ -20,7 +20,8 @@
 							"console.log(iterationCount);\r",
 							"const currentIteration = pm.info.iteration;\r",
 							"console.log(currentIteration);\r",
-							"pm.collectionVariables.set(\"currentIteration\",currentIteration)\r",
+							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
+							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
 							"const response = pm.response.json();\r",
 							"console.log(response);\r",
 							"\r",
@@ -2516,7 +2517,7 @@
 	],
 	"variable": [
 		{
-			"id": "6b0a8d88-df60-485c-8b10-676016f2137b",
+			"id": "b0f5dd1e-0fec-42a4-a0df-5f16dfaabc1d",
 			"key": "currentIteration",
 			"value": ""
 		}
