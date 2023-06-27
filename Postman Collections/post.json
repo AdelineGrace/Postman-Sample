@@ -6,123 +6,103 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
-			"item": [],
-			"id": "b34fd1fa-066e-429a-a8c9-f2c619887740"
-		},
-		{
-			"name": "Create 3 Users with CSV",
-			"event": [
+			"name": "CSV",
+			"item": [
 				{
-					"listen": "prerequest",
-					"script": {
-						"id": "5ef53797-93d7-4721-869b-3f14d0921077",
-						"exec": [
-							"const serialNo = Math.floor(Math.random()* 900) + 100;\r",
-							"\r",
-							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
-							"\r",
-							"const randomNumber = _.random(1000000000,9999999999)\r",
-							"\r",
-							"pm.environment.set(\"randomNumber\",randomNumber);\r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "7a12a931-4757-4ef6-b64e-e0afc9e2804a",
-						"exec": [
-							"pm.test(\"Created-201 OK\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});\r",
-							"pm.test(\"Verify the mandatory fields are not null\", function () {\r",
-							"    pm.expect(reqBody.userPhoneNumber).to.not.null;\r",
-							"    pm.expect(reqBody.roleId).to.not.null;\r",
-							"    pm.expect(reqBody.userRoleStatus).to.not.null;\r",
-							"    pm.expect(reqBody.userFirstName).to.not.null;\r",
-							"    pm.expect(reqBody.userLastName).to.not.null;\r",
-							"    pm.expect(reqBody.userTimeZone).to.not.null;\r",
-							"    pm.expect(reqBody.userVisaStatus).to.not.null;\r",
-							"    \r",
-							"    });\r",
-							"\r",
-							"\r",
-							"const AdminUser = pm.request.body;\r",
-							"const AdminId = JSON.parse(AdminUser).userRoleMaps[0].roleId\r",
-							"console.log(AdminUser)\r",
-							"console.log(AdminId);\r",
-							"const response = pm.response.json();\r",
-							"pm.globals.set(\"PhoneNumber\",response.userPhoneNumber)\r",
-							"console.log(response)\r",
-							"if (AdminId ===\"R01\"){\r",
-							"pm.globals.set(\"AdminID\", response.userId);\r",
-							"\r",
-							"pm.test(\"Admin User Created\", () => {\r",
-							"   pm.expect(AdminUser).to.be.an('object');\r",
-							"    pm.expect(AdminId).to.eql(\"R01\");\r",
-							"});}\r",
-							"else if (AdminId ===\"R02\")\r",
-							"{\r",
-							"\r",
-							"pm.globals.set(\"StaffID\", response.userId);\r",
-							"\r",
-							"\r",
-							"pm.test(\"Staff User Created\", () => {\r",
-							"   pm.expect(AdminUser).to.be.an('object');\r",
-							"    pm.expect(AdminId).to.eql(\"R02\");\r",
-							"});}\r",
-							"else if (AdminId ===\"R03\")\r",
-							"{\r",
-							"\r",
-							"pm.globals.set(\"StudentID\", response.userId);\r",
-							"\r",
-							"pm.test(\"Student User Created\", () => {\r",
-							"   pm.expect(AdminUser).to.be.an('object');\r",
-							"    pm.expect(AdminId).to.eql(\"R03\");\r",
-							"});}\r",
-							"else {\r",
-							"    console.error(\"Invalid role ID:\", AdminId);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "1d159d2e-b3be-43c6-b1e5-5b7c158834d8",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"userComments\": \"{{userComments}}\",\r\n  \"userEduPg\": \"{{userEduPg}}\",\r\n  \"userEduUg\": \"{{userEduUg}}\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n   \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"{{userLinkedinUrl}}\",\r\n  \"userLocation\": \"{{userLocation}}\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": \"{{randomNumber}}\",\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"{{roleId}}\",\r\n      \"userRoleStatus\": \"{{userRoleStatus}}\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"{{userTimeZone}}\",\r\n  \"userVisaStatus\": \"{{userVisaStatus}}\"\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
+					"name": "Create 3 Users with CSV",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5ef53797-93d7-4721-869b-3f14d0921077",
+								"exec": [
+									"const serialNo = Math.floor(Math.random()* 900) + 100;\r",
+									"\r",
+									"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
+									"\r",
+									"const randomNumber = _.random(1000000000,9999999999)\r",
+									"\r",
+									"pm.environment.set(\"randomNumber\",randomNumber);\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "7a12a931-4757-4ef6-b64e-e0afc9e2804a",
+								"exec": [
+									"pm.test(\"Created-201 OK\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"pm.test(\"Verify the mandatory fields are not null\", function () {\r",
+									"    pm.expect(reqBody.userPhoneNumber).to.not.null;\r",
+									"    pm.expect(reqBody.roleId).to.not.null;\r",
+									"    pm.expect(reqBody.userRoleStatus).to.not.null;\r",
+									"    pm.expect(reqBody.userFirstName).to.not.null;\r",
+									"    pm.expect(reqBody.userLastName).to.not.null;\r",
+									"    pm.expect(reqBody.userTimeZone).to.not.null;\r",
+									"    pm.expect(reqBody.userVisaStatus).to.not.null;\r",
+									"    \r",
+									"    });\r",
+									"\r",
+									"\r",
+									"const AdminUser = pm.request.body;\r",
+									"const AdminId = JSON.parse(AdminUser).userRoleMaps[0].roleId\r",
+									"console.log(AdminUser)\r",
+									"console.log(AdminId);\r",
+									"const response = pm.response.json();\r",
+									"pm.globals.set(\"PhoneNumber\",response.userPhoneNumber)\r",
+									"console.log(response)\r",
+									"if (AdminId ===\"R01\"){\r",
+									"pm.globals.set(\"AdminID\", response.userId);\r",
+									"\r",
+									"pm.test(\"Admin User Created\", () => {\r",
+									"   pm.expect(AdminUser).to.be.an('object');\r",
+									"    pm.expect(AdminId).to.eql(\"R01\");\r",
+									"});}\r",
+									"else if (AdminId ===\"R02\")\r",
+									"{\r",
+									"\r",
+									"pm.globals.set(\"StaffID\", response.userId);\r",
+									"\r",
+									"\r",
+									"pm.test(\"Staff User Created\", () => {\r",
+									"   pm.expect(AdminUser).to.be.an('object');\r",
+									"    pm.expect(AdminId).to.eql(\"R02\");\r",
+									"});}\r",
+									"else if (AdminId ===\"R03\")\r",
+									"{\r",
+									"\r",
+									"pm.globals.set(\"StudentID\", response.userId);\r",
+									"\r",
+									"pm.test(\"Student User Created\", () => {\r",
+									"   pm.expect(AdminUser).to.be.an('object');\r",
+									"    pm.expect(AdminId).to.eql(\"R03\");\r",
+									"});}\r",
+									"else {\r",
+									"    console.error(\"Invalid role ID:\", AdminId);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
 						}
-					}
-				},
-				"url": "{{BaseUrl}}/users/users/roleStatus"
-			},
-			"response": [
-				{
-					"id": "849018ec-51b4-459f-b7bb-f609eb21e086",
-					"name": "Create New Admin User",
-					"originalRequest": {
+					],
+					"id": "1d159d2e-b3be-43c6-b1e5-5b7c158834d8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"userComments\": \"CreatingUser\",\r\n  \"userEduPg\": \"ME\",\r\n  \"userEduUg\": \"BE\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"Canada\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": 7786056908,\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R01\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"EST\",\r\n  \"userVisaStatus\": \"Canada-Citizen\"\r\n}\r\n",
+							"raw": "{\r\n  \"userComments\": \"{{userComments}}\",\r\n  \"userEduPg\": \"{{userEduPg}}\",\r\n  \"userEduUg\": \"{{userEduUg}}\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n   \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"{{userLinkedinUrl}}\",\r\n  \"userLocation\": \"{{userLocation}}\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": \"{{randomNumber}}\",\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"{{roleId}}\",\r\n      \"userRoleStatus\": \"{{userRoleStatus}}\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"{{userTimeZone}}\",\r\n  \"userVisaStatus\": \"{{userVisaStatus}}\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -131,40 +111,61 @@
 						},
 						"url": "{{BaseUrl}}/users/users/roleStatus"
 					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sat, 24 Jun 2023 04:21:54 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
+							"id": "849018ec-51b4-459f-b7bb-f609eb21e086",
+							"name": "Create New Admin User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userComments\": \"CreatingUser\",\r\n  \"userEduPg\": \"ME\",\r\n  \"userEduUg\": \"BE\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"Canada\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": 7786056908,\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R01\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"EST\",\r\n  \"userVisaStatus\": \"Canada-Citizen\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{BaseUrl}}/users/users/roleStatus"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Cowboy"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 24 Jun 2023 04:21:54 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 vegur"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"userId\": \"U323\",\n    \"userFirstName\": \"PostmanPros_842397\",\n    \"userLastName\": \"Thiel\",\n    \"userMiddleName\": \"Marietta\",\n    \"userPhoneNumber\": 7786056908,\n    \"userLocation\": \"Canada\",\n    \"userTimeZone\": \"EST\",\n    \"userLinkedinUrl\": \"LinkedIn\",\n    \"userEduUg\": \"BE\",\n    \"userEduPg\": \"ME\",\n    \"userComments\": \"CreatingUser\",\n    \"userVisaStatus\": \"Canada-Citizen\"\n}"
 						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"userId\": \"U323\",\n    \"userFirstName\": \"PostmanPros_842397\",\n    \"userLastName\": \"Thiel\",\n    \"userMiddleName\": \"Marietta\",\n    \"userPhoneNumber\": 7786056908,\n    \"userLocation\": \"Canada\",\n    \"userTimeZone\": \"EST\",\n    \"userLinkedinUrl\": \"LinkedIn\",\n    \"userEduUg\": \"BE\",\n    \"userEduPg\": \"ME\",\n    \"userComments\": \"CreatingUser\",\n    \"userVisaStatus\": \"Canada-Citizen\"\n}"
+					]
 				}
-			]
+			],
+			"id": "b34fd1fa-066e-429a-a8c9-f2c619887740"
 		},
 		{
 			"name": "Create New Student User with Invalid Details",
@@ -1647,22 +1648,9 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "195ccf13-8558-499d-bb57-9f34353f8cf0",
+				"id": "13b3408b-e22d-43ba-bfd7-6352eed9249f",
 				"type": "text/javascript",
 				"exec": [
-					"if (pm.environment.get(\"alreadyRun\") == undefined) {",
-					"    pm.environment.set(\"alreadyRun\", true);",
-					"} else {",
-					"    const currentRequest = pm.info.requestName;",
-					"    const csvRequests = [\"Create 3 Users with CSV\"]; ",
-					"",
-					"    if (csvRequests.includes(currentRequest)) {",
-					"      ",
-					"        pm.environment.set(\"alreadyRun\", false);",
-					"    } else {",
-					"        postman.setNextRequest(\"Create New Student User with Invalid Details\");",
-					"    }",
-					"}",
 					""
 				]
 			}
@@ -1670,7 +1658,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "c8965d1c-7ebe-4087-8884-8de0997d5efd",
+				"id": "e9c8208f-bd57-411e-8574-ba7c5c669fde",
 				"type": "text/javascript",
 				"exec": [
 					""
