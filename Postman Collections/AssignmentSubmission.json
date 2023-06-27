@@ -215,7 +215,7 @@
 					"variable": [
 						{
 							"key": "UserID",
-							"value": "U7"
+							"value": "0"
 						}
 					]
 				}
@@ -1097,13 +1097,13 @@
 	],
 	"variable": [
 		{
-			"id": "6024fbc8-7791-4682-8cec-d81b3fe982ca",
+			"id": "af64fe14-8426-48a8-a7f8-e24b31cfcc68",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eaf9d4be-1a07-40ac-a069-68b551baccc2",
+			"id": "a8fa24b6-d4a8-48be-906d-b62a069547ee",
 			"key": "submissionDateTime",
 			"value": ""
 		}
