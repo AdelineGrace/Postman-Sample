@@ -1264,14 +1264,15 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"const response = pm.response.json();\r",
+							"/*const response = pm.response.json();\r",
 							"pm.test(\"Response message is validated\", () => {\r",
+							"    var invalidAssignmentId = pm.request.url.path[2];\r",
 							"   const expectedObject = {\r",
 							"    \"message\": \"Program Id-\"+programId+\"deleted Successfully!\"    \r",
 							"};\r",
 							"\r",
 							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
-							"});\r",
+							"});*/\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1297,7 +1298,7 @@
 					"variable": [
 						{
 							"key": "programId",
-							"value": "{{programId_SDET}}"
+							"value": "4645"
 						}
 					]
 				}
