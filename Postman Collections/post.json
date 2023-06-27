@@ -23,6 +23,7 @@
 							"\r",
 							"\r",
 							"\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -42,6 +43,7 @@
 							"console.log(AdminUser)\r",
 							"console.log(AdminId);\r",
 							"const response = pm.response.json();\r",
+							"pm.globals.set(\"PhoneNumber\",response.userPhoneNumber)\r",
 							"console.log(response)\r",
 							"if (AdminId ===\"R01\"){\r",
 							"pm.globals.set(\"AdminID\", response.userId);\r",
@@ -186,7 +188,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userComments\": \"Creating Student User\",\r\n  \"userEduPg\": \"MSC\",\r\n  \"userEduUg\": \"BSC\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"USA\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": 7775888808,\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R03\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"PST\",\r\n  \"userVisaStatus\": \"H1B\"\r\n}\r\n",
+					"raw": "{\r\n  \"userComments\": \"Creating Student User\",\r\n  \"userEduPg\": \"MSC\",\r\n  \"userEduUg\": \"BSC\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"USA\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": {{PhoneNumber}},\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R03\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"PST\",\r\n  \"userVisaStatus\": \"H1B\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
