@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Create Program",
+			"name": "Post Program",
 			"event": [
 				{
 					"listen": "test",
@@ -79,7 +79,7 @@
 			"response": []
 		},
 		{
-			"name": "Post Program",
+			"name": "Post Program with Existing ProgramName",
 			"event": [
 				{
 					"listen": "test",
@@ -2518,12 +2518,12 @@
 	],
 	"variable": [
 		{
-			"id": "ee257b56-6ccf-428c-9813-d6dc495c5963",
+			"id": "b4b18ffb-c9d9-4a52-ada4-ebce1d14e4a3",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "4dba42fa-2eb6-478b-ba5c-17d422e8cc64",
+			"id": "fbfbed4a-1bbc-4296-8f0f-bc380f4bd115",
 			"key": "iterationCount",
 			"value": ""
 		}
