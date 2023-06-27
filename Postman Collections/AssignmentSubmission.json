@@ -107,7 +107,7 @@
 					"variable": [
 						{
 							"key": "batchID",
-							"value": "100"
+							"value": "0"
 						}
 					]
 				}
@@ -1097,13 +1097,13 @@
 	],
 	"variable": [
 		{
-			"id": "160d7170-477f-4c2f-b882-4b7271e91c78",
+			"id": "6024fbc8-7791-4682-8cec-d81b3fe982ca",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "262a330b-96b6-4599-ad26-bd1cdba72f2e",
+			"id": "eaf9d4be-1a07-40ac-a069-68b551baccc2",
 			"key": "submissionDateTime",
 			"value": ""
 		}
