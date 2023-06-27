@@ -21,10 +21,7 @@
 							"\r",
 							"pm.environment.set(\"randomNumber\",randomNumber);\r",
 							"\r",
-							"pm.iterationData.iterations = 3;\r",
 							"\r",
-							"\r",
-							"pm.iterationData.filePath = \"C:\\Users\\shaun\\OneDrive\\Desktop\\post.csv\";\r",
 							"\r",
 							""
 						],
