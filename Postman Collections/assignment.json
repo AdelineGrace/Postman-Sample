@@ -6,6 +6,133 @@
 	},
 	"item": [
 		{
+			"name": "Create Assignment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ec359da5-1c92-400b-b80c-ce6355c4fb32",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"pm.globals.set(\"assignmentId\", response.assignmentId);\r",
+							"pm.globals.set(\"assignmentDueDate\", response.dueDate);\r",
+							"\r",
+							"const reqBody = JSON.parse(pm.request.body.raw);\r",
+							"// test to check the mandatory fields should not be null, need to validate if the assignment Name is unique)\r",
+							"pm.test(\"Verify the mandatory fields are not null\", function () {\r",
+							"    pm.expect(reqBody.assignmentName).to.not.null;\r",
+							"    pm.expect(reqBody.assignmentDescription).to.not.null;\r",
+							"    pm.expect(reqBody.createdBy).to.not.null;\r",
+							"    pm.expect(reqBody.batchId).to.not.null;\r",
+							"    pm.expect(reqBody.dueDate).to.not.null;\r",
+							"    pm.expect(reqBody.graderId).to.not.null;\r",
+							"    \r",
+							"});\r",
+							"pm.test\r",
+							"\r",
+							"/*var reqBodyDueDate = reqBody.dueDate;\r",
+							"console.log(reqBodyDueDate);*/\r",
+							"\r",
+							"//var moment = require(moment);\r",
+							"/*pm.test(\"Checking data format\", function () {\r",
+							"    pm.expect(reqBodyDueDate).to.include(moment(reqBodyDueDate).format('YYYY-MM-DDTHH:mm:ss:sssZ'));\r",
+							"    pm.expect(reqBodyDueDate).to.match(/^\\d{4}-\\d{2}-\\d{2}\\T\\d{2}:\\d{2}.\\d{3}\\Z$/);\r",
+							"    pm.expect(reqBodyDueDate).to.match(/YYYY-MM-DDTHH:mm:ss:sssZ/);\r",
+							"});*/\r",
+							"\r",
+							"const schema = {\r",
+							"\"type\": \"object\",\r",
+							"\"properties\":{\r",
+							"    \"assignmentId\": {\r",
+							"        \"type\" : \"integer\"\r",
+							"    },\r",
+							"    \"assignmentName\": {\r",
+							"        \"type\" : \"string\"\r",
+							"    },\r",
+							"    \"batchId\": {\r",
+							"        \"type\" : \"integer\"\r",
+							"    },\r",
+							"    \"comments\": {\r",
+							"       \"type\" : \"string\"\r",
+							"    },\r",
+							"    \"createdBy\": {\r",
+							"        \"type\" : \"string\"\r",
+							"    },\r",
+							"    \"dueDate\": {\r",
+							"        \"type\" : \"string\"        \r",
+							"    },\r",
+							"    \"graderId\": {\r",
+							"        \"type\" : \"string\"\r",
+							"    }\r",
+							"}\r",
+							"};\r",
+							"\r",
+							"pm.test(\"Validating schema\", () => {\r",
+							"            pm.response.to.have.jsonSchema(schema);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9d31f758-03c1-455f-b713-895a56ed5d70",
+						"exec": [
+							"//script to create serialnumber at the end of the Assignment as per the Hackathon guidelines\r",
+							"//const serialNo = Math.floor(Math.random()* 1000);\r",
+							"const serialNo = Math.floor(Math.random()* 900) +100;\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
+							"\r",
+							"/*const assignmentName = [Java, Python, Selenium, TestNG, Cucumber, SQL];\r",
+							"pm.environment.set(\"assignmentName\", [\"a\",\"b\"]);\r",
+							"const assignmentDescription = [\r",
+							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
+							"    \"This assignemnt is to understand the basics of Python\",\r",
+							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
+							"    \"This assignment is to understand the TestNg Annotations\",\r",
+							"    \"This assignment is to understand the  test case implementation in Cucumber\",\r",
+							"    \"This assignment is to understand the  SQL concepts\"\r",
+							"]*/\r",
+							"\r",
+							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
+							"const moment = require('moment');\r",
+							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MM.SSZ\"))\r",
+							"/*var dateNow = new Date();  \r",
+							"var assignmentDueDate = new Date(dateNow.setDate(dateNow.getDate() + 14)).toISOString();\r",
+							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSZ\"))*/\r",
+							"//postman.setEnvironmentVariable(\"future-date\", twoWeeksFutureDate);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "51cc30c4-87d3-40b1-a8ad-742628e57b0d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescForJava}}\",\r\n  \"assignmentName\": \"Jun23-PostmanPros-SDET-Java Assignment-{{serialNumber}}\" ,\r\n  \"batchId\": 1,\r\n  \"comments\": \"Test Assignment created by Team3\",\r\n  \"createdBy\": \"U233\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\"\r\n }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}/assignments"
+			},
+			"response": []
+		},
+		{
 			"name": "Get All Assignment",
 			"event": [
 				{
@@ -299,133 +426,6 @@
 			"response": []
 		},
 		{
-			"name": "Create Assignment",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "ec359da5-1c92-400b-b80c-ce6355c4fb32",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});\r",
-							"\r",
-							"const response = pm.response.json();\r",
-							"pm.globals.set(\"assignmentId\", response.assignmentId);\r",
-							"pm.globals.set(\"assignmentDueDate\", response.dueDate);\r",
-							"\r",
-							"const reqBody = JSON.parse(pm.request.body.raw);\r",
-							"// test to check the mandatory fields should not be null, need to validate if the assignment Name is unique)\r",
-							"pm.test(\"Verify the mandatory fields are not null\", function () {\r",
-							"    pm.expect(reqBody.assignmentName).to.not.null;\r",
-							"    pm.expect(reqBody.assignmentDescription).to.not.null;\r",
-							"    pm.expect(reqBody.createdBy).to.not.null;\r",
-							"    pm.expect(reqBody.batchId).to.not.null;\r",
-							"    pm.expect(reqBody.dueDate).to.not.null;\r",
-							"    pm.expect(reqBody.graderId).to.not.null;\r",
-							"    \r",
-							"});\r",
-							"pm.test\r",
-							"\r",
-							"/*var reqBodyDueDate = reqBody.dueDate;\r",
-							"console.log(reqBodyDueDate);*/\r",
-							"\r",
-							"//var moment = require(moment);\r",
-							"/*pm.test(\"Checking data format\", function () {\r",
-							"    pm.expect(reqBodyDueDate).to.include(moment(reqBodyDueDate).format('YYYY-MM-DDTHH:mm:ss:sssZ'));\r",
-							"    pm.expect(reqBodyDueDate).to.match(/^\\d{4}-\\d{2}-\\d{2}\\T\\d{2}:\\d{2}.\\d{3}\\Z$/);\r",
-							"    pm.expect(reqBodyDueDate).to.match(/YYYY-MM-DDTHH:mm:ss:sssZ/);\r",
-							"});*/\r",
-							"\r",
-							"const schema = {\r",
-							"\"type\": \"object\",\r",
-							"\"properties\":{\r",
-							"    \"assignmentId\": {\r",
-							"        \"type\" : \"integer\"\r",
-							"    },\r",
-							"    \"assignmentName\": {\r",
-							"        \"type\" : \"string\"\r",
-							"    },\r",
-							"    \"batchId\": {\r",
-							"        \"type\" : \"integer\"\r",
-							"    },\r",
-							"    \"comments\": {\r",
-							"       \"type\" : \"string\"\r",
-							"    },\r",
-							"    \"createdBy\": {\r",
-							"        \"type\" : \"string\"\r",
-							"    },\r",
-							"    \"dueDate\": {\r",
-							"        \"type\" : \"string\"        \r",
-							"    },\r",
-							"    \"graderId\": {\r",
-							"        \"type\" : \"string\"\r",
-							"    }\r",
-							"}\r",
-							"};\r",
-							"\r",
-							"pm.test(\"Validating schema\", () => {\r",
-							"            pm.response.to.have.jsonSchema(schema);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "9d31f758-03c1-455f-b713-895a56ed5d70",
-						"exec": [
-							"//script to create serialnumber at the end of the Assignment as per the Hackathon guidelines\r",
-							"//const serialNo = Math.floor(Math.random()* 1000);\r",
-							"const serialNo = Math.floor(Math.random()* 900) +100;\r",
-							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
-							"\r",
-							"const assignmentName = [Java, Python, Selenium, TestNG, Cucumber, SQL];\r",
-							"pm.environment.set(\"assignmentName\", [\"a\",\"b\"]);\r",
-							"const assignmentDescription = [\r",
-							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
-							"    \"This assignemnt is to understand the basics of Python\",\r",
-							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
-							"    \"This assignment is to understand the TestNg Annotations\",\r",
-							"    \"This assignment is to understand the  test case implementation in Cucumber\",\r",
-							"    \"This assignment is to understand the  SQL concepts\"\r",
-							"]\r",
-							"\r",
-							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
-							"const moment = require('moment');\r",
-							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MM.SSZ\"))\r",
-							"/*var dateNow = new Date();  \r",
-							"var assignmentDueDate = new Date(dateNow.setDate(dateNow.getDate() + 14)).toISOString();\r",
-							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSZ\"))*/\r",
-							"//postman.setEnvironmentVariable(\"future-date\", twoWeeksFutureDate);\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "51cc30c4-87d3-40b1-a8ad-742628e57b0d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescForJava}}\",\r\n  \"assignmentName\": \"Jun23-PostmanPros-SDET-Java Assignment-{{serialNumber}}\" ,\r\n  \"batchId\": 1,\r\n  \"comments\": \"Test Assignment created by Team3\",\r\n  \"createdBy\": \"U233\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\"\r\n }\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}/assignments"
-			},
-			"response": []
-		},
-		{
 			"name": "Update Assignment",
 			"event": [
 				{
@@ -623,31 +623,31 @@
 	],
 	"variable": [
 		{
-			"id": "9989099a-4abb-4668-ad88-4b09cb1eb50d",
+			"id": "fff4bad5-d198-4093-afd3-fb34523bb3d1",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "111fd720-c847-48d9-a9c1-35fe1104c56c",
+			"id": "d4701cd2-c81a-42d5-b63b-841d8e1d5f43",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "8e993761-b2b8-41ab-bd65-ca22c49b4021",
+			"id": "9d0df365-da3d-4eda-8562-e509f100652d",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "9ee242bf-3229-41fa-b08e-55b652a6eea7",
+			"id": "e6d9fcdb-937b-4620-b786-63d837002b44",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "40539ed4-424f-488c-a329-eac2eb26bbcf",
+			"id": "3e978cad-2c5b-4c3d-b7ec-abdc390baffe",
 			"key": "dueDate",
 			"value": ""
 		}
