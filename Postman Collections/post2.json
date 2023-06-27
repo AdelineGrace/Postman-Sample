@@ -1441,7 +1441,7 @@
 			"response": []
 		},
 		{
-			"name": "Delete by Invalid ProgramId",
+			"name": "Error 404 Delete by Invalid ProgramId",
 			"event": [
 				{
 					"listen": "test",
