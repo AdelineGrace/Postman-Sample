@@ -111,9 +111,6 @@
 							"\r",
 							"if (currentIterationValue <= iterationCount){\r",
 							"    postman.setNextRequest(\"Create Program\");    \r",
-							"}\r",
-							"else{\r",
-							"     postman.setNextRequest(\"Create Program with Null Status\");\r",
 							"}"
 						],
 						"type": "text/javascript"
@@ -2544,12 +2541,12 @@
 	],
 	"variable": [
 		{
-			"id": "cccebbbc-c96d-4343-abfe-c667e4f87578",
+			"id": "7109a9c0-6ee8-46a0-97dd-5aabc0855daa",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "8d991ff4-49b0-4cd1-8134-4e4fb304a14f",
+			"id": "a44041ce-60e5-48a7-8eca-8e1b9b7d453a",
 			"key": "iterationCount",
 			"value": ""
 		}
