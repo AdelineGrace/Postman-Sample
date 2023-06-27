@@ -343,10 +343,9 @@
 							"\r",
 							"const reqbody = pm.request.body;\r",
 							"const submissiondate = JSON.parse(reqbody).subDateTime\r",
-							"var dueDate={{assignmentDueDate}};\r",
+							"\r",
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
-							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
-							"});"
+							"pm.expect(Date.parse({{assignmentDueDate}})).to.be.above(Date.parse(submissiondate))"
 						],
 						"type": "text/javascript"
 					}
@@ -1104,13 +1103,13 @@
 	],
 	"variable": [
 		{
-			"id": "65413ead-6c81-428e-af59-0eec2f6920a6",
+			"id": "13154644-c9ed-4e20-b921-49a4fdaae053",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e4bcb9fd-abb4-4c17-9d45-b22b84c4edc1",
+			"id": "b9321bb8-8b47-4534-9527-1b9f2b0c8abb",
 			"key": "submissionDateTime",
 			"value": ""
 		}
