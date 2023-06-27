@@ -158,7 +158,8 @@
 						"exec": [
 							"const serialNo = Math.floor(Math.random()* 1000000);\r",
 							"\r",
-							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
+							""
 						],
 						"type": "text/javascript"
 					}
