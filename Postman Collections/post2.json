@@ -1115,7 +1115,7 @@
 			]
 		},
 		{
-			"name": "400 Error Bad Request for Missing Required Field",
+			"name": "Update by Missing Program Id",
 			"event": [
 				{
 					"listen": "test",
