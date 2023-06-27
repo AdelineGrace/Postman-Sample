@@ -2513,5 +2513,12 @@
 				}
 			]
 		}
+	],
+	"variable": [
+		{
+			"id": "6b0a8d88-df60-485c-8b10-676016f2137b",
+			"key": "currentIteration",
+			"value": ""
+		}
 	]
 }
