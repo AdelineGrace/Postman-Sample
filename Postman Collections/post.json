@@ -188,7 +188,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userComments\": \"Creating Student User\",\r\n  \"userEduPg\": \"MSC\",\r\n  \"userEduUg\": \"BSC\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"USA\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": 7775888808,\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R03\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"PST\",\r\n  \"userVisaStatus\": \"H1B\"\r\n}\r\n",
+					"raw": "{\r\n  \"userComments\": \"Creating Student User\",\r\n  \"userEduPg\": \"MSC\",\r\n  \"userEduUg\": \"BSC\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"USA\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": {{PhoneNumber}},\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R03\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"PST\",\r\n  \"userVisaStatus\": \"H1B\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -197,58 +197,7 @@
 				},
 				"url": "{{BaseUrl}}/users/users/roleStatus"
 			},
-			"response": [
-				{
-					"id": "fabb5bc9-28fc-4d98-bee1-1832c588c5db",
-					"name": "Create New Student User with Invalid Details",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"userComments\": \"Creating Student User\",\r\n  \"userEduPg\": \"MSC\",\r\n  \"userEduUg\": \"BSC\",\r\n  \"userFirstName\": \"PostmanPros_{{serialNumber}}\",\r\n  \"userId\": \"U{{$randomInt}}\",\r\n  \"userLastName\": \"{{$randomLastName}}\",\r\n  \"userLinkedinUrl\": \"LinkedIn\",\r\n  \"userLocation\": \"USA\",\r\n  \"userMiddleName\": \"{{$randomFirstName}}\",\r\n  \"userPhoneNumber\": 7775888808,\r\n  \"userRoleMaps\": [\r\n    {\r\n      \"roleId\": \"R03\",\r\n      \"userRoleStatus\": \"Active\"\r\n    }\r\n  ],\r\n  \"userTimeZone\": \"PST\",\r\n  \"userVisaStatus\": \"H1B\"\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{BaseUrl}}/users/users/roleStatus"
-					},
-					"status": "Bad Request",
-					"code": 400,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sat, 24 Jun 2023 02:40:52 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"message\": \"Failed to create new User as phone number 7775888808 already exists !!\",\n    \"success\": false\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Get All Users",
