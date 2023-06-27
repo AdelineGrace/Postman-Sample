@@ -524,7 +524,7 @@
 							"});\r",
 							"const response = pm.response.json();\r",
 							"\r",
-							"console.log(AdminRoleId)\r",
+							"\r",
 							"if (response.map(user => user.roleName).includes(\"ROLE_ADMIN\")) {\r",
 							"    pm.globals.set(\"AdminRoleId\", response.map(user => user.roleId));\r",
 							"}\r",
