@@ -233,7 +233,22 @@
 						}
 					}
 				},
-				"url": "{{BaseUrl}}/saveprogram"
+				"url": {
+					"raw": "{{BaseUrl}}/saveprogram/:pragramName",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"saveprogram",
+						":pragramName"
+					],
+					"variable": [
+						{
+							"key": "pragramName",
+							"value": "Jun23-PostmanPros-DA-388"
+						}
+					]
+				}
 			},
 			"response": [
 				{
@@ -2562,12 +2577,12 @@
 	],
 	"variable": [
 		{
-			"id": "7ef16c3f-1352-4b76-b394-e5899f66a61f",
+			"id": "aaf1de8f-1b44-4bcc-98a8-107b9d0516e3",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "778f8bcb-89fe-428c-afea-bd26c018949e",
+			"id": "455f43d8-0711-4ead-8e6c-aff9f3b524d2",
 			"key": "currentIteration",
 			"value": ""
 		}
