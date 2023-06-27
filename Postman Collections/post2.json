@@ -764,7 +764,7 @@
 			]
 		},
 		{
-			"name": "400 Bad Request Missing Field",
+			"name": "Update by Missing Program Name",
 			"event": [
 				{
 					"listen": "prerequest",
