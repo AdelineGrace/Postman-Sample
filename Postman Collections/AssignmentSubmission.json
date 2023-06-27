@@ -53,6 +53,54 @@
 			"response": []
 		},
 		{
+			"name": "Get Assignment by",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cebd2ddc-59de-452c-bd91-79a46c66d728",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "0e784c58-0c8b-4a43-9ce1-3e859ec5317b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/grades/:batchID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"grades",
+						":batchID"
+					],
+					"variable": [
+						{
+							"id": "0b3a2a25-8e0e-4f0f-9405-d9ee2b243752",
+							"key": "batchID",
+							"value": "{{batchId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Grades by Invalid BatchID",
 			"event": [
 				{
@@ -1124,13 +1172,13 @@
 	],
 	"variable": [
 		{
-			"id": "7d51bd04-c2fc-4a73-ade2-a94adcffbe43",
+			"id": "7895f41a-9385-4320-a84a-e683eefdd480",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4179cc3d-111c-4426-ad7a-d55d1347fc10",
+			"id": "97df27de-fc87-419d-9fc7-435e8f3488d4",
 			"key": "submissionDateTime",
 			"value": ""
 		}
