@@ -68,7 +68,7 @@
 			"response": [
 				{
 					"id": "967100ba-99c7-445f-823c-c04708fb2478",
-					"name": "Create/Save Prog1",
+					"name": "Post Program 1",
 					"originalRequest": {
 						"method": "POST",
 						"header": [],
