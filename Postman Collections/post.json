@@ -1632,9 +1632,22 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "637d6a15-fcc2-44cb-812f-fb187151cf9d",
+				"id": "195ccf13-8558-499d-bb57-9f34353f8cf0",
 				"type": "text/javascript",
 				"exec": [
+					"if (pm.environment.get(\"alreadyRun\") == undefined) {",
+					"    pm.environment.set(\"alreadyRun\", true);",
+					"} else {",
+					"    const currentRequest = pm.info.requestName;",
+					"    const csvRequests = [\"Create 3 Users with CSV\"]; ",
+					"",
+					"    if (csvRequests.includes(currentRequest)) {",
+					"      ",
+					"        pm.environment.set(\"alreadyRun\", false);",
+					"    } else {",
+					"        postman.setNextRequest(\"Create New Student User with Invalid Details\");",
+					"    }",
+					"}",
 					""
 				]
 			}
@@ -1642,7 +1655,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "31d35370-ed46-4ef1-804f-df8ba89b2ec8",
+				"id": "c8965d1c-7ebe-4087-8884-8de0997d5efd",
 				"type": "text/javascript",
 				"exec": [
 					""
