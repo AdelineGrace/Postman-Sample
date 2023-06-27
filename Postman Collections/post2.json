@@ -6,66 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Create Program",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "77f468ab-7309-4f3d-9603-70c7e027b502",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});\r",
-							"\r",
-							"const response = pm.response.json();\r",
-							"console.log(response);\r",
-							"\r",
-							"const reqBody = JSON.parse(pm.request.body.raw);\r",
-							"//console.log(reqBody);\r",
-							"//console.log(reqBody.programName);\r",
-							"if (reqBody.programName.has(\"SDET\")){\r",
-							"pm.globals.set(\"programId_SDET\", response.programId);\r",
-							"}\r",
-							"else if(reqBody.programName.has(\"DA\"))\r",
-							"pm.globals.set(\"programId_DA\", response.programId)\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "e3d63e48-adf0-42b5-b3e9-75f9d501b11f",
-						"exec": [
-							"const serialNo = Math.floor(Math.random()* 1000);\r",
-							"pm.environment.set(\"serialNumber\", serialNo.toString());"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "ff67ea18-2f81-4054-bb2e-beb4d2849336",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"programDescription\": \"{{programDescription}}\",\r\n  \"programName\": \"{{programName}}{{serialNumber}}\",\r\n  \"programStatus\": \"{{programStatus}}\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}//saveprogram"
-			},
-			"response": []
-		},
-		{
 			"name": "400 Error Prog already exists",
 			"event": [
 				{
@@ -1483,6 +1423,66 @@
 					"body": "{\n    \"message\": \"no record found with programName\",\n    \"success\": false\n}"
 				}
 			]
+		},
+		{
+			"name": "Post Program using CSV Data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77f468ab-7309-4f3d-9603-70c7e027b502",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"console.log(response);\r",
+							"\r",
+							"const reqBody = JSON.parse(pm.request.body.raw);\r",
+							"//console.log(reqBody);\r",
+							"//console.log(reqBody.programName);\r",
+							"if (reqBody.programName.has(\"SDET\")){\r",
+							"pm.globals.set(\"programId_SDET\", response.programId);\r",
+							"}\r",
+							"else if(reqBody.programName.has(\"DA\"))\r",
+							"pm.globals.set(\"programId_DA\", response.programId)\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e3d63e48-adf0-42b5-b3e9-75f9d501b11f",
+						"exec": [
+							"const serialNo = Math.floor(Math.random()* 1000);\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ff67ea18-2f81-4054-bb2e-beb4d2849336",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"programDescription\": \"{{programDescription}}\",\r\n  \"programName\": \"{{programName}}{{serialNumber}}\",\r\n  \"programStatus\": \"{{programStatus}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}//saveprogram"
+			},
+			"response": []
 		}
 	]
 }
