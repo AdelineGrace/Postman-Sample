@@ -2539,16 +2539,26 @@
 			]
 		}
 	],
-	"variable": [
+	"event": [
 		{
-			"id": "7109a9c0-6ee8-46a0-97dd-5aabc0855daa",
-			"key": "currentIteration",
-			"value": ""
+			"listen": "prerequest",
+			"script": {
+				"id": "06f257ea-f2c7-42c7-8717-e0912e63ba51",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		},
 		{
-			"id": "a44041ce-60e5-48a7-8eca-8e1b9b7d453a",
-			"key": "iterationCount",
-			"value": ""
+			"listen": "test",
+			"script": {
+				"id": "ccf567aa-d4d4-45e1-8a09-80a1c2a0cd88",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
