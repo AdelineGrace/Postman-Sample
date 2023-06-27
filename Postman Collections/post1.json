@@ -847,7 +847,7 @@
 			]
 		},
 		{
-			"name": "Update Batch",
+			"name": "Update Batch by Batch Id",
 			"id": "a8692441-7738-4afa-add8-21134b9ba2de",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
