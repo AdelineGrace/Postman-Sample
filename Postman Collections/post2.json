@@ -2216,6 +2216,20 @@
 		},
 		{
 			"name": "Delete by ProgramName",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c1258ef2-af50-4044-ada7-6e5354c54fc4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "e37a578e-b9cc-44a5-90b9-0d1aa9bb0d77",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
