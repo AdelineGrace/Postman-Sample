@@ -879,20 +879,6 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
-							"// Parse the request body as JSON\r",
-							"var requestBody;\r",
-							"\r",
-							"try {\r",
-							"    requestBody = JSON.parse(pm.request.body.raw);\r",
-							"} catch (error) {\r",
-							"    console.log('Error parsing request body as JSON:', error);\r",
-							"    return;\r",
-							"}\r",
-							"\r",
-							"if (!requestBody || !requestBody[0]) {\r",
-							"    console.log('Request body is missing or empty.');\r",
-							"    return;\r",
-							"}\r",
 							"\r",
 							"// Get the assignment ID from the request body\r",
 							"var assignmentId = requestBody[0].assignmentId;\r",
@@ -1198,13 +1184,13 @@
 	],
 	"variable": [
 		{
-			"id": "a4b70d81-6fc3-4670-a493-abc5498b9ea8",
+			"id": "fbce3fa4-e756-4579-b8a8-c32ffb090248",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b42723d8-4c42-4b29-b15f-8ceb13afd68b",
+			"id": "224993fb-667e-4ed8-b72f-4c40702d039e",
 			"key": "submissionDateTime",
 			"value": ""
 		}
