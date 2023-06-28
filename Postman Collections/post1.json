@@ -32,7 +32,7 @@
 							"const response = pm.response.json();\r",
 							"\r",
 							"pm.globals.set(\"batchId\", response.batchId);\r",
-							"pm.globals.set(\"batchName\", response.batchName);\r",
+							"pm.globals.set(\"BatchName\", response.batchName);\r",
 							"console.log(response.batchId);\r",
 							"console.log(response.batchName);\r",
 							"\r",
