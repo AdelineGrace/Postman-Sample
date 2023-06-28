@@ -1132,22 +1132,22 @@
 	],
 	"variable": [
 		{
-			"id": "de541418-bad2-4e1d-ac27-5e32bd21ec6c",
+			"id": "67e4f09f-6e1d-4490-a277-7c92e41a746c",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "6b844900-57d1-4503-b181-fd0c375ad7dd",
+			"id": "87f56c6c-1782-40bc-9717-763ede8f2978",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "27cd8557-768c-482d-8a9a-fa8f189bcbd1",
+			"id": "f312a292-5b9b-4829-8916-092234d19fc3",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "665d58dd-be3d-48e7-b906-5751c8406bc4",
+			"id": "191193f8-843f-40e7-8cb4-b9b79d4f3008",
 			"key": "batchDescription",
 			"value": ""
 		}
