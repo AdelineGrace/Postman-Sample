@@ -621,7 +621,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "553be096-4260-4672-b664-797368b69828",
+				"id": "b287b59c-a380-4c43-b4d6-003e4ee47630",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -631,7 +631,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7cbe8c25-7ec8-430b-bdb5-a78d5b83f5ba",
+				"id": "2820e8a9-6e4c-4c25-b6e3-d2959b44ed02",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -641,41 +641,46 @@
 	],
 	"variable": [
 		{
-			"id": "55c60592-0373-4d2a-b78d-d7b15754d8ef",
+			"id": "e1c9e17b-50a5-46ae-8e31-d6a5477f0aae",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
-			"type": "string"
+			"type": "string",
+			"disabled": true
 		},
 		{
-			"id": "df4558e9-c7bb-47de-8191-352d0944de73",
+			"id": "4366fa8e-f98c-41ad-8d3c-43ab29d7061a",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
-			"type": "string"
+			"type": "string",
+			"disabled": true
 		},
 		{
-			"id": "292aceff-4ef4-46e5-ab47-7b907631305b",
+			"id": "f0d689a0-a46b-4254-8e9a-455badd9d3d3",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
-			"type": "string"
+			"type": "string",
+			"disabled": true
 		},
 		{
-			"id": "70460f13-bf8a-4ece-97be-0daa60240121",
+			"id": "9b08bab9-26ef-41cf-8b1a-cc73c0b56022",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
-			"type": "string"
+			"type": "string",
+			"disabled": true
 		},
 		{
-			"id": "048beaf5-d312-4fbe-8ee5-39458b4c9eb2",
+			"id": "a84dfa36-1290-46c6-ad95-4c972bda467d",
 			"key": "dueDate",
-			"value": ""
+			"value": "",
+			"disabled": true
 		},
 		{
-			"id": "8f027127-1ce8-40dd-85c5-5058c7f290cc",
+			"id": "a5a37cb3-77b9-4f35-b550-e29b1f627764",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "04bad985-1fc6-4394-bd41-23a4fec3ba57",
+			"id": "84bb7eca-0ea8-462d-96a4-69af6907c1d0",
 			"key": "iterationCount",
 			"value": ""
 		}
