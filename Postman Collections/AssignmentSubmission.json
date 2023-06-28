@@ -431,7 +431,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 1951,\r\n    \"userId\": \"U3980\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"String\",\r\n    \"gradedBy\": \"U76\",\r\n    \"gradedDateTime\": \"String\",\r\n    \"grade\": -1\r\n}",
+					"raw": "{\r\n  \"assignmentId\": 1951,\r\n  \"grade\": 0,\r\n  \"gradedBy\": \"string\",\r\n  \"gradedDateTime\": {\r\n    \"date\": 0,\r\n    \"hours\": 0,\r\n    \"minutes\": 0,\r\n    \"month\": 0,\r\n    \"nanos\": 0,\r\n    \"seconds\": 0,\r\n    \"time\": 0,\r\n    \"year\": 0\r\n  },\r\n  \"subComments\": \"string\",\r\n  \"subDateTime\": {\r\n    \"date\": 28,\r\n    \"hours\": 12,\r\n    \"minutes\": 0,\r\n    \"month\": 6,\r\n    \"nanos\": 0,\r\n    \"seconds\": 0,\r\n    \"time\": 0,\r\n    \"year\": 2023\r\n  },\r\n  \"subDesc\": \"string\",\r\n  \"subPathAttach1\": \"string\",\r\n  \"subPathAttach2\": \"string\",\r\n  \"subPathAttach3\": \"string\",\r\n  \"subPathAttach4\": \"string\",\r\n  \"subPathAttach5\": \"string\",\r\n  \"submissionId\": 0,\r\n  \"userId\": \"U4467\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1286,18 +1286,18 @@
 	],
 	"variable": [
 		{
-			"id": "2fd029a5-8f63-453f-a035-85c2118b9f78",
+			"id": "0fd906e8-92a9-4c1f-bdf7-2db6bacd6693",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f1f59f50-99f8-42bb-a1fb-f51639f8632c",
+			"id": "035a2f52-7b18-4466-a6ea-78711578be94",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "df919c21-d268-42a1-925f-499be89e9ca2",
+			"id": "87ab1f78-2eab-44b3-9cf6-2f594ab749bd",
 			"key": "subDateTime",
 			"value": ""
 		}
