@@ -86,7 +86,7 @@
 							"};\r",
 							"\r",
 							"pm.test(\"Validating schema\", () => {\r",
-							"            pm.response.to.have.jsonSchema(schema);\r",
+							"    pm.response.to.have.jsonSchema(schema);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -641,31 +641,31 @@
 	],
 	"variable": [
 		{
-			"id": "7d227c22-c2ea-4112-bb55-6db522f6660f",
+			"id": "4d6c496b-8e41-4a5d-9cf8-e61a7f8a55ae",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "771d91e6-d716-4914-9956-7c91263c616f",
+			"id": "24334c13-8d10-4203-931c-fe1e8efd90d4",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "2ea4619d-c81b-4244-a346-1adb65e20a30",
+			"id": "17467b89-ad80-4731-9bda-30a17096a00a",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "b778808a-b905-4a8c-a74b-e0340d8bf1d8",
+			"id": "c43adef9-8913-4d9a-91b6-5bbfde5e5524",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "b541f365-78cf-4c79-bdef-dc52c46eb39f",
+			"id": "cacae30d-d399-4139-a711-57a2a770d083",
 			"key": "dueDate",
 			"value": ""
 		}
