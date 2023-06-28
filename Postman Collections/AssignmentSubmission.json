@@ -893,7 +893,7 @@
 							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
 							"\r",
 							"\r",
-							"        var body : Body;\r",
+							"        var body: Body;\r",
 							"        var submission = body.subDateTime;\r",
 							"        var subDateTime = submission.subDateTime;\r",
 							"\r",
@@ -1165,13 +1165,13 @@
 	],
 	"variable": [
 		{
-			"id": "8c85be8f-13a7-4235-b346-46743905f2ba",
+			"id": "16cc3af9-8355-426d-bac9-c75ef7dbc2b5",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c9d6ed36-493f-4727-9740-75a5ca035506",
+			"id": "4287d8ab-d358-47c9-a67e-decbb3dbf195",
 			"key": "submissionDateTime",
 			"value": ""
 		}
