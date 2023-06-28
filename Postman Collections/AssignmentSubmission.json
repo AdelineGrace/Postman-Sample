@@ -889,10 +889,33 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
+							"const loginRequest = {\r",
+							"    url: 'http://example.com/login',\r",
+							"    method: 'PUT',\r",
+							"    header: 'Content-Type: application/json',\r",
+							"    body: {\r",
+							"        mode: 'application/json',\r",
+							"        raw: {\r",
+							"            \"assignmentId\": 292,\r",
+							"            \"userId\": \"U234\",\r",
+							"            \"subDesc\": \"Assignment submission by U234 updated\",\r",
+							"            \"subComments\": \"Resubmitted successfully\",\r",
+							"            \"subPathAttach1\": \"file1.json\",\r",
+							"            \"subPathAttach2\": \"file2.json\",\r",
+							"            \"subPathAttach3\": \"file3.json\",\r",
+							"            \"subPathAttach4\": \"file4.json\",\r",
+							"            \"subPathAttach5\": \"file5.json\",\r",
+							"            \"subDateTime\": \"06-26-2023 21:24:49\",\r",
+							"            \"gradedBy\": \"U1172\",\r",
+							"            \"gradedDateTime\": \"06-26-2023 21:24:52\",\r",
+							"            \"grade\": 2\r",
+							"    }\r",
+							"}\r",
+							"\r",
 							"// Get the assignment ID from the request URL\r",
 							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
 							"\r",
-							"var submission = Body[0];\r",
+							"var submission = loginRequest.subDateTime;\r",
 							"var subDateTime = submission.subDateTime;\r",
 							"\r",
 							"var dueDate = \"2023-06-26T22:02:28.140+00:00\"; // Update with the actual due date from the assignment details\r",
@@ -1164,13 +1187,13 @@
 	],
 	"variable": [
 		{
-			"id": "10329635-8e99-4f9d-a050-6dd709fcf065",
+			"id": "4b7019c0-14ff-4208-b6b9-ebd31a4e2383",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dec467c3-b96f-4464-87bb-1c78dc9caca3",
+			"id": "b76e41a2-3759-4590-b398-73507badfe61",
 			"key": "submissionDateTime",
 			"value": ""
 		}
