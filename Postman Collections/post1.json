@@ -29,7 +29,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"const requestbody = pm.request.json();\r",
+							"const requestbody=pm.request.body.raw;\r",
 							"const response = pm.response.json();\r",
 							"\r",
 							"pm.globals.set(\"batchId\", response.batchId);\r",
