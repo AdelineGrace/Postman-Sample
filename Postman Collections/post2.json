@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "458bbd44-8ec5-40c2-b66b-346f06cbed07",
-		"name": "Program Module",
+		"name": "ProgramModule",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -2576,12 +2576,12 @@
 	],
 	"variable": [
 		{
-			"id": "eb642742-e2a7-4f20-987c-ec08e770aabc",
+			"id": "6b442579-62d9-4b0f-9f73-df47f9ffcd07",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "4c7c2a0b-4bc8-4f37-bce6-402329b4afce",
+			"id": "d170671e-7e45-48dc-8b69-1889f22d9c01",
 			"key": "currentIteration",
 			"value": ""
 		}
