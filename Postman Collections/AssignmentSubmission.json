@@ -431,14 +431,29 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentId\": 1951,\r\n  \"grade\": -1,\r\n  \"gradedBy\": \"string\",\r\n  \"gradedDateTime\": {\r\n    \"date\": 0,\r\n    \"hours\": 0,\r\n    \"minutes\": 0,\r\n    \"month\": 0,\r\n    \"nanos\": 0,\r\n    \"seconds\": 0,\r\n    \"time\": 0,\r\n    \"year\": 0\r\n  },\r\n  \"subComments\": \"string\",\r\n  \"subDateTime\": {\r\n    \"date\": 28,\r\n    \"hours\": 12,\r\n    \"minutes\": 0,\r\n    \"month\": 6,\r\n    \"nanos\": 0,\r\n    \"seconds\": 0,\r\n    \"time\": 0,\r\n    \"year\": 2023\r\n  },\r\n  \"subDesc\": \"string\",\r\n  \"subPathAttach1\": \"string\",\r\n  \"subPathAttach2\": \"string\",\r\n  \"subPathAttach3\": \"string\",\r\n  \"subPathAttach4\": \"string\",\r\n  \"subPathAttach5\": \"string\",\r\n  \"userId\": \"U4467\"\r\n}",
+					"raw": "{\r\n    \"assignmentId\": 1951,\r\n    \"userId\": \"U3980\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"String\",\r\n    \"gradedBy\": \"U76\",\r\n    \"gradedDateTime\": \"String\",\r\n    \"grade\": -1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{BaseUrl}}/assignmentsubmission"
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						":Id"
+					],
+					"variable": [
+						{
+							"key": "Id",
+							"value": null
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -1286,18 +1301,18 @@
 	],
 	"variable": [
 		{
-			"id": "7a7182ee-495f-4373-b5e0-90ec4ddc6ea0",
+			"id": "e205238d-6332-48ef-b2d8-1affabd143f8",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8f11454-f070-48d6-b671-3b00dba8a8d0",
+			"id": "a91f6898-18df-4cb6-85db-cd8373afd1ef",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "1136d4d7-63a1-4e11-900d-883aedb27adf",
+			"id": "52851dc2-1175-4c49-9e25-459d1e6b948c",
 			"key": "subDateTime",
 			"value": ""
 		}
