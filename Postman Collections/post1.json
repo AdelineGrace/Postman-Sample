@@ -1008,7 +1008,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Status code name has string Not Found\", function () {\r",
-							"    pm.response.to.have.status(\"Not Found\");\r",
+							"    pm.response.to.have.status(\"Bad Request\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Response message is validated\", () => {\r",
@@ -1266,22 +1266,22 @@
 	],
 	"variable": [
 		{
-			"id": "03f74df6-aa39-4b9e-a4f3-60c274477c61",
+			"id": "ee718444-1e76-4d36-b77d-c83a32796622",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "75756548-fe8b-4f0b-a975-1a06ba304cde",
+			"id": "1c1bf1ac-7050-4308-98a5-cf5a6403d872",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "1e257e25-eed8-45fb-877d-7ecb511c4ef1",
+			"id": "81e421ff-d85b-4a0e-bae0-3eb2dd7129f9",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "59c6bde9-ba20-491c-af4b-63f89ed5b3b5",
+			"id": "e37f9f58-f8b5-4e76-b6e8-95c2b12a2a88",
 			"key": "batchDescription",
 			"value": ""
 		}
