@@ -889,8 +889,8 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
-							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
-							"var requestBody = JSON.parse(pm.request.body.raw);\r",
+							"//var assignmentId = pm.variables.get(\"assignmentId\");\r",
+							"//var assignmentId = JSON.parse(pm.request.body.raw);\r",
 							"\r",
 							"var requestBody = JSON.parse(pm.request.body.raw);\r",
 							"\r",
@@ -1163,13 +1163,13 @@
 	],
 	"variable": [
 		{
-			"id": "768820ab-21e2-43ca-9e94-1d8c8ba2dec1",
+			"id": "61078902-8c0b-40d4-9526-962c36694491",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fff236ef-8225-42a5-ae4b-69f995d532be",
+			"id": "d8c7500f-1391-4fad-a149-2b25cc1ca698",
 			"key": "submissionDateTime",
 			"value": ""
 		}
