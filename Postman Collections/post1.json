@@ -895,6 +895,20 @@
 		},
 		{
 			"name": "Update Batch by Batch Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6b83ddc9-a09c-4299-b385-11462564acb3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "a8692441-7738-4afa-add8-21134b9ba2de",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -1132,22 +1146,22 @@
 	],
 	"variable": [
 		{
-			"id": "660597e3-4fea-4fd0-88f8-c295efe9986e",
+			"id": "f219e73a-1ed1-43b2-a877-31b56b12cae4",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "e512b4e0-c0ce-4adc-bec3-615d0a49e689",
+			"id": "0a7aa01a-7d98-43d8-a9b6-193bc975dab1",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "0666bff6-8f35-4729-b13c-e4b218cf2e53",
+			"id": "473b6447-e2c1-488c-89af-c1faefe1daa0",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "2bf4997a-bfaf-4a8a-9ddd-e49ef9bf8ef0",
+			"id": "20ead48c-25e7-4b7a-9023-f90260b0bebc",
 			"key": "batchDescription",
 			"value": ""
 		}
