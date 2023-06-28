@@ -1005,7 +1005,7 @@
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
 							"var moment = require('moment');\r",
-							"var DueDate = pm.globals.get(\"dueDate\");\r",
+							"var DueDate = pm.collectionVariables.get(\"dueDate\");\r",
 							"var submissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
 							"\r",
 							"if (Date.parse(DueDate) > Date.parse(submissionDateTime)) {\r",
@@ -1277,18 +1277,18 @@
 	],
 	"variable": [
 		{
-			"id": "094eda6d-d578-4ea6-a51d-3680da1b50f9",
+			"id": "ec9afaec-ddb5-4da9-9384-d05ef425ac72",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8be28112-c9bf-4924-a6fc-f9c4afdaa9d3",
+			"id": "8f3f299f-6bc5-41ab-8f96-c2004e934029",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "1be6f0bb-5e96-4e7d-8242-80d6b55a9d20",
+			"id": "6ec48f1a-96de-4ff3-8df4-c497b2f23c0f",
 			"key": "subDateTime",
 			"value": ""
 		}
