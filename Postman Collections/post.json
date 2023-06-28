@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "1b8b248e-9b55-4534-adf4-4462d08f9836",
-		"name": "User Module",
+		"name": "UserModule",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -1812,22 +1812,22 @@
 	],
 	"variable": [
 		{
-			"id": "b4398611-56ea-4469-98c8-cfb56dd473c2",
+			"id": "ef3d5049-0a8b-4ca7-a839-5df00573c2a9",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "5a17b32a-5380-42f8-8bb7-5fd632578eb9",
+			"id": "b4594729-a7dc-4030-91b1-874379f3bb72",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "176edcab-7d4f-4e76-a437-f2831518af52",
+			"id": "a0ca2f4e-c402-4142-aa83-e8cfff5a74d7",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "ae2f7859-1f8d-4954-a2b1-6e6a2eb660e3",
+			"id": "767252ab-da25-498e-940e-6aaae695f8f0",
 			"key": "submissionDateTime",
 			"value": ""
 		}
