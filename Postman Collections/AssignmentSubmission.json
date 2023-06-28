@@ -1108,14 +1108,20 @@
 					"script": {
 						"id": "1357d138-ba2f-4b7f-b5fc-fb79efb16a58",
 						"exec": [
-							"//Get the current date and time\r",
-							"const currentDate = new Date();\r",
+							"var moment = require('moment');\r",
+							"var dueDate = moment().add(7, 'days').format(\"YYYY-MM-DDTHH:MM.SSSZ\")\r",
+							"pm.globals.get(\"assignmentDueDate\");\r",
+							"var submissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
 							"\r",
+							"\r",
+							"//Get the current date and time\r",
+							"//const currentDate = new Date();\r",
+							"//console.log(currentDate)\r",
 							"// Get the due date from the global variable\r",
-							"const dueDate = pm.globals.get(\"dueDate\");\r",
+							"//const dueDate = pm.globals.get(\"dueDate\");\r",
 							"\r",
 							"// Compare the current date with the due date\r",
-							"if (currentDate < new Date(dueDate)) {\r",
+							"if (submissionDateTime < new Date(dueDate)) {\r",
 							"    // Set the grade value as -1 as a placeholder\r",
 							"    pm.request.body.grades[0].grade = -1;\r",
 							"    \r",
@@ -1297,18 +1303,18 @@
 	],
 	"variable": [
 		{
-			"id": "f447d631-c268-4db3-ae7f-82dd2b34083a",
+			"id": "03a3f4a8-6f28-481b-b246-8d3d81baf5f6",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2d4b1793-eafb-4e7d-aa9a-09b9811b887b",
+			"id": "0ec87421-b772-4092-881c-f7c4aa6e8faa",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "16010b6c-203b-4cfb-b4f5-ab7fcb909a83",
+			"id": "a1bb3dc7-3e7f-47bb-879f-201f03ebf1a4",
 			"key": "subDateTime",
 			"value": ""
 		}
