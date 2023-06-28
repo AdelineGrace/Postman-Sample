@@ -24,14 +24,14 @@
 					"script": {
 						"id": "ba0b61a5-f1af-441d-b46e-4629bcdda8e2",
 						"exec": [
-							"const request = pm.request.json();\r",
+							"const requestbody = pm.request.json();\r",
 							"pm.test(\"Create Batch - Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"const response = pm.response.json();\r",
 							"\r",
 							"pm.globals.set(\"batchId\", response.batchId);\r",
-							"pm.globals.set(\"batchName\", request.batchName);\r",
+							"pm.globals.set(\"batchName\", requestbody.batchName);\r",
 							"\r",
 							"\r",
 							""
