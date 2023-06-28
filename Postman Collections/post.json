@@ -1672,114 +1672,6 @@
 					"body": "Deleted User ID:  U909"
 				}
 			]
-		},
-		{
-			"name": "{{BaseUrl}}/assignmentsubmission/:Id",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "4c9fc880-996b-4634-a45e-a7c8f3d2a162",
-						"exec": [
-							"\r",
-							"var moment = require('moment');\r",
-							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
-							"var submissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
-							"\r",
-							"if (Date.parse(dueDate) > Date.parse(submissionDateTime)) {\r",
-							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
-							"}\r",
-							"\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "3e044067-f0be-481f-9e2f-81104e3064fb",
-						"exec": [
-							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
-							"\r",
-							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
-							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "27d6a352-2023-422d-9292-2fd688fd40fc",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 292,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Submissions for SQL assignment updated\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{subDateTime}}\",\r\n    \"gradedBy\": \"{{StaffID}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": -1\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"assignmentsubmission",
-						":Id"
-					],
-					"variable": [
-						{
-							"key": "Id",
-							"value": "292"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "{{BaseUrl}}/assignmentsubmission",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "918ded1c-aff2-4768-8432-f6ee78069d04",
-						"exec": [
-							"var moment = require('moment')\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "dfa5afa3-f87f-4103-bad2-f04381403bfe",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 786,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": -1\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}/assignmentsubmission"
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -1806,22 +1698,22 @@
 	],
 	"variable": [
 		{
-			"id": "b2ff428a-9337-46c3-b474-65449ed3ac56",
+			"id": "67384c93-53e0-412c-a99f-4dac2cf07802",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "f486e629-6f15-44e2-a4cf-e7e03ed1a3b5",
+			"id": "92929398-0fea-44af-b94f-d1db863f46dc",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "397d1c4a-3130-4dc9-96c2-20e5db80a3e4",
+			"id": "a5b0d206-8eef-4069-bf46-66b74c17b24b",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "8a860efe-15d4-46d4-8349-5e24ba8402f0",
+			"id": "1a26a497-4b03-4ea2-9d4c-56070018919b",
 			"key": "submissionDateTime",
 			"value": ""
 		}
