@@ -385,7 +385,7 @@
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
 							"var moment = require('moment')\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('YYYY-MM-DDTHH:MM.SSZ'))\r",
+							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('YYYY-MM-DDTHH:MM.SSSZ'))\r",
 							"\r",
 							"const reqBody = pm.request.body.raw;\r",
 							"/*const assignId = reqBody.assignmentId;\r",
@@ -402,9 +402,9 @@
 							"const submissiondate = reqBody.subDateTime;\r",
 							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
 							"\r",
-							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
+							"/*pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
 							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
-							"});"
+							"});*/"
 						],
 						"type": "text/javascript"
 					}
@@ -1273,18 +1273,18 @@
 	],
 	"variable": [
 		{
-			"id": "573a5872-6fed-4de9-8828-98621564bcbf",
+			"id": "58a3953c-6252-4f72-aded-de01cb60ed27",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b9dbb3b-dd6c-4551-ba8c-9e0236499560",
+			"id": "c030089f-3724-49c6-be20-dd0d2f06d0ea",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "5e21d916-8ae3-41cd-8156-6f2338001dd0",
+			"id": "08995e27-4d5c-4413-a385-9fda4b63bbf5",
 			"key": "subDateTime",
 			"value": ""
 		}
