@@ -14,7 +14,26 @@
 						"id": "625d88b8-993d-4bc1-9ca6-634e1647045d",
 						"exec": [
 							"const serialNo = Math.floor(Math.random()* 900)+ 100;\r",
-							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
+							"\r",
+							"//to store batch description in access it based on the assignment name in requestbody\r",
+							"\r",
+							"pm.collectionVariables.set(\"assignmentName\", pm.iterationData.get('assignmentName'));\r",
+							"let nameofAssignment = pm.collectionVariables.get(\"assignmentName\");\r",
+							"console.log(nameofAssignment);\r",
+							"\r",
+							"const assignmentDescriptions = [\r",
+							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
+							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
+							"]\r",
+							"if (nameofAssignment == \"Jun23-PostmanPros-SDET-Java Assignment-\"){\r",
+							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[0]);\r",
+							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));    \r",
+							"}\r",
+							"else if(nameofAssignment == \"Jun23-PostmanPros-SDET-Selenium Assignment-\"){\r",
+							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[1]);\r",
+							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
+							"}"
 						],
 						"type": "text/javascript"
 					}
@@ -1113,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "61faf66f-227d-45fe-9547-a773d6d73821",
+			"id": "9a3bc46f-2941-4a39-974e-10826d67c219",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "b2f4bd60-c412-4305-8384-30f157b478dc",
+			"id": "4f26d0fb-6ab5-47ef-93ed-7286628fdddf",
 			"key": "iterationCount",
 			"value": ""
 		}
