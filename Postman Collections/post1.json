@@ -37,11 +37,11 @@
 							"\r",
 							"//to store batch no of class and access it based on the assignment name in requestbody\r",
 							"\r",
-							"pm.collectionVariables.set(\"batchName\", pm.iterationData.get('batchName'));\r",
+							"pm.collectionVariables.set(\"batchNoOfClasses\", pm.iterationData.get('batchName'));\r",
 							"let nameofbatchName = pm.collectionVariables.get(\"batchName\");\r",
 							"console.log(nameofbatchName);\r",
 							"\r",
-							"const batchDescriptions = [\r",
+							"const batchNoOfClasses = [\r",
 							"    \"This batch is for SDET batch 81\",\r",
 							"    \"This batch is for DA batch 65\",\r",
 							"]\r",
@@ -52,8 +52,7 @@
 							"else if(nameofbatchName == \"Jun23-PostmanPros-DA-DA65-\"){\r",
 							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[1]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
-							"}\r",
-							""
+							"}"
 						],
 						"type": "text/javascript"
 					}
@@ -1152,22 +1151,22 @@
 	],
 	"variable": [
 		{
-			"id": "e4eae57c-25e7-4f3e-983a-5cf0ccb9dc0e",
+			"id": "0941a0ac-7fea-404a-89ba-7cb1497a9689",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "31c6566d-37f5-4cac-b2ee-6f9efdcf8560",
+			"id": "30a6e6a0-a183-4c94-9efb-b636b57efddc",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "f56fc190-90cb-42ae-9501-00a8fca7f0d0",
+			"id": "d14299e2-2136-48af-8c9d-5532fc57b3e7",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "9143c4e2-9e3f-460e-9e4c-c24eecbe8bb0",
+			"id": "53c1a1de-93d9-47db-bcba-793ae8205387",
 			"key": "batchDescription",
 			"value": ""
 		}
