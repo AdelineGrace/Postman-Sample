@@ -18,11 +18,11 @@
 							"\r",
 							"//to store batch description in access it based on the assignment name in requestbody\r",
 							"\r",
-							"pm.collectionVariables.set(\"assignmentName\", pm.iterationData.get('assignmentName'));\r",
-							"let nameofAssignment = pm.collectionVariables.get(\"assignmentName\");\r",
-							"console.log(nameofAssignment);\r",
+							"pm.collectionVariables.set(\"batchName\", pm.iterationData.get('batchName'));\r",
+							"let nameofbatchName = pm.collectionVariables.get(\"batchName\");\r",
+							"console.log(nameofbatchName);\r",
 							"\r",
-							"const assignmentDescriptions = [\r",
+							"const batchDescriptions = [\r",
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "9a3bc46f-2941-4a39-974e-10826d67c219",
+			"id": "ba0a3afe-b9a8-441a-8434-be8c19d012c2",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "4f26d0fb-6ab5-47ef-93ed-7286628fdddf",
+			"id": "acf04d0e-2a40-460c-b8fb-9fadc5a6c76a",
 			"key": "iterationCount",
 			"value": ""
 		}
