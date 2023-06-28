@@ -48,7 +48,7 @@
 							"}\r",
 							"else\r",
 							"{\r",
-							"    postman.setNextRequest(\"Create Batch with Null Status\");\r",
+							"    postman.setNextRequest(\"Create Batch with Null Values\");\r",
 							"}\r",
 							"\r",
 							"\r",
@@ -99,7 +99,7 @@
 						"id": "ba0b61a5-f1af-441d-b46e-4629bcdda8e2",
 						"exec": [
 							"\r",
-							"pm.test(\"Create Batch with Null - Status code is 400\", function () {\r",
+							"pm.test(\"Create Batch with Null Values- Status code is 400\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
 							"});\r",
 							"\r",
@@ -1113,12 +1113,12 @@
 	],
 	"variable": [
 		{
-			"id": "1dd1aebd-494a-4668-816f-4c55af1124ef",
+			"id": "35a40d08-864c-4e9c-8d88-6da0f8f6a7ba",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "5cd9d58e-dd3f-4fb2-8eba-45b2fe234fd8",
+			"id": "94fcd80a-0d6e-4313-8209-daf43c82f2ed",
 			"key": "iterationCount",
 			"value": ""
 		}
