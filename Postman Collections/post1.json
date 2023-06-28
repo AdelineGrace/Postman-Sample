@@ -26,7 +26,7 @@
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
-							"if (nameofbatchName == \"Jun23-PostmanPros-SDET-Java Assignment-\"){\r",
+							"if (nameofbatchName == \"Jun23-PostmanPros-SDET-SDET81-\"){\r",
 							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[0]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));    \r",
 							"}\r",
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "1054274f-82bd-48b8-af0d-2ccad195df7e",
+			"id": "2c42e68a-c09d-4464-b1be-c5bf36d75294",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "94055c93-e8c2-4abe-a101-88119f2d2722",
+			"id": "d21cabaa-250b-4bbb-8484-5d4efcbd7068",
 			"key": "iterationCount",
 			"value": ""
 		}
