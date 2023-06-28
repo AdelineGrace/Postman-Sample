@@ -124,11 +124,11 @@
 							"]\r",
 							"if (nameofAssignment == \"Jun23-PostmanPros-SDET-Java Assignment-\"){\r",
 							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[0]);\r",
-							"    console.log(pm.collectionVariables.get(assignmentDescription));    \r",
+							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));    \r",
 							"}\r",
 							"else if(nameofAssignment == \"Jun23-PostmanPros-SDET-Selenium Assignment-\"){\r",
 							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[1]);\r",
-							"    console.log(pm.collectionVariables.get(assignmentDescription));\r",
+							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
 							"}\r",
 							"\r",
 							"//CreatedBy  - Should be Admin / Staff , Only active users can create assignment\r",
@@ -659,61 +659,61 @@
 	],
 	"variable": [
 		{
-			"id": "c019b8a9-83f3-4257-ab70-2bedc744bdf1",
+			"id": "203a950d-0966-4211-bfc2-0c05b70d7a9a",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "b4c854ae-98cb-4461-85bf-017cfdfea854",
+			"id": "6f5169a5-ea22-40d0-bdca-10eb732c9e45",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "d829e18f-46ab-4b56-8c3b-03b45371e52c",
+			"id": "0d9bda1e-4221-4f37-8c16-98c8d96bcfd4",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "92dbbaef-c7fd-4b1c-9ea8-afc0113e2c02",
+			"id": "b1412591-8114-4556-b723-256d8e73aedd",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "aa4d0648-1ebb-4921-99b3-44be9f280d10",
+			"id": "849aa8b5-cd96-4198-a2e0-61dcb7ade2c3",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "eb900e2b-2692-43b8-9670-771e5deddbfe",
+			"id": "26ecff86-ad25-44eb-a2c7-9d27733000ae",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "a9bf4503-c581-4dde-b57e-c6df5b63c6ae",
+			"id": "67ac2a23-1dff-4005-96a0-9cd2670117e9",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "674d5fe6-6332-47d9-9158-6add4af18f94",
+			"id": "f8f9d4f0-791d-4adc-a910-31c4aa3b9e6b",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "6b5df310-70a9-42af-ae41-ec173ca32648",
+			"id": "6e63f7cc-f8f0-4718-8028-9f104aa77e38",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "1e2ea46b-b7ef-4a4d-960d-b61608b33d96",
+			"id": "6a7640f4-4225-426c-82b9-7e77a5bfbe6d",
 			"key": "assignmentDescription",
 			"value": ""
 		}
