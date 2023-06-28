@@ -65,6 +65,7 @@
 							"console.log(response)\r",
 							"if (AdminId ===\"R01\"){\r",
 							"pm.globals.set(\"AdminID\", response.userId);\r",
+							"pm.globals.set(\"AdminUserRoleStatus\",JSON.parse(AdminUser).userRoleMaps[0].userRoleStatus)\r",
 							"\r",
 							"pm.test(\"Admin User Created\", () => {\r",
 							"   pm.expect(AdminUser).to.be.an('object');\r",
@@ -74,6 +75,7 @@
 							"{\r",
 							"\r",
 							"pm.globals.set(\"StaffID\", response.userId);\r",
+							"pm.globals.set(\"StaffUserRoleStatus\",JSON.parse(AdminUser).userRoleMaps[0].userRoleStatus)\r",
 							"\r",
 							"\r",
 							"pm.test(\"Staff User Created\", () => {\r",
@@ -84,7 +86,7 @@
 							"{\r",
 							"\r",
 							"pm.globals.set(\"StudentID\", response.userId);\r",
-							"\r",
+							"pm.globals.set(\"StudentUserRoleStatus\",JSON.parse(AdminUser).userRoleMaps[0].userRoleStatus)\r",
 							"pm.test(\"Student User Created\", () => {\r",
 							"   pm.expect(AdminUser).to.be.an('object');\r",
 							"    pm.expect(AdminId).to.eql(\"R03\");\r",
@@ -1807,22 +1809,22 @@
 	],
 	"variable": [
 		{
-			"id": "3cc48494-4f32-428d-9c6a-4c240244c211",
+			"id": "3cce085f-3cbc-4950-b533-3f1edaa8c0d5",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "d83e1d19-5afc-455b-874b-fa51f98f43d8",
+			"id": "3404d61d-4666-4857-bbba-bf06e875ef0b",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "c0398b4c-4293-4c83-b74d-58bd91d7259c",
+			"id": "087b944f-f05d-48f5-a109-f39044ad9228",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "2de1fcda-e52c-4a4c-b837-19ce86d9c2be",
+			"id": "68433e82-41ba-46f7-b141-a66b3b026dbf",
 			"key": "submissionDateTime",
 			"value": ""
 		}
