@@ -80,7 +80,7 @@
 			"response": []
 		},
 		{
-			"name": "Create Batch with Null Status",
+			"name": "Create Batch with Null Values",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1113,12 +1113,12 @@
 	],
 	"variable": [
 		{
-			"id": "683b9c56-d8a2-4e4e-a64c-2dee977c1db6",
+			"id": "1dd1aebd-494a-4668-816f-4c55af1124ef",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "fb1ab096-b8b1-4d2e-a70a-9cb7e8c8558f",
+			"id": "5cd9d58e-dd3f-4fb2-8eba-45b2fe234fd8",
 			"key": "iterationCount",
 			"value": ""
 		}
