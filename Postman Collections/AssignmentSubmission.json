@@ -391,6 +391,7 @@
 							"\r",
 							"const reqBody = JSON.parse(pm.request.body.raw);\r",
 							"const assignId = reqBody.assignmentId;\r",
+							"console.log(reqBody.assignmentId);\r",
 							"\r",
 							"if(assignId){\r",
 							"    console.log(\"Assignment Id Exist\");\r",
@@ -1274,18 +1275,18 @@
 	],
 	"variable": [
 		{
-			"id": "e500f3c2-124e-480a-92b1-b75937da2140",
+			"id": "09e39720-aafe-404a-813f-44c4c1dea0b9",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1097214c-d099-4c17-a337-b762079481b3",
+			"id": "409e59f4-5f2e-428f-bcb3-da120256b21c",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "bd604853-bc18-40d1-a366-9934bcf9ec13",
+			"id": "bfcde669-b35c-4594-8a33-e3ab1ba9b851",
 			"key": "subDateTime",
 			"value": ""
 		}
