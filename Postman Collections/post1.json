@@ -33,25 +33,6 @@
 							"else if(nameofbatchName == \"Jun23-PostmanPros-DA-DA65-\"){\r",
 							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[1]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
-							"}\r",
-							"\r",
-							"//to store batch no of class and access it based on the assignment name in requestbody\r",
-							"\r",
-							"pm.collectionVariables.set(\"batchNoOfClasses\", pm.iterationData.get('batchName'));\r",
-							"let nameofbatchName = pm.collectionVariables.get(\"batchName\");\r",
-							"console.log(nameofbatchName);\r",
-							"\r",
-							"const batchNoOfClasses = [\r",
-							"    \"This batch is for SDET batch 81\",\r",
-							"    \"This batch is for DA batch 65\",\r",
-							"]\r",
-							"if (nameofbatchName == \"Jun23-PostmanPros-SDET-SDET81-\"){\r",
-							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[0]);\r",
-							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));    \r",
-							"}\r",
-							"else if(nameofbatchName == \"Jun23-PostmanPros-DA-DA65-\"){\r",
-							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[1]);\r",
-							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
 							"}"
 						],
 						"type": "text/javascript"
@@ -1151,22 +1132,22 @@
 	],
 	"variable": [
 		{
-			"id": "0941a0ac-7fea-404a-89ba-7cb1497a9689",
+			"id": "273fabeb-3527-4f56-b4aa-1f275db3d530",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "30a6e6a0-a183-4c94-9efb-b636b57efddc",
+			"id": "a76f5013-b70d-4e96-819a-0fe3ef9b784f",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "d14299e2-2136-48af-8c9d-5532fc57b3e7",
+			"id": "fed3e148-76df-4792-bbe9-09c78744e8a5",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "53c1a1de-93d9-47db-bcba-793ae8205387",
+			"id": "1b2cdc7e-591d-40c8-8f82-3cff42df4d4d",
 			"key": "batchDescription",
 			"value": ""
 		}
