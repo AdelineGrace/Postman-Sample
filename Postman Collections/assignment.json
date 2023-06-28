@@ -56,7 +56,7 @@
 							"}\r",
 							"else\r",
 							"{\r",
-							"    postman.setNextRequest(\"Create Program with Null Status\");\r",
+							"    postman.setNextRequest(\"Get All Assignment\");\r",
 							"}\r",
 							"\r",
 							"const schema = {\r",
@@ -642,31 +642,31 @@
 	],
 	"variable": [
 		{
-			"id": "20e560c8-1327-4b4b-8b69-2f68a8211330",
+			"id": "ac494465-7346-4f40-8b06-7ef9b4bd10f4",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "720b7adc-9e9e-4d79-a323-450eea0e13b8",
+			"id": "d2aaf984-84c4-46df-b1e8-76b2fc5da8f1",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "2872070d-b884-4fdc-aa1b-4dc3e338647a",
+			"id": "561e8bdb-e477-4d4d-8e13-1bf4d743e92a",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "b76bcf73-3aa8-4a33-94cf-0e6236f2c9d2",
+			"id": "18eead9a-a20e-47a2-b397-b637ec9c77b2",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "e5af01a5-99d0-4f5b-b271-1dd8cab5b1ab",
+			"id": "5db3782f-3797-4f0a-99ae-6c647523f727",
 			"key": "dueDate",
 			"value": ""
 		}
