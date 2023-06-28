@@ -1674,38 +1674,75 @@
 			]
 		},
 		{
-			"name": "{{BaseUrl}}/assignmentsubmission",
+			"name": "{{BaseUrl}}/assignmentsubmission/:Id",
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "918ded1c-aff2-4768-8432-f6ee78069d04",
+						"id": "4c9fc880-996b-4634-a45e-a7c8f3d2a162",
 						"exec": [
-							"var moment = require('moment')\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))\r",
+							"\r",
+							"var moment = require('moment');\r",
+							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
+							"var submissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
+							"\r",
+							"if (Date.parse(dueDate) > Date.parse(submissionDateTime)) {\r",
+							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
+							"}\r",
+							"\r",
 							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "3e044067-f0be-481f-9e2f-81104e3064fb",
+						"exec": [
+							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
+							"\r",
+							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
+							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"id": "dfa5afa3-f87f-4103-bad2-f04381403bfe",
+			"id": "003c21f4-7745-4239-92b0-ab139f0193f1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 786,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": -1\r\n}",
+					"raw": "{\r\n    \"assignmentId\": 786 ,\r\n    \"userId\": \"U3846\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{subDateTime}}\",\r\n    \"gradedBy\": \"{{StaffID}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": -1\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{BaseUrl}}/assignmentsubmission"
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						":Id"
+					],
+					"variable": [
+						{
+							"id": "6e690b83-f953-47bf-acd2-eace15b2165a",
+							"key": "Id",
+							"value": "428"
+						}
+					]
+				}
 			},
 			"response": []
 		}
@@ -1734,22 +1771,22 @@
 	],
 	"variable": [
 		{
-			"id": "864a2580-30cb-4c9d-923b-38d87cb6b55a",
+			"id": "a8ead31a-d803-4a0b-b370-10c421d437d7",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "4b5df38c-bc30-4fd7-b113-901efb680e6a",
+			"id": "48551a67-57ca-4eb4-b565-1cc76a364df8",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "97b3624d-666c-4aa4-92e6-45f703e1f82b",
+			"id": "4b79419b-e6dd-4adc-84aa-e7d0d5bddc25",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "6cb05755-7b51-4b62-b91b-38a144ffc4eb",
+			"id": "c8fe3b9b-071b-456c-9b05-581c89bc59e7",
 			"key": "submissionDateTime",
 			"value": ""
 		}
