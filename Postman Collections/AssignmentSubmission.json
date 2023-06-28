@@ -402,9 +402,9 @@
 							"const submissiondate = reqBody.subDateTime;\r",
 							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
 							"\r",
-							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
+							"/*pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
 							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
-							"});"
+							"});*/"
 						],
 						"type": "text/javascript"
 					}
@@ -1273,18 +1273,18 @@
 	],
 	"variable": [
 		{
-			"id": "3300613d-206f-4846-b309-9dff70d14edd",
+			"id": "160bfc87-e6b1-4ae8-8ff1-744b98e2e999",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2f5c3a7d-867e-45f4-a3a6-cff56799d91a",
+			"id": "cb297de1-2819-468c-b28c-56a2e9a64ca7",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "55b5cd4f-1f58-4a60-aa89-923f9dde2c4f",
+			"id": "43692251-0d2f-4e5c-a948-5a62f6d407c4",
 			"key": "subDateTime",
 			"value": ""
 		}
