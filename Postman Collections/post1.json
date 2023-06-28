@@ -405,12 +405,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BaseUrl}}/lms/batches/batchName/:batchName",
+					"raw": "{{BaseUrl}}/batches/batchName/:batchName",
 					"host": [
 						"{{BaseUrl}}"
 					],
 					"path": [
-						"lms",
 						"batches",
 						"batchName",
 						":batchName"
