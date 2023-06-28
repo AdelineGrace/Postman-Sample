@@ -1009,6 +1009,7 @@
 							"\r",
 							"if (Date.parse(dueDate) > Date.parse(submissionDateTime)) {\r",
 							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
+							"}\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1034,7 +1035,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 292,\r\n    \"userId\": {{StaffRoleId}},\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": {{subDateTime}},\r\n    \"gradedBy\": {{StaffId}},\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
+					"raw": "{\r\n    \"assignmentId\": 292,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": \"{{subDateTime}}\",\r\n    \"gradedBy\": \"{{StaffId}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1272,18 +1273,18 @@
 	],
 	"variable": [
 		{
-			"id": "8cbc1685-fc77-4151-9f72-1e0cdde1d5d1",
+			"id": "e7ae8101-746b-4bb8-89d0-27890904abc5",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ac28a95-7f3c-41b4-b43f-6f6c5acbc857",
+			"id": "1ce87d1f-8974-4633-9579-ec20590d5578",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "9817a531-1e51-48df-84fc-0bddc6f0a29c",
+			"id": "3fae9603-d804-4f0c-b4d7-c19122244cd6",
 			"key": "subDateTime",
 			"value": ""
 		}
