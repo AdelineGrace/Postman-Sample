@@ -108,16 +108,14 @@
 							"var dueDate = moment().add(7, 'days').format(\"YYYY-MM-DDTHH:MM.SSSZ\");\r",
 							"pm.collectionVariables.set(\"dueDate\", dueDate);\r",
 							"\r",
-							"/*const assignmentName = [Java, Python, Selenium, TestNG, Cucumber, SQL];\r",
-							"pm.environment.set(\"assignmentName\", [\"a\",\"b\"]);\r",
+							"//to store assignment description in access it based on the assignment name in requestbody\r",
+							"const reqBody = JSON.parse(pm.request.body.raw);\r",
+							"console.log(reqBody.assignmentName);\r",
 							"const assignmentDescription = [\r",
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
-							"    \"This assignemnt is to understand the basics of Python\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
-							"    \"This assignment is to understand the TestNg Annotations\",\r",
-							"    \"This assignment is to understand the  test case implementation in Cucumber\",\r",
-							"    \"This assignment is to understand the  SQL concepts\"\r",
-							"]*/\r",
+							"]\r",
+							"\r",
 							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
 							"//const moment = require('moment');\r",
@@ -643,41 +641,41 @@
 	],
 	"variable": [
 		{
-			"id": "3119a16a-dfc7-4864-a99d-4eaffe2f0971",
+			"id": "86fd6c70-71dc-4c9a-8fbe-96e6dd8cb046",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "f697f90b-7bb1-4d8f-91c0-5260b3db76e5",
+			"id": "90bacef4-9bcb-4b73-9d4d-f101ab495f28",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "ee73c1a1-de84-4ad4-80a8-989c9fef7231",
+			"id": "8cf7bd97-6110-443b-a3ca-de023fb0caf0",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "3b01d44c-5edf-48c2-a319-615fa74eba07",
+			"id": "a4851ec6-7ff0-4114-884d-4cfd272ca394",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "e3119518-83f0-4c56-9650-f5dbd4beb007",
+			"id": "a98230d8-4535-4e29-808b-6e31195f3f2f",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "4e45ce85-e4fe-4449-b451-27f54df85282",
+			"id": "8414a4c2-56e6-4ba6-9485-c7caef8ff25c",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "05d47e2f-a57a-479f-ab7b-b7013dff6804",
+			"id": "e13491ed-ed96-4daa-8fc8-1449b0575b67",
 			"key": "iterationCount",
 			"value": ""
 		}
