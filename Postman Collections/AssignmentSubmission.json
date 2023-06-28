@@ -1009,7 +1009,9 @@
 							"pm.sendRequest({\r",
 							"    url: pm.variables.replaceIn(\"{{BaseUrl}}/assignments/\" + 292),\r",
 							"    method: \"GET\"\r",
-							"var dueDate = assignment.dueDate\r",
+							"\r",
+							"\r",
+							"        var dueDate = assignment.dueDate;\r",
 							"    })\r",
 							"\r",
 							"var submissionDateTime = pm.collectionVariables.set(\"submissionDateTime\");\r",
@@ -1286,18 +1288,18 @@
 	],
 	"variable": [
 		{
-			"id": "896de168-4b8f-4274-b3f4-0225240356fb",
+			"id": "5586c96c-83c3-47d3-acde-5da89149ef69",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "169e30d5-b14e-44a9-a0a9-a6c5fe8e37d2",
+			"id": "e6823204-0176-4637-a33f-e8c9359bb2e9",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "23ff9c7a-2a42-4f41-a6b8-c0fa14d991e9",
+			"id": "6b0d3f43-79a3-4626-a996-1ae9791f54ae",
 			"key": "subDateTime",
 			"value": ""
 		}
