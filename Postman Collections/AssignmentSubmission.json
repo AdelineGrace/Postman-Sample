@@ -1010,16 +1010,14 @@
 							"\r",
 							"if (Date.parse(DueDate) > Date.parse(submissionDateTime)) {\r",
 							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
+							"    console.log(\"Assignment submission is not allowed after the due date.\");\r",
 							"}\r",
+							"else{ console.log(\"Assignment resubmitted successfully.\");}\r",
 							"\r",
-							"if (new Date(\"subDateTime\") >= new Date(DueDate)) {\r",
-							"            console.log(\"Assignment submission is not allowed after the due date.\");\r",
-							"            return;\r",
-							"        }\r",
+							"           \r",
 							"\r",
-							"        // Log message for assignment resubmission\r",
-							"        console.log(\"Assignment resubmitted successfully.\");\r",
-							"\r",
+							"        \r",
+							"       \r",
 							"\r",
 							"\r",
 							"\r",
@@ -1279,18 +1277,18 @@
 	],
 	"variable": [
 		{
-			"id": "48a46e99-9fd7-415d-b1e5-a5befaf6a53f",
+			"id": "53ba40e1-f3ff-40a9-8bda-4da8ecf20024",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3c22223a-6182-4d71-b303-2f53a2eb406c",
+			"id": "55a2bf4e-c626-44b4-ac7a-0de61484f85b",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "73d43084-552a-4e14-829b-4cdc42e471fa",
+			"id": "73aa162c-0fa5-42f0-9066-17491557680d",
 			"key": "subDateTime",
 			"value": ""
 		}
