@@ -1005,7 +1005,25 @@
 						"exec": [
 							"pm.test(\"Status code is 400\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
-							"});"
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string Not Found\", function () {\r",
+							"    pm.response.to.have.status(\"Not Found\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response message is validated\", () => {\r",
+							"  var batchId = pm.request.url.path[3];\r",
+							"  \r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Batch not found with Id : \" +batchId+\" \",\r",
+							"    \"success\": false\r",
+							"};\r",
+							"\r",
+							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"console.log(pm.response.status);\r",
+							"console.log(pm.response.code);"
 						],
 						"type": "text/javascript"
 					}
@@ -1248,22 +1266,22 @@
 	],
 	"variable": [
 		{
-			"id": "0328f34a-8ed9-4bc0-92d5-e75e7c23804a",
+			"id": "de0b1e56-3cf1-4e30-924d-74327058bd4a",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "1e2d9adf-377a-49fa-8bd3-6d789eba1b7c",
+			"id": "59963a2c-82e0-461e-a7e7-809a81ebda26",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "e05f4aa0-e68f-4963-a412-078fd3e58bf2",
+			"id": "8a4edb51-361b-45b8-9f18-8f5d9ba858a2",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "feb7dd06-b02b-4d25-b24b-b6c9dbcd0ec5",
+			"id": "8fd8dd30-2037-49e5-a494-8b6fa47b3088",
 			"key": "batchDescription",
 			"value": ""
 		}
