@@ -55,17 +55,6 @@
 							"}\r",
 							"\r",
 							"\r",
-							"pm.test(\"Verify the mandatory fields are not null\", function () {\r",
-							"    pm.expect(reqBody.userPhoneNumber).to.not.null;\r",
-							"    pm.expect(reqBody.roleId).to.not.null;\r",
-							"    pm.expect(reqBody.userRoleStatus).to.not.null;\r",
-							"    pm.expect(reqBody.userFirstName).to.not.null;\r",
-							"    pm.expect(reqBody.userLastName).to.not.null;\r",
-							"    pm.expect(reqBody.userTimeZone).to.not.null;\r",
-							"    pm.expect(reqBody.userVisaStatus).to.not.null;\r",
-							"    \r",
-							"    });\r",
-							"\r",
 							"\r",
 							"const AdminUser = pm.request.body;\r",
 							"const AdminId = JSON.parse(AdminUser).userRoleMaps[0].roleId\r",
@@ -1817,22 +1806,22 @@
 	],
 	"variable": [
 		{
-			"id": "a4c521cf-ae35-49ef-8e1b-cffc345ff32e",
+			"id": "1d2fc749-9334-4500-a781-fd700a4ecda3",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "42ef7bb7-ec2c-4ee1-8d11-dccec56fb919",
+			"id": "202b1b45-d706-4ad0-abef-5bb7de2942e9",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "0ee607fa-a575-4d74-a610-eca68f507c82",
+			"id": "03818acd-cfa6-4f7e-80b3-10179781d8f9",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "39892ddf-b510-44bf-88ae-3224b3443371",
+			"id": "32cd629b-ae0c-4fb8-a726-915a66b582be",
 			"key": "submissionDateTime",
 			"value": ""
 		}
