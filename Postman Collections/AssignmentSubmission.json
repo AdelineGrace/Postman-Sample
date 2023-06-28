@@ -987,11 +987,6 @@
 					"script": {
 						"id": "f08401ca-be65-4d57-bbf4-80b0a53d69ac",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"console.log(pm.response.status);\r",
-							"console.log(pm.response.code);\r",
 							"var moment = require('moment');\r",
 							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
 							"var submissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
@@ -1277,18 +1272,18 @@
 	],
 	"variable": [
 		{
-			"id": "c68bb858-1722-42cd-8c75-c1a0f2c3f7ee",
+			"id": "504d0cfe-4053-49f5-a1b4-05cf69faf7fd",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7f6e219a-cdb2-4bef-83e3-e59db82e53ed",
+			"id": "893aa2fd-b08a-4673-b8da-f075783de56d",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "23c7c064-f692-4e70-a1c0-4718bd5a8b23",
+			"id": "950d52b9-b000-447c-96fd-fa4e8e301054",
 			"key": "subDateTime",
 			"value": ""
 		}
