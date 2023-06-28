@@ -353,7 +353,8 @@
 							"    postman.setNextRequest(null);\r",
 							"\r",
 							"}*/\r",
-							"const submissiondate = reqBody.subDateTime;\r",
+							"//const submissiondate = reqBody.subDateTime;\r",
+							"var submissionDateTime = pm.collectionVariables.get(\"submissionDateTime\");\r",
 							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
 							"\r",
 							"/*pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
@@ -1208,18 +1209,18 @@
 	],
 	"variable": [
 		{
-			"id": "ecd9e249-c2d7-47d5-9db5-649470ccb6a8",
+			"id": "beeade65-631d-4069-a3b3-d9fbff1e8b8d",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ba10c041-bbf9-41a5-93d1-97c1ae587f2b",
+			"id": "e2410f6b-134c-49d5-b628-cf3bdd373802",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "bb274271-ac03-4872-9abd-4da3ebd77b8e",
+			"id": "220f56ca-d494-4286-8727-207f669080e0",
 			"key": "subDateTime",
 			"value": ""
 		}
