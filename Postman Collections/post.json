@@ -71,7 +71,7 @@
 							"}\r",
 							"else\r",
 							"{\r",
-							"    postman.setNextRequest(\"Create Program with Null Status\");\r",
+							"    postman.setNextRequest(\"Create New Student User with Invalid Details\");\r",
 							"}\r",
 							"\r",
 							"\r",
@@ -1729,12 +1729,12 @@
 	],
 	"variable": [
 		{
-			"id": "aea7f474-8f1f-40db-be49-0d0858f91d2f",
+			"id": "079faa19-112d-43e8-a2d9-74035be6596d",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "f8d1c639-1647-4b5e-a950-a8e63a9d7de0",
+			"id": "71f859d2-821e-4b39-a313-a6df36fdb571",
 			"key": "iterationCount",
 			"value": ""
 		}
