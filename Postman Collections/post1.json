@@ -1038,9 +1038,8 @@
 					],
 					"variable": [
 						{
-							"id": "8bfc3f63-a036-4b49-9d2c-0995f4af2131",
 							"key": "batchId",
-							"value": "{{batchId}}"
+							"value": "0"
 						}
 					]
 				}
@@ -1249,22 +1248,22 @@
 	],
 	"variable": [
 		{
-			"id": "deb719d7-f27e-4216-bfa7-9ae97db68473",
+			"id": "28561131-efbb-4371-bdea-78b465df4929",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "91658e33-8888-4881-9026-44b51c450a74",
+			"id": "cdfe21d4-923e-44d5-97d5-51c3022f4d6e",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "d3bc8d8c-4701-4d2b-96ea-5764da7aed88",
+			"id": "e847960c-7567-417e-aec0-d3e67dd60929",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "ef76f339-050d-4915-b2c2-e1d9cfba1448",
+			"id": "088adfcd-5879-40ac-8979-e9e4e83d81f5",
 			"key": "batchDescription",
 			"value": ""
 		}
