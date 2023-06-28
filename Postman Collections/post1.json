@@ -30,7 +30,7 @@
 							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[0]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));    \r",
 							"}\r",
-							"else if(nameofbatchName == \"Jun23-PostmanPros-SDET-SDET81-\"){\r",
+							"else if(nameofbatchName == \"Jun23-PostmanPros-DA-DA65-\"){\r",
 							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[1]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
 							"}"
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "ef26c85e-88a1-4b41-9ece-a05452157de2",
+			"id": "6f47ce7d-8199-424b-b104-0995645d524c",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "c59387be-61b3-4839-9d68-c2022a2bea5d",
+			"id": "cc001660-bf1c-41c8-9ddc-aedb05b0fa47",
 			"key": "iterationCount",
 			"value": ""
 		}
