@@ -30,7 +30,7 @@
 							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[0]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));    \r",
 							"}\r",
-							"else if(nameofAssignment == \"Jun23-PostmanPros-SDET-Selenium Assignment-\"){\r",
+							"else if(nameofbatchName == \"Jun23-PostmanPros-SDET-SDET81-\"){\r",
 							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[1]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
 							"}"
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "2c42e68a-c09d-4464-b1be-c5bf36d75294",
+			"id": "8e639b21-efec-4825-804c-c2323d869311",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "d21cabaa-250b-4bbb-8484-5d4efcbd7068",
+			"id": "97d8f346-601f-4fef-afdc-bae41581b260",
 			"key": "iterationCount",
 			"value": ""
 		}
