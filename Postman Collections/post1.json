@@ -1012,7 +1012,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Response message is validated\", () => {\r",
-							"  var batchId = pm.request.url.path[3];\r",
+							"  var batchId = pm.request.url.path[2];\r",
 							"  \r",
 							"  const expectedObject = {\r",
 							"    \"message\": \"Batch not found with Id : \" +batchId+\" \",\r",
@@ -1266,22 +1266,22 @@
 	],
 	"variable": [
 		{
-			"id": "de0b1e56-3cf1-4e30-924d-74327058bd4a",
+			"id": "03f74df6-aa39-4b9e-a4f3-60c274477c61",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "59963a2c-82e0-461e-a7e7-809a81ebda26",
+			"id": "75756548-fe8b-4f0b-a975-1a06ba304cde",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "8a4edb51-361b-45b8-9f18-8f5d9ba858a2",
+			"id": "1e257e25-eed8-45fb-877d-7ecb511c4ef1",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "8fd8dd30-2037-49e5-a494-8b6fa47b3088",
+			"id": "59c6bde9-ba20-491c-af4b-63f89ed5b3b5",
 			"key": "batchDescription",
 			"value": ""
 		}
