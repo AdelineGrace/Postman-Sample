@@ -110,16 +110,15 @@
 							"pm.collectionVariables.set(\"dueDate\", dueDate);\r",
 							"\r",
 							"//to store assignment description in access it based on the assignment name in requestbody\r",
-							"const reqBody = JSON.parse(pm.request.body.raw);\r",
-							"const response = pm.response.json();\r",
-							"var assignmentName = response.assignmentName;\r",
-							"console.log(assignmentName);\r",
+							"\r",
 							"//var testdesc = \"test description\"\r",
 							"//pm.collectionVariables.set(\"assignmentDesc\",testdesc );\r",
 							"\r",
 							"pm.collectionVariables.set(\"assignmentName\", pm.iterationData.get('assignmentName'));\r",
+							"let nameofAssignment = pm.collectionVariables.get(\"assignmentName\");\r",
+							"console.log(nameofAssignment)\r",
 							"\r",
-							"const assignmentDescriptions = [\r",
+							"/*const assignmentDescriptions = [\r",
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
@@ -129,7 +128,7 @@
 							"}\r",
 							"else if(pm.collectionVariables.get.assignmentName.has(\"Selenium\")){\r",
 							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[1]);\r",
-							"    console.log(pm.collectionVariables.get(assignmentDesription));\r",
+							"    console.log(pm.collectionVariables.get(assignmentDesription));*/\r",
 							"}\r",
 							"\r",
 							"//CreatedBy  - Should be Admin / Staff , Only active users can create assignment\r",
@@ -660,51 +659,51 @@
 	],
 	"variable": [
 		{
-			"id": "7995e728-3de6-453c-aa7d-417ae23a667d",
+			"id": "1180491a-e640-4296-9b31-b25a2a9429ed",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "7ce8da16-b5b8-4e2a-b317-db468690950e",
+			"id": "c0a745e0-9f3c-4990-9e1a-47f32313a237",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "70e91786-5354-4dbb-87aa-67e93bb0a5f7",
+			"id": "d8379958-1da9-4a5d-bd3d-38f449449f3e",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "6604748e-e32e-44b1-a409-2bc0f4c26b65",
+			"id": "d48f8376-6ea1-4408-b7f4-d8997ac167c7",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "1166358f-afd1-438f-bd53-8c0e8d97096d",
+			"id": "5e33a325-d91b-4bd3-92b1-8fd50bef9856",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "7c8678d3-c45c-4ead-880f-317ace5432b4",
+			"id": "09a55a79-8363-4cfd-b8f3-44cb802e4ad4",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "c4a921c2-ebb1-4ec6-a2e7-b4f227fcc6e3",
+			"id": "f9ee7960-0ed2-4e5d-9236-73d18aaea1a3",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "78bcadfe-859f-45cb-999c-77f25b7ca500",
+			"id": "07a9dcd8-207e-4544-b24b-561dac00e67d",
 			"key": "dueDate",
 			"value": ""
 		}
