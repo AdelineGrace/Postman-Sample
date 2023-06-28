@@ -1003,8 +1003,8 @@
 					"script": {
 						"id": "6b83ddc9-a09c-4299-b385-11462564acb3",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -1248,22 +1248,22 @@
 	],
 	"variable": [
 		{
-			"id": "28561131-efbb-4371-bdea-78b465df4929",
+			"id": "0328f34a-8ed9-4bc0-92d5-e75e7c23804a",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "cdfe21d4-923e-44d5-97d5-51c3022f4d6e",
+			"id": "1e2d9adf-377a-49fa-8bd3-6d789eba1b7c",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "e847960c-7567-417e-aec0-d3e67dd60929",
+			"id": "e05f4aa0-e68f-4963-a412-078fd3e58bf2",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "088adfcd-5879-40ac-8979-e9e4e83d81f5",
+			"id": "feb7dd06-b02b-4d25-b24b-b6c9dbcd0ec5",
 			"key": "batchDescription",
 			"value": ""
 		}
