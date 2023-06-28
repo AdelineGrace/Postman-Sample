@@ -431,29 +431,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 1951,\r\n    \"userId\": \"U3980\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"String\",\r\n    \"gradedBy\": \"U76\",\r\n    \"gradedDateTime\": \"String\",\r\n    \"grade\": -1\r\n}",
+					"raw": "{\r\n    \"assignmentId\": 562,\r\n    \"userId\": \"U3980\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"String\",\r\n    \"gradedBy\": \"U76\",\r\n    \"gradedDateTime\": \"String\",\r\n    \"grade\": -1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"assignmentsubmission",
-						":Id"
-					],
-					"variable": [
-						{
-							"key": "Id",
-							"value": null
-						}
-					]
-				}
+				"url": "{{BaseUrl}}/assignmentsubmission"
 			},
 			"response": []
 		},
@@ -1301,18 +1286,18 @@
 	],
 	"variable": [
 		{
-			"id": "13c9f99f-b4c8-4dc9-9861-91afe216e77e",
+			"id": "50ba0c6d-dac0-4a73-b0a5-1925062eba2b",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e59bc20c-4835-49cc-a567-2db08630d7ab",
+			"id": "918ad222-878e-4342-9c54-61963f0373b9",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "40ae9d02-04db-41eb-be33-c9d4290fcab8",
+			"id": "8e0b55c7-01d1-45ee-b9f5-6993db83b599",
 			"key": "subDateTime",
 			"value": ""
 		}
