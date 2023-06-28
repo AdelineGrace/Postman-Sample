@@ -59,6 +59,27 @@
 							"        postman.setNextRequest(\"Create New Student User with Invalid Details\");\r",
 							"    }\r",
 							"}\r",
+							"const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
+							"const currentIteration = pm.info.iteration;\r",
+							"console.log(currentIteration);\r",
+							"pm.collectionVariables.set(\"currentIteration\", currentIteration);\r",
+							"pm.collectionVariables.set(\"iterationCount\", iterationCount);\r",
+							"\r",
+							"const requestName = pm.info.requestName; // Get the current request name\r",
+							"if (requestName === \"Create 3 Users with CSV\") {\r",
+							"    if (currentIteration < (iterationCount + 3)) {\r",
+							"        postman.setNextRequest(requestName);\r",
+							"    } else {\r",
+							"        postman.setNextRequest(null);\r",
+							"    }\r",
+							"} else {\r",
+							"    if (currentIteration < iterationCount) {\r",
+							"        postman.setNextRequest(requestName);\r",
+							"    } else {\r",
+							"        postman.setNextRequest(null);\r",
+							"    }\r",
+							"}\r",
 							"\r",
 							"pm.test(\"Verify the mandatory fields are not null\", function () {\r",
 							"    pm.expect(reqBody.userPhoneNumber).to.not.null;\r",
@@ -1714,12 +1735,12 @@
 	],
 	"variable": [
 		{
-			"id": "d4111f62-a96f-4b50-93b7-112168874902",
+			"id": "5137b984-1611-4af4-8c95-db48a01d3946",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "33b2ed2f-5535-4b07-a817-4f5a96f051ba",
+			"id": "9f534fa4-0f20-4a0b-87c1-9822fc506a76",
 			"key": "iterationCount",
 			"value": ""
 		}
