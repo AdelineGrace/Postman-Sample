@@ -46,7 +46,7 @@
 							"}\r",
 							"else\r",
 							"{\r",
-							"    postman.setNextRequest(\"API Status\");\r",
+							"    postman.setNextRequest(\"Create Program with Null Status\");\r",
 							"}\r",
 							"\r",
 							"\r",
@@ -2572,12 +2572,12 @@
 	],
 	"variable": [
 		{
-			"id": "aa90654a-959a-448a-8298-8d85a75c7507",
+			"id": "1ecd18dc-0f8a-43e6-8564-95b1abbe8945",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "f77f6db0-8595-4817-b693-78b51d884394",
+			"id": "68cd017a-0bbb-47aa-b74b-8c26241ee79d",
 			"key": "currentIteration",
 			"value": ""
 		}
