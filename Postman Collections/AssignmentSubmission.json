@@ -1005,18 +1005,18 @@
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
 							"\r",
-							"var DueDate = pm.collectionVariables.get(\"dueDate\");\r",
+							"var dueDate = pm.collectionVariables.get(\"dueDate\");\r",
 							"\r",
-							"var SubmissionDateTime = pm.collectionVariables.set(\"submissionDateTime\");\r",
+							"var submissionDateTime = pm.collectionVariables.set(\"submissionDateTime\");\r",
 							"\r",
 							"\r",
-							"if (Date.parse(DueDate) < Date.parse(SubmissionDateTime)) {\r",
+							"if (Date.parse(dueDate) < Date.parse(submissionDateTime)) {\r",
 							"    \r",
 							"    console.log(\"Assignment submission is not allowed after the due date.\");\r",
 							"\r",
 							"}\r",
 							"else{\r",
-							"    console.log(\"Assignment resubmitted\");\r",
+							"    console.log(\"Assignment resubmitted\");}\r",
 							"\r",
 							"           \r",
 							"\r",
@@ -1044,7 +1044,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 292,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": {{subDateTime}},\r\n    \"gradedBy\": \"{{StaffId}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
+					"raw": "{\r\n    \"assignmentId\": 1201,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": {{subDateTime}},\r\n    \"gradedBy\": \"{{StaffId}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1063,7 +1063,7 @@
 					"variable": [
 						{
 							"key": "Id",
-							"value": "292"
+							"value": ""
 						}
 					]
 				}
@@ -1281,18 +1281,18 @@
 	],
 	"variable": [
 		{
-			"id": "24c82a86-2c60-4ef2-ace2-91088a091de7",
+			"id": "5c38e10a-0843-4b38-8acd-d09ead5175b2",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3a1738e0-e177-47c5-9f60-a1233cd34b07",
+			"id": "49020d7e-ee7f-4cfa-9c93-ccb1de2c0f17",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "e1a7562e-4740-45c5-8f60-6cf0187ed412",
+			"id": "e3d7bfcf-08bf-4b60-92c3-3c83efc7d46f",
 			"key": "subDateTime",
 			"value": ""
 		}
