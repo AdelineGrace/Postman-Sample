@@ -919,7 +919,7 @@
 							"var submission = loginRequest.subDateTime;\r",
 							"var subDateTime = submission;\r",
 							"\r",
-							"var dueDate = \"2023-06-26T22:02:28.140+00:00\"; // Update with the actual due date from the assignment details\r",
+							"var dueDate = \"06-27-2023 21:24:52\"; // Update with the actual due date from the assignment details\r",
 							"\r",
 							"if (new Date(subDateTime) >= new Date(dueDate)) {\r",
 							"    console.log(\"Assignment submission is not allowed after the due date.\");\r",
@@ -1188,13 +1188,13 @@
 	],
 	"variable": [
 		{
-			"id": "d85ce776-4cb2-4557-9ed8-06febd3481b2",
+			"id": "8715ef64-0705-4f18-ba9c-73158d03bc6e",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ad0b7b00-888d-40fa-9723-67f812b4809c",
+			"id": "7acccdf9-8dc1-43d8-8ba3-0a83ec72f477",
 			"key": "submissionDateTime",
 			"value": ""
 		}
