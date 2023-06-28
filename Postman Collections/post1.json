@@ -99,7 +99,7 @@
 						"id": "ba0b61a5-f1af-441d-b46e-4629bcdda8e2",
 						"exec": [
 							"\r",
-							"pm.test(\"Create Batch with Null Values- Status code is 400\", function () {\r",
+							"pm.test(\"Create Batch with Null - Status code is 400\", function () {\r",
 							"    pm.response.to.have.status(400);\r",
 							"});\r",
 							"\r",
@@ -1113,12 +1113,12 @@
 	],
 	"variable": [
 		{
-			"id": "35a40d08-864c-4e9c-8d88-6da0f8f6a7ba",
+			"id": "709112b7-9e6a-46a9-bb19-049f0a1bf50a",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "94fcd80a-0d6e-4313-8209-daf43c82f2ed",
+			"id": "28d847f7-a398-48a4-9b37-f63a165c1699",
 			"key": "iterationCount",
 			"value": ""
 		}
