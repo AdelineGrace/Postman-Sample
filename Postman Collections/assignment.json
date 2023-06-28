@@ -469,7 +469,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{   \r\n  \"assignmentDescription\": \"Test Assignment 1\",\r\n  \"assignmentName\": \"Test Assignment 01\",\r\n  \"batchId\": 1,\r\n  \"comments\": \"Comments are updated\",\r\n  \"createdBy\": \"U22\",\r\n  \"dueDate\": \"2023-06-19T22:02:28.140Z\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\"\r\n}\r\n",
+					"raw": "{   \r\n  \"assignmentDescription\": \"Test Assignment 1\",\r\n  \"assignmentName\": \"Test Assignment 01\",\r\n  \"batchId\": 1,\r\n  \"comments\": \"Comments are updated\",\r\n  \"createdBy\": \"U22\",\r\n  \"dueDate\": \"2023-06-19T22:02:28.140Z\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\",\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -642,41 +642,41 @@
 	],
 	"variable": [
 		{
-			"id": "f5f64237-094c-4099-b38f-b8ab08e97f81",
+			"id": "15aa61a0-f395-4342-8799-61d18cf5cef6",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "3de1241f-4755-47f5-a0fc-7cfc42998918",
+			"id": "ed77de76-87e3-4bad-b0b3-91693b919083",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "af5d7cd1-8ff9-4604-a87a-329c715c1969",
+			"id": "48a4f50d-1ea3-4334-b68a-4f99339c02e3",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "8382b7ee-46a1-48b3-90ac-6e50be5a653f",
+			"id": "64fb81e6-c4e8-4103-b292-925921c4519b",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "43a57c5d-bff7-4d5f-aeea-d967327fbe34",
+			"id": "9fed5665-9681-4840-a104-7ecb69396176",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "3a832fe3-555c-4da9-a3a5-ac42fea8c737",
+			"id": "fb097fd3-5a9e-4081-84dd-a3cc736568c9",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "75951799-1774-4536-9f0a-3ca13f01a2d2",
+			"id": "3a271607-5738-4f06-a70b-2964cf326b9d",
 			"key": "iterationCount",
 			"value": ""
 		}
