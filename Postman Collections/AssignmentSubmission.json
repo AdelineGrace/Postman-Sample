@@ -1152,6 +1152,8 @@
 							"\r",
 							"console.log(pm.response.status);\r",
 							"console.log(pm.response.code);\r",
+							"\r",
+							"postman.setNextRequest(\"Delete with  AssignmentId\");\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1209,18 +1211,18 @@
 	],
 	"variable": [
 		{
-			"id": "beeade65-631d-4069-a3b3-d9fbff1e8b8d",
+			"id": "25878a96-790c-415f-9b53-af70183e9120",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e2410f6b-134c-49d5-b628-cf3bdd373802",
+			"id": "05686888-4225-4a7a-9c37-e6ff3c7fbb69",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "220f56ca-d494-4286-8727-207f669080e0",
+			"id": "6b375bd8-1236-440b-bdd5-119653a44537",
 			"key": "subDateTime",
 			"value": ""
 		}
