@@ -889,22 +889,21 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
-							"// Get the assignment ID from the request URL\r",
+							"/ Get the assignment ID from the request URL\r",
 							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
 							"\r",
+							"var submission = requestBody[0];\r",
+							"var subDateTime = submission.subDateTime;\r",
 							"\r",
-							"        \r",
-							"        var submission = pm.subDateTime;\r",
-							"        var subDateTime = submission.subDateTime;\r",
+							"var dueDate = \"2023-06-26T22:02:28.140+00:00\"; // Update with the actual due date from the assignment details\r",
 							"\r",
-							"        if (new Date(subDateTime) >= \"2023-06-26T22:02:28.140+00:00\") {\r",
-							"            console.log(\"Assignment submission is not allowed after the due date.\");\r",
-							"            return;\r",
-							"        }\r",
+							"if (new Date(subDateTime) >= new Date(dueDate)) {\r",
+							"    console.log(\"Assignment submission is not allowed after the due date.\");\r",
+							"    return;\r",
+							"}\r",
 							"\r",
-							"        // Log message for assignment resubmission\r",
-							"        console.log(\"Assignment resubmitted successfully.\");\r",
-							"\r",
+							"// Log message for assignment resubmission\r",
+							"console.log(\"Assignment resubmitted successfully.\")\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1165,13 +1164,13 @@
 	],
 	"variable": [
 		{
-			"id": "fdc8f07a-7c8b-4c31-a782-2ab68ee2a26f",
+			"id": "8c332ab2-ba05-4f0f-bffd-b0993b1e1c0b",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "948950cd-ab29-4382-aac7-34be22ab08fb",
+			"id": "f1b91cfb-7f89-4798-bf5b-ae73924addb6",
 			"key": "submissionDateTime",
 			"value": ""
 		}
