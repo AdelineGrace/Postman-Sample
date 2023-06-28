@@ -80,6 +80,80 @@
 			"response": []
 		},
 		{
+			"name": "Create Batch with Null Status",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "625d88b8-993d-4bc1-9ca6-634e1647045d",
+						"exec": [
+							"const serialNo = Math.floor(Math.random()* 900)+ 100;\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ba0b61a5-f1af-441d-b46e-4629bcdda8e2",
+						"exec": [
+							"\r",
+							"pm.test(\"Create Batch - Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"\r",
+							"pm.globals.set(\"batchId\", response.batchId);\r",
+							"pm.globals.set(\"BatchName\", response.batchName);\r",
+							"console.log(response.batchId);\r",
+							"console.log(response.batchName);\r",
+							"\r",
+							"const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
+							"const currentIteration = (pm.info.iteration);\r",
+							"console.log(currentIteration);\r",
+							"pm.collectionVariables.set(\"currentIteration\", currentIteration);\r",
+							"pm.collectionVariables.set(\"iterationCount\", iterationCount);\r",
+							"if ((currentIteration + 1) <= iterationCount)\r",
+							"{\r",
+							"    postman.setNextRequest(null);\r",
+							"}\r",
+							"else\r",
+							"{\r",
+							"    postman.setNextRequest(\"Create Batch with Null Status\");\r",
+							"}\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "22c9b1f4-a5aa-4841-862a-a09aa1d13f4e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}-{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId_SDET}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}/batches"
+			},
+			"response": []
+		},
+		{
 			"name": "Get All Batches",
 			"event": [
 				{
