@@ -116,17 +116,17 @@
 							"\r",
 							"pm.collectionVariables.set(\"assignmentName\", pm.iterationData.get('assignmentName'));\r",
 							"let nameofAssignment = pm.collectionVariables.get(\"assignmentName\");\r",
-							"console.log(nameofAssignment)\r",
+							"console.log(nameofAssignment);\r",
 							"\r",
 							"const assignmentDescriptions = [\r",
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
-							"if (pm.collectionVariables.get.assignmentName.has(\"Java\")){\r",
+							"if (nameofAssignment == \"Jun23-PostmanPros-SDET-Java Assignment-\"){\r",
 							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[0]);\r",
 							"    console.log(pm.collectionVariables.get(assignmentDesription));    \r",
 							"}\r",
-							"else if(pm.collectionVariables.get.assignmentName.has(\"Selenium\")){\r",
+							"else if(nameofAssignment == \"Jun23-PostmanPros-SDET-Selenium Assignment-\"){\r",
 							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[1]);\r",
 							"    console.log(pm.collectionVariables.get(assignmentDesription));\r",
 							"}\r",
@@ -659,56 +659,56 @@
 	],
 	"variable": [
 		{
-			"id": "91a8c4ac-4a0a-4aa2-a154-8f4e20e53db0",
+			"id": "2153b3ed-5761-41b6-883e-e920bf29f2c9",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "c8881163-92ba-49b3-b040-c5f330502351",
+			"id": "4f78acbd-7cb6-4ef3-ac82-ee6ef213e07c",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "f0cca2aa-d50a-4387-89c3-de95069be84d",
+			"id": "792368e6-9515-4792-9178-bcb1f48a5033",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "dafac1de-fe0c-4ed0-b211-ccc1623aba41",
+			"id": "32168bf1-7436-4eae-9375-1020dc420304",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "1ce0e6b5-4e2c-4e24-8789-1d915f0795d5",
+			"id": "ea8d4b4b-c2ab-4e1f-b218-2a7d953651e0",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "2edc8df7-b54c-40ff-8721-a957dd07caf3",
+			"id": "46becd9b-b8d8-4b97-a221-9737d80dad15",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "eccc4607-3589-4017-94c5-6ae4c4b0058c",
+			"id": "bd4aae73-881e-432f-bee5-20fda7ef7c5b",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "0407c907-2b6d-4f79-a77a-44c8e72044a6",
+			"id": "d8c763a4-5b26-4ceb-9421-956d6b11494a",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "67723dfa-6cb2-425b-a652-7d66ce5c1098",
+			"id": "eea809e9-044d-49b9-b9e3-daa3187dc0db",
 			"key": "assignmentName",
 			"value": ""
 		}
