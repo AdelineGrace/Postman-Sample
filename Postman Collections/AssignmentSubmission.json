@@ -1036,7 +1036,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 442,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": {{subDateTime}},\r\n    \"gradedBy\": \"{{StaffId}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
+					"raw": "{\r\n    \"assignmentId\": 1074,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": {{subDateTime}},\r\n    \"gradedBy\": \"{{StaffId}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1055,7 +1055,7 @@
 					"variable": [
 						{
 							"key": "Id",
-							"value": "442"
+							"value": "1074"
 						}
 					]
 				}
@@ -1273,18 +1273,18 @@
 	],
 	"variable": [
 		{
-			"id": "4e24c4e5-a48a-4779-8df5-348774514826",
+			"id": "2100c619-2f79-4b00-b63b-7dc6880a5370",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3273bd89-dbf1-40b4-b0c5-ca5a7a3e3d30",
+			"id": "6ae942e6-b786-45c7-80c6-aa7a0df7cd55",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "beec6f08-1573-42af-8ab7-b2519e1bad93",
+			"id": "878b5d00-6b2b-4f3d-be60-bcf9f40cc5e5",
 			"key": "subDateTime",
 			"value": ""
 		}
