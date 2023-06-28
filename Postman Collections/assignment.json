@@ -128,8 +128,8 @@
 							"}\r",
 							"else if(pm.collectionVariables.get.assignmentName.has(\"Selenium\")){\r",
 							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[1]);\r",
-							"    console.log(pm.collectionVariables.get(assignmentDesription));*/\r",
-							"}\r",
+							"    console.log(pm.collectionVariables.get(assignmentDesription));\r",
+							"}*/\r",
 							"\r",
 							"//CreatedBy  - Should be Admin / Staff , Only active users can create assignment\r",
 							"\r",
@@ -659,52 +659,57 @@
 	],
 	"variable": [
 		{
-			"id": "0431c13c-07b3-4d14-8373-791d0376130a",
+			"id": "61751ce2-7115-475a-aba7-3d81000aabc3",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "1e29c14a-03ab-46fc-ab04-e25f6574b2f5",
+			"id": "00f89722-8a85-4633-a4b5-ed2a75669e8c",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "23230e93-dfce-4539-b98e-84a092650641",
+			"id": "ab22c593-24a0-49b7-ae7d-67af5b92e137",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "36ab5953-1cf8-49ca-8868-98381cf39951",
+			"id": "a51fc9f9-801c-49e7-8c59-045ae02d5d36",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "0d9a58c8-6737-4996-bce8-3b6a6311fe5b",
+			"id": "16a649e7-3a62-474a-8194-d0b9554f3519",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "8d68b611-df6e-4ca5-8b5e-c4c8b61f7755",
+			"id": "c96d912f-c733-462f-a4ce-f45d399921c3",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "35549fd8-b553-4d9f-9f98-448b0d7490c3",
+			"id": "04c40d5c-82ad-4677-8192-61177832a769",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "87dd2438-efc4-42b6-81f9-5fd4beba2a13",
+			"id": "1021498d-feb0-42d1-a3e0-1fed5d227798",
 			"key": "dueDate",
+			"value": ""
+		},
+		{
+			"id": "5e878c91-a102-45e1-b57a-ba4a82e9dbc3",
+			"key": "assignmentName",
 			"value": ""
 		}
 	]
