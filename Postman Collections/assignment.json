@@ -659,62 +659,57 @@
 	],
 	"variable": [
 		{
-			"id": "71e9e745-7560-48dc-b81b-fbead8a14429",
+			"id": "9585e326-1417-457d-814c-12564eaa2bbd",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "5dee54a9-4b3b-4585-8736-df44f550fdc0",
+			"id": "3a484e0a-fe30-427d-9aa4-d44383bf04b6",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "c65edabf-b20b-41f4-9608-23a703ee59df",
+			"id": "cddf1469-3f4b-4b48-95f7-709fd926c628",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "ba13cc59-1113-43e3-b04a-11aed57f8760",
+			"id": "f5e50056-3587-4418-9b6c-109f29de9a04",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "965029e0-e3f8-4fa3-996d-5cac4ddc7b26",
+			"id": "fefb1715-53d3-4a0c-9d69-bb67d099da30",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "b15dd21f-7784-4265-8123-3707cae06175",
+			"id": "1a619640-6e94-400a-bbf4-76ed90ef3c3e",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "d8eca6ab-88a5-4596-899c-3f3509f1e64c",
+			"id": "8639dc17-e5b5-49fa-89ae-0a9b6ef6f939",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "9286eb84-4297-4248-a485-e9f6d489f401",
+			"id": "a48c735c-2765-4b27-bf13-6d2b4ad4289e",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "20148456-4667-4f46-85c7-cc17811e0ed7",
+			"id": "d533e44e-0a27-4094-a752-ca2f3551821e",
 			"key": "assignmentName",
-			"value": ""
-		},
-		{
-			"id": "e7fd1463-b6dd-4fcf-a115-94bf9934cd45",
-			"key": "assignmentDescription",
 			"value": ""
 		}
 	]
