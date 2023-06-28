@@ -889,11 +889,10 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
-							"\r",
 							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
 							"\r",
-							"var submission = reqBody.subDateTime;\r",
-							"var subDateTime = submission;\r",
+							"var submission = requestBody[0];\r",
+							"var subDateTime = submission.subDateTime;\r",
 							"\r",
 							"var dueDate = \"06-27-2023 21:24:52\"; // Update with the actual due date from the assignment details\r",
 							"\r",
@@ -904,8 +903,6 @@
 							"\r",
 							"// Log message for assignment resubmission\r",
 							"console.log(\"Assignment resubmitted successfully.\");\r",
-							"\r",
-							"\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1164,13 +1161,13 @@
 	],
 	"variable": [
 		{
-			"id": "b0eb43cd-84d6-467d-be46-a6f66ce4cbc3",
+			"id": "37caeb0f-05e4-4f91-b49a-5135fb657fb2",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e38fdf48-a69c-44c9-b3b5-f16d8f5c7f6f",
+			"id": "29860751-ca1b-4e79-a406-c3113ee79a34",
 			"key": "submissionDateTime",
 			"value": ""
 		}
