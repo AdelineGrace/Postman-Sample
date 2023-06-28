@@ -103,7 +103,7 @@
 							"const serialNo = Math.floor(Math.random()* 900) +100;\r",
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
 							"\r",
-							"var moment=require('moment');\r",
+							"//var moment=require('moment');\r",
 							"var dueDate = moment().add(7, 'days').format();\r",
 							"pm.collectionVariables.set(\"dueDate\", dueDate);\r",
 							"\r",
@@ -120,7 +120,7 @@
 							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
 							"const moment = require('moment');\r",
-							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MM.SSZ\"))\r",
+							"//pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MM.SSZ\"))\r",
 							"/*var dateNow = new Date();  \r",
 							"var assignmentDueDate = new Date(dateNow.setDate(dateNow.getDate() + 14)).toISOString();\r",
 							"pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MI.SSZ\"))*/\r",
@@ -642,31 +642,31 @@
 	],
 	"variable": [
 		{
-			"id": "a5e59d89-c5d7-4495-b2b7-cb98f9ce0269",
+			"id": "f893a68a-e90d-4684-811c-66ff59128d25",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "9bb0caf0-6f2b-4301-982d-ea4aaf830f90",
+			"id": "29bf499c-e86a-4481-a85b-815d90f387c1",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "90ca3e2b-b496-4de3-84fa-d6a873f0bc97",
+			"id": "91fe983a-dc0d-4ac2-8b59-1a2bb1e432ed",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "f0e690d8-d881-4432-8025-24fd0e3018ae",
+			"id": "bc109783-d776-40ab-a2fb-8432ad72200a",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "8ef2e33b-688f-4314-9e14-5aca87f00f6e",
+			"id": "521c1a17-7d93-4f7d-819d-1fcf91ab6543",
 			"key": "dueDate",
 			"value": ""
 		}
