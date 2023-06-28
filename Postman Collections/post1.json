@@ -23,8 +23,8 @@
 							"console.log(nameofbatchName);\r",
 							"\r",
 							"const batchDescriptions = [\r",
-							"    \"This batch\",\r",
-							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
+							"    \"This batch is for SDET batch 81\",\r",
+							"    \"This batch is for DA batch 65\",\r",
 							"]\r",
 							"if (nameofbatchName == \"Jun23-PostmanPros-SDET-SDET81-\"){\r",
 							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[0]);\r",
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "6f47ce7d-8199-424b-b104-0995645d524c",
+			"id": "87cbae86-7c05-41fa-bf5e-a7cd665d834d",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "cc001660-bf1c-41c8-9ddc-aedb05b0fa47",
+			"id": "97575243-69cf-4a50-9d0a-39e4d28486a8",
 			"key": "iterationCount",
 			"value": ""
 		}
