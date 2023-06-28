@@ -87,7 +87,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}-{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId_SDET}}\r\n}",
+					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId_SDET}}\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "0a772374-f42a-4733-bc3e-3e324966af06",
+			"id": "ef26c85e-88a1-4b41-9ece-a05452157de2",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "b08b0c6b-d789-404e-8e76-acca04679d15",
+			"id": "c59387be-61b3-4839-9d68-c2022a2bea5d",
 			"key": "iterationCount",
 			"value": ""
 		}
