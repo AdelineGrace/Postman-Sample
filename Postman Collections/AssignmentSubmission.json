@@ -897,7 +897,7 @@
 							"        var dueDate = assignment.dueDate;\r",
 							"\r",
 							"        // Check if the assignment submission is allowed based on the due date\r",
-							"        var requestBody = pm.request.json();\r",
+							"        var requestBody = JSON.parse(pm.request.body.raw);\r",
 							"\r",
 							"        if (!requestBody || !requestBody[0]) {\r",
 							"            console.log(\"Request body is missing or empty.\");\r",
@@ -918,6 +918,7 @@
 							"        console.log(\"Error fetching assignment details:\", response.code);\r",
 							"    }\r",
 							"});\r",
+							"\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1177,13 +1178,13 @@
 	],
 	"variable": [
 		{
-			"id": "77d63510-aed2-4e19-92d8-7949513d2708",
+			"id": "833893f6-d80c-459c-b3e2-be5cd414e8f8",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "edc3d074-4646-4199-9046-401c1428d2b6",
+			"id": "d9f78855-0184-40e2-a945-57baab5307e4",
 			"key": "submissionDateTime",
 			"value": ""
 		}
