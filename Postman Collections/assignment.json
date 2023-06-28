@@ -127,6 +127,10 @@
 							"    console.log(pm.collectionVariables.get(assignmentDesription));\r",
 							"}\r",
 							"\r",
+							"//CreatedBy  - Should be Admin / Staff , Only active users can create assignment\r",
+							"\r",
+							"\r",
+							"\r",
 							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
 							"//const moment = require('moment');\r",
@@ -652,46 +656,46 @@
 	],
 	"variable": [
 		{
-			"id": "02f338f7-8b8e-4f2f-adad-3684cc615c45",
+			"id": "0b298695-454a-47b3-b76e-8beb415682d8",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "4a10606b-00d3-4077-8b6e-59416e1594d9",
+			"id": "b84d99a1-62cf-48b8-a9ce-915c38b3a1a0",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "8a672c64-ed75-4233-9f79-ad747575c421",
+			"id": "4cfe0729-61fa-41f1-833f-e50e784257d4",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "f7138fef-ccf4-433e-a7dc-865d3ee14cc4",
+			"id": "280b0a1b-4e4c-41a1-9487-268316c871a6",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "830c95d6-0b1d-404c-bdb2-d5178b6d4b8a",
+			"id": "a56511e0-7c09-4f86-b1b9-a73645587a73",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "e2a53324-b98e-4e85-8a96-5a40fecc1890",
+			"id": "0ff2f729-0f12-4fe9-a9ef-43b9789477be",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "ff2f75e2-ceff-4831-93f3-bc545dad7f5f",
+			"id": "f5f1584f-4d8f-477d-a5bf-3896752cb32b",
 			"key": "iterationCount",
 			"value": ""
 		}
