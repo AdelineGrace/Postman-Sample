@@ -992,101 +992,6 @@
 			"response": []
 		},
 		{
-			"name": "Resubmit Assignment Copy",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "f08401ca-be65-4d57-bbf4-80b0a53d69ac",
-						"exec": [
-							"var moment = require('moment');\r",
-							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
-							"var submissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
-							"\r",
-							"if (Date.parse(dueDate) > Date.parse(submissionDateTime)) {\r",
-							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
-							"}"
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
-						"exec": [
-							"// Get the assignment ID from the request URL\r",
-							";\r",
-							"pm.sendRequest({\r",
-							"    url: pm.variables.replaceIn(\"{{BaseUrl}}/assignments/\" + 292),\r",
-							"    method: \"GET\"\r",
-							"var dueDate = assignment.dueDate\r",
-							"    })\r",
-							"\r",
-							"var submissionDateTime = pm.collectionVariables.set(\"submissionDateTime\");\r",
-							"\r",
-							"\r",
-							"if (Date.parse(dueDate) < Date.parse(submissionDateTime)) {\r",
-							"    \r",
-							"    console.log(\"Assignment submission is not allowed after the due date.\");\r",
-							"\r",
-							"}\r",
-							"else{\r",
-							"    console.log(\"Assignment resubmitted\");}\r",
-							"\r",
-							"           \r",
-							"\r",
-							"        \r",
-							"       \r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
-							"\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "b3caf3d0-a820-46ea-9cef-097118387431",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 1201,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": {{subDateTime}},\r\n    \"gradedBy\": \"{{StaffId}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"assignmentsubmission",
-						":Id"
-					],
-					"variable": [
-						{
-							"key": "Id",
-							"value": ""
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Grade Assignment Submission",
 			"event": [
 				{
@@ -1303,18 +1208,18 @@
 	],
 	"variable": [
 		{
-			"id": "82f39245-1e2c-4c7d-b59c-6e972e2b9d29",
+			"id": "ecd9e249-c2d7-47d5-9db5-649470ccb6a8",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ab92114-5170-4bd8-9141-005462317a15",
+			"id": "ba10c041-bbf9-41a5-93d1-97c1ae587f2b",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "398ebf5f-688e-4869-830d-3d8ee55730a4",
+			"id": "bb274271-ac03-4872-9abd-4da3ebd77b8e",
 			"key": "subDateTime",
 			"value": ""
 		}
