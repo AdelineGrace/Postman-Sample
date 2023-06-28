@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "c780f37a-9a25-4b6b-9ffb-1130d9d2ac97",
-		"name": "Program Batch Module",
+		"name": "ProgramBatchModule",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -1269,22 +1269,22 @@
 	],
 	"variable": [
 		{
-			"id": "b239caab-c83b-4360-a21a-474800d938a3",
+			"id": "1deab345-802c-4c05-8144-a0f356dbbabe",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "ba2922fc-b06e-4c7b-a5fc-de1bb5d16a7e",
+			"id": "e9ee74d6-0e40-410a-a45e-78a480590369",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "4446394e-c741-4c05-b8c7-25c2bfddfe69",
+			"id": "9421df8e-0cd4-47dc-8d81-0121b67cc679",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "fa0b6238-c003-46af-a3f3-69788374e625",
+			"id": "a7da333c-f596-4e90-b92d-881bd00b0307",
 			"key": "batchDescription",
 			"value": ""
 		}
