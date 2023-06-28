@@ -1222,6 +1222,8 @@
 							"\r",
 							"console.log(pm.response.status);\r",
 							"console.log(pm.response.code);\r",
+							"\r",
+							"postman.setNextRequest(\"Delete by ProgramId\")\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1267,22 +1269,22 @@
 	],
 	"variable": [
 		{
-			"id": "8aaade22-10cb-4794-b4f3-2aa4c18a8171",
+			"id": "b239caab-c83b-4360-a21a-474800d938a3",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "edd23bd0-25bf-4080-b1a8-96bf4b63938f",
+			"id": "ba2922fc-b06e-4c7b-a5fc-de1bb5d16a7e",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "8064f3fa-7d5d-43db-8e60-0ac41b0a005f",
+			"id": "4446394e-c741-4c05-b8c7-25c2bfddfe69",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "dd929d96-a6c7-4a68-83c5-29d99256e52c",
+			"id": "fa0b6238-c003-46af-a3f3-69788374e625",
 			"key": "batchDescription",
 			"value": ""
 		}
