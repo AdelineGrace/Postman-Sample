@@ -1004,6 +1004,20 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
+							"// Get the assignment ID from the request URL\r",
+							";\r",
+							"pm.sendRequest({\r",
+							"    url: pm.variables.replaceIn(\"{{BaseUrl}}/assignments/\" + 292),\r",
+							"    method: \"GET\"\r",
+							"}, function (err, response) {\r",
+							"    if (err) {\r",
+							"        console.log(\"Error fetching assignment details:\", err);\r",
+							"        return;\r",
+							"    }\r",
+							"\r",
+							"    if (response.code === 200) {\r",
+							"        var assignment = response.json();\r",
+							"        var dueDate = assignment.dueDate;\r",
 							"\r",
 							"var dueDate = pm.collectionVariables.get(\"dueDate\");\r",
 							"\r",
@@ -1281,18 +1295,18 @@
 	],
 	"variable": [
 		{
-			"id": "3041e334-af99-4a0a-91b2-c5cf34d22d3c",
+			"id": "508219d7-09c2-4690-b295-edd096ce8902",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "21ede9f7-b313-4256-afe8-a08bda6c0476",
+			"id": "211c1bcc-b422-48cb-8127-40613146f3db",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "202ebb15-67d6-4ccf-a180-e9995cce2d38",
+			"id": "8df37fb6-38eb-450f-922f-c86f2e10e5d5",
 			"key": "subDateTime",
 			"value": ""
 		}
