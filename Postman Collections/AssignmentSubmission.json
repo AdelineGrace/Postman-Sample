@@ -568,6 +568,63 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "[\n    {\n        \"submissionId\": 11,\n        \"assignmentId\": 10,\n        \"userId\": \"U75\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:09:16\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 12,\n        \"assignmentId\": 10,\n        \"userId\": \"U76\",\n        \"subDesc\": \"subDesc for U19\",\n        \"subComments\": \"subComments for U19\",\n        \"subDateTime\": \"06-23-2023 20:20:02\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 14,\n        \"assignmentId\": 10,\n        \"userId\": \"U78\",\n        \"subDesc\": \"Test\",\n        \"subComments\": \"test\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 16:04:24\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 24,\n        \"assignmentId\": 10,\n        \"userId\": \"U92\",\n        \"subDesc\": \"Test1\",\n        \"subComments\": \"test1\",\n        \"subPathAttach1\": \"test\",\n        \"subPathAttach2\": \"test\",\n        \"subPathAttach3\": \"test\",\n        \"subPathAttach4\": \"test\",\n        \"subPathAttach5\": \"test\",\n        \"subDateTime\": \"06-24-2023 17:51:29\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    }\n]"
+				},
+				{
+					"id": "0bdf31ab-6bf5-4d74-8af9-2879a2e5bf70",
+					"name": "Grades by Assignment ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGrades",
+								":assignmentId"
+							],
+							"variable": [
+								{
+									"key": "assignmentId",
+									"value": "292"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 28 Jun 2023 21:00:39 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"submissionId\": 186,\n        \"assignmentId\": 292,\n        \"userId\": \"U234\",\n        \"subDesc\": \"Assignment submission by U234\",\n        \"subComments\": \"submitted succesfully\",\n        \"subPathAttach1\": \"file1.json\",\n        \"subPathAttach2\": \"file2.json\",\n        \"subPathAttach3\": \"file3.json\",\n        \"subPathAttach4\": \"file4.json\",\n        \"subPathAttach5\": \"file5.json\",\n        \"subDateTime\": \"06-26-2023 19:02:14\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    }\n]"
 				}
 			]
 		},
@@ -1240,18 +1297,18 @@
 	],
 	"variable": [
 		{
-			"id": "a209dcb7-24cf-40b5-8933-5336e758e43f",
+			"id": "f447d631-c268-4db3-ae7f-82dd2b34083a",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8627a324-c2c3-4ced-ba50-3250b5b26049",
+			"id": "2d4b1793-eafb-4e7d-aa9a-09b9811b887b",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "72bfb901-19e5-4aaf-8bdf-8d130f6a9f61",
+			"id": "16010b6c-203b-4cfb-b4f5-ab7fcb909a83",
 			"key": "subDateTime",
 			"value": ""
 		}
