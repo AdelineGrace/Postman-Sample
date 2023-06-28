@@ -926,7 +926,7 @@
 							"}\r",
 							"\r",
 							"// Log message for assignment resubmission\r",
-							"console.log(\"Assignment resubmitted successfully.\")\r",
+							"console.log(\"Assignment resubmitted successfully.\");\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1187,13 +1187,13 @@
 	],
 	"variable": [
 		{
-			"id": "327b65d6-3ecc-472f-88a2-4815b2e384d6",
+			"id": "0191d312-1368-4ce2-b9cc-cf3809dce85e",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "77f9d0a2-f421-4494-8ac6-45ebfd5bf988",
+			"id": "84e492d5-6063-4a09-8694-adf834aa4aa4",
 			"key": "submissionDateTime",
 			"value": ""
 		}
