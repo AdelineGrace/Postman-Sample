@@ -892,8 +892,9 @@
 							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
 							"var requestBody = JSON.parse(pm.request.body.raw);\r",
 							"\r",
-							"var submission = requestBody[0];\r",
-							"var subDateTime = submission.subDateTime;\r",
+							"var requestBody = JSON.parse(pm.request.body.raw);\r",
+							"\r",
+							"var subDateTime = requestBody.subDateTime;\r",
 							"\r",
 							"var dueDate = \"06-27-2023 21:24:52\"; // Update with the actual due date from the assignment details\r",
 							"\r",
@@ -1162,13 +1163,13 @@
 	],
 	"variable": [
 		{
-			"id": "4cbd5081-0809-4205-b57b-33fbf7c6c10b",
+			"id": "768820ab-21e2-43ca-9e94-1d8c8ba2dec1",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "44865ede-1801-499c-a3d2-a40ef52718b6",
+			"id": "fff236ef-8225-42a5-ae4b-69f995d532be",
 			"key": "submissionDateTime",
 			"value": ""
 		}
