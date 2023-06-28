@@ -103,6 +103,10 @@
 							"const serialNo = Math.floor(Math.random()* 900) +100;\r",
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
 							"\r",
+							"var moment=require('moment');\r",
+							"var dueDate = moment().add(7, 'days').format();\r",
+							"pm.collectionVariables.set(\"dueDate\", dueDate);\r",
+							"\r",
 							"/*const assignmentName = [Java, Python, Selenium, TestNG, Cucumber, SQL];\r",
 							"pm.environment.set(\"assignmentName\", [\"a\",\"b\"]);\r",
 							"const assignmentDescription = [\r",
@@ -136,7 +140,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescForJava}}\",\r\n  \"assignmentName\": \"Jun23-PostmanPros-SDET-Java Assignment-{{serialNumber}}\" ,\r\n  \"batchId\": {{batchId}},\r\n  \"comments\": \"{{comments}}\",\r\n  \"createdBy\": \"U233\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\"\r\n }\r\n",
+					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescription}}\",\r\n  \"assignmentName\": \"{{assignmentName}}{{serialNumber}}\" ,\r\n  \"batchId\": {{batchId}},\r\n  \"comments\": \"{{comments}}\",\r\n  \"createdBy\": \"{{AdminID}}\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"U694\",\r\n  \"pathAttachment1\": \"string\",\r\n  \"pathAttachment2\": \"string\",\r\n  \"pathAttachment3\": \"string\"\r\n }\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -638,31 +642,31 @@
 	],
 	"variable": [
 		{
-			"id": "3b69c42c-6430-411a-b2cc-253faed7fba8",
+			"id": "5dcc92c8-495d-4dc6-ae96-148b20ab0657",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string"
 		},
 		{
-			"id": "d50066a7-91f8-4446-a06c-7391cadaedd6",
+			"id": "3ecdef9f-e0a4-409d-9111-d60e16b0b38d",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string"
 		},
 		{
-			"id": "d23a651a-7497-4012-afc8-594c994e0733",
+			"id": "eff0bfd1-5a2c-4c97-9844-7d9c4a6b7b17",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string"
 		},
 		{
-			"id": "a6acebc0-4605-4ff3-a8dd-08f8aefd8d7d",
+			"id": "1c827f05-8155-4a23-990e-b89cd8ec90ba",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string"
 		},
 		{
-			"id": "465b4f93-dbf5-4726-9f2e-15ae1fc30ae9",
+			"id": "cab277d9-27d8-485a-9630-91c86c100817",
 			"key": "dueDate",
 			"value": ""
 		}
