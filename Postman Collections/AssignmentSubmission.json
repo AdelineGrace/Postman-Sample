@@ -909,6 +909,7 @@
 							"            \"gradedBy\": \"U1172\",\r",
 							"            \"gradedDateTime\": \"06-26-2023 21:24:52\",\r",
 							"            \"grade\": 2\r",
+							"        }\r",
 							"    }\r",
 							"}\r",
 							"\r",
@@ -1187,13 +1188,13 @@
 	],
 	"variable": [
 		{
-			"id": "0191d312-1368-4ce2-b9cc-cf3809dce85e",
+			"id": "d85ce776-4cb2-4557-9ed8-06febd3481b2",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "84e492d5-6063-4a09-8694-adf834aa4aa4",
+			"id": "ad0b7b00-888d-40fa-9723-67f812b4809c",
 			"key": "submissionDateTime",
 			"value": ""
 		}
