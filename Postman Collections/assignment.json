@@ -131,7 +131,6 @@
 							"//CreatedBy  - Should be Admin / Staff , Only active users can create assignment\r",
 							"\r",
 							"\r",
-							"\r",
 							"//script to format dueDate as per contract testing document  YYYY-MM-DD HH:MI:SS\r",
 							"//const moment = require('moment');\r",
 							"//pm.collectionVariables.set(\"dueDate\", moment().format(\"YYYY-MM-DDTHH:MM.SSZ\"))\r",
@@ -154,7 +153,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescription}}\",\r\n  \"assignmentName\": \"{{assignmentName}}{{serialNumber}}\",\r\n  \"batchId\": \"{{batchId}}\",\r\n  \"comments\": \"{{comments}}\",\r\n  \"createdBy\": \"{{AdminID}}\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"{{StaffID}}\",\r\n  \"pathAttachment1\": \"{{pathAttachment1}}\",\r\n  \"pathAttachment2\": \"{{pathAttachment2}}\",\r\n  \"pathAttachment3\": \"{{pathAttachment3}}\"\r\n }",
+					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescription}}\",\r\n  \"assignmentName\": \"{{assignmentName}}{{serialNumber}}\",\r\n  \"batchId\": \"{{batchId}}\",\r\n  \"comments\": \"{{comments}}\",\r\n  \"createdBy\": \"U117\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"{{StaffID}}\",\r\n  \"pathAttachment1\": \"{{pathAttachment1}}\",\r\n  \"pathAttachment2\": \"{{pathAttachment2}}\",\r\n  \"pathAttachment3\": \"{{pathAttachment3}}\"\r\n }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -656,61 +655,61 @@
 	],
 	"variable": [
 		{
-			"id": "f0ea6d0e-16c4-4ce9-aa46-5f5b81561496",
+			"id": "9286a2d5-5867-4b19-9cab-c65fa48d12c4",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "7a2fdab8-7248-4ae5-b0e7-bca7818a541e",
+			"id": "7af27f99-22cd-4cc6-a785-9c580aac96c3",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "16f00169-0141-4e75-96a0-e74f775cf762",
+			"id": "c6951201-4d89-4a88-8c7b-dff0f664cef7",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "92b1c593-20a1-4a5a-af6d-be523d109772",
+			"id": "459b9817-94e1-4137-8b03-39517f7f1611",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "286bbc7e-aa2c-402c-bdf0-f557d4addbee",
+			"id": "4ddb3070-34a1-4b1f-ac2e-e536688a725c",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "b5a81f15-063a-4d83-a9c0-dbbf1ee6fa75",
+			"id": "481b00f4-3888-4e53-8278-206d5ab50366",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "633a8f9a-4478-4f83-bc6e-f7e3a54819b5",
+			"id": "a2d6745d-19f6-4b79-991d-b67f18d7e6c6",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "7ef1f71c-619f-4ae8-b814-b51753dbe6a9",
+			"id": "a02c77a5-8529-4573-a72e-784a984bc5f0",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "3dc5519d-382b-4694-8187-dd0fea1274e7",
+			"id": "d88d393e-5986-4daa-9024-d7d81f14ac39",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "60129b3d-79cc-4633-a5a8-3e1277184be3",
+			"id": "645d673c-03f3-4dc8-b634-f7ce1f282778",
 			"key": "assignmentDescription",
 			"value": ""
 		}
