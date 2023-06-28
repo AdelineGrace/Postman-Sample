@@ -99,31 +99,11 @@
 						"id": "ba0b61a5-f1af-441d-b46e-4629bcdda8e2",
 						"exec": [
 							"\r",
-							"pm.test(\"Create Batch - Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
+							"pm.test(\"Create Batch with Null - Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
 							"});\r",
 							"\r",
-							"const response = pm.response.json();\r",
 							"\r",
-							"pm.globals.set(\"batchId\", response.batchId);\r",
-							"pm.globals.set(\"BatchName\", response.batchName);\r",
-							"console.log(response.batchId);\r",
-							"console.log(response.batchName);\r",
-							"\r",
-							"const iterationCount = pm.info.iterationCount;\r",
-							"console.log(iterationCount);\r",
-							"const currentIteration = (pm.info.iteration);\r",
-							"console.log(currentIteration);\r",
-							"pm.collectionVariables.set(\"currentIteration\", currentIteration);\r",
-							"pm.collectionVariables.set(\"iterationCount\", iterationCount);\r",
-							"if ((currentIteration + 1) <= iterationCount)\r",
-							"{\r",
-							"    postman.setNextRequest(null);\r",
-							"}\r",
-							"else\r",
-							"{\r",
-							"    postman.setNextRequest(\"Create Batch with Null Status\");\r",
-							"}\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1129,6 +1109,18 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "683b9c56-d8a2-4e4e-a64c-2dee977c1db6",
+			"key": "currentIteration",
+			"value": ""
+		},
+		{
+			"id": "fb1ab096-b8b1-4d2e-a70a-9cb7e8c8558f",
+			"key": "iterationCount",
+			"value": ""
 		}
 	]
 }
