@@ -415,7 +415,9 @@
 					"script": {
 						"id": "c3cc8495-bcfa-4f15-9134-d9712ad9e5a2",
 						"exec": [
-							""
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -1272,18 +1274,18 @@
 	],
 	"variable": [
 		{
-			"id": "c4236d56-5da2-493b-927f-65726381ffb0",
+			"id": "e500f3c2-124e-480a-92b1-b75937da2140",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7de46208-45e6-4b71-815f-efe23457065f",
+			"id": "1097214c-d099-4c17-a337-b762079481b3",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "e1d85316-2c81-446e-ab1a-d467588a0453",
+			"id": "bd604853-bc18-40d1-a366-9934bcf9ec13",
 			"key": "subDateTime",
 			"value": ""
 		}
