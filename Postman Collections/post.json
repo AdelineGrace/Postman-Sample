@@ -1711,5 +1711,17 @@
 				]
 			}
 		}
+	],
+	"variable": [
+		{
+			"id": "aa1871a5-9d7d-4a90-a5ba-6216dcd6e3bc",
+			"key": "currentIteration",
+			"value": ""
+		},
+		{
+			"id": "5cd60455-b84f-437d-836a-de34ad178e89",
+			"key": "iterationCount",
+			"value": ""
+		}
 	]
 }
