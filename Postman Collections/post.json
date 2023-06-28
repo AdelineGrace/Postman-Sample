@@ -1818,13 +1818,18 @@
 	],
 	"variable": [
 		{
-			"id": "c40683f6-6bfc-4752-8121-a4dc52f2447a",
+			"id": "dd08e16b-4d0e-4674-81db-d97833a1c0fb",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "c26336b2-f728-4436-b0b8-dbceeb477f35",
+			"id": "ebfa9629-c99c-48d0-a88d-dce54f406120",
 			"key": "iterationCount",
+			"value": ""
+		},
+		{
+			"id": "76ce28e9-8fdf-432c-ad3d-f0fd42116c66",
+			"key": "subDateTime",
 			"value": ""
 		}
 	]
