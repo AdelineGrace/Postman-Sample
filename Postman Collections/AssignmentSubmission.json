@@ -1008,7 +1008,7 @@
 							"var DueDate = pm.collectionVariables.get(\"dueDate\");\r",
 							"\r",
 							"var SubmissionDateTime = pm.collectionVariables.set(\"submissionDateTime\");\r",
-							"\r",
+							"var SubmissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
 							"\r",
 							"if (Date.parse(DueDate) > Date.parse(SubmissionDateTime)) {\r",
 							"    \r",
@@ -1279,18 +1279,18 @@
 	],
 	"variable": [
 		{
-			"id": "04590c9c-bf3f-41a4-a5cb-257d845b4c53",
+			"id": "c1727a9a-7a11-4b72-a37e-de86c3497317",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d839098a-3fed-411f-b3d3-f6dfb7ee5bae",
+			"id": "5f0c022d-3b9f-4077-af58-c1605eb510e8",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "974fb8e5-5d06-4560-a7a1-49e45fbfe363",
+			"id": "218ce092-9f7f-46ca-a7db-72ca4af703ed",
 			"key": "subDateTime",
 			"value": ""
 		}
