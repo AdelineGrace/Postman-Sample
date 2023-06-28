@@ -1016,7 +1016,7 @@
 							"\r",
 							"}\r",
 							"else{\r",
-							"    console.log(\"Assignment resubmitted\");}\r",
+							"    console.log(\"Assignment resubmitted\");\r",
 							"\r",
 							"           \r",
 							"\r",
@@ -1281,18 +1281,18 @@
 	],
 	"variable": [
 		{
-			"id": "992c4439-9919-4999-b351-1cc5a4ee980c",
+			"id": "24c82a86-2c60-4ef2-ace2-91088a091de7",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "36e175e5-20d0-4d06-9cc5-cf6dee14ae7b",
+			"id": "3a1738e0-e177-47c5-9f60-a1233cd34b07",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "ca587e0f-b738-40c9-8ef8-6a5e3275585d",
+			"id": "e1a7562e-4740-45c5-8f60-6cf0187ed412",
 			"key": "subDateTime",
 			"value": ""
 		}
