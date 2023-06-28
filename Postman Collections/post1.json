@@ -26,12 +26,12 @@
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
-							"if (nameofAssignment == \"Jun23-PostmanPros-SDET-Java Assignment-\"){\r",
-							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[0]);\r",
+							"if (nameofbatchName == \"Jun23-PostmanPros-SDET-Java Assignment-\"){\r",
+							"    pm.collectionVariables.set(\"batchDescription\",assignmentDescriptions[0]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));    \r",
 							"}\r",
 							"else if(nameofAssignment == \"Jun23-PostmanPros-SDET-Selenium Assignment-\"){\r",
-							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[1]);\r",
+							"    pm.collectionVariables.set(\"batchDescription\",assignmentDescriptions[1]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
 							"}"
 						],
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "ba0a3afe-b9a8-441a-8434-be8c19d012c2",
+			"id": "432ac1fc-6c01-4cfb-ae2f-5e354d1be700",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "acf04d0e-2a40-460c-b8fb-9fadc5a6c76a",
+			"id": "5b54a72b-50f6-4860-915c-0ae362cde5e6",
 			"key": "iterationCount",
 			"value": ""
 		}
