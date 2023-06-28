@@ -116,6 +116,8 @@
 							"console.log(assignmentName);\r",
 							"//var testdesc = \"test description\"\r",
 							"//pm.collectionVariables.set(\"assignmentDesc\",testdesc );\r",
+							"\r",
+							"pm.collectionVariables.set(\"assignmentName\", pm.iterationData.get('assignmentName'))\r",
 							"const assignmentDescriptions = [\r",
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
@@ -657,51 +659,51 @@
 	],
 	"variable": [
 		{
-			"id": "773d9fa0-2daf-4394-bcf9-fb32ced170ef",
+			"id": "25e8ed34-b5b1-462c-87fa-bab908ad4310",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "789c22f1-8257-4cde-b8b0-8eb218a72582",
+			"id": "02b32cb3-623d-4b83-85a8-12d25bc94fea",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "12ad21aa-2248-47a3-8b42-679e62836017",
+			"id": "f498173e-3e58-4c74-9feb-becad28a7b9d",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "87aa5746-1c2f-44ee-9b36-31f904bf4af4",
+			"id": "8a0f2a9e-048d-4aff-b65e-0e8fd53d25a1",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "632563bb-6601-420b-893d-f92f582f5725",
+			"id": "918197a2-1f62-4946-95cd-680434fd694a",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "ab182412-5d2f-4675-a696-9c646e363f96",
+			"id": "6674f505-e98f-4aed-8d91-d7b955c2d5be",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "8bb62101-f829-4268-b977-a1f73889ab8d",
+			"id": "0baf27fa-14db-4076-bfda-aa358a619a48",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "a5626db8-9ba7-472b-949b-a14607f48491",
+			"id": "92f7fea2-785f-4cba-a9a6-bfafcda4a6b1",
 			"key": "dueDate",
 			"value": ""
 		}
