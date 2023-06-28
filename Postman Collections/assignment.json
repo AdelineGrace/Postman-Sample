@@ -113,9 +113,9 @@
 							"const reqBody = JSON.parse(pm.request.body.raw);\r",
 							"var assignmentName = reqBody.assignmentName;\r",
 							"console.log(assignmentName);\r",
-							"var testdesc = \"test description\"\r",
-							"pm.collectionVariables.set(\"assignmentDesc\",testdesc );\r",
-							"/*const assignmentDescriptions = [\r",
+							"//var testdesc = \"test description\"\r",
+							"//pm.collectionVariables.set(\"assignmentDesc\",testdesc );\r",
+							"const assignmentDescriptions = [\r",
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
@@ -126,7 +126,7 @@
 							"else if(reqBody.assignmentName.has(\"Selenium\")){\r",
 							"    pm.collectionVariables.set(\"assignmentDescription\",assignmentDescriptions[1]);\r",
 							"    console.log(pm.collectionVariables.get(assignmentDesription));\r",
-							"}*/\r",
+							"}\r",
 							"\r",
 							"//CreatedBy  - Should be Admin / Staff , Only active users can create assignment\r",
 							"\r",
@@ -154,7 +154,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDesc}}\",\r\n  \"assignmentName\": \"{{assignmentName}}{{serialNumber}}\",\r\n  \"batchId\": \"{{batchId}}\",\r\n  \"comments\": \"{{comments}}\",\r\n  \"createdBy\": \"{{AdminID}}\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"{{StaffID}}\",\r\n  \"pathAttachment1\": \"{{pathAttachment1}}\",\r\n  \"pathAttachment2\": \"{{pathAttachment2}}\",\r\n  \"pathAttachment3\": \"{{pathAttachment3}}\"\r\n }",
+					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescription}}\",\r\n  \"assignmentName\": \"{{assignmentName}}{{serialNumber}}\",\r\n  \"batchId\": \"{{batchId}}\",\r\n  \"comments\": \"{{comments}}\",\r\n  \"createdBy\": \"{{AdminID}}\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"{{StaffID}}\",\r\n  \"pathAttachment1\": \"{{pathAttachment1}}\",\r\n  \"pathAttachment2\": \"{{pathAttachment2}}\",\r\n  \"pathAttachment3\": \"{{pathAttachment3}}\"\r\n }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -656,51 +656,51 @@
 	],
 	"variable": [
 		{
-			"id": "dfa11c99-ea25-471d-80f0-0c74150de3f6",
+			"id": "ae1617ae-170b-45a1-89ab-2574304fd4b4",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "cbf07655-2c80-4dac-8bf3-f496d8ce95d9",
+			"id": "2ecc6f36-5d1a-40eb-9bbf-d735fc731197",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "68c34871-0ed7-4c67-b43b-31ee9d603cd5",
+			"id": "3d1edcbf-ede2-476a-b345-9fe141122d12",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "007d98a9-b2f0-425c-85fd-0bfdbf172ae8",
+			"id": "5788daa3-cc9b-4685-b104-9bc534416269",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "f23633f4-db2e-4f4d-bce5-ba2064d5c88f",
+			"id": "dc59ebd9-529e-4fa3-8f0f-8592e27cb163",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "4ccb598b-9297-4bcf-8080-b0b99ce04bbf",
+			"id": "49a5c23a-b2d1-46a0-8cdf-09f5e00ab75e",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "dbafd73a-2cf7-4c81-9123-4da0e588213e",
+			"id": "cc544e50-b422-421e-ac0b-d990ee587494",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "8588daae-276c-493a-9f54-ecda8bf30042",
+			"id": "bcd7a075-e972-48ef-9fb7-a60e50b2bef4",
 			"key": "dueDate",
 			"value": ""
 		}
