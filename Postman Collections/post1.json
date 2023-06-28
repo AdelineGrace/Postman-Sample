@@ -27,11 +27,11 @@
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
 							"if (nameofbatchName == \"Jun23-PostmanPros-SDET-Java Assignment-\"){\r",
-							"    pm.collectionVariables.set(\"batchDescription\",assignmentDescriptions[0]);\r",
+							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[0]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));    \r",
 							"}\r",
 							"else if(nameofAssignment == \"Jun23-PostmanPros-SDET-Selenium Assignment-\"){\r",
-							"    pm.collectionVariables.set(\"batchDescription\",assignmentDescriptions[1]);\r",
+							"    pm.collectionVariables.set(\"batchDescription\",batchDescriptions[1]);\r",
 							"    console.log(pm.collectionVariables.get(\"assignmentDescription\"));\r",
 							"}"
 						],
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "432ac1fc-6c01-4cfb-ae2f-5e354d1be700",
+			"id": "1054274f-82bd-48b8-af0d-2ccad195df7e",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "5b54a72b-50f6-4860-915c-0ae362cde5e6",
+			"id": "94055c93-e8c2-4abe-a101-88119f2d2722",
 			"key": "iterationCount",
 			"value": ""
 		}
