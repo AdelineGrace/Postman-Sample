@@ -104,6 +104,7 @@
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
 							"\r",
 							"//to set dueDate 14 days from current date/assignment creation date\r",
+							"//Due Date in Assignments should be entered in YYYY-MM-DD HH:MI:SS\r",
 							"var moment=require('moment');\r",
 							"var dueDate = moment().add(7, 'days').format(\"YYYY-MM-DDTHH:MM.SSSZ\");\r",
 							"pm.collectionVariables.set(\"dueDate\", dueDate);\r",
@@ -651,46 +652,46 @@
 	],
 	"variable": [
 		{
-			"id": "ba486db5-95fc-48a0-a8bb-c30970c1e8da",
+			"id": "52288463-72ba-46fa-93cd-0c8d6cb9442d",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "a0757794-ed95-45a4-b189-d0f4a16a1414",
+			"id": "f27dcd41-66dc-4cf6-9308-98750d07161a",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "ef7e68f0-6f45-4a13-aebd-a2972a00044d",
+			"id": "fe618ddd-f636-4bcf-ae9e-5a75dd48c85b",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "cdb2e3e7-1c36-42cf-9650-d4fef222676e",
+			"id": "db65ffbc-0120-4a46-9d35-5ee2530a8643",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "552e4065-6470-46f0-b404-a58a2b7ba1a4",
+			"id": "f90bfa31-9c8d-486e-b2d0-15780c961c25",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "1cc93283-92b8-4451-ad48-cd16b818eaba",
+			"id": "177deada-e701-49f8-b143-16f367bc97c9",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "276e320d-8bdc-4645-8905-1e2c09e5fc2c",
+			"id": "c62f827a-3fff-47ea-b423-b1f67a0f1e2b",
 			"key": "iterationCount",
 			"value": ""
 		}
