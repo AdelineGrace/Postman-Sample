@@ -1005,18 +1005,18 @@
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
 							"\r",
-							"var dueDate = pm.collectionVariables.get(\"dueDate\");\r",
+							"var DueDate = pm.collectionVariables.get(\"dueDate\");\r",
 							"\r",
-							"var submissionDateTime = pm.collectionVariables.set(\"submissionDateTime\");\r",
+							"var SubmissionDateTime = pm.collectionVariables.set(\"submissionDateTime\");\r",
 							"\r",
 							"\r",
-							"if (Date.parse(dueDate) < Date.parse(submissionDateTime)) {\r",
+							"if (Date.parse(DueDate) < Date.parse(SubmissionDateTime)) {\r",
 							"    \r",
 							"    console.log(\"Assignment submission is not allowed after the due date.\");\r",
 							"\r",
 							"}\r",
 							"else{\r",
-							"    console.log(\"Assignment resubmitted\");}\r",
+							"    console.log(\"Assignment resubmitted\")\r",
 							"\r",
 							"           \r",
 							"\r",
@@ -1281,18 +1281,18 @@
 	],
 	"variable": [
 		{
-			"id": "03c10cd1-c11e-4547-b092-f53712f5e759",
+			"id": "342b8d04-2fd1-461d-9c8a-bc6d3b4f4749",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "187ba81e-0908-4da8-a398-31913d19ba83",
+			"id": "4d6821a7-71ab-4642-a372-96fffc3a3c41",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "fd571597-dbba-4e4d-a42d-252a1dee15a2",
+			"id": "ccd79b46-be3c-4248-ab92-a4340cebc7da",
 			"key": "subDateTime",
 			"value": ""
 		}
