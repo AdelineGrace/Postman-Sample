@@ -417,7 +417,7 @@
 					"variable": [
 						{
 							"key": "batchName",
-							"value": "{{batchName}}"
+							"value": "{{BatchName}}"
 						}
 					]
 				}
