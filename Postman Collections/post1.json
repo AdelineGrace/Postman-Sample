@@ -996,6 +996,109 @@
 			]
 		},
 		{
+			"name": "Update Batch by Invalid Batch Id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6b83ddc9-a09c-4299-b385-11462564acb3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "fe5b0f8d-6d35-4f3d-b8d0-25709c4b97ba",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"batchName\": {{batchName}},\r\n    \"batchId\": {{batchId}},\r\n    \"batchDescription\": \"Batch details Updated\",\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 4,\r\n    \"programId\": {{programId_SDET}},\r\n    \"programName\": {{programName_SDET}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/batches/:batchId",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"batches",
+						":batchId"
+					],
+					"variable": [
+						{
+							"id": "8bfc3f63-a036-4b49-9d2c-0995f4af2131",
+							"key": "batchId",
+							"value": "{{batchId}}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "0f029014-21d2-44f6-9855-eff76c7ba266",
+					"name": "Update Batch",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"batchName\": \"June 2023 API Hackathon-72761\",\r\n    \"batchDescription\": null,\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 4,\r\n    \"programId\": 51,\r\n    \"programName\": \"new1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/1003"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 17:30:40 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"batchId\": 1003,\n    \"batchName\": \"June 2023 API Hackathon-72761\",\n    \"batchDescription\": null,\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 4,\n    \"programId\": 51,\n    \"programName\": \"new1\"\n}"
+				}
+			]
+		},
+		{
 			"name": "Delete Batch",
 			"event": [
 				{
@@ -1146,22 +1249,22 @@
 	],
 	"variable": [
 		{
-			"id": "f219e73a-1ed1-43b2-a877-31b56b12cae4",
+			"id": "deb719d7-f27e-4216-bfa7-9ae97db68473",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "0a7aa01a-7d98-43d8-a9b6-193bc975dab1",
+			"id": "91658e33-8888-4881-9026-44b51c450a74",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "473b6447-e2c1-488c-89af-c1faefe1daa0",
+			"id": "d3bc8d8c-4701-4d2b-96ea-5764da7aed88",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "20ead48c-25e7-4b7a-9023-f90260b0bebc",
+			"id": "ef76f339-050d-4915-b2c2-e1d9cfba1448",
 			"key": "batchDescription",
 			"value": ""
 		}
