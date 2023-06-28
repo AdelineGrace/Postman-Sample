@@ -600,7 +600,7 @@
 							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
 							"});\r",
 							"\r",
-							""
+							"postman.setNextRequest(\"Delete Batch\");"
 						],
 						"type": "text/javascript"
 					}
@@ -657,61 +657,61 @@
 	],
 	"variable": [
 		{
-			"id": "f6d2d67f-c6d4-41d5-b3bc-6e697b263210",
+			"id": "b0759a2c-6164-44e9-bf52-a917bc06d65d",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "eb0c51e8-c9a0-441a-b0eb-0e39f5303c91",
+			"id": "501bd1e9-4f72-4963-82df-467f06853247",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "7a65f380-c80f-4f37-b5f0-3afc0c2e43be",
+			"id": "d24bef2f-cb72-420e-b99d-dc8e7011b432",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "b9ce195e-f766-4180-b731-6c02e49fe994",
+			"id": "25f0f651-6fff-4996-a74e-cc99f8fabcce",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "a98ab20b-8ffc-4ed6-9e62-d39b584794c7",
+			"id": "d77f8eca-1f2f-4f19-b207-ec83c1115596",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "0c7f415a-aa83-430a-890b-3f5d42d37cdb",
+			"id": "de95cb04-a57d-441a-8aaa-2c08ad6d025b",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "ba053c50-2128-4026-b7be-8f8e755abd31",
+			"id": "32706bfe-1105-4fd2-9416-47203f046e68",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "58c6d1b6-0db7-4fe8-abce-280b87a30f48",
+			"id": "2b37959d-529f-4e6c-ba7f-80959d1e6ae2",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "988ddac1-fe88-4b1c-9c65-b4813085febb",
+			"id": "64726649-0891-4e4a-bddd-51cb2f6667bb",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "be964fe1-6672-469c-bb43-bd1f9d6bfbb3",
+			"id": "89fa1cb5-64d1-40c2-b68f-2dace2e0feae",
 			"key": "assignmentDescription",
 			"value": ""
 		}
