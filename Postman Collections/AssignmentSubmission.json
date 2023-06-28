@@ -890,6 +890,7 @@
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
 							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
+							"var requestBody = JSON.parse(pm.request.body.raw);\r",
 							"\r",
 							"var submission = requestBody[0];\r",
 							"var subDateTime = submission.subDateTime;\r",
@@ -1161,13 +1162,13 @@
 	],
 	"variable": [
 		{
-			"id": "37caeb0f-05e4-4f91-b49a-5135fb657fb2",
+			"id": "4cbd5081-0809-4205-b57b-33fbf7c6c10b",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "29860751-ca1b-4e79-a406-c3113ee79a34",
+			"id": "44865ede-1801-499c-a3d2-a40ef52718b6",
 			"key": "submissionDateTime",
 			"value": ""
 		}
