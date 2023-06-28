@@ -385,7 +385,7 @@
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
 							"var moment = require('moment')\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYYTHH:mm:sssZ'))\r",
+							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('YYYY-MM-DDTHH:MM.SSZ'))\r",
 							"\r",
 							"const reqBody = pm.request.body.raw;\r",
 							"/*const assignId = reqBody.assignmentId;\r",
@@ -1273,18 +1273,18 @@
 	],
 	"variable": [
 		{
-			"id": "1665f451-abf1-4e01-8a61-276e9c15cda7",
+			"id": "394d40f1-6cf6-42bf-9a0f-808d61524ad9",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8a69aa66-6260-46a4-a3e7-ce3c2c4c7b93",
+			"id": "47d2da0f-f056-4bc4-8da6-faf04d8aa4a2",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "15c442f2-d71f-4af9-b12e-e28d2cfecb8a",
+			"id": "37e66f1c-ae36-491c-8399-318f06384610",
 			"key": "subDateTime",
 			"value": ""
 		}
