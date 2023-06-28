@@ -385,12 +385,22 @@
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
 							"\r",
+							"\r",
 							"var moment = require('moment')\r",
 							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))\r",
 							"\r",
 							"const reqBody = JSON.parse(pm.request.body.raw);\r",
-							"const submissiondate = reqBody.subDateTime;\r",
+							"const assignId = reqBody.assignmentId;\r",
 							"\r",
+							"if(assignId){\r",
+							"    console.log(\"Assignment Id Exist\");\r",
+							"}\r",
+							"else{\r",
+							"    console.log(\"Assignment Id does not Exist\");\r",
+							"    postman.setNextRequest(null);\r",
+							"\r",
+							"}\r",
+							"const submissiondate = reqBody.subDateTime;\r",
 							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
 							"\r",
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
@@ -1178,13 +1188,13 @@
 	],
 	"variable": [
 		{
-			"id": "833893f6-d80c-459c-b3e2-be5cd414e8f8",
+			"id": "19f18431-1e7a-4aee-9b04-233abb421b58",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d9f78855-0184-40e2-a945-57baab5307e4",
+			"id": "afeea1a4-b8a6-4218-98a3-95f8c1da7908",
 			"key": "submissionDateTime",
 			"value": ""
 		}
