@@ -1010,7 +1010,7 @@
 							"var SubmissionDateTime = pm.collectionVariables.set(\"submissionDateTime\");\r",
 							"var SubmissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
 							"\r",
-							"if (Date.parse(DueDate) > Date.parse(SubmissionDateTime)) {\r",
+							"if (Date.parse(DueDate) < Date.parse(SubmissionDateTime)) {\r",
 							"    \r",
 							"    console.log(\"Assignment submission is not allowed after the due date.\");\r",
 							"}\r",
@@ -1279,18 +1279,18 @@
 	],
 	"variable": [
 		{
-			"id": "c1727a9a-7a11-4b72-a37e-de86c3497317",
+			"id": "5ae76ec3-8778-4dfc-af40-c1a53e8c6d9e",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f0c022d-3b9f-4077-af58-c1605eb510e8",
+			"id": "aef9b891-c841-4abc-9ff4-a0c15fa7f34b",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "218ce092-9f7f-46ca-a7db-72ca4af703ed",
+			"id": "ebebd57b-c8c9-4816-8b82-ff9321be841c",
 			"key": "subDateTime",
 			"value": ""
 		}
