@@ -110,11 +110,11 @@
 							"pm.collectionVariables.set(\"dueDate\", dueDate);\r",
 							"\r",
 							"//to store assignment description in access it based on the assignment name in requestbody\r",
-							"/*const reqBody = JSON.parse(pm.request.body.raw);\r",
+							"const reqBody = JSON.parse(pm.request.body.raw);\r",
 							"var assignmentName = reqBody.assignmentName;\r",
 							"console.log(assignmentName);\r",
 							"\r",
-							"const assignmentDescriptions = [\r",
+							"/*const assignmentDescriptions = [\r",
 							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
@@ -655,51 +655,51 @@
 	],
 	"variable": [
 		{
-			"id": "70e91d82-3eaa-4928-8431-b82563cacccf",
+			"id": "d81deb47-cff6-4889-bbba-4f783008664f",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "d954cd4b-5ce1-4731-8fd4-b6bc6f690473",
+			"id": "94d814f6-cbfe-493f-8ce3-7f263b00732a",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "bfc421b1-c8e9-4c28-a3b0-a33c62c832eb",
+			"id": "e8c6cc99-d758-47bc-bd55-78ff5deca065",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "ea144188-504d-4016-98d5-f5a4f803cff7",
+			"id": "85d9ed49-16c5-4f23-aba9-f0691fd26d7f",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "31c53ee4-c970-4b51-8a06-6bb7e994140f",
+			"id": "6ac4712f-edb6-45c3-9b46-32fb0f6e9a4f",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "d51858d3-0f94-4744-9279-aa48f8d4034a",
+			"id": "2af7d7f1-9427-4140-b436-ec89ab56d725",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "d7875995-b131-4234-a559-9fd77c746002",
+			"id": "0dd580ef-6578-421f-b85b-6a1a48952850",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "a6853997-7e87-45a6-b378-2a4a7e3f3dad",
+			"id": "39fdc15a-c95a-4b3e-854a-687c5e529924",
 			"key": "dueDate",
 			"value": ""
 		}
