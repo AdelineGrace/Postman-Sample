@@ -1683,6 +1683,79 @@
 					"body": "Deleted User ID:  U909"
 				}
 			]
+		},
+		{
+			"name": "{{BaseUrl}}/assignmentsubmission/:Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4c9fc880-996b-4634-a45e-a7c8f3d2a162",
+						"exec": [
+							"\r",
+							"var moment = require('moment');\r",
+							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
+							"var submissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
+							"\r",
+							"if (Date.parse(dueDate) > Date.parse(submissionDateTime)) {\r",
+							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
+							"}\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "3e044067-f0be-481f-9e2f-81104e3064fb",
+						"exec": [
+							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
+							"\r",
+							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
+							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "27d6a352-2023-422d-9292-2fd688fd40fc",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"assignmentId\": 786,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Submissions for SQL assignment updated\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{subDateTime}}\",\r\n    \"gradedBy\": \"{{StaffID}}\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": -1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/:Id",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						":Id"
+					],
+					"variable": [
+						{
+							"id": "91d6d2b8-c8d0-4cd1-8ded-3e15437448c1",
+							"key": "Id",
+							"value": "786"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -1709,12 +1782,12 @@
 	],
 	"variable": [
 		{
-			"id": "9adb04d9-998c-4121-b784-8f92541daed3",
+			"id": "3b9d0d65-66bd-4cae-9287-6c1a79567c5b",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "224b8df4-f85e-4d9f-954d-05057c9bd8e3",
+			"id": "a19c5537-2243-4e97-8dd0-80ef0887315f",
 			"key": "iterationCount",
 			"value": ""
 		}
