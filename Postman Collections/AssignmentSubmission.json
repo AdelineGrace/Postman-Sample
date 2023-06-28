@@ -384,10 +384,8 @@
 					"script": {
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
-							"\r",
-							"\r",
 							"var moment = require('moment')\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYYTHH:mm:sssZ'))\r",
+							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))\r",
 							"\r",
 							"const reqBody = pm.request.body.raw;\r",
 							"/*const assignId = reqBody.assignmentId;\r",
@@ -433,7 +431,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": {{assignmentId}},\r\n    \"userId\": {{StudentID}},\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": {{StaffID}},\r\n    \"gradedDateTime\": \"2023-06-19T22:02:28.140Z\",\r\n    \"grade\": -1\r\n}",
+					"raw": "{\r\n    \"assignmentId\": 1695,\r\n    \"userId\": {{StudentID}},\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": {{StaffID}},\r\n    \"gradedDateTime\": \"{{$isoTimestamp}}\",\r\n    \"grade\": -1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1275,18 +1273,18 @@
 	],
 	"variable": [
 		{
-			"id": "d7d4c34d-fe25-4105-b72c-a7aa75361051",
+			"id": "924e915b-a232-40fd-a7e3-b470e1749899",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f8d29027-1426-4c1d-8e36-72a2cfaa6d38",
+			"id": "8be7c77a-d39a-4da0-b508-9d0bd17a4879",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "838242f1-a253-48b1-9606-d74f6927ca12",
+			"id": "73fe81bc-8534-4d02-9c2b-349042274bd3",
 			"key": "subDateTime",
 			"value": ""
 		}
