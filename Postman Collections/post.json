@@ -44,27 +44,7 @@
 							"pm.collectionVariables.set(\"currentIteration\", currentIteration);\r",
 							"pm.collectionVariables.set(\"iterationCount\", iterationCount);\r",
 							"\r",
-							"if (currentIteration < iterationCount) {\r",
-							"    postman.setNextRequest(null); // Runs all requests once\r",
-							"} else {\r",
-							"    const requestName = pm.info.requestName; // Get the current request name\r",
-							"    if (requestName === \"Name of the Request with CSV\") {\r",
-							"        // Run the request with CSV three times\r",
-							"        if (currentIteration < iterationCount + 3) {\r",
-							"            postman.setNextRequest(\"Create 3 Users with CSV\");\r",
-							"        } else {\r",
-							"            postman.setNextRequest(\"Create New Student User with Invalid Details\");\r",
-							"        }\r",
-							"    } else {\r",
-							"        postman.setNextRequest(\"Create New Student User with Invalid Details\");\r",
-							"    }\r",
-							"}\r",
-							"const iterationCount = pm.info.iterationCount;\r",
-							"console.log(iterationCount);\r",
-							"const currentIteration = pm.info.iteration;\r",
-							"console.log(currentIteration);\r",
-							"pm.collectionVariables.set(\"currentIteration\", currentIteration);\r",
-							"pm.collectionVariables.set(\"iterationCount\", iterationCount);\r",
+							"\r",
 							"if ((currentIteration + 1) <= iterationCount)\r",
 							"{\r",
 							"    postman.setNextRequest(null);\r",
@@ -1729,12 +1709,12 @@
 	],
 	"variable": [
 		{
-			"id": "079faa19-112d-43e8-a2d9-74035be6596d",
+			"id": "69b790bf-6993-4edc-afdc-a338d8efb3dd",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "71f859d2-821e-4b39-a313-a6df36fdb571",
+			"id": "ae031278-ad4c-4550-bea7-b852a8d012c4",
 			"key": "iterationCount",
 			"value": ""
 		}
