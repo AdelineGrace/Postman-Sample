@@ -1012,7 +1012,9 @@
 							"});\r",
 							"\r",
 							"console.log(pm.response.status);\r",
-							"console.log(pm.response.code);"
+							"console.log(pm.response.code);\r",
+							"\r",
+							"postman.setNextRequest(\"Create Assignment\")"
 						],
 						"type": "text/javascript"
 					}
@@ -1265,22 +1267,22 @@
 	],
 	"variable": [
 		{
-			"id": "4cecf392-5db3-4e66-94cc-92f18f4beea3",
+			"id": "8aaade22-10cb-4794-b4f3-2aa4c18a8171",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "6bbb5ae7-c0c5-4c39-a7e4-816a9970cf75",
+			"id": "edd23bd0-25bf-4080-b1a8-96bf4b63938f",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "6aa811aa-1d49-4848-ad34-1191264a4884",
+			"id": "8064f3fa-7d5d-43db-8e60-0ac41b0a005f",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "7044e4d1-2f36-4b85-9ba1-99f3b4b70ff5",
+			"id": "dd929d96-a6c7-4a68-83c5-29d99256e52c",
 			"key": "batchDescription",
 			"value": ""
 		}
