@@ -889,7 +889,7 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
-							"/ Get the assignment ID from the request URL\r",
+							"// Get the assignment ID from the request URL\r",
 							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
 							"\r",
 							"var submission = requestBody[0];\r",
@@ -1164,13 +1164,13 @@
 	],
 	"variable": [
 		{
-			"id": "8c332ab2-ba05-4f0f-bffd-b0993b1e1c0b",
+			"id": "aa85aff1-008a-406f-8437-abd65cd9ae10",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f1b91cfb-7f89-4798-bf5b-ae73924addb6",
+			"id": "c694c557-0828-45a8-b8b6-0facad3dba55",
 			"key": "submissionDateTime",
 			"value": ""
 		}
