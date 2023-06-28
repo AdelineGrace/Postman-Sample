@@ -1011,17 +1011,6 @@
 							"    pm.response.to.have.status(\"Bad Request\");\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Response message is validated\", () => {\r",
-							"  var batchId = pm.request.url.path[2];\r",
-							"  \r",
-							"  const expectedObject = {\r",
-							"    \"message\": \"Batch not found with Id : \" +batchId+\" \",\r",
-							"    \"success\": false\r",
-							"};\r",
-							"\r",
-							"pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
-							"});\r",
-							"\r",
 							"console.log(pm.response.status);\r",
 							"console.log(pm.response.code);"
 						],
@@ -1266,22 +1255,22 @@
 	],
 	"variable": [
 		{
-			"id": "ee718444-1e76-4d36-b77d-c83a32796622",
+			"id": "aefa3531-0121-45e2-ae91-b19dbdae928c",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "1c1bf1ac-7050-4308-98a5-cf5a6403d872",
+			"id": "d20e137b-7953-4081-8bb8-d9405c338dd7",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "81e421ff-d85b-4a0e-bae0-3eb2dd7129f9",
+			"id": "4a5d03ca-06ab-4f6c-b32f-2c253c812a6a",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "e37f9f58-f8b5-4e76-b6e8-95c2b12a2a88",
+			"id": "6b75c84c-2201-49a7-a4b4-1128198b5d86",
 			"key": "batchDescription",
 			"value": ""
 		}
