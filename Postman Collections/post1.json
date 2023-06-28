@@ -23,7 +23,7 @@
 							"console.log(nameofbatchName);\r",
 							"\r",
 							"const batchDescriptions = [\r",
-							"    \"This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections\",\r",
+							"    \"This batch\",\r",
 							"    \"This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions\",\r",
 							"]\r",
 							"if (nameofbatchName == \"Jun23-PostmanPros-SDET-SDET81-\"){\r",
@@ -1132,12 +1132,12 @@
 	],
 	"variable": [
 		{
-			"id": "8e639b21-efec-4825-804c-c2323d869311",
+			"id": "0a772374-f42a-4733-bc3e-3e324966af06",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "97d8f346-601f-4fef-afdc-bae41581b260",
+			"id": "b08b0c6b-d789-404e-8e76-acca04679d15",
 			"key": "iterationCount",
 			"value": ""
 		}
