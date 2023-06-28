@@ -1009,7 +1009,7 @@
 							"\r",
 							"if (Date.parse(dueDate) > Date.parse(submissionDateTime)) {\r",
 							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
-							"}\r",
+							"\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1272,18 +1272,18 @@
 	],
 	"variable": [
 		{
-			"id": "fd3b8db1-2e74-4e32-bfb6-0fe6a2d76f09",
+			"id": "6c8fdba6-50ba-4922-8a4f-9a7677cf279b",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "35e0c3d7-2805-4368-b971-f793be1f403c",
+			"id": "fa48b575-3cb4-41aa-a79c-1191bbfa176b",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "ca02892e-a57f-46a4-a12f-5c12730694df",
+			"id": "a5048717-b770-420e-b5db-2d9417494274",
 			"key": "subDateTime",
 			"value": ""
 		}
