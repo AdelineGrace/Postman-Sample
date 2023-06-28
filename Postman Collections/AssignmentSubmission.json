@@ -153,7 +153,7 @@
 					"variable": [
 						{
 							"key": "UserID",
-							"value": "U76"
+							"value": "{{StudentID}}"
 						}
 					]
 				}
@@ -1303,18 +1303,18 @@
 	],
 	"variable": [
 		{
-			"id": "a7fabd6a-ff35-41d4-8d4c-e390a43dcb47",
+			"id": "82f39245-1e2c-4c7d-b59c-6e972e2b9d29",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "17073748-522d-46cb-a06c-be31ee57a369",
+			"id": "5ab92114-5170-4bd8-9141-005462317a15",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "53a958f8-cd2c-4c8b-9f76-3623f672103e",
+			"id": "398ebf5f-688e-4869-830d-3d8ee55730a4",
 			"key": "subDateTime",
 			"value": ""
 		}
