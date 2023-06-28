@@ -881,7 +881,7 @@
 						"exec": [
 							"\r",
 							"// Get the assignment ID from the request body\r",
-							"var assignmentId = requestBody[0].assignmentId;\r",
+							"var assignmentId = Body[0].assignmentId;\r",
 							"\r",
 							"// Get the due date for the assignment ID\r",
 							"var url = pm.variables.replaceIn('{{BaseUrl}}/assignments/' + assignmentId);\r",
@@ -897,14 +897,7 @@
 							"    if (response.code === 200) {\r",
 							"        var assignment = response.json();\r",
 							"        var dueDate = assignment.dueDate;\r",
-							"\r",
-							"        // Perform validations\r",
-							"        var submission = requestBody[0];\r",
-							"\r",
-							"        if (!submission.subDateTime || !submission.userId || !submission.subDesc) {\r",
-							"            console.log('Mandatory fields are missing in the request body.');\r",
-							"            return;\r",
-							"        }\r",
+							"       \r",
 							"\r",
 							"        var subDateTime = submission.subDateTime;\r",
 							"\r",
@@ -1184,13 +1177,13 @@
 	],
 	"variable": [
 		{
-			"id": "fbce3fa4-e756-4579-b8a8-c32ffb090248",
+			"id": "c8c90452-bbd9-452d-86f3-d4cb73018f1f",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "224993fb-667e-4ed8-b72f-4c40702d039e",
+			"id": "805ae979-b950-41a3-bb3d-066e054f7eb0",
 			"key": "submissionDateTime",
 			"value": ""
 		}
