@@ -2458,7 +2458,9 @@
 						"exec": [
 							"pm.test(\"Status code is 404\", function () {\r",
 							"    pm.response.to.have.status(404);\r",
-							"});"
+							"});\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -2572,12 +2574,12 @@
 	],
 	"variable": [
 		{
-			"id": "bb3e32d1-b1a5-4b02-ae2c-7502d17a32ad",
+			"id": "e362d440-60e9-46e8-8f4d-75f370e0935b",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "68564b66-6d64-4a9f-b812-723857688dc9",
+			"id": "7640be14-64ad-49ec-8893-3cd2064e4728",
 			"key": "currentIteration",
 			"value": ""
 		}
