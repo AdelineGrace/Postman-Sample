@@ -278,7 +278,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "a38a9ab6-2a91-4980-ba91-1a40ee9d9dca",
+					"name": "Get Submission by Invalid UserID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/student/:UserID",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"student",
+								":UserID"
+							],
+							"variable": [
+								{
+									"key": "UserID",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:18:02 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"User not found with UserID : 0 \",\n    \"success\": false\n}"
+				}
+			]
 		},
 		{
 			"name": "Get Submission by BatchID",
@@ -1334,18 +1392,18 @@
 	],
 	"variable": [
 		{
-			"id": "7454b1ea-15d8-4e03-b6bf-fe02d702536c",
+			"id": "1868c9e7-3001-4e03-b398-2a901d88a538",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7e684c2d-19fa-437c-96a3-0853624ee067",
+			"id": "ea32c59e-c167-4de1-a46a-db84bc800b8f",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "5d64ab2b-817d-456f-b64a-eaf6bf5badde",
+			"id": "5a5c5ea4-2cc7-4768-8f26-8c432ad34091",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
