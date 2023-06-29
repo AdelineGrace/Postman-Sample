@@ -1843,7 +1843,7 @@
 					"variable": [
 						{
 							"key": "submissiontId",
-							"value": null
+							"value": "{{submissionId}}"
 						}
 					]
 				}
@@ -1936,23 +1936,23 @@
 	],
 	"variable": [
 		{
-			"id": "03fe1b54-6c6f-40eb-99e7-8fa1fc4db20a",
+			"id": "51d897b7-450f-481b-95d2-5df79b12afee",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f6c3f520-10a3-4e75-b82e-aabfd5096b0e",
+			"id": "a8d2e854-5f72-4b2d-b6af-8d3cf1466365",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "9acdeb37-4f54-41c6-bc9d-41cd24a96d1e",
+			"id": "9b8b1228-bc14-42be-a908-3f8730676e0f",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "d0fed6f7-211d-4de5-b9e4-4f5cbee013d8",
+			"id": "0e446b9f-fd0d-462b-91c0-78241030a3cf",
 			"key": "req_body",
 			"value": ""
 		}
