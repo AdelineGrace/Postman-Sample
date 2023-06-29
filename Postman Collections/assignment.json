@@ -160,23 +160,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{BaseUrl}}/assignments/batch/:batchId",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"assignments",
-						"batch",
-						":batchId"
-					],
-					"variable": [
-						{
-							"key": "batchId",
-							"value": null
-						}
-					]
-				}
+				"url": "{{BaseUrl}}/assignments"
 			},
 			"response": []
 		},
@@ -673,61 +657,61 @@
 	],
 	"variable": [
 		{
-			"id": "53b21bdd-1fd2-4eaa-a063-2766eed9c471",
+			"id": "bb7e07d8-582a-4954-a9f5-db4348a012ab",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "ebbb2a39-ff7e-4f89-ab1f-74d4184678e7",
+			"id": "0b6c0281-8346-4b58-8a64-bb8ef1f914d1",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "01064fc4-9cea-4738-8667-7544578beba1",
+			"id": "27ded4a4-f514-45a1-a67b-f3d98e8babf3",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "cac9624d-91f4-4a12-bf5d-433f080ecbda",
+			"id": "da68b09f-f721-41d3-bc2d-8ba5de503f10",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "46dba7bb-fe40-4243-8a2f-23c6850d1f97",
+			"id": "ecf03352-3602-4c32-b569-d6cfa32c67cb",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "806fd928-3cb3-4ddc-9a6b-37927f0ce8a5",
+			"id": "d0dac020-9cf5-447d-ba64-2d10eac372b4",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "3d6140db-8255-496c-8df6-4419560e1768",
+			"id": "452fa292-754e-4898-afda-79d6807692e8",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "c284f8a6-3729-4956-a84b-6a3c289f9949",
+			"id": "19b04fe7-9c17-4f82-befc-68eb9e13ed3d",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "43a7f24e-491c-4427-b499-33ed199650dc",
+			"id": "94a30c0a-7dbc-4374-adbe-27a278cc76c7",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "066276fd-5cb3-49de-8d75-ac013f2d7770",
+			"id": "dd5745e0-bb82-4765-8416-59a774939748",
 			"key": "assignmentDescription",
 			"value": ""
 		}
