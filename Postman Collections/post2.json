@@ -1355,62 +1355,6 @@
 			},
 			"response": [
 				{
-					"id": "39a156ee-368d-4607-8f4d-3e4463a2f11b",
-					"name": "Delete by ProgramId",
-					"originalRequest": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/deletebyprogid/:programId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"deletebyprogid",
-								":programId"
-							],
-							"variable": [
-								{
-									"key": "programId",
-									"value": "4175"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "plain",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "text/plain;charset=UTF-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "49"
-						},
-						{
-							"key": "Date",
-							"value": "Tue, 27 Jun 2023 04:13:35 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "Message: Program Id-4175 is deleted Successfully!"
-				},
-				{
 					"id": "2227e9f9-5fc2-4da9-9468-de6529ae8d02",
 					"name": "Delete by ProgramId",
 					"originalRequest": {
@@ -2574,12 +2518,12 @@
 	],
 	"variable": [
 		{
-			"id": "5c03ce56-2ee4-4b4d-8c03-a182966f6a02",
+			"id": "4524fd8f-83eb-4997-9765-edde63bc2245",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "7b2463b9-73ac-4420-bf43-0618de256a96",
+			"id": "19540754-649a-46b7-8213-11aecf4aa60b",
 			"key": "currentIteration",
 			"value": ""
 		}
