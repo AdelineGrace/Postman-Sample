@@ -112,7 +112,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "ae4004af-763a-4edb-89e3-4ee8b215c0fb",
+					"name": "Get Grades by Invalid BatchID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/grades/:batchID",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"grades",
+								":batchID"
+							],
+							"variable": [
+								{
+									"key": "batchID",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:17:42 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"Assignments with grades does not exist for Batch ID : 0\",\n    \"success\": false\n}"
+				}
+			]
 		},
 		{
 			"name": "Get Submission by UserID",
@@ -1276,18 +1334,18 @@
 	],
 	"variable": [
 		{
-			"id": "209712b9-9c07-4a12-92a1-597544cf1862",
+			"id": "7454b1ea-15d8-4e03-b6bf-fe02d702536c",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1c8e0220-6990-4d0a-996b-e508142bbc50",
+			"id": "7e684c2d-19fa-437c-96a3-0853624ee067",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "ebb2f7fb-e777-45c4-84f3-c6d88e1d60ae",
+			"id": "5d64ab2b-817d-456f-b64a-eaf6bf5badde",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
