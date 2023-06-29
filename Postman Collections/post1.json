@@ -1097,7 +1097,64 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "2a79d001-5db2-495e-9eb3-524f2ce643d4",
+					"name": "Delete Batch",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/:batchId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								":batchId"
+							],
+							"variable": [
+								{
+									"key": "batchId",
+									"value": "{{batchId}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:09:35 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Message: Batch with Id-5588 deleted Successfully!"
+				}
+			]
 		},
 		{
 			"name": "Delete batch with invalid BatchId",
@@ -1168,27 +1225,84 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "6f570d22-a911-46c6-9212-857c585039ab",
+					"name": "Delete batch with invalid BatchId",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/:batchId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								":batchId"
+							],
+							"variable": [
+								{
+									"key": "batchId",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:09:03 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"Batch not found with Id : 0 \",\n    \"success\": false\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
-			"id": "1810748f-1a5a-4903-b349-12f241118215",
+			"id": "9201ac67-6b74-43f3-bf50-8b9c191e2700",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "7cdeb480-2c94-48ed-bf7c-8b6b29bfb001",
+			"id": "7ce01d6a-a04e-4472-960a-e318a732784f",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "34bf789d-8890-45e9-962d-2355e2600b11",
+			"id": "4ee37bd7-c3e1-4667-923c-be9a74993676",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "a2b423a8-12e6-4cba-b6bc-17b50b681144",
+			"id": "3cfb9aeb-16d8-4d16-9519-16afe07d0e17",
 			"key": "batchDescription",
 			"value": ""
 		}
