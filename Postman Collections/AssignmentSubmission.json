@@ -1763,18 +1763,18 @@
 	],
 	"variable": [
 		{
-			"id": "12cab3d7-dd75-4169-95b4-4df899a8205f",
+			"id": "3aefdd45-fe72-4233-9031-551a71648cc1",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e0d9c6e9-ec4e-4f4e-b438-acf3f3ec4c2e",
+			"id": "2372279b-ffa3-4611-904a-a3161b6094c2",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "6027c942-96a5-46f9-a8ba-3624c11798f3",
+			"id": "e53ff798-e1d5-46c0-846e-c7fecc1d92ee",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
