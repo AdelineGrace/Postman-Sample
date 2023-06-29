@@ -1010,6 +1010,63 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"message\": \"Assignment not found with Id : 0 \",\n    \"success\": false\n}"
+				},
+				{
+					"id": "82b151d6-55a7-42d5-bc76-5be28efaa05f",
+					"name": "Grades by Invalid Assignment ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGrades",
+								":assignmentId"
+							],
+							"variable": [
+								{
+									"key": "assignmentId",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 07:04:25 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"Assignment not found with Id : 0 \",\n    \"success\": false\n}"
 				}
 			]
 		},
@@ -1682,18 +1739,18 @@
 	],
 	"variable": [
 		{
-			"id": "02d2558b-6a1b-4700-b51b-df4f31ab1c80",
+			"id": "6ca8cb03-f2a8-41e3-8d3d-91172e23ffb4",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0844cace-0f01-4efd-9163-dcff43c0c25d",
+			"id": "e022face-fb8e-49e0-b58b-a5bbb7f2992c",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "4b165b1c-18b0-4f97-9d83-c3c1a200bd71",
+			"id": "fc8ea46c-770f-4171-9ddb-7739813d3edd",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
