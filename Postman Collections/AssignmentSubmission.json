@@ -1627,7 +1627,7 @@
 							"    pm.response.to.have.status(201);\r",
 							"});\r",
 							"\r",
-							"const response = pm.response.submissionId;\r",
+							"const response = pm.response.json();\r",
 							"pm.globals.set(\"submissionId\", response.submissionId);"
 						],
 						"type": "text/javascript"
@@ -1886,23 +1886,23 @@
 	],
 	"variable": [
 		{
-			"id": "9fdece61-a13e-4647-8ab7-36a8acca65dc",
+			"id": "658f9130-ca54-4557-ac51-30270a08fc76",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0b734bba-17f6-47a5-bca2-b443b59f5db6",
+			"id": "131a3a28-2ccc-4fc7-bda4-bd1c22868816",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "2f3d4916-5204-4da1-ae3b-dd300e5df7e2",
+			"id": "487b7482-5fe8-4d5c-a3b8-971e46f63722",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "f074bc63-cc70-42fd-8178-757070b97554",
+			"id": "5fd2bd4e-0a37-4c28-8c46-2348ba062d56",
 			"key": "req_body",
 			"value": ""
 		}
