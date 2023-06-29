@@ -926,6 +926,22 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "8fff320f-71a4-4636-8196-6479fad31b11",
+						"exec": [
+							"var body = [\r",
+							"    {\r",
+							"        \"assignmentId\" : 0\r",
+							"    }\r",
+							"];\r",
+							"\r",
+							"pm.collectionVariables.set('req_body', JSON.stringify(body));"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "f57db13d-2d94-4ace-a511-d922dc83a6d1",
@@ -935,6 +951,15 @@
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{reqBody}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
 					"host": [
@@ -1763,20 +1788,25 @@
 	],
 	"variable": [
 		{
-			"id": "a4c9c7c3-eff1-46dd-94d4-733037a5644c",
+			"id": "52fdd85c-fcfa-447e-a560-682105c5d9a6",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3481b10a-accc-4e90-a0d6-a7140920e289",
+			"id": "30ac3aed-a607-4901-ab07-51fd11a669cc",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "601efd90-3de6-4ef3-9dbf-18eebf3d21a2",
+			"id": "214b4185-0653-457f-a4a3-3d9f83c09ea1",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
+		},
+		{
+			"id": "4dd89d63-3c56-4312-8ece-ed4af1af7c72",
+			"key": "req_body",
+			"value": ""
 		}
 	]
 }
