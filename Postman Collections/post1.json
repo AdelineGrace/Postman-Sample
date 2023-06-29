@@ -751,65 +751,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "e91831f1-ee81-41aa-9911-029a682076ae",
-					"name": "New Request",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/batches/program/:programId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"batches",
-								"program",
-								":programId"
-							],
-							"variable": [
-								{
-									"key": "programId",
-									"value": "6789456"
-								}
-							]
-						}
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Mon, 26 Jun 2023 12:45:36 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"message\": \"batch with this programId 6789456not found\",\n    \"success\": false\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Update Batch by Batch Id",
@@ -1185,22 +1127,22 @@
 	],
 	"variable": [
 		{
-			"id": "9b8ac804-3591-4d69-8666-95146dcbd1d4",
+			"id": "d5deef9e-efdc-4c0d-980f-b77f7dbea522",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "db11ba7c-e1a4-4fba-8dfa-9337cdb7ea8d",
+			"id": "c90e3e47-aed1-4762-a87f-2ca4e8518cc9",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "b6883949-cee8-4422-861c-4f1ce932381a",
+			"id": "56413103-fa20-454e-9267-0f51557d0546",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "4653db89-232f-4886-bcbf-684cd1cab38d",
+			"id": "b0739784-37ac-4498-9a55-0270ce4313e9",
 			"key": "batchDescription",
 			"value": ""
 		}
