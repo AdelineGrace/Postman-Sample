@@ -751,7 +751,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "19ece409-7d9d-49b5-a067-2b39be7ba9de",
+					"name": "Get batch by Invalid ProgramId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/program/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								"program",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "6789456"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:05:45 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"batch with this programId 6789456not found\",\n    \"success\": false\n}"
+				}
+			]
 		},
 		{
 			"name": "Update Batch by Batch Id",
@@ -1127,22 +1185,22 @@
 	],
 	"variable": [
 		{
-			"id": "d5deef9e-efdc-4c0d-980f-b77f7dbea522",
+			"id": "0b4a5c33-1396-4a2e-a857-5c4a9f144e3b",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "c90e3e47-aed1-4762-a87f-2ca4e8518cc9",
+			"id": "de4cdbed-b7a8-41d6-9ddc-6107d3c41f16",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "56413103-fa20-454e-9267-0f51557d0546",
+			"id": "c45b1861-738c-4a54-9437-b97bdd30bb13",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "b0739784-37ac-4498-9a55-0270ce4313e9",
+			"id": "4421510a-07e5-4231-b80a-9586bd12478c",
 			"key": "batchDescription",
 			"value": ""
 		}
