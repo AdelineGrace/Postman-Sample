@@ -1064,6 +1064,71 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"programId\": 1851,\n    \"programName\": \"Jun23-Postman Pros-DA-289907_UpdatedWithID\",\n    \"programDescription\": \"2023 June API HAckathon \",\n    \"programStatus\": \"Active\",\n    \"creationTime\": null,\n    \"lastModTime\": null\n}"
+				},
+				{
+					"id": "a509b978-de40-4336-9b71-90a8e60aca54",
+					"name": "Update Program by ProgramID",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"programDescription\": \"2023 June API HAckathon \",\r\n  \"programId\": {{programId_SDET}},\r\n  \"programName\": \"{{programName}}_UpdatedWithID\",\r\n  \"programStatus\": \"Active\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/putprogram/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"putprogram",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "{{programId_SDET}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 04:27:29 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"programId\": 6164,\n    \"programName\": \"_UpdatedWithID\",\n    \"programDescription\": \"2023 June API HAckathon \",\n    \"programStatus\": \"Active\",\n    \"creationTime\": null,\n    \"lastModTime\": null\n}"
 				}
 			]
 		},
@@ -2576,12 +2641,12 @@
 	],
 	"variable": [
 		{
-			"id": "41211800-2f7f-491b-995f-250b65b6e687",
+			"id": "a34383d2-811e-4e8a-9e3d-84aede862678",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "d5d0ee15-e3b8-4fbb-9218-1f977fc01fe7",
+			"id": "f25035a5-7ab7-48d1-a683-b7e5cfc0d78f",
 			"key": "currentIteration",
 			"value": ""
 		}
