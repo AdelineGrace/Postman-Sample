@@ -1300,6 +1300,71 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"timestamp\": \"2023-06-25T17:45:57.647+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/lms/putprogram/1851\"\n}"
+				},
+				{
+					"id": "d9002d89-544f-4357-91e4-8ed3e6ca3ac4",
+					"name": "Update Program by Missing field",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"programDescription\":\"2023 June API HAckathon\",\r\n  \"programId\": 1851,\r\n  \"programName\": \"2023 June API HAckathon\",\r\n  \"programStatus\": \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/putprogram/:programId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"putprogram",
+								":programId"
+							],
+							"variable": [
+								{
+									"key": "programId",
+									"value": "{{programId_SDET}}"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 04:34:58 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"timestamp\": \"2023-06-29T04:34:58.938+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/lms/putprogram/6164\"\n}"
 				}
 			]
 		},
@@ -2575,12 +2640,12 @@
 	],
 	"variable": [
 		{
-			"id": "b726bbce-e527-4c23-8ba1-787b1e81e8b1",
+			"id": "fd017949-31a5-4269-80d7-84157d3c8871",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "0a3002d9-4e33-48c9-9076-4f40354104d4",
+			"id": "514deca3-2913-4758-9a0e-7e79befd2b91",
 			"key": "currentIteration",
 			"value": ""
 		}
