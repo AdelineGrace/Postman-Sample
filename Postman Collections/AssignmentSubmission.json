@@ -1533,7 +1533,7 @@
 							"//const dueDate = pm.globals.get(\"dueDate\");\r",
 							"\r",
 							"// Compare the current date with the due date\r",
-							"/*if (submissionDateTime < dueDate) {\r",
+							"if (submissionDateTime < new Date(dueDate)) {\r",
 							"    // Set the grade value as -1 as a placeholder\r",
 							"    pm.request.body.grades[0].grade = -1;\r",
 							"    \r",
@@ -1542,7 +1542,7 @@
 							"    \r",
 							"    // Abort the request\r",
 							"    pm.request.abort();\r",
-							"}*/"
+							"}"
 						],
 						"type": "text/javascript"
 					}
@@ -1557,7 +1557,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[    {\r\n        \r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"{{StudentID}}\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 5\r\n    }]",
+					"raw": "[    {\r\n        \r\n        \"assignmentId\": 10,\r\n        \"userId\": \"U19\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 2\r\n    }]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1806,7 +1806,7 @@
 			]
 		},
 		{
-			"name": "Delete by SubmissionId",
+			"name": "Delete Assignment Id",
 			"event": [
 				{
 					"listen": "test",
@@ -1832,80 +1832,23 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/:submissiontId",
+					"raw": "{{BaseUrl}}/assignmentsubmission/:assignmentId",
 					"host": [
 						"{{BaseUrl}}"
 					],
 					"path": [
 						"assignmentsubmission",
-						":submissiontId"
+						":assignmentId"
 					],
 					"variable": [
 						{
-							"key": "submissiontId",
-							"value": "{{submissionId}}"
+							"key": "assignmentId",
+							"value": "{{assignmentId}}"
 						}
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "484a6ede-9505-4e21-b7dc-5c4bf192f80c",
-					"name": "Delete by SubmissionId",
-					"originalRequest": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/assignmentsubmission/:submissiontId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"assignmentsubmission",
-								":submissiontId"
-							],
-							"variable": [
-								{
-									"key": "submissiontId",
-									"value": "{{submissionId}}"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 29 Jun 2023 15:43:07 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"message\": \"Submission deleted successfully\",\n    \"success\": true\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Delete Invalid Assignment Id",
@@ -1950,80 +1893,23 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/:submissionId",
+					"raw": "{{BaseUrl}}/assignmentsubmission/:assignmentId",
 					"host": [
 						"{{BaseUrl}}"
 					],
 					"path": [
 						"assignmentsubmission",
-						":submissionId"
+						":assignmentId"
 					],
 					"variable": [
 						{
-							"key": "submissionId",
-							"value": "01"
+							"key": "assignmentId",
+							"value": "0"
 						}
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "ad4c49df-b55b-46d1-8e37-387e2d364d33",
-					"name": "Delete by Invalid SubmissionId",
-					"originalRequest": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/assignmentsubmission/:submissionId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"assignmentsubmission",
-								":submissionId"
-							],
-							"variable": [
-								{
-									"key": "submissionId",
-									"value": "0"
-								}
-							]
-						}
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 29 Jun 2023 15:45:32 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"message\": \"Submission not found with ID : 0 \",\n    \"success\": false\n}"
-				}
-			]
+			"response": []
 		}
 	],
 	"event": [
@@ -2050,23 +1936,23 @@
 	],
 	"variable": [
 		{
-			"id": "e27c2097-3228-45bf-ba1e-b0edb688cf06",
+			"id": "13369bca-5f23-4600-857e-af696004c295",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "27028100-b4a3-4725-9717-0be1174832e2",
+			"id": "2253fb9a-2068-4a70-aafe-bf3ec8797780",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "6260323f-e72c-4e5c-9e75-c7266899faa1",
+			"id": "8ca0e70f-e289-4c79-92c8-1d89b296336d",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "486aed58-7a4c-495b-a951-2a95d5de956e",
+			"id": "0321a629-681c-4013-81ea-a149a981b2bc",
 			"key": "req_body",
 			"value": ""
 		}
