@@ -491,7 +491,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "7f88aeef-9249-4c89-9973-5b9513a0e5cd",
+					"name": "Get Batch by Name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/batchName/:batchName",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								"batchName",
+								":batchName"
+							],
+							"variable": [
+								{
+									"key": "batchName",
+									"value": "{{BatchName}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 18:29:33 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"batchId\": 5809,\n        \"batchName\": \"Jun23-PostmanPros-DA-DA65-225\",\n        \"batchDescription\": \"This batch is for DA batch 65\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 8,\n        \"programId\": 9498,\n        \"programName\": \"Jun23-PostmanPros-DA-445\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Get Batch by Invalid batch name",
@@ -1287,22 +1345,22 @@
 	],
 	"variable": [
 		{
-			"id": "cab70a10-ccac-47b8-948e-c1f6918b2c99",
+			"id": "bcdd33f7-267f-4436-aad7-acda9b227110",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "65faa7ef-c540-404d-8ad6-a615566aedc9",
+			"id": "969dbbad-cef2-4ead-b3c5-ab5ad97f4196",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "609c7a87-a321-4e2a-b379-7e4e1b2420aa",
+			"id": "c8c128ac-80c3-4a48-b075-99d5bec91bb4",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "b8d87aff-5caf-46a2-b134-5f3f68f820f6",
+			"id": "68060c62-3b73-42b8-916b-b92749a3f284",
 			"key": "batchDescription",
 			"value": ""
 		}
