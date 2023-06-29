@@ -331,73 +331,6 @@
 			"response": []
 		},
 		{
-			"name": "Submit Assignment",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
-						"exec": [
-							"var moment = require('moment')\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('YYYY-MM-DDTHH:MM.SSSZ'))\r",
-							"\r",
-							"const reqBody = pm.request.body.raw;\r",
-							"/*const assignId = reqBody.assignmentId;\r",
-							"console.log(reqBody.assignmentId);\r",
-							"\r",
-							"if(assignId){\r",
-							"    console.log(\"Assignment Id Exist\");\r",
-							"}\r",
-							"else{\r",
-							"    console.log(\"Assignment Id does not Exist\");\r",
-							"    postman.setNextRequest(null);\r",
-							"\r",
-							"}*/\r",
-							"//const submissiondate = reqBody.subDateTime;\r",
-							"var submissionDateTime = pm.collectionVariables.get(\"submissionDateTime\");\r",
-							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
-							"\r",
-							"/*pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
-							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
-							"});*/"
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "c3cc8495-bcfa-4f15-9134-d9712ad9e5a2",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "e57842a9-c2a8-43c1-af4a-03be4a0f0a1d",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 562,\r\n    \"userId\": \"U3980\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"String\",\r\n    \"gradedBy\": \"U76\",\r\n    \"gradedDateTime\": \"String\",\r\n    \"grade\": -1\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}/assignmentsubmission"
-			},
-			"response": []
-		},
-		{
 			"name": "All Submission",
 			"event": [
 				{
@@ -888,11 +821,11 @@
 					"script": {
 						"id": "f08401ca-be65-4d57-bbf4-80b0a53d69ac",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"console.log(pm.response.status);\r",
-							"console.log(pm.response.code);"
+							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
+							"\r",
+							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
+							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -902,45 +835,14 @@
 					"script": {
 						"id": "429e83a9-d2d2-4821-a233-4c8c15ca5e9b",
 						"exec": [
-							"// Get the assignment ID from the request URL\r",
-							"var assignmentId = pm.variables.get(\"assignmentId\");\r",
+							"var moment = require('moment');\r",
+							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
+							"var submissionDateTime = moment().format('MM-DD-YYYY HH:mm:ss');\r",
 							"\r",
-							"// Fetch the due date from the assignments API\r",
-							"pm.sendRequest({\r",
-							"    url: pm.variables.replaceIn(\"{{BaseUrl}}/assignments/\" + assignmentId),\r",
-							"    method: \"GET\"\r",
-							"}, function (err, response) {\r",
-							"    if (err) {\r",
-							"        console.log(\"Error fetching assignment details:\", err);\r",
-							"        return;\r",
-							"    }\r",
+							"if (Date.parse(dueDate) > Date.parse(submissionDateTime)) {\r",
+							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
+							"}\r",
 							"\r",
-							"    if (response.code === 200) {\r",
-							"        var assignment = response.json();\r",
-							"        var dueDate = assignment.dueDate;\r",
-							"\r",
-							"        // Check if the assignment submission is allowed based on the due date\r",
-							"        var requestBody = JSON.parse(pm.request.body.raw);\r",
-							"\r",
-							"        if (!requestBody || !requestBody[0]) {\r",
-							"            console.log(\"Request body is missing or empty.\");\r",
-							"            return;\r",
-							"        }\r",
-							"\r",
-							"        var submission = requestBody[0];\r",
-							"        var subDateTime = submission.subDateTime;\r",
-							"\r",
-							"        if (new Date(subDateTime) >= new Date(dueDate)) {\r",
-							"            console.log(\"Assignment submission is not allowed after the due date.\");\r",
-							"            return;\r",
-							"        }\r",
-							"\r",
-							"        // Log message for assignment resubmission\r",
-							"        console.log(\"Assignment resubmitted successfully.\");\r",
-							"    } else {\r",
-							"        console.log(\"Error fetching assignment details:\", response.code);\r",
-							"    }\r",
-							"});\r",
 							"\r",
 							"\r",
 							"\r",
@@ -966,7 +868,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 292,\r\n    \"userId\":\"{{StudentID}}\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": \"06-26-2023 21:24:49\",\r\n    \"gradedBy\": \"U1172\",\r\n    \"gradedDateTime\": \"06-26-2023 21:24:52\",\r\n    \"grade\": 2\r\n}\r\n",
+					"raw": "{\r\n    \"assignmentId\": 292,\r\n    \"userId\":\"{{StudentID}}\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1075,6 +977,73 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "Submit Assignment",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
+						"exec": [
+							"var moment = require('moment')\r",
+							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('YYYY-MM-DDTHH:MM.SSSZ'))\r",
+							"\r",
+							"const reqBody = pm.request.body.raw;\r",
+							"/*const assignId = reqBody.assignmentId;\r",
+							"console.log(reqBody.assignmentId);\r",
+							"\r",
+							"if(assignId){\r",
+							"    console.log(\"Assignment Id Exist\");\r",
+							"}\r",
+							"else{\r",
+							"    console.log(\"Assignment Id does not Exist\");\r",
+							"    postman.setNextRequest(null);\r",
+							"\r",
+							"}*/\r",
+							"//const submissiondate = reqBody.subDateTime;\r",
+							"var submissionDateTime = pm.collectionVariables.get(\"submissionDateTime\");\r",
+							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
+							"\r",
+							"/*pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
+							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
+							"});*/"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "c3cc8495-bcfa-4f15-9134-d9712ad9e5a2",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "e57842a9-c2a8-43c1-af4a-03be4a0f0a1d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"assignmentId\": 562,\r\n    \"userId\": \"U3980\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"String\",\r\n    \"gradedBy\": \"U76\",\r\n    \"gradedDateTime\": \"String\",\r\n    \"grade\": -1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}/assignmentsubmission"
 			},
 			"response": []
 		},
@@ -1211,18 +1180,18 @@
 	],
 	"variable": [
 		{
-			"id": "25878a96-790c-415f-9b53-af70183e9120",
+			"id": "27c13158-1372-4dfa-a2e2-afd8d51fc6d6",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "05686888-4225-4a7a-9c37-e6ff3c7fbb69",
+			"id": "87d6b485-1cf6-4407-9ea8-92c5f72a0f05",
 			"key": "submissionDateTime",
 			"value": ""
 		},
 		{
-			"id": "6b375bd8-1236-440b-bdd5-119653a44537",
+			"id": "38493f73-abba-44cf-9776-a5b63b5f49a5",
 			"key": "subDateTime",
 			"value": ""
 		}
