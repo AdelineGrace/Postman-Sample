@@ -628,7 +628,7 @@
 			"response": [
 				{
 					"id": "fa3fe696-ecf1-47db-9bb4-5d3044acba22",
-					"name": "Update Program by Name with Path Variable",
+					"name": "Update Program by Name",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
@@ -1621,12 +1621,12 @@
 	],
 	"variable": [
 		{
-			"id": "395d115a-41cb-4fd1-9739-28b08d6f397b",
+			"id": "01d0bd08-8376-46a5-a55c-191064d39bf1",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "783dcfca-4504-4176-b73d-adf27fa2460e",
+			"id": "6533fc06-b850-4df4-a1f6-d1832b1846bd",
 			"key": "currentIteration",
 			"value": ""
 		}
