@@ -1832,18 +1832,18 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/:assignmentId",
+					"raw": "{{BaseUrl}}/assignmentsubmission/:submissiontId",
 					"host": [
 						"{{BaseUrl}}"
 					],
 					"path": [
 						"assignmentsubmission",
-						":assignmentId"
+						":submissiontId"
 					],
 					"variable": [
 						{
-							"key": "assignmentId",
-							"value": "{{assignmentId}}"
+							"key": "submissiontId",
+							"value": null
 						}
 					]
 				}
@@ -1936,23 +1936,23 @@
 	],
 	"variable": [
 		{
-			"id": "c3ddc34a-f707-4ba2-b248-801c8b723e05",
+			"id": "03fe1b54-6c6f-40eb-99e7-8fa1fc4db20a",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e6a61719-bdef-4e9c-b997-2562da494209",
+			"id": "f6c3f520-10a3-4e75-b82e-aabfd5096b0e",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "eac0019c-92d4-4023-8c7a-b8a9f4e08160",
+			"id": "9acdeb37-4f54-41c6-bc9d-41cd24a96d1e",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "0040c712-b3e2-4f72-87db-9f0f7d24c2c6",
+			"id": "d0fed6f7-211d-4de5-b9e4-4f5cbee013d8",
 			"key": "req_body",
 			"value": ""
 		}
