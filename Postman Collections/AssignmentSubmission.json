@@ -932,13 +932,7 @@
 					"script": {
 						"id": "8fff320f-71a4-4636-8196-6479fad31b11",
 						"exec": [
-							"var body = [\r",
-							"    {\r",
-							"        \"assignmentId\" : 0\r",
-							"    }\r",
-							"];\r",
-							"\r",
-							"pm.collectionVariables.set('req_body', JSON.stringify(body));"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -953,7 +947,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{{reqBody}}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1788,23 +1782,23 @@
 	],
 	"variable": [
 		{
-			"id": "e5501b26-8d9a-4a84-b295-614569727cb4",
+			"id": "4d0a251b-c39e-42f8-a039-3f716d2b4971",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ff390a54-38c0-43b4-a890-b17679008a41",
+			"id": "b000b46e-52f6-44f7-aca0-974a335c7ae2",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "9ae49585-9191-4a3d-ba75-a39844f19ad1",
+			"id": "942cc1e9-0c9a-4f90-9baf-e478c38e9831",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		},
 		{
-			"id": "83e0c8f6-e1e1-4ebe-b58e-d8143c7cd49b",
+			"id": "548f823a-b7fa-45e5-a901-68182db39009",
 			"key": "req_body",
 			"value": ""
 		}
