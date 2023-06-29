@@ -2460,7 +2460,7 @@
 							"    pm.response.to.have.status(404);\r",
 							"});\r",
 							"\r",
-							"postman.setNextRequest(\"Delete User by UserID\");\r",
+							"\r",
 							"\r",
 							""
 						],
@@ -2576,12 +2576,12 @@
 	],
 	"variable": [
 		{
-			"id": "64a338a9-0cae-4794-9f76-9de0f96541ad",
+			"id": "01c95619-ee2a-4c7e-84d2-294fff85d13f",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "5aa66afb-34e6-4ad8-920c-2048f411129c",
+			"id": "54feb725-95b7-462d-b6d4-b4ab06a06234",
 			"key": "currentIteration",
 			"value": ""
 		}
