@@ -40,7 +40,7 @@
 							"console.log(currentIteration);\r",
 							"pm.collectionVariables.set(\"currentIteration\", currentIteration);\r",
 							"pm.collectionVariables.set(\"iterationCount\", iterationCount);\r",
-							"if ((currentIteration + 1) <= iterationCount)\r",
+							"if ((currentIteration + 1) < iterationCount)\r",
 							"{\r",
 							"    postman.setNextRequest(null);\r",
 							"}\r",
@@ -1621,12 +1621,12 @@
 	],
 	"variable": [
 		{
-			"id": "6551b47e-ec94-4250-8f66-5268c6c99037",
+			"id": "0a39e977-0ba2-49af-8a74-e346476d5fca",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "4d937356-361b-49f8-81e6-70b0d619e7fd",
+			"id": "1f913527-9246-4573-b4c5-5889a7720a19",
 			"key": "currentIteration",
 			"value": ""
 		}
