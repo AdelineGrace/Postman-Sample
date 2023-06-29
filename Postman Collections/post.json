@@ -1606,8 +1606,7 @@
 							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
 							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
 							"});\r",
-							"\r",
-							"postman.setNextRequest(\"Create Program\")"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -1812,22 +1811,22 @@
 	],
 	"variable": [
 		{
-			"id": "703ed95e-704c-4ad7-aa73-2174fed071aa",
+			"id": "d30ebb62-7b3d-4a38-a1dc-19149a239a6f",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "7bda3bf0-a8d9-44c1-bfa3-ac2ae271215d",
+			"id": "4c760bfe-01ef-41ed-ae0e-50546171854d",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "46581e4b-2ff6-4847-a2ef-f8161af0f98b",
+			"id": "8940585f-bf49-4366-9aad-a29855d4160a",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "0130b4ce-c060-41b2-a9c5-353db8b7dcb9",
+			"id": "f39e7c77-1baa-490b-895e-c7ba0f194472",
 			"key": "submissionDateTime",
 			"value": ""
 		}
