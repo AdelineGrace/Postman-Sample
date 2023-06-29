@@ -1219,7 +1219,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"programId\": 55,\r\n  \"roleId\": \"{{StaffRoleId}}\",\r\n  \"userId\": \"{{StaffID}}\",\r\n  \"userRoleProgramBatches\": [\r\n    {\r\n      \"batchId\": 151,\r\n      \"userRoleProgramBatchStatus\": \"Active\"\r\n    }\r\n  ]\r\n}",
+					"raw": "{\r\n  \"programId\": {{programId_SDET}},\r\n  \"roleId\": \"{{StaffRoleId}}\",\r\n  \"userId\": \"{{StaffID}}\",\r\n  \"userRoleProgramBatches\": [\r\n    {\r\n      \"batchId\": {{batchId}},\r\n      \"userRoleProgramBatchStatus\": \"Active\"\r\n    }\r\n  ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1245,75 +1245,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "0c2491c7-72cc-412b-9055-2680adea6e68",
-					"name": "Assign Update User Role Program Batch Status",
-					"originalRequest": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"programId\": 55,\r\n  \"roleId\": \"R02\",\r\n  \"userId\": \"{{StaffID}}\",\r\n  \"userRoleProgramBatches\": [\r\n    {\r\n      \"batchId\": 151,\r\n      \"userRoleProgramBatchStatus\": \"Active\"\r\n    }\r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{BaseUrl}}/users/users/roleProgramBatchStatus/:userId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"users",
-								"users",
-								"roleProgramBatchStatus",
-								":userId"
-							],
-							"variable": [
-								{
-									"key": "userId",
-									"value": "{{StaffID}}"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "plain",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "text/plain;charset=UTF-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "61"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 01:03:15 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "User U554 has been successfully assigned to Program/Batch(es)"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Assign Update User Role Program Batch Status with Invalid ID",
@@ -1700,22 +1632,22 @@
 	],
 	"variable": [
 		{
-			"id": "810f1cad-d98c-4a1d-8c10-6216fbcc5a11",
+			"id": "916dfa0f-dc0c-431a-b7ec-80833845bb4d",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "15b0e24a-1b50-4235-a23c-1ae93c49fbfc",
+			"id": "080eb998-051c-4e8a-aa15-f48080ae90ad",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "16f9f0d0-ac5b-46fa-ae96-bcc9730c6d69",
+			"id": "f7b48bbc-c669-4f0b-86f0-7fcd90dbd2e3",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "aa59c618-6cbc-4599-ad65-14709384f1f1",
+			"id": "19c71e5a-e2aa-4cc3-9ad1-2ff963b5f909",
 			"key": "submissionDateTime",
 			"value": ""
 		}
