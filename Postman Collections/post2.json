@@ -754,6 +754,71 @@
 			},
 			"response": [
 				{
+					"id": "0625be42-75a3-45ad-ad15-0628f47ae905",
+					"name": "404 Error for invalid ProgName",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"programDescription\": \"2023 June API Hackathon\",\r\n    \"programName\": \"Jun23-DA-314482\",\r\n    \"programStatus\": \"Active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/program/:programName",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"program",
+								":programName"
+							],
+							"variable": [
+								{
+									"key": "programName",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 05:22:38 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"no list with such program nameJun23-Postman Pros-DA-314482\",\n    \"success\": false\n}"
+				},
+				{
 					"id": "967aa951-b60c-422d-949b-6c1b6f2c70e9",
 					"name": "Update by Invalid ProgName",
 					"originalRequest": {
@@ -2575,12 +2640,12 @@
 	],
 	"variable": [
 		{
-			"id": "d7b899e7-5fa2-4061-86da-55d9b8557500",
+			"id": "fdd30cc0-b5fe-45a4-9dc9-625c4b4cc22c",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "7a86c899-8d04-4f79-a0dc-5999ec88816d",
+			"id": "f786decf-4c14-4b01-8ca6-0a430d1451d5",
 			"key": "currentIteration",
 			"value": ""
 		}
