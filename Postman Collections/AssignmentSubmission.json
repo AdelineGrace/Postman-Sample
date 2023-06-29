@@ -1752,11 +1752,61 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"submissionId\": 965,\n    \"assignmentId\": 2848,\n    \"userId\": \"U6535\",\n    \"subDesc\": \"Submissions for SQL assignment\",\n    \"subComments\": \"SQL\",\n    \"subPathAttach1\": \"Filepath1\",\n    \"subPathAttach2\": \"Filepath2\",\n    \"subPathAttach3\": \"Filepath3\",\n    \"subPathAttach4\": \"Filepath4\",\n    \"subPathAttach5\": \"Filepath5\",\n    \"subDateTime\": \"06-29-2023 15:33:31\",\n    \"gradedBy\": null,\n    \"gradedDateTime\": null,\n    \"grade\": -1\n}"
+				},
+				{
+					"id": "33dc9a87-fce0-42b9-af93-a62a8e8da664",
+					"name": "Submit Assignment",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"assignmentId\":{{assignmentId}},\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": \"{{StaffID}}\",\r\n    \"gradedDateTime\": \"{{submissionDateTime}}\",\r\n    \"grade\": -1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{BaseUrl}}/assignmentsubmission"
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 15:41:16 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"submissionId\": 969,\n    \"assignmentId\": 2857,\n    \"userId\": \"U6535\",\n    \"subDesc\": \"Submissions for SQL assignment\",\n    \"subComments\": \"SQL\",\n    \"subPathAttach1\": \"Filepath1\",\n    \"subPathAttach2\": \"Filepath2\",\n    \"subPathAttach3\": \"Filepath3\",\n    \"subPathAttach4\": \"Filepath4\",\n    \"subPathAttach5\": \"Filepath5\",\n    \"subDateTime\": \"06-29-2023 15:41:16\",\n    \"gradedBy\": null,\n    \"gradedDateTime\": null,\n    \"grade\": -1\n}"
 				}
 			]
 		},
 		{
-			"name": "Delete Assignment Id",
+			"name": "Delete by SubmissionId",
 			"event": [
 				{
 					"listen": "test",
@@ -1886,23 +1936,23 @@
 	],
 	"variable": [
 		{
-			"id": "e8f3b7cd-0eae-4393-9ba8-58ff3323386e",
+			"id": "c3ddc34a-f707-4ba2-b248-801c8b723e05",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b0324777-f553-45dc-8a59-8ad4866bae64",
+			"id": "e6a61719-bdef-4e9c-b997-2562da494209",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "bdd969ec-e724-4702-92e8-f3a1edb4201f",
+			"id": "eac0019c-92d4-4023-8c7a-b8a9f4e08160",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "dd3db898-f02a-44af-be0a-da9cb7926a4c",
+			"id": "0040c712-b3e2-4f72-87db-9f0f7d24c2c6",
 			"key": "req_body",
 			"value": ""
 		}
