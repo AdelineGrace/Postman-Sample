@@ -1950,23 +1950,80 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/:assignmentId",
+					"raw": "{{BaseUrl}}/assignmentsubmission/:submissionId",
 					"host": [
 						"{{BaseUrl}}"
 					],
 					"path": [
 						"assignmentsubmission",
-						":assignmentId"
+						":submissionId"
 					],
 					"variable": [
 						{
-							"key": "assignmentId",
-							"value": "0"
+							"key": "submissionId",
+							"value": "01"
 						}
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "ad4c49df-b55b-46d1-8e37-387e2d364d33",
+					"name": "Delete Invalid Assignment Id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/:submissionId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								":submissionId"
+							],
+							"variable": [
+								{
+									"key": "submissionId",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 15:45:32 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"Submission not found with ID : 0 \",\n    \"success\": false\n}"
+				}
+			]
 		}
 	],
 	"event": [
@@ -1993,23 +2050,23 @@
 	],
 	"variable": [
 		{
-			"id": "1b3dd548-cc2b-416f-a37d-52cefb1c60d3",
+			"id": "928ec1d3-4a49-4cf6-865f-b61579f628dc",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d62e47ae-590d-4fed-8278-af250a677112",
+			"id": "0d194cb8-e707-4362-bf57-38acd06bc450",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "de5910cd-8295-4192-a7cf-2fa4b649e276",
+			"id": "17b6a89e-c879-4720-9677-f21fd7a458cd",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "3bb2bb83-ba4e-4d85-879f-f9d48ebccb9a",
+			"id": "ee430e56-338e-4fec-8818-d824919d248f",
 			"key": "req_body",
 			"value": ""
 		}
