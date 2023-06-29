@@ -1170,6 +1170,63 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "[\n    {\n        \"submissionId\": 5,\n        \"assignmentId\": 12,\n        \"userId\": \"U19\",\n        \"subDesc\": \"Submissions for SQL assignment\",\n        \"subComments\": \"SQL\",\n        \"subPathAttach1\": \"Filepath1\",\n        \"subPathAttach2\": \"Filepath2\",\n        \"subPathAttach3\": \"Filepath3\",\n        \"subPathAttach4\": \"Filepath4\",\n        \"subPathAttach5\": \"Filepath5\",\n        \"subDateTime\": \"06-20-2023 15:35:01\",\n        \"gradedBy\": \"U22\",\n        \"gradedDateTime\": \"06-20-2023 17:18:42\",\n        \"grade\": 2\n    }\n]"
+				},
+				{
+					"id": "cae38b75-bd6a-47c3-982a-d90663b8fb41",
+					"name": "Grades by StudentID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGradesByStudentId/:studentID",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGradesByStudentId",
+								":studentID"
+							],
+							"variable": [
+								{
+									"key": "studentID",
+									"value": "U5670"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 07:08:49 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"submissionId\": 761,\n        \"assignmentId\": 2508,\n        \"userId\": \"U5670\",\n        \"subDesc\": \"description3\",\n        \"subComments\": \"comment3\",\n        \"subPathAttach1\": \"path3\",\n        \"subPathAttach2\": \"subpath4\",\n        \"subPathAttach3\": \"sub3\",\n        \"subPathAttach4\": \"at3\",\n        \"subPathAttach5\": \"you4\",\n        \"subDateTime\": \"06-29-2023 03:46:20\",\n        \"gradedBy\": \"U5669\",\n        \"gradedDateTime\": \"06-29-2023 03:46:20\",\n        \"grade\": 6\n    }\n]"
 				}
 			]
 		},
@@ -1796,18 +1853,18 @@
 	],
 	"variable": [
 		{
-			"id": "38e0da2d-6352-408d-be15-04e626b7d9bb",
+			"id": "d08215f1-c89d-40c1-b62d-b7a1ee083285",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d605f9a0-d009-4ce7-8e0d-b6657fb792e4",
+			"id": "c44b49e6-c544-4bd8-8353-e5a11f516e1d",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "96547343-ce5e-4992-841c-3704d630dff6",
+			"id": "3f505c81-cfa0-4936-841b-4656a276ef85",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
