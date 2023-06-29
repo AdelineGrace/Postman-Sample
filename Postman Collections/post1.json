@@ -1234,7 +1234,7 @@
 					"script": {
 						"id": "a8f020a0-56a8-4bfd-b329-d8c69627c908",
 						"exec": [
-							"postman.setNextRequest(null)"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -1269,22 +1269,22 @@
 	],
 	"variable": [
 		{
-			"id": "1deab345-802c-4c05-8144-a0f356dbbabe",
+			"id": "08d651ea-f6d8-4859-9d93-7a6b107cedd8",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "e9ee74d6-0e40-410a-a45e-78a480590369",
+			"id": "eb5804fe-5a61-46d9-8dbc-66cb54fc58f2",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "9421df8e-0cd4-47dc-8d81-0121b67cc679",
+			"id": "bfc5dd0b-9e95-45cc-8d5f-a8994f57b06b",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "a7da333c-f596-4e90-b92d-881bd00b0307",
+			"id": "5fe06a09-6188-4314-9038-941c7be35694",
 			"key": "batchDescription",
 			"value": ""
 		}
