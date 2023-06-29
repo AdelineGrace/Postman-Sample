@@ -1966,64 +1966,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "ad4c49df-b55b-46d1-8e37-387e2d364d33",
-					"name": "Delete by Invalid SubmissionId",
-					"originalRequest": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/assignmentsubmission/:submissionId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"assignmentsubmission",
-								":submissionId"
-							],
-							"variable": [
-								{
-									"key": "submissionId",
-									"value": "0"
-								}
-							]
-						}
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 29 Jun 2023 15:45:32 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"message\": \"Submission not found with ID : 0 \",\n    \"success\": false\n}"
-				}
-			]
+			"response": []
 		}
 	],
 	"event": [
@@ -2050,23 +1993,23 @@
 	],
 	"variable": [
 		{
-			"id": "59261d6b-3187-46a5-9e36-cbf5abce1e7b",
+			"id": "eb7fbffe-1f32-49dd-974b-0b5fabd35910",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7902cf6-2cfa-4278-a92b-bceb2de5089b",
+			"id": "0325246a-dc56-43b8-bc8e-c53c5d717212",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "7e016663-7173-4ac7-9ff1-1f715c341c1b",
+			"id": "1fe9502d-9338-4f9d-93b1-87aa5b9edebe",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "8a836b26-e98e-42fd-a9ab-13e0e52c5341",
+			"id": "3f98ab64-8f46-47c3-ba3e-a48e436f3c9a",
 			"key": "req_body",
 			"value": ""
 		}
