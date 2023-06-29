@@ -1593,7 +1593,7 @@
 						"id": "b57d747a-3cb4-419e-a415-762c830c8458",
 						"exec": [
 							"var moment = require('moment')\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:MM.SS'))\r",
+							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:MM:SS'))\r",
 							"\r",
 							"const reqBody = pm.request.body.raw;\r",
 							"/*const assignId = reqBody.assignmentId;\r",
@@ -1782,23 +1782,23 @@
 	],
 	"variable": [
 		{
-			"id": "4d0a251b-c39e-42f8-a039-3f716d2b4971",
+			"id": "7eaa5bd5-af99-4ef1-b904-15a08b814b26",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b000b46e-52f6-44f7-aca0-974a335c7ae2",
+			"id": "1ac6e8d4-25fa-4c4e-ae44-e9bd0f72647c",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "942cc1e9-0c9a-4f90-9baf-e478c38e9831",
+			"id": "a6a72192-200f-4160-8353-87cdf0da52d8",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		},
 		{
-			"id": "548f823a-b7fa-45e5-a901-68182db39009",
+			"id": "1b4992e6-e429-4d29-9f82-664d2d0c0cf5",
 			"key": "req_body",
 			"value": ""
 		}
