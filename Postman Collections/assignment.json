@@ -727,7 +727,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "7ed35690-1fd7-42f6-ac4e-b28c7193a677",
+					"name": "Get Assignment for Invalid Batch",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignments/batch/:batchId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignments",
+								"batch",
+								":batchId"
+							],
+							"variable": [
+								{
+									"key": "batchId",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 04:39:17 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"Batch not found with Id : 0 \",\n    \"success\": false\n}"
+				}
+			]
 		},
 		{
 			"name": "Update Assignment",
@@ -929,61 +987,61 @@
 	],
 	"variable": [
 		{
-			"id": "3cec95eb-cd4a-4672-a9bf-92930a329f14",
+			"id": "0023050d-bb2f-495e-8be6-bd8bc555d054",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "3099fdf1-02d0-4a70-9c19-8647c39c37fc",
+			"id": "de977436-c417-49c9-bddf-3b60495a89f6",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "051bb66d-472c-4dc1-8c31-029b469b8272",
+			"id": "a22b1349-9919-4402-bd84-4ed67a24ac36",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "96b51cb7-1606-4176-88b2-de218ea0a16a",
+			"id": "4c276688-c646-496c-9dc5-a694b57a5374",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "6d7023cc-5917-49b6-a92b-b2c5047dc5c4",
+			"id": "f3af5c02-28ff-4c6d-bfdd-ecb3623dfac8",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "3e5ac784-5c9b-4b79-aefb-b90f0e4867c5",
+			"id": "93ca96cf-0494-45bc-8bec-b165252823fb",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "3274a402-3275-479d-985e-37d33a3833a0",
+			"id": "423ec719-ca54-4546-86bf-b46244f02474",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "0558a318-1c5a-4887-a1b8-5f3157c170a5",
+			"id": "58fc74ef-f19a-483b-94b9-b20f3a2183a9",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "74fe0d2b-13ed-43b5-ac72-97f173f1b4cb",
+			"id": "d72460fa-6782-4bb2-9072-d5bf70e25968",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "b1cb8b92-0c3d-4537-9890-bab46d3454b3",
+			"id": "3a826bf6-9fee-43f5-894d-89da183ecd56",
 			"key": "assignmentDescription",
 			"value": ""
 		}
