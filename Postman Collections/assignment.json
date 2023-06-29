@@ -699,61 +699,61 @@
 	],
 	"variable": [
 		{
-			"id": "7d04e671-4673-49f7-8f4e-2f0699da8c83",
+			"id": "d1dbd595-ae2e-4085-aeef-23d815d94c3a",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "ce8cac05-4779-4683-be86-16fe2f83facb",
+			"id": "7e7dd773-95fb-4e6a-9607-d4e913af703e",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "d3ece856-9683-41b4-b7f4-c32e6ba257cd",
+			"id": "cb936a45-6172-4920-b2e5-00590787b9b8",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "0d506b9c-71c6-4271-9f6a-d5450dc47103",
+			"id": "0ca4aa61-97b0-4413-ac7b-53d20f4a0651",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "6500e1a2-ade6-4c71-97a4-396be4f7f0f7",
+			"id": "8573474b-7777-43d4-a75a-753aee059a53",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "6585143b-13d9-4999-ac85-3fc1cf8e7a0d",
+			"id": "a84f3c2b-3247-4517-9143-4e4dec16a286",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "0064e97d-1ada-44f7-92f8-d8e218fa38f4",
+			"id": "7aec7201-a856-4ebe-bf33-2d7a66cb713a",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "b98cb533-2e70-4170-8ee1-d51b9a18a912",
+			"id": "0c681635-6e04-4ee3-bea8-846a29ea39ed",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "e75ba667-034b-47ee-bc96-1995f71a8a35",
+			"id": "4aa16c00-b153-42c1-bec2-2bc03b0b0e32",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "4a20b34a-f6b8-4e74-a7e1-f563ac5b6733",
+			"id": "0b6014e1-a35a-478f-a13d-320221a3dff5",
 			"key": "assignmentDescription",
 			"value": ""
 		}
