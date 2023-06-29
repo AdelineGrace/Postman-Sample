@@ -1643,7 +1643,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\":{{assignmentId}},\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": \"{{StaffID}}\",\r\n    \"gradedDateTime\": \"{{submissionDateTime}}\",\r\n    \"grade\": -1\r\n}",
+					"raw": "{\r\n    \"assignmentId\":{{assignmentId}},\r\n    \"userId\": \"{{AdminID}}\",\r\n    \"subDesc\": ,\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": \"{{StudentID}}\",\r\n    \"gradedDateTime\": \"{{submissionDateTime}}\",\r\n    \"grade\": -1\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2050,23 +2050,23 @@
 	],
 	"variable": [
 		{
-			"id": "61dedb36-4c9b-4c17-9310-5d2df14b0db8",
+			"id": "666f45ec-4103-4227-b674-c59c4f4fff6f",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c741ecf2-2072-45cb-93a5-6b2aa922dcdd",
+			"id": "77bd02ad-3910-4b4b-ba68-c4a0bde1fef4",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "cd84ae26-0bd3-4fcc-8fe6-f460b8ae8374",
+			"id": "767a6fd6-cbc5-4637-b28e-7e4e20475e88",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "9c3b16ec-ca21-487e-8f28-a01dba6530b1",
+			"id": "ae7f747d-c3e1-43af-9fb2-74d147a71355",
 			"key": "req_body",
 			"value": ""
 		}
