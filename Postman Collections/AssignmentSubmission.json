@@ -1625,7 +1625,10 @@
 						"exec": [
 							"pm.test(\"Status code is 201\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
-							"});"
+							"});\r",
+							"\r",
+							"const response = pm.response.submissionId;\r",
+							"pm.globals.set(\"submissionId\", response.submissionId);"
 						],
 						"type": "text/javascript"
 					}
@@ -1883,23 +1886,23 @@
 	],
 	"variable": [
 		{
-			"id": "09f2e6b3-54f0-4de6-8231-b93c9b216c9c",
+			"id": "9fdece61-a13e-4647-8ab7-36a8acca65dc",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "836873dc-46f9-4adc-8139-d57072c2ded3",
+			"id": "0b734bba-17f6-47a5-bca2-b443b59f5db6",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "f08bba14-4b2d-4290-b0c7-14f487998be7",
+			"id": "2f3d4916-5204-4da1-ae3b-dd300e5df7e2",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "4a8c2cf5-8df3-43cb-8680-a89fc6e758c3",
+			"id": "f074bc63-cc70-42fd-8178-757070b97554",
 			"key": "req_body",
 			"value": ""
 		}
