@@ -860,58 +860,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "b275b10b-0fae-46e8-afb4-a8eaa5510fbf",
-					"name": "Update Batch",
-					"originalRequest": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"batchName\": \"June 2023 API Hackathon-72761\",\r\n    \"batchDescription\": null,\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 4,\r\n    \"programId\": 51,\r\n    \"programName\": \"new1\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/1003"
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sun, 25 Jun 2023 17:30:40 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "{\n    \"batchId\": 1003,\n    \"batchName\": \"June 2023 API Hackathon-72761\",\n    \"batchDescription\": null,\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 4,\n    \"programId\": 51,\n    \"programName\": \"new1\"\n}"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Update Batch by Invalid Batch Id",
@@ -1185,22 +1134,22 @@
 	],
 	"variable": [
 		{
-			"id": "0b4a5c33-1396-4a2e-a857-5c4a9f144e3b",
+			"id": "0bcc16db-714e-4522-a69a-7db37350b53f",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "de4cdbed-b7a8-41d6-9ddc-6107d3c41f16",
+			"id": "810343a2-39d8-4334-9809-243f16a0a6a5",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "c45b1861-738c-4a54-9437-b97bdd30bb13",
+			"id": "2618f6a5-66fe-466a-8cc1-43d665997893",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "4421510a-07e5-4231-b80a-9586bd12478c",
+			"id": "3be372dc-ef94-47f5-92bb-ef7d81b5b437",
 			"key": "batchDescription",
 			"value": ""
 		}
