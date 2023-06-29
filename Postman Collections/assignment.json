@@ -105,9 +105,10 @@
 							"\r",
 							"//to set dueDate 14 days from current date/assignment creation date\r",
 							"//Due Date in Assignments should be entered in YYYY-MM-DD HH:MI:SS\r",
-							"var moment=require('moment');\r",
+							"/*var moment=require('moment');\r",
 							"var dueDate = moment().add(7, 'days').format(\"YYYY-MM-DDTHH:MM.SSSZ\");\r",
-							"pm.collectionVariables.set(\"dueDate\", dueDate);\r",
+							"var dueDate = moment().add(7, 'days').format(\"YYYY-MM-DDTHH:MM.SSSZ\");\r",
+							"pm.collectionVariables.set(\"dueDate\", dueDate);*/\r",
 							"\r",
 							"//to store assignment description in access it based on the assignment name in requestbody\r",
 							"\r",
@@ -153,7 +154,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescription}}\",\r\n  \"assignmentName\": \"{{assignmentName}}{{serialNumber}}\",\r\n  \"batchId\": \"{{batchId}}\",\r\n  \"comments\": \"{{comments}}\",\r\n  \"createdBy\": \"{{StaffID}}\",\r\n  \"dueDate\": \"{{dueDate}}\",\r\n  \"graderId\": \"{{StaffID}}\",\r\n  \"pathAttachment1\": \"{{pathAttachment1}}\",\r\n  \"pathAttachment2\": \"{{pathAttachment2}}\",\r\n  \"pathAttachment3\": \"{{pathAttachment3}}\"\r\n }",
+					"raw": "{\r\n  \"assignmentDescription\": \"{{assignmentDescription}}\",\r\n  \"assignmentName\": \"{{assignmentName}}{{serialNumber}}\",\r\n  \"batchId\": \"{{batchId}}\",\r\n  \"comments\": \"{{comments}}\",\r\n  \"createdBy\": \"{{StaffID}}\",\r\n  \"dueDate\": \"2023-06-28T22:02:28.140Z\",\r\n  \"graderId\": \"{{StaffID}}\",\r\n  \"pathAttachment1\": \"{{pathAttachment1}}\",\r\n  \"pathAttachment2\": \"{{pathAttachment2}}\",\r\n  \"pathAttachment3\": \"{{pathAttachment3}}\"\r\n }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1178,61 +1179,61 @@
 	],
 	"variable": [
 		{
-			"id": "e77d8096-296e-4382-ac66-67e1eb7d709e",
+			"id": "b17e321f-c1c4-480e-b1c5-7de37472684f",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "6fff294d-aebf-4deb-b64d-70da7bd9c711",
+			"id": "61017aef-4424-4ec2-af07-943a5cb6b5e4",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "654c51ec-5e74-416f-820f-54d7ca44c6a0",
+			"id": "ec758b53-d2ce-4d0c-b85d-6b8201448311",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "050a7eae-47f6-43f8-8561-832c41f7f4a4",
+			"id": "9a700c51-02d6-49c5-b596-02c57f59dae0",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "bee301d9-74ce-4629-bf06-c8259cf3eacb",
+			"id": "de74523e-1ecd-40a0-aba9-cf85f41b0dc3",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "63b14da1-8f37-422b-9a90-edb57b5d46a1",
+			"id": "307f5347-8fc5-4891-9fd9-26d91ecdc1b4",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "0f7beb1f-fded-4c63-8fc7-2fa8ae289392",
+			"id": "7e297b14-583e-4286-afc4-3e25b85540b8",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "313c108b-e35c-4085-8b3e-fa5f1664567a",
+			"id": "453abcfe-1b96-4a18-8c4c-70e8401de936",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "f9466e71-81ac-4fda-978a-a88eea74c6cf",
+			"id": "11d6d489-77ea-48bd-b778-aa37e844746b",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "e5e010d5-d847-4785-a41e-8fb0ed0ffa7c",
+			"id": "45fa1525-5ea1-4568-a6f5-d85bb0fb4378",
 			"key": "assignmentDescription",
 			"value": ""
 		}
