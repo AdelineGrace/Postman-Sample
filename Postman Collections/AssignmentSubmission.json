@@ -50,7 +50,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "da2e11c6-0f7c-4f01-9203-91395a2bc1ab",
+					"name": "Get Grades by BatchID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/grades/:batchID",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"grades",
+								":batchID"
+							],
+							"variable": [
+								{
+									"key": "batchID",
+									"value": "220"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:24:52 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"submissionId\": 764,\n        \"assignmentId\": 2541,\n        \"userId\": \"U3343\",\n        \"subDesc\": \"APIcScripters\",\n        \"subComments\": \"APIcScripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-29-2023 04:07:42\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 580,\n        \"assignmentId\": 2031,\n        \"userId\": \"U4809\",\n        \"subDesc\": \"APIcScripters\",\n        \"subComments\": \"APIcScripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 19:53:03\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 494,\n        \"assignmentId\": 1783,\n        \"userId\": \"U3342\",\n        \"subDesc\": \"APIc Scripters\",\n        \"subComments\": \"{APIc Scripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 05:53:30\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 498,\n        \"assignmentId\": 1796,\n        \"userId\": \"U3342\",\n        \"subDesc\": \"APIc Scripters\",\n        \"subComments\": \"APIc Scripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 06:18:17\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 499,\n        \"assignmentId\": 1799,\n        \"userId\": \"U3342\",\n        \"subDesc\": \"APIc Scripters\",\n        \"subComments\": \"APIc Scripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 06:20:22\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 500,\n        \"assignmentId\": 1800,\n        \"userId\": \"U3342\",\n        \"subDesc\": \"APIc Scripters\",\n        \"subComments\": \"APIc Scripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 06:24:52\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 502,\n        \"assignmentId\": 1803,\n        \"userId\": \"U3342\",\n        \"subDesc\": \"APIc Scripters\",\n        \"subComments\": \"APIc Scripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 06:31:01\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 503,\n        \"assignmentId\": 1804,\n        \"userId\": \"U3342\",\n        \"subDesc\": \"APIc Scripters\",\n        \"subComments\": \"APIc Scripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 06:36:09\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 772,\n        \"assignmentId\": 2562,\n        \"userId\": \"U3343\",\n        \"subDesc\": \"APIcScripters\",\n        \"subComments\": \"APIcScripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-29-2023 04:30:14\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 506,\n        \"assignmentId\": 1804,\n        \"userId\": \"U3343\",\n        \"subDesc\": \"APIc Scripters\",\n        \"subComments\": \"APIc Scripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 07:04:16\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 562,\n        \"assignmentId\": 2001,\n        \"userId\": \"U3343\",\n        \"subDesc\": \"APIcScripters\",\n        \"subComments\": \"APIcScripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 19:05:01\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 722,\n        \"assignmentId\": 2357,\n        \"userId\": \"U3343\",\n        \"subDesc\": \"APIcScripters\",\n        \"subComments\": \"APIcScripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-29-2023 02:04:32\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 569,\n        \"assignmentId\": 2011,\n        \"userId\": \"U3343\",\n        \"subDesc\": \"APIcScripters\",\n        \"subComments\": \"APIcScripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 19:16:57\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 573,\n        \"assignmentId\": 2020,\n        \"userId\": \"U4809\",\n        \"subDesc\": \"APIcScripters\",\n        \"subComments\": \"APIcScripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-28-2023 19:30:58\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    },\n    {\n        \"submissionId\": 778,\n        \"assignmentId\": 2571,\n        \"userId\": \"U3343\",\n        \"subDesc\": \"APIcScripters\",\n        \"subComments\": \"APIcScripters\",\n        \"subPathAttach1\": \"File1\",\n        \"subPathAttach2\": \"File2\",\n        \"subPathAttach3\": \"File3\",\n        \"subPathAttach4\": \"File4\",\n        \"subPathAttach5\": \"File5\",\n        \"subDateTime\": \"06-29-2023 04:35:39\",\n        \"gradedBy\": null,\n        \"gradedDateTime\": null,\n        \"grade\": -1\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Get Grades by Invalid BatchID",
@@ -1566,18 +1624,18 @@
 	],
 	"variable": [
 		{
-			"id": "8dd5fb7f-9af7-40d7-8586-b805884bd202",
+			"id": "013a85fe-e790-4467-a0e2-d324fbbae978",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2f86c028-1dd8-4d92-80b0-63c1167100a8",
+			"id": "ff975874-bcfa-46dd-ab19-a99592c17240",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "7d1c5edd-bca6-4fcf-b946-2c865e93a223",
+			"id": "fee37a28-7c5a-4c31-ab8d-b0ba1246fd29",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
