@@ -860,7 +860,73 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "d299325e-66dc-471c-b593-d46ea812d3ad",
+					"name": "Update Batch by Batch Id",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"batchName\": \"{{batchName}}\",\r\n    \"batchId\": {{batchId}},\r\n    \"batchDescription\": \"Batch details Updated\",\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 4,\r\n    \"programId\": {{programId_SDET}},\r\n    \"programName\": \"{{programName_SDET}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/batches/:batchId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								":batchId"
+							],
+							"variable": [
+								{
+									"key": "batchId",
+									"value": "{{batchId}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:06:58 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"batchId\": 5588,\n    \"batchName\": \"Jun23-PostmanPros-SDET-SDET81\",\n    \"batchDescription\": \"Batch details Updated\",\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 4,\n    \"programId\": 9123,\n    \"programName\": \"Jun23-PostmanPros-DA-_UpdatedWithID\"\n}"
+				}
+			]
 		},
 		{
 			"name": "Update Batch by Invalid Batch Id",
@@ -1134,22 +1200,22 @@
 	],
 	"variable": [
 		{
-			"id": "29b5f159-1d9d-4da7-87f6-749f6e319e71",
+			"id": "5462c3c9-db2b-46bf-aee0-501177847008",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "f1fd137b-323b-4b3f-bf5f-e37df54fc7d5",
+			"id": "493e0163-0391-4d44-b1a3-551224bd2e6b",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "efefd9f7-1896-408f-a61c-501a3eaafa2f",
+			"id": "4e89497c-a61c-4e20-bba5-06256234ec63",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "01e891be-68dd-4c61-b232-bc208b8e12c5",
+			"id": "468b505b-5946-42f6-bfc7-96c0b3f5a08d",
 			"key": "batchDescription",
 			"value": ""
 		}
