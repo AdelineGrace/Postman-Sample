@@ -200,7 +200,7 @@
 							"variable": [
 								{
 									"key": "programId",
-									"value": "1"
+									"value": "{{programId_SDET}}"
 								}
 							]
 						}
@@ -1205,22 +1205,22 @@
 	],
 	"variable": [
 		{
-			"id": "a2256a10-795a-4031-8ff9-51e05c593bd1",
+			"id": "13a0bc72-8d18-476a-9de0-69dbbcbd64fc",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "3a3f3564-d1be-48f2-a68a-57e0704daa6a",
+			"id": "14109d39-f4cc-4e0f-b68e-18ab7ac74d42",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "fe70ced0-0b1a-469d-b7a8-f890e819fc4e",
+			"id": "e245ff0c-7f18-4588-bc7c-628d2fa89c67",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "264dc850-9400-4cea-84f4-4d7799566b8c",
+			"id": "49709536-eb4a-4ef5-85aa-2895369bbaa9",
 			"key": "batchDescription",
 			"value": ""
 		}
