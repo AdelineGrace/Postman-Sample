@@ -269,7 +269,7 @@
 					"variable": [
 						{
 							"key": "UserID",
-							"value": "{{UserID}}"
+							"value": "{{StudentID}}"
 						}
 					]
 				}
@@ -2050,23 +2050,23 @@
 	],
 	"variable": [
 		{
-			"id": "8814da0d-20c3-4e8a-a578-ae285bef05d0",
+			"id": "f3aa1b96-0b43-4ffd-9d2c-ed7030961ec9",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "716f9e78-f07d-42d2-85ce-5ae108aa2205",
+			"id": "e5300c7c-dfbc-4ebc-bc61-b3fe5f79de68",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "3e2c7124-6306-4cbe-b54d-ae6de4f6ad66",
+			"id": "33c4e11c-3594-416a-8316-76a132938672",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "a11e77e1-3d44-490d-8b10-54b19953c136",
+			"id": "654dbe97-8cbc-4584-90fd-01740cf5e3b5",
 			"key": "req_body",
 			"value": ""
 		}
