@@ -486,7 +486,7 @@
 					"variable": [
 						{
 							"key": "batchName",
-							"value": "{{BatchName}}"
+							"value": "{{batchId}}"
 						}
 					]
 				}
@@ -1287,22 +1287,22 @@
 	],
 	"variable": [
 		{
-			"id": "5d2e597d-6d7d-479b-bfbf-c6abc4db37d5",
+			"id": "d49f7442-8bc0-4c5f-9a3a-51b8ad45ceda",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "022546d2-c18d-4702-85af-e7ee4cefc1b0",
+			"id": "beea39e0-855c-49d5-ade5-3652b37e1e84",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "78c30c75-7614-46f1-b12d-f8b3e5a92b5d",
+			"id": "91dc057e-7144-4d4a-8614-21093732a9f9",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "6376236b-3c49-496c-9521-4a50c06a49c4",
+			"id": "aa0f5dbc-d830-466a-b0e3-c9d660f342f8",
 			"key": "batchDescription",
 			"value": ""
 		}
