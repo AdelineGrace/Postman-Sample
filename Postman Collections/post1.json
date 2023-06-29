@@ -988,24 +988,39 @@
 			},
 			"response": [
 				{
-					"id": "0f029014-21d2-44f6-9855-eff76c7ba266",
-					"name": "Update Batch",
+					"id": "402d66f8-aca3-4fe1-9575-214253fac2fc",
+					"name": "Update Batch by Invalid Batch Id",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"batchName\": \"June 2023 API Hackathon-72761\",\r\n    \"batchDescription\": null,\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 4,\r\n    \"programId\": 51,\r\n    \"programName\": \"new1\"\r\n}",
+							"raw": "{\r\n    \"batchName\": {{batchName}},\r\n    \"batchId\": {{batchId}},\r\n    \"batchDescription\": \"Batch details Updated\",\r\n    \"batchStatus\": \"Active\",\r\n    \"batchNoOfClasses\": 4,\r\n    \"programId\": {{programId_SDET}},\r\n    \"programName\": {{programName_SDET}}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/1003"
+						"url": {
+							"raw": "{{BaseUrl}}/batches/:batchId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								":batchId"
+							],
+							"variable": [
+								{
+									"key": "batchId",
+									"value": "0"
+								}
+							]
+						}
 					},
-					"status": "OK",
-					"code": 200,
+					"status": "Bad Request",
+					"code": 400,
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
@@ -1026,7 +1041,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 25 Jun 2023 17:30:40 GMT"
+							"value": "Thu, 29 Jun 2023 05:07:09 GMT"
 						},
 						{
 							"key": "Via",
@@ -1035,7 +1050,7 @@
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n    \"batchId\": 1003,\n    \"batchName\": \"June 2023 API Hackathon-72761\",\n    \"batchDescription\": null,\n    \"batchStatus\": \"Active\",\n    \"batchNoOfClasses\": 4,\n    \"programId\": 51,\n    \"programName\": \"new1\"\n}"
+					"body": "{\n    \"timestamp\": \"2023-06-29T05:07:09.958+00:00\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"path\": \"/lms/batches/0\"\n}"
 				}
 			]
 		},
@@ -1200,22 +1215,22 @@
 	],
 	"variable": [
 		{
-			"id": "5462c3c9-db2b-46bf-aee0-501177847008",
+			"id": "c6b7d08f-50be-42a1-a6dd-6c968d079066",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "493e0163-0391-4d44-b1a3-551224bd2e6b",
+			"id": "49a2284a-c44d-4167-a713-9752d2e9ace6",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "4e89497c-a61c-4e20-bba5-06256234ec63",
+			"id": "893f4a36-4cf5-4dab-b9cf-9be3ae2e9c31",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "468b505b-5946-42f6-bfc7-96c0b3f5a08d",
+			"id": "6b66206d-b717-4996-ad76-65ac7579007b",
 			"key": "batchDescription",
 			"value": ""
 		}
