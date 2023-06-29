@@ -1247,14 +1247,14 @@
 			},
 			"response": [
 				{
-					"id": "0c2491c7-72cc-412b-9055-2680adea6e68",
+					"id": "b0ffc70c-95b8-446c-8fb0-5cd6ffd5fd8d",
 					"name": "Assign Update User Role Program Batch Status",
 					"originalRequest": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"programId\": 55,\r\n  \"roleId\": \"R02\",\r\n  \"userId\": \"{{StaffID}}\",\r\n  \"userRoleProgramBatches\": [\r\n    {\r\n      \"batchId\": 151,\r\n      \"userRoleProgramBatchStatus\": \"Active\"\r\n    }\r\n  ]\r\n}",
+							"raw": "{\r\n  \"programId\": {{programId_SDET}},\r\n  \"roleId\": \"{{StaffRoleId}}\",\r\n  \"userId\": \"{{StaffID}}\",\r\n  \"userRoleProgramBatches\": [\r\n    {\r\n      \"batchId\": {{batchId}},\r\n      \"userRoleProgramBatchStatus\": \"Active\"\r\n    }\r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1298,11 +1298,11 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "61"
+							"value": "62"
 						},
 						{
 							"key": "Date",
-							"value": "Sun, 25 Jun 2023 01:03:15 GMT"
+							"value": "Thu, 29 Jun 2023 17:30:33 GMT"
 						},
 						{
 							"key": "Via",
@@ -1311,7 +1311,7 @@
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "User U554 has been successfully assigned to Program/Batch(es)"
+					"body": "User U6671 has been successfully assigned to Program/Batch(es)"
 				}
 			]
 		},
@@ -1700,22 +1700,22 @@
 	],
 	"variable": [
 		{
-			"id": "a9a45834-50ec-48ee-a72a-9c41bc96dce6",
+			"id": "fdf4daa7-da1f-4863-a729-f572f30fe162",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "345f1c11-0c8a-43d5-ab13-c557504822d6",
+			"id": "c307bf1a-9681-413a-8349-94710d420c85",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "7a501b9f-524c-4e63-a5ad-3322d3b8c2c7",
+			"id": "5f9952f6-8805-4065-9209-1de0ee02347e",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "e6e4f44e-e8a7-4491-9a73-c4733b30662f",
+			"id": "78c31ec9-32b1-4966-ab96-42f7c5e53cf7",
 			"key": "submissionDateTime",
 			"value": ""
 		}
