@@ -1557,7 +1557,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[    {\r\n        \r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"{{StudentID}}\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 5\r\n    }]",
+					"raw": "[    {\r\n        \r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"{{StudentID}}\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 2\r\n    }]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2050,23 +2050,23 @@
 	],
 	"variable": [
 		{
-			"id": "17d62a30-823b-4a65-bf20-12a147fe5634",
+			"id": "da4f58f5-bef7-4b08-9284-7245539ce9b1",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "18c65a01-a4b8-4335-ac02-1aa18c2b3338",
+			"id": "750f9154-99ae-4b49-8117-c4a0076522cd",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "6ad3d6a5-729b-4677-ba46-45d081739efe",
+			"id": "410e030e-5509-4fd0-833d-a2bb882cefa6",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "dd35395c-c279-424a-bd6c-aa7580486828",
+			"id": "a115fccb-8828-4e15-b85a-963125a83eec",
 			"key": "req_body",
 			"value": ""
 		}
