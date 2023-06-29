@@ -6,6 +6,103 @@
 	},
 	"item": [
 		{
+			"name": "Create Program",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "77f468ab-7309-4f3d-9603-70c7e027b502",
+						"exec": [
+							"pm.test(\"Program Module POST request - Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"console.log(response);\r",
+							"\r",
+							"const reqBody = JSON.parse(pm.request.body.raw);\r",
+							"//console.log(reqBody);\r",
+							"//console.log(reqBody.programName);\r",
+							"if (reqBody.programName.has(\"SDET\")){\r",
+							"pm.globals.set(\"programId_SDET\", response.programId);\r",
+							"pm.globals.set(\"programName_SDET\", response.programName);\r",
+							"//console.log(response.programName);\r",
+							"}\r",
+							"else if(reqBody.programName.has(\"DA\")){\r",
+							"pm.globals.set(\"programId_DA\", response.programId)\r",
+							"pm.globals.set(\"programName_DA\", response.programName);\r",
+							"//console.log(programName);\r",
+							"};\r",
+							"\r",
+							"const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
+							"const currentIteration = (pm.info.iteration);\r",
+							"console.log(currentIteration);\r",
+							"pm.collectionVariables.set(\"currentIteration\", currentIteration);\r",
+							"pm.collectionVariables.set(\"iterationCount\", iterationCount);\r",
+							"if ((currentIteration + 1) < iterationCount)\r",
+							"{\r",
+							"    postman.setNextRequest(null);\r",
+							"}\r",
+							"else\r",
+							"{\r",
+							"    postman.setNextRequest(\"Create Program with Null Status\");\r",
+							"}\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "e3d63e48-adf0-42b5-b3e9-75f9d501b11f",
+						"exec": [
+							"const serialNo = Math.floor(Math.random()* 1000);\r",
+							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
+							"\r",
+							"// to create work flow to run the post request alone in the collection\r",
+							"/*const iterationCount = pm.info.iterationCount;\r",
+							"console.log(iterationCount);\r",
+							"const currentIteration = (pm.info.iteration);\r",
+							"console.log(currentIteration);\r",
+							"let currentIterationValue = (currentIteration+1);\r",
+							"console.log(currentIterationValue);\r",
+							"\r",
+							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
+							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
+							"\r",
+							"if (currentIterationValue <= iterationCount){\r",
+							"    postman.setNextRequest(\"Create Program\");    \r",
+							"}*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ce08f12d-c8a9-44e8-9d09-d7ff0b151387",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"programDescription\": \"{{programDescription}}\",\r\n  \"programName\": \"{{programName}}{{serialNumber}}\",\r\n  \"programStatus\": \"{{programStatus}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{BaseUrl}}//saveprogram"
+			},
+			"response": []
+		},
+		{
 			"name": "Create Program with Null Status",
 			"event": [
 				{
@@ -1498,103 +1595,6 @@
 					"body": "{\n    \"message\": \"no record found with programName\",\n    \"success\": false\n}"
 				}
 			]
-		},
-		{
-			"name": "Create Program",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "77f468ab-7309-4f3d-9603-70c7e027b502",
-						"exec": [
-							"pm.test(\"Program Module POST request - Status code is 201\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});\r",
-							"\r",
-							"const response = pm.response.json();\r",
-							"console.log(response);\r",
-							"\r",
-							"const reqBody = JSON.parse(pm.request.body.raw);\r",
-							"//console.log(reqBody);\r",
-							"//console.log(reqBody.programName);\r",
-							"if (reqBody.programName.has(\"SDET\")){\r",
-							"pm.globals.set(\"programId_SDET\", response.programId);\r",
-							"pm.globals.set(\"programName_SDET\", response.programName);\r",
-							"//console.log(response.programName);\r",
-							"}\r",
-							"else if(reqBody.programName.has(\"DA\")){\r",
-							"pm.globals.set(\"programId_DA\", response.programId)\r",
-							"pm.globals.set(\"programName_DA\", response.programName);\r",
-							"//console.log(programName);\r",
-							"};\r",
-							"\r",
-							"const iterationCount = pm.info.iterationCount;\r",
-							"console.log(iterationCount);\r",
-							"const currentIteration = (pm.info.iteration);\r",
-							"console.log(currentIteration);\r",
-							"pm.collectionVariables.set(\"currentIteration\", currentIteration);\r",
-							"pm.collectionVariables.set(\"iterationCount\", iterationCount);\r",
-							"if ((currentIteration + 1) < iterationCount)\r",
-							"{\r",
-							"    postman.setNextRequest(null);\r",
-							"}\r",
-							"else\r",
-							"{\r",
-							"    postman.setNextRequest(\"Create Program with Null Status\");\r",
-							"}\r",
-							"\r",
-							"\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "e3d63e48-adf0-42b5-b3e9-75f9d501b11f",
-						"exec": [
-							"const serialNo = Math.floor(Math.random()* 1000);\r",
-							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
-							"\r",
-							"// to create work flow to run the post request alone in the collection\r",
-							"/*const iterationCount = pm.info.iterationCount;\r",
-							"console.log(iterationCount);\r",
-							"const currentIteration = (pm.info.iteration);\r",
-							"console.log(currentIteration);\r",
-							"let currentIterationValue = (currentIteration+1);\r",
-							"console.log(currentIterationValue);\r",
-							"\r",
-							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
-							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
-							"\r",
-							"if (currentIterationValue <= iterationCount){\r",
-							"    postman.setNextRequest(\"Create Program\");    \r",
-							"}*/"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "ce08f12d-c8a9-44e8-9d09-d7ff0b151387",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"programDescription\": \"{{programDescription}}\",\r\n  \"programName\": \"{{programName}}{{serialNumber}}\",\r\n  \"programStatus\": \"{{programStatus}}\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}//saveprogram"
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -1621,12 +1621,12 @@
 	],
 	"variable": [
 		{
-			"id": "5417e218-581a-4a6b-aa6f-821d98a73e5d",
+			"id": "43bfc20c-d72a-4ed3-99a7-fc43842248f0",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "0e811e8a-9260-4be6-b4a1-534db8507449",
+			"id": "d0c0bdd5-a477-4025-b7be-f5450d265f58",
 			"key": "currentIteration",
 			"value": ""
 		}
