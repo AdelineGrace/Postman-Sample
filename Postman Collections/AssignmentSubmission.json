@@ -502,7 +502,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "37b69a74-3a31-4135-9ffe-3030ee125eb9",
+					"name": "Get Submission by Invalid BatchID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/studentbatch/:batchid",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"studentbatch",
+								":batchid"
+							],
+							"variable": [
+								{
+									"key": "batchid",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:18:23 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[]"
+				}
+			]
 		},
 		{
 			"name": "All Submission",
@@ -1450,18 +1508,18 @@
 	],
 	"variable": [
 		{
-			"id": "2345367b-7771-44e5-bf0c-3a978f342098",
+			"id": "d14ce160-ed3a-4111-847f-fe8da5278a08",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b590dc82-1da4-4689-8f1c-5770f5bba5d5",
+			"id": "032796be-3f97-4c65-9dee-d7c5d170e4af",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "24fb8f29-d6be-43ec-8c9f-29d5c331b11b",
+			"id": "b8db0a87-6da7-47fd-b25b-f10277bc7dfa",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
