@@ -45,7 +45,7 @@
 					"variable": [
 						{
 							"key": "batchID",
-							"value": "{{batchId}}"
+							"value": "220"
 						}
 					]
 				}
@@ -1682,18 +1682,18 @@
 	],
 	"variable": [
 		{
-			"id": "225bc9f9-99f1-4c3d-a6d0-cde5a324b298",
+			"id": "862fcd1e-e634-4f2a-a3c8-c0bf28a7353c",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c91adc2d-fb2a-405d-b8f8-0615b53bd223",
+			"id": "8c39d4d8-e241-43ca-9240-2d21631afead",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "bb0756ae-6313-4b07-9116-0c7e21d45d97",
+			"id": "5ecf1f93-27e2-47e2-9028-e04533627f11",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
