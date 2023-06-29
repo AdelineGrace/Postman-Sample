@@ -278,7 +278,64 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "2052b7c7-c94f-4f9e-9e50-822cc77dba93",
+					"name": "Get Assignments By ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignments/:assignmentId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignments",
+								":assignmentId"
+							],
+							"variable": [
+								{
+									"key": "assignmentId",
+									"value": "{{assignmentId}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 04:37:54 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"assignmentId\": 2546,\n    \"assignmentName\": \"-Updated\",\n    \"assignmentDescription\": \"Test Assignment 1\",\n    \"comments\": \"Comments are updated\",\n    \"dueDate\": \"2023-06-19T22:02:28.140+00:00\",\n    \"pathAttachment1\": \"string\",\n    \"pathAttachment2\": \"string\",\n    \"pathAttachment3\": \"string\",\n    \"batchId\": 5443,\n    \"createdBy\": \"U22\",\n    \"graderId\": \"U5713\"\n}"
+				}
+			]
 		},
 		{
 			"name": "Get Assignment By Invalid AssignmentID",
@@ -699,61 +756,61 @@
 	],
 	"variable": [
 		{
-			"id": "d1dbd595-ae2e-4085-aeef-23d815d94c3a",
+			"id": "0d8e068d-7f85-4224-862e-50d4e38b16c7",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "7e7dd773-95fb-4e6a-9607-d4e913af703e",
+			"id": "4433aff5-4ab7-4073-b5d3-7dec219d3361",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "cb936a45-6172-4920-b2e5-00590787b9b8",
+			"id": "cdfe2a91-60f4-4efb-aa63-09dd21ce7ef2",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "0ca4aa61-97b0-4413-ac7b-53d20f4a0651",
+			"id": "0af0fd50-21a4-492f-bed0-61d9495bb712",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "8573474b-7777-43d4-a75a-753aee059a53",
+			"id": "3f263912-fc57-472f-80b4-bcf1d92f094c",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "a84f3c2b-3247-4517-9143-4e4dec16a286",
+			"id": "7d2e53c7-3776-4b91-a998-42a898a54397",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "7aec7201-a856-4ebe-bf33-2d7a66cb713a",
+			"id": "42e96ea0-3f73-49b5-98b0-d9929a6b62d9",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "0c681635-6e04-4ee3-bea8-846a29ea39ed",
+			"id": "04c72323-0f81-403b-9ee1-aef8684cafdf",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "4aa16c00-b153-42c1-bec2-2bc03b0b0e32",
+			"id": "18a3ca1c-8229-4250-a283-79f8d046b84d",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "0b6014e1-a35a-478f-a13d-320221a3dff5",
+			"id": "3d87cafb-389b-4493-ace9-0e1540747cec",
 			"key": "assignmentDescription",
 			"value": ""
 		}
