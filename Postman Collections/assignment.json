@@ -1189,23 +1189,7 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "{{BaseUrl}}/assignmentsubmission/studentbatch/:batchid",
-					"host": [
-						"{{BaseUrl}}"
-					],
-					"path": [
-						"assignmentsubmission",
-						"studentbatch",
-						":batchid"
-					],
-					"variable": [
-						{
-							"key": "batchid",
-							"value": null
-						}
-					]
-				}
+				"url": "{{BaseUrl}}/assignments"
 			},
 			"response": []
 		}
@@ -1234,61 +1218,61 @@
 	],
 	"variable": [
 		{
-			"id": "9da7f6b6-6dc2-4ff2-9f68-ab40129b24d1",
+			"id": "4e92f83e-c707-4931-a099-6ed7235cd80d",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "5390fb5d-c2b3-43ff-9659-b519449a074d",
+			"id": "4b017a56-b691-4661-a165-1c7a62dd8d3c",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "7da19833-56d6-4558-80cf-98ee57c8475f",
+			"id": "fee2ef3f-136c-446c-bc8b-dd8b41206c77",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "a22ec064-f5f0-4bc5-977c-3c4e8714e4e9",
+			"id": "9ab0b33e-d300-488c-af2f-49b2658269bf",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "44194114-7daa-47fe-b037-ff46e180f504",
+			"id": "9ba20707-184e-4230-bbdb-9905fc60df20",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "9d475df6-4ca5-4294-8acd-195c60b3e1e2",
+			"id": "e8ef92b7-3550-4cf7-a5f7-1a7b92e6f014",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "43492e32-25c6-4377-8b93-30e20b8ac91f",
+			"id": "55ef3a6e-fee9-4d25-a3aa-ca04d3c2f7e5",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "6b18ed21-3b25-4a54-a778-69366c4afc54",
+			"id": "351bae0c-1d77-426e-907f-1905b01c7c38",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "cb8a2705-cff5-4e3e-b16a-ec8351fc44fd",
+			"id": "de46bfb0-f46e-4c2e-87c3-d539f9db69fd",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "4abf70b8-75cd-4ee4-8514-6e20d7a22280",
+			"id": "16c407bc-81d4-486d-9bda-bd419a15767c",
 			"key": "assignmentDescription",
 			"value": ""
 		}
