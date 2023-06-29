@@ -1196,7 +1196,7 @@
 							"    pm.response.to.have.status(400);\r",
 							"});\r",
 							"\r",
-							"postman.setNextRequest(\"Create Batch\");"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -2576,12 +2576,12 @@
 	],
 	"variable": [
 		{
-			"id": "6b442579-62d9-4b0f-9f73-df47f9ffcd07",
+			"id": "64a338a9-0cae-4794-9f76-9de0f96541ad",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "d170671e-7e45-48dc-8b69-1889f22d9c01",
+			"id": "5aa66afb-34e6-4ad8-920c-2048f411129c",
 			"key": "currentIteration",
 			"value": ""
 		}
