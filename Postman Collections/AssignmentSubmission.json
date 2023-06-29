@@ -1158,7 +1158,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b0501780-9027-4ea5-907e-19cd6402ac95",
+				"id": "37313bfa-1cb2-4162-a1a3-fd9bf48066d9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1168,7 +1168,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0dc4f278-5b5a-45de-b6da-2eca4fb7956a",
+				"id": "3110275f-45e0-4f7d-9d33-2f435e567b24",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1178,20 +1178,20 @@
 	],
 	"variable": [
 		{
-			"id": "49ef465c-48df-4737-9f4e-5f591749febf",
+			"id": "bb04cf6a-e760-4127-99da-f24a5e5fda4f",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "038795d2-079a-4ae4-8201-476db25bf4f4",
+			"id": "97b99752-38bd-489d-8ef2-1d2922a5fadf",
 			"key": "submissionDateTime",
-			"value": ""
+			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "5b7f9af7-6f19-4853-8ced-90297bc038cb",
+			"id": "092e2f1d-0a18-4358-b2fd-eeeaba867f08",
 			"key": "subDateTime",
-			"value": ""
+			"value": "06-29-2023 00:17:48"
 		}
 	]
 }
