@@ -1749,42 +1749,6 @@
 					"body": "Deleted User ID:  U909"
 				}
 			]
-		},
-		{
-			"name": "{{BaseUrl}}/assignmentsubmission",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "918ded1c-aff2-4768-8432-f6ee78069d04",
-						"exec": [
-							"var moment = require('moment')\r",
-							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "057f6b6c-7453-469d-8f92-4c56934099e3",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": 1865,\r\n    \"userId\": \"{{StudentID}}\",\r\n    \"subDesc\": \"Submissions for SQL assignment\",\r\n    \"subComments\": \"SQL\",\r\n    \"subPathAttach1\": \"Filepath1\",\r\n    \"subPathAttach2\": \"Filepath2\",\r\n    \"subPathAttach3\": \"Filepath3\",\r\n    \"subPathAttach4\": \"Filepath4\",\r\n    \"subPathAttach5\": \"Filepath5\",\r\n    \"subDateTime\": \"{{submissionDateTime}}\",\r\n    \"gradedBy\": \"U22\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": -1\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{BaseUrl}}/assignmentsubmission"
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -1811,22 +1775,22 @@
 	],
 	"variable": [
 		{
-			"id": "d30ebb62-7b3d-4a38-a1dc-19149a239a6f",
+			"id": "797ea79b-8f3e-416d-9eb7-95a0e8eb7e61",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "4c760bfe-01ef-41ed-ae0e-50546171854d",
+			"id": "28cc7828-0da6-4bb7-a7c6-8ae4639ee514",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "8940585f-bf49-4366-9aad-a29855d4160a",
+			"id": "375d711b-e342-4fe2-80e7-68a39ab144c8",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "f39e7c77-1baa-490b-895e-c7ba0f194472",
+			"id": "84891471-f6a3-4664-8f2c-03ffc7b4aa21",
 			"key": "submissionDateTime",
 			"value": ""
 		}
