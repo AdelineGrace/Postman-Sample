@@ -595,7 +595,7 @@
 					"variable": [
 						{
 							"key": "batchName",
-							"value": "657"
+							"value": "SDET"
 						}
 					]
 				}
@@ -1345,22 +1345,22 @@
 	],
 	"variable": [
 		{
-			"id": "bcdd33f7-267f-4436-aad7-acda9b227110",
+			"id": "ffcb6a80-9b10-4225-987c-42457cfc9275",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "969dbbad-cef2-4ead-b3c5-ab5ad97f4196",
+			"id": "8082a8ab-e9b9-476d-9ff3-1ee2c5286b42",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "c8c128ac-80c3-4a48-b075-99d5bec91bb4",
+			"id": "0bf98950-4541-4c03-b809-3d2fe06591fb",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "68060c62-3b73-42b8-916b-b92749a3f284",
+			"id": "1b83370b-2e7c-481b-bdb4-c79307263346",
 			"key": "batchDescription",
 			"value": ""
 		}
