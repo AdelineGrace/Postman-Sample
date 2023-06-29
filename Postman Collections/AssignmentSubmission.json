@@ -1969,7 +1969,7 @@
 			"response": [
 				{
 					"id": "ad4c49df-b55b-46d1-8e37-387e2d364d33",
-					"name": "Delete Invalid Assignment Id",
+					"name": "Delete by Invalid SubmissionId",
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
@@ -2050,23 +2050,23 @@
 	],
 	"variable": [
 		{
-			"id": "928ec1d3-4a49-4cf6-865f-b61579f628dc",
+			"id": "59261d6b-3187-46a5-9e36-cbf5abce1e7b",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0d194cb8-e707-4362-bf57-38acd06bc450",
+			"id": "c7902cf6-2cfa-4278-a92b-bceb2de5089b",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "17b6a89e-c879-4720-9677-f21fd7a458cd",
+			"id": "7e016663-7173-4ac7-9ff1-1f715c341c1b",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "ee430e56-338e-4fec-8818-d824919d248f",
+			"id": "8a836b26-e98e-42fd-a9ab-13e0e52c5341",
 			"key": "req_body",
 			"value": ""
 		}
