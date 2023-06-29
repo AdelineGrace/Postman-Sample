@@ -87,7 +87,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId_SDET}}\r\n}",
+					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId_DA}}\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1097,7 +1097,64 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "2a79d001-5db2-495e-9eb3-524f2ce643d4",
+					"name": "Delete Batch",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/batches/:batchId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"batches",
+								":batchId"
+							],
+							"variable": [
+								{
+									"key": "batchId",
+									"value": "{{batchId}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:09:35 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "Message: Batch with Id-5588 deleted Successfully!"
+				}
+			]
 		},
 		{
 			"name": "Delete batch with invalid BatchId",
@@ -1230,22 +1287,22 @@
 	],
 	"variable": [
 		{
-			"id": "e60f124d-ebd0-40da-b130-4555f0686e3b",
+			"id": "97569ebb-e805-45ab-9d82-c4c9b14fe96f",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "0b9cdc51-18ab-4bca-8d62-1496d77dc749",
+			"id": "a002e399-9614-4f3b-a490-821ba3edcd2d",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "447d8883-55fa-4a4b-a99f-7c16731245f6",
+			"id": "66f2fb8d-137a-43cf-9009-2fd8b91a98f6",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "315496bd-71be-4f76-921f-8109b6dd0e43",
+			"id": "ab3c15b1-d6b2-4277-a4fc-3bd1b823f334",
 			"key": "batchDescription",
 			"value": ""
 		}
