@@ -601,7 +601,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"programDescription\": \"This is a program to learn\",\r\n    \"programName\": \"Jun23-Postman Pros-DA-303_NewUpdated\",\r\n    \"programStatus\": \"Active\"\r\n}",
+					"raw": "{\r\n    \"programDescription\": \"This is a program to learn\",\r\n    \"programName\": \"{{programName_DA}}_NewUpdated\",\r\n    \"programStatus\": \"Active\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2575,12 +2575,12 @@
 	],
 	"variable": [
 		{
-			"id": "e348ed7a-f80d-4f13-a454-211514cc20b1",
+			"id": "b726bbce-e527-4c23-8ba1-787b1e81e8b1",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "dd2db766-2d0b-4be5-b694-76baa94f93aa",
+			"id": "0a3002d9-4e33-48c9-9076-4f40354104d4",
 			"key": "currentIteration",
 			"value": ""
 		}
