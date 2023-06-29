@@ -563,6 +563,62 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"message\": \"program with this: 250not found\",\n    \"success\": false\n}"
+				},
+				{
+					"id": "031653cc-decd-42e2-b593-ea9054bbd151",
+					"name": "Get by Invalid ProgramId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/programs/:pid",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"programs",
+								":pid"
+							],
+							"variable": [
+								{
+									"key": "pid",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 04:05:19 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"program with this: 0not found\",\n    \"success\": false\n}"
 				}
 			]
 		},
@@ -2576,12 +2632,12 @@
 	],
 	"variable": [
 		{
-			"id": "3f1c6c67-98e0-44a2-aa61-afac2bbcf2f7",
+			"id": "2ee1a664-380f-44a9-a455-24665307cd5e",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "03c0d71c-c886-4f34-b884-afb1a5c45a58",
+			"id": "b068367c-05bf-4972-acf6-73ae499788d2",
 			"key": "currentIteration",
 			"value": ""
 		}
