@@ -1433,7 +1433,7 @@
 						"exec": [
 							"var moment = require('moment');\r",
 							"//var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
-							"\r",
+							"/*\r",
 							"pm.sendRequest({\r",
 							"    url: pm.variables.replaceIn(\"{{BaseUrl}}/assignments/\" + assignmentId),\r",
 							"    method: \"GET\"\r",
@@ -1445,7 +1445,7 @@
 							"\r",
 							"if (Date.parse(dueDate) > Date.parse(submissionDateTime)) {\r",
 							"    pm.collectionVariables.set(\"subDateTime\", submissionDateTime);\r",
-							"}\r",
+							"}*/\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1472,7 +1472,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"assignmentId\": \"{{assignmentId}}}\",\r\n    \"userId\":\"U234\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": \"{{subDateTime}}\",\r\n    \"gradedBy\": \"\",\r\n    \"gradedDateTime\": \"\",\r\n    \"grade\": 2\r\n}\r\n",
+					"raw": "{\r\n    \"assignmentId\": \"{{assignmentId}}}\",\r\n    \"userId\":\"U234\",\r\n    \"subDesc\": \"Assignment submission by U234 updated\",\r\n    \"subComments\": \"Resubmitted successfully\",\r\n    \"subPathAttach1\": \"file1.json\",\r\n    \"subPathAttach2\": \"file2.json\",\r\n    \"subPathAttach3\": \"file3.json\",\r\n    \"subPathAttach4\": \"file4.json\",\r\n    \"subPathAttach5\": \"file5.json\",\r\n    \"subDateTime\": \"{{subDateTime}}\",\r\n    \"gradedBy\": \"{{StaffID}}\",\r\n    \"gradedDateTime\": \"{{submissionDateTime}}\",\r\n    \"grade\": 2\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1557,7 +1557,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[    {\r\n        \r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"{{StudentID}}\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 5\r\n    }]",
+					"raw": "[    {\r\n        \"assignmentId\": {{assignmentId}},\r\n        \"userId\": \"{{StudentID}}\",\r\n        \"subDesc\": \"Submissions for SQL assignment updated\",\r\n        \"subComments\": \"SQL\",\r\n        \"subPathAttach1\": \"Filepath1\",\r\n        \"subPathAttach2\": \"Filepath2\",\r\n        \"subPathAttach3\": \"Filepath3\",\r\n        \"subPathAttach4\": \"Filepath4\",\r\n        \"subPathAttach5\": \"Filepath5\",\r\n        \"subDateTime\": \"06-25-2023 15:35:01\",\r\n        \"gradedBy\": \"U22\",\r\n        \"gradedDateTime\": \"06-25-2023 17:23:14\",\r\n        \"grade\": 5\r\n    }]",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -2050,23 +2050,23 @@
 	],
 	"variable": [
 		{
-			"id": "df220965-07e8-407f-9458-3c5c3beea49e",
+			"id": "4aecc2dd-aba1-41de-a41b-e513fbe02c90",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "56decabb-9aac-48eb-aa94-69ab8a3a3513",
+			"id": "fde3451e-319e-4f4f-851a-d14776dfcfd2",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "3a3eafd2-b25c-474b-8b57-5abb5ebfb166",
+			"id": "86d919ae-5a46-4bc6-b29d-2234c5700fb7",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "e9aa7e68-42b3-42f8-a3c5-f78ae002148a",
+			"id": "89e4b524-8421-4410-bcd6-ad7ce481baff",
 			"key": "req_body",
 			"value": ""
 		}
