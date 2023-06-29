@@ -1097,64 +1097,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "2a79d001-5db2-495e-9eb3-524f2ce643d4",
-					"name": "Delete Batch",
-					"originalRequest": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "{{BaseUrl}}/batches/:batchId",
-							"host": [
-								"{{BaseUrl}}"
-							],
-							"path": [
-								"batches",
-								":batchId"
-							],
-							"variable": [
-								{
-									"key": "batchId",
-									"value": "{{batchId}}"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Content-Length",
-							"value": "49"
-						},
-						{
-							"key": "Date",
-							"value": "Thu, 29 Jun 2023 05:09:35 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "Message: Batch with Id-5588 deleted Successfully!"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Delete batch with invalid BatchId",
@@ -1287,22 +1230,22 @@
 	],
 	"variable": [
 		{
-			"id": "9201ac67-6b74-43f3-bf50-8b9c191e2700",
+			"id": "e60f124d-ebd0-40da-b130-4555f0686e3b",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "7ce01d6a-a04e-4472-960a-e318a732784f",
+			"id": "0b9cdc51-18ab-4bca-8d62-1496d77dc749",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "4ee37bd7-c3e1-4667-923c-be9a74993676",
+			"id": "447d8883-55fa-4a4b-a99f-7c16731245f6",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "3cfb9aeb-16d8-4d16-9519-16afe07d0e17",
+			"id": "315496bd-71be-4f76-921f-8109b6dd0e43",
 			"key": "batchDescription",
 			"value": ""
 		}
