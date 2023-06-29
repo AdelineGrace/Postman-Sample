@@ -1273,6 +1273,63 @@
 					"cookie": [],
 					"responseTime": null,
 					"body": "{\n    \"message\": \"Student not found with Student ID:  : U12 \",\n    \"success\": false\n}"
+				},
+				{
+					"id": "2c0edf9d-6411-4d39-9f87-bd5686eb2d26",
+					"name": "Grades by Invalid StudentID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGradesByStudentId/:studentID",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGradesByStudentId",
+								":studentID"
+							],
+							"variable": [
+								{
+									"key": "studentID",
+									"value": "U12"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 07:05:00 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"Student not found with Student ID:  : U12 \",\n    \"success\": false\n}"
 				}
 			]
 		},
@@ -1739,18 +1796,18 @@
 	],
 	"variable": [
 		{
-			"id": "6ca8cb03-f2a8-41e3-8d3d-91172e23ffb4",
+			"id": "38e0da2d-6352-408d-be15-04e626b7d9bb",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e022face-fb8e-49e0-b58b-a5bbb7f2992c",
+			"id": "d605f9a0-d009-4ce7-8e0d-b6657fb792e4",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "fc8ea46c-770f-4171-9ddb-7739813d3edd",
+			"id": "96547343-ce5e-4992-841c-3704d630dff6",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
