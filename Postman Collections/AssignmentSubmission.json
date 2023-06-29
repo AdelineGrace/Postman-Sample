@@ -216,7 +216,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "f64219ab-a5b1-441a-b98a-d802141a0d60",
+					"name": "Get Submission by UserID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/student/:UserID",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"student",
+								":UserID"
+							],
+							"variable": [
+								{
+									"key": "UserID",
+									"value": "U5649"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:23:34 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"submissionId\": 758,\n        \"assignmentId\": 2472,\n        \"userId\": \"U5649\",\n        \"subDesc\": \"description1\",\n        \"subComments\": \"comment1\",\n        \"subPathAttach1\": \"path1\",\n        \"subPathAttach2\": \"subpath2\",\n        \"subPathAttach3\": \"sub1\",\n        \"subPathAttach4\": \"at1\",\n        \"subPathAttach5\": \"you2\",\n        \"subDateTime\": \"06-29-2023 03:27:23\",\n        \"gradedBy\": \"U5649\",\n        \"gradedDateTime\": \"06-29-2023 03:27:23\",\n        \"grade\": 6\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Get Submission by Invalid UserID",
@@ -1508,18 +1566,18 @@
 	],
 	"variable": [
 		{
-			"id": "d14ce160-ed3a-4111-847f-fe8da5278a08",
+			"id": "8dd5fb7f-9af7-40d7-8586-b805884bd202",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "032796be-3f97-4c65-9dee-d7c5d170e4af",
+			"id": "2f86c028-1dd8-4d92-80b0-63c1167100a8",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "b8db0a87-6da7-47fd-b25b-f10277bc7dfa",
+			"id": "7d1c5edd-bca6-4fcf-b946-2c865e93a223",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
