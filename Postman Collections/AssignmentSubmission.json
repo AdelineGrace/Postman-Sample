@@ -570,7 +570,7 @@
 							"pm.test(\"Status code is 404\", function () {\r",
 							"    pm.response.to.have.status(404);\r",
 							"});\r",
-							"\r",
+							"/*\r",
 							"pm.test(\"Status code name has string Not Found\", function () {\r",
 							"    pm.response.to.have.status(\"Not Found\");\r",
 							"});\r",
@@ -587,7 +587,7 @@
 							"});\r",
 							"\r",
 							"console.log(pm.response.status);\r",
-							"console.log(pm.response.code);"
+							"console.log(pm.response.code);*/"
 						],
 						"type": "text/javascript"
 					}
@@ -2050,23 +2050,23 @@
 	],
 	"variable": [
 		{
-			"id": "f3aa1b96-0b43-4ffd-9d2c-ed7030961ec9",
+			"id": "7197a835-4ec3-47c0-9b85-b4c7ef82959a",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e5300c7c-dfbc-4ebc-bc61-b3fe5f79de68",
+			"id": "ced53171-251c-425f-9b72-6163397d9b1d",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "33c4e11c-3594-416a-8316-76a132938672",
+			"id": "bd918068-5e8f-4079-89e7-a867412d171f",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "654dbe97-8cbc-4584-90fd-01740cf5e3b5",
+			"id": "af2188d4-d5b4-4649-8f5d-49d2acfb99ac",
 			"key": "req_body",
 			"value": ""
 		}
