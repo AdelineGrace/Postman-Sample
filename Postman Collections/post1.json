@@ -87,7 +87,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId_DA}}\r\n}",
+					"raw": "{\r\n  \"batchDescription\": \"{{batchDescription}}\",\r\n  \"batchName\": \"{{batchName}}{{serialNumber}}\",\r\n  \"batchNoOfClasses\": \"{{batchNoOfClasses}}\",\r\n  \"batchStatus\": \"{{batchStatus}}\",\r\n  \"programId\": {{programId_SDET}}\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1287,22 +1287,22 @@
 	],
 	"variable": [
 		{
-			"id": "4bdc9bbe-3c43-4ab7-9252-864ab12aef33",
+			"id": "d0877955-b3cc-4582-bdef-9fb41cddd99c",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "0eb9d1a3-2158-43ff-8152-b317dd2a35c6",
+			"id": "e39f7e39-4678-42df-8b47-fcdb39f04bc7",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "220e69fd-f18e-4d66-aeb8-19b0f6be84dd",
+			"id": "44ddaae0-1053-410a-b85c-45c604e76dba",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "7453bd9d-350f-4dd1-95ee-15b7b069430e",
+			"id": "d3470b75-613c-4769-8823-91f3422ded6c",
 			"key": "batchDescription",
 			"value": ""
 		}
