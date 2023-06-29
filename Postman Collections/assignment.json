@@ -1171,6 +1171,17 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "571ed788-a61a-4865-8806-72cfbb1b76c8",
+						"exec": [
+							"const response = pm.response.json();\r",
+							"pm.globals.set(\"assignmentId\", response.assignmentId);"
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "91b35bd3-79e2-444e-8260-f8c251249d6b",
@@ -1182,14 +1193,30 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"assignmentDescription\": \"assignmentDescription\",\r\n  \"assignmentName\": \"Test Java Assignment\",\r\n  \"batchId\": {{batchId}},\r\n  \"comments\": \"comments\",\r\n  \"createdBy\": \"{{StaffID}}\",\r\n  \"dueDate\": \"2023-07-10T22:02:28.140Z\",\r\n  \"graderId\": \"{{StaffID}}\",\r\n  \"pathAttachment1\": \"{{pathAttachment1}}\",\r\n  \"pathAttachment2\": \"{{pathAttachment2}}\",\r\n  \"pathAttachment3\": \"{{pathAttachment3}}\"\r\n }",
+					"raw": "{\r\n  \"assignmentDescription\": \"assignmentDescription\",\r\n  \"assignmentName\": \"Test Java Assignment\",\r\n  \"batchId\": {{batchId}},\r\n  \"comments\": \"comments\",\r\n  \"createdBy\": \"{{StaffID}}\",\r\n  \"dueDate\": \"2023-06-28T22:02:28.140Z\",\r\n  \"graderId\": \"{{StaffID}}\",\r\n  \"pathAttachment1\": \"{{pathAttachment1}}\",\r\n  \"pathAttachment2\": \"{{pathAttachment2}}\",\r\n  \"pathAttachment3\": \"{{pathAttachment3}}\"\r\n }",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{BaseUrl}}/assignments"
+				"url": {
+					"raw": "{{BaseUrl}}/assignmentsubmission/grades/:batchID",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"assignmentsubmission",
+						"grades",
+						":batchID"
+					],
+					"variable": [
+						{
+							"key": "batchID",
+							"value": null
+						}
+					]
+				}
 			},
 			"response": []
 		}
@@ -1218,61 +1245,61 @@
 	],
 	"variable": [
 		{
-			"id": "4764e08d-6232-4a1f-8d40-4ca557ff2c28",
+			"id": "666cd1d1-01fd-4de7-a036-97deb0028d47",
 			"key": "assignmentDescForJava",
 			"value": "This assignemnt is to understand the basics of Java - Access Specifiers, Constructors, OOPS, Collections",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "fc67e812-57cf-48cb-a5e6-8296915f3be8",
+			"id": "2a50e20f-c83f-4b27-8a53-1389f82dbb24",
 			"key": "assignmentDescForSelenium",
 			"value": "This assignemnt is to understand the  basic concepts of Selenium - Elementlocators, Waits, Driver/Core functions, ",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "497dc03d-1424-4dc6-8666-f9631f4a0036",
+			"id": "5e7a1099-d312-452c-b93e-c0deacf9f1c4",
 			"key": "assignmentDescForTestNG",
 			"value": "This assignment is to understand the TestNg Annotations",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "c4151b59-c77a-4f77-8709-2fd193bbf2a9",
+			"id": "d8c4e07a-f2f9-4f73-a508-c9bf15d80492",
 			"key": "assignmentDescForCucumber",
 			"value": "This assignment is to understand the  test case implementation in Cucumber",
 			"type": "string",
 			"disabled": true
 		},
 		{
-			"id": "6d7aedfe-c7a6-4374-bea5-26191b4e58ca",
+			"id": "d4904bee-c1d3-4b5f-8278-5ee5c6cc618f",
 			"key": "dueDate",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "16d5ca25-7ebd-44e5-a8fd-93731c666244",
+			"id": "11dcfc1f-04ff-454e-95fd-7ba7b9301dc0",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "ce26293e-175d-49dd-b2f1-d475ddaa40db",
+			"id": "fd98dced-b371-4022-b7c8-c6ba5dd24c83",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "15b6c982-7dd8-40f6-9eed-ac7a20173d47",
+			"id": "47d48a8e-5a70-4818-9cdb-cac8f416ebf7",
 			"key": "dueDate",
 			"value": ""
 		},
 		{
-			"id": "739f72ff-f795-4b5b-b962-2b90336a29a5",
+			"id": "01b0ba63-1e9c-4860-bd3c-ff7c7fa68c3b",
 			"key": "assignmentName",
 			"value": ""
 		},
 		{
-			"id": "4cb9c406-6df1-441a-bab4-68c827fb767f",
+			"id": "d2bdf24f-eccc-49fc-8a4a-f655abce5d7f",
 			"key": "assignmentDescription",
 			"value": ""
 		}
