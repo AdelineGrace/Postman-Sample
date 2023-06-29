@@ -1245,7 +1245,75 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "0c2491c7-72cc-412b-9055-2680adea6e68",
+					"name": "Assign Update User Role Program Batch Status",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"programId\": 55,\r\n  \"roleId\": \"R02\",\r\n  \"userId\": \"{{StaffID}}\",\r\n  \"userRoleProgramBatches\": [\r\n    {\r\n      \"batchId\": 151,\r\n      \"userRoleProgramBatchStatus\": \"Active\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/users/users/roleProgramBatchStatus/:userId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"users",
+								"users",
+								"roleProgramBatchStatus",
+								":userId"
+							],
+							"variable": [
+								{
+									"key": "userId",
+									"value": "{{StaffID}}"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 25 Jun 2023 01:03:15 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "User U554 has been successfully assigned to Program/Batch(es)"
+				}
+			]
 		},
 		{
 			"name": "Assign Update User Role Program Batch Status with Invalid ID",
@@ -1632,22 +1700,22 @@
 	],
 	"variable": [
 		{
-			"id": "916dfa0f-dc0c-431a-b7ec-80833845bb4d",
+			"id": "a9a45834-50ec-48ee-a72a-9c41bc96dce6",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "080eb998-051c-4e8a-aa15-f48080ae90ad",
+			"id": "345f1c11-0c8a-43d5-ab13-c557504822d6",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "f7b48bbc-c669-4f0b-86f0-7fcd90dbd2e3",
+			"id": "7a501b9f-524c-4e63-a5ad-3322d3b8c2c7",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "19c71e5a-e2aa-4cc3-9ad1-2ff963b5f909",
+			"id": "e6e4f44e-e8a7-4491-9a73-c4733b30662f",
 			"key": "submissionDateTime",
 			"value": ""
 		}
