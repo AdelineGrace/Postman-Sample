@@ -953,7 +953,65 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "307d32eb-9592-457d-bcf5-c2e667a3d772",
+					"name": "Grades by Invalid Assignment ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/assignmentsubmission/getGrades/:assignmentId",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"assignmentsubmission",
+								"getGrades",
+								":assignmentId"
+							],
+							"variable": [
+								{
+									"key": "assignmentId",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 29 Jun 2023 05:25:17 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"message\": \"Assignment not found with Id : 0 \",\n    \"success\": false\n}"
+				}
+			]
 		},
 		{
 			"name": "Grades by StudentID",
@@ -1624,18 +1682,18 @@
 	],
 	"variable": [
 		{
-			"id": "013a85fe-e790-4467-a0e2-d324fbbae978",
+			"id": "517f67d2-0c52-4672-8c57-06497ac29ca4",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ff975874-bcfa-46dd-ab19-a99592c17240",
+			"id": "373ef5a7-3b6d-4d3d-b487-ddc598f61ec2",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 00:06.36"
 		},
 		{
-			"id": "fee37a28-7c5a-4c31-ab8d-b0ba1246fd29",
+			"id": "a3267246-4e38-4dc6-89d0-4639127fc717",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:17:48"
 		}
