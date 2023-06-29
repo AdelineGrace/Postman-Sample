@@ -491,69 +491,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "d6402c3f-0e4d-438e-96a7-a61891df26a5",
-					"name": "New Request",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://lms-api-hackathon-june2023-930a8b0f895d.herokuapp.com/lms/batches/batchName/:batchName",
-							"protocol": "https",
-							"host": [
-								"lms-api-hackathon-june2023-930a8b0f895d",
-								"herokuapp",
-								"com"
-							],
-							"path": [
-								"lms",
-								"batches",
-								"batchName",
-								":batchName"
-							],
-							"variable": [
-								{
-									"key": "batchName",
-									"value": "01"
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "Cowboy"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Date",
-							"value": "Sat, 24 Jun 2023 19:28:47 GMT"
-						},
-						{
-							"key": "Via",
-							"value": "1.1 vegur"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "[\n    {\n        \"batchId\": 5,\n        \"batchName\": \"01\",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 5,\n        \"programId\": 1,\n        \"programName\": \"\"\n    },\n    {\n        \"batchId\": 51,\n        \"batchName\": \"01\",\n        \"batchDescription\": \"string\",\n        \"batchStatus\": \"Active\",\n        \"batchNoOfClasses\": 5,\n        \"programId\": 1,\n        \"programName\": \"\"\n    }\n]"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Get Batch by Invalid batch name",
@@ -1247,22 +1185,22 @@
 	],
 	"variable": [
 		{
-			"id": "7824fceb-2020-48c6-868c-18199e590aa0",
+			"id": "2d0662b0-7283-4c02-9f74-ac7565cd4520",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "f56e7120-41d3-4be5-8a18-75d81cea7087",
+			"id": "091aa2be-9130-4059-8450-918cd7c5ffdd",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "e42ca813-14cb-4d26-a987-7ba1af0e107b",
+			"id": "a4604c22-bd17-4575-b734-b7bc99e94604",
 			"key": "batchName",
 			"value": ""
 		},
 		{
-			"id": "1a6b1864-fd20-4563-98ef-09b844e24f01",
+			"id": "e95fed8d-71dc-49c4-a50f-bcf13658a77d",
 			"key": "batchDescription",
 			"value": ""
 		}
