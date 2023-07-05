@@ -62,21 +62,7 @@
 						"exec": [
 							"const serialNo = Math.floor(Math.random()* 1000);\r",
 							"pm.environment.set(\"serialNumber\", serialNo.toString());\r",
-							"\r",
-							"// to create work flow to run the post request alone in the collection\r",
-							"/*const iterationCount = pm.info.iterationCount;\r",
-							"console.log(iterationCount);\r",
-							"const currentIteration = (pm.info.iteration);\r",
-							"console.log(currentIteration);\r",
-							"let currentIterationValue = (currentIteration+1);\r",
-							"console.log(currentIterationValue);\r",
-							"\r",
-							"pm.collectionVariables.set(\"iterationCount\",iterationCount);\r",
-							"pm.collectionVariables.set(\"currentIteration\",currentIteration);\r",
-							"\r",
-							"if (currentIterationValue <= iterationCount){\r",
-							"    postman.setNextRequest(\"Create Program\");    \r",
-							"}*/"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -1621,12 +1607,12 @@
 	],
 	"variable": [
 		{
-			"id": "1c3a65e1-bf4c-405d-93ec-e4f897634e5e",
+			"id": "810b935a-183e-4450-819b-1a6e42f51df5",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "4402c3c1-58a8-49fe-868e-e62fcc14b0c5",
+			"id": "0d69db09-18d6-444f-bd9a-d5c9bb95c414",
 			"key": "currentIteration",
 			"value": ""
 		}
