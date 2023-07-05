@@ -17,7 +17,7 @@
 							"pm.collectionVariables.set(\"submissionDateTime\", moment().format('MM-DD-YYYY HH:mm:ss'))\r",
 							"\r",
 							"const reqBody = pm.request.body.raw;\r",
-							"/*const assignId = reqBody.assignmentId;\r",
+							"const assignId = reqBody.assignmentId;\r",
 							"console.log(reqBody.assignmentId);\r",
 							"\r",
 							"if(assignId){\r",
@@ -27,14 +27,14 @@
 							"    console.log(\"Assignment Id does not Exist\");\r",
 							"    postman.setNextRequest(null);\r",
 							"\r",
-							"}*/\r",
+							"}\r",
 							"//const submissiondate = reqBody.subDateTime;\r",
 							"var submissionDateTime = pm.collectionVariables.get(\"submissionDateTime\");\r",
 							"var dueDate = pm.globals.get(\"assignmentDueDate\");\r",
 							"\r",
-							"/*pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
+							"pm.test(\"Submission Date is present in Timestamp format\", function () {\r",
 							"pm.expect(Date.parse(dueDate)).to.be.above(Date.parse(submissiondate))\r",
-							"});*/"
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -2051,23 +2051,23 @@
 	],
 	"variable": [
 		{
-			"id": "a85ca476-1186-4f1a-9600-76d248c501e9",
+			"id": "f26b1989-d9b6-4357-8404-bc0e43372c34",
 			"key": "assignmentIdsubmission",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9d510438-0115-4f78-85ae-3b261e0ef5c1",
+			"id": "1d5dbb6c-c308-4c32-9c47-82f162c78f4b",
 			"key": "submissionDateTime",
 			"value": "06-29-2023 10:06:95"
 		},
 		{
-			"id": "054950b0-b49c-4cff-b07e-51dd298eb52d",
+			"id": "dc02c9c1-27b0-44b0-87fb-e2a425ccb32f",
 			"key": "subDateTime",
 			"value": "06-29-2023 00:50:43"
 		},
 		{
-			"id": "06bc4d31-561f-4e30-b7c6-3898d5cf6b96",
+			"id": "703442ec-14ce-467b-9a8f-65ff57a7c3d1",
 			"key": "req_body",
 			"value": ""
 		}
