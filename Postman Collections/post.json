@@ -63,6 +63,7 @@
 							"const response = pm.response.json();\r",
 							"pm.globals.set(\"PhoneNumber\",response.userPhoneNumber)\r",
 							"console.log(response)\r",
+							"\r",
 							"if (AdminId ===\"R01\"){\r",
 							"pm.globals.set(\"AdminID\", response.userId);\r",
 							"pm.globals.set(\"AdminUserRoleStatus\",JSON.parse(AdminUser).userRoleMaps[0].userRoleStatus)\r",
@@ -1698,22 +1699,22 @@
 	],
 	"variable": [
 		{
-			"id": "f6341f33-73a8-4cc2-82be-9d0e76d1a36f",
+			"id": "cabdfea7-c41f-4d86-98b0-a5599fd3ca3e",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "8ec7a8ad-9190-498b-8763-fc0c5007e0a1",
+			"id": "11425a48-8eee-40e9-ab30-17dc486a49dc",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "56868ac1-2760-4120-9df0-108be91eb7f5",
+			"id": "15f222e5-16ce-4aa2-8b11-42b31a5c799b",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "626babc3-d4d2-4f11-bdce-9714ea3b86fb",
+			"id": "976cbdca-b830-460b-b871-8fd0be070ce8",
 			"key": "submissionDateTime",
 			"value": ""
 		}
