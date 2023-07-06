@@ -20,6 +20,8 @@
 							"const response = pm.response.json();\r",
 							"console.log(response);\r",
 							"\r",
+							"//to store programs in 2 different global variables\r",
+							"\r",
 							"const reqBody = JSON.parse(pm.request.body.raw);\r",
 							"//console.log(reqBody);\r",
 							"//console.log(reqBody.programName);\r",
@@ -1607,12 +1609,12 @@
 	],
 	"variable": [
 		{
-			"id": "810b935a-183e-4450-819b-1a6e42f51df5",
+			"id": "8ae5210c-78f6-4955-8126-fa88ab2042ce",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "0d69db09-18d6-444f-bd9a-d5c9bb95c414",
+			"id": "9c78e837-f653-4f14-834a-7dbfcf8bb0e8",
 			"key": "currentIteration",
 			"value": ""
 		}
