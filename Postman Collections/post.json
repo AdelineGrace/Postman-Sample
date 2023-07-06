@@ -521,13 +521,11 @@
 							"});\r",
 							"const response = pm.response.json();\r",
 							"\r",
-							"\r",
 							"const adminUser = response.find(user => user.role.roleName === \"ROLE_ADMIN\");\r",
 							"if (adminUser) {\r",
 							"    pm.globals.set(\"AdminRoleId\", adminUser.role.roleId);\r",
 							"   \r",
 							"}\r",
-							"\r",
 							"const studentUser = response.find(user => user.role.roleName === \"ROLE_STUDENT\");\r",
 							"if (studentUser) {\r",
 							"    pm.globals.set(\"StudentRoleId\", studentUser.role.roleId);\r",
@@ -1700,22 +1698,22 @@
 	],
 	"variable": [
 		{
-			"id": "fdf4daa7-da1f-4863-a729-f572f30fe162",
+			"id": "f6341f33-73a8-4cc2-82be-9d0e76d1a36f",
 			"key": "currentIteration",
 			"value": ""
 		},
 		{
-			"id": "c307bf1a-9681-413a-8349-94710d420c85",
+			"id": "8ec7a8ad-9190-498b-8763-fc0c5007e0a1",
 			"key": "iterationCount",
 			"value": ""
 		},
 		{
-			"id": "5f9952f6-8805-4065-9209-1de0ee02347e",
+			"id": "56868ac1-2760-4120-9df0-108be91eb7f5",
 			"key": "subDateTime",
 			"value": ""
 		},
 		{
-			"id": "78c31ec9-32b1-4966-ab96-42f7c5e53cf7",
+			"id": "626babc3-d4d2-4f11-bdce-9714ea3b86fb",
 			"key": "submissionDateTime",
 			"value": ""
 		}
